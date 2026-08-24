@@ -1,0 +1,34 @@
+{
+  "title": "ASTROPHOTOGRAPHY - M31",
+  "object": "M31",
+  "image": {
+    "large": "/Images/m31_040913_2000.jpg",
+    "thumb": "/Images/m31_040913_800.jpg",
+    "alt": "M31",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "M31"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/m31_061022_12i60m_L.FIT\">m31_061022_12i60m_L.FIT</a> (Luminance, 60 min, 5-min subs)<br><a href=\"/fits/m31_061022_4i20m_R.FIT\">m31_061022_4i20m_R.FIT</a> (Red, 20 min, 5-min subs)<br><a href=\"/fits/m31_061022_4i20m_G.FIT\">m31_061022_4i20m_G.FIT</a> (Green, 20 min, 5-min subs)<br><a href=\"/fits/m31_061022_4i20m_B.FIT\">m31_061022_4i20m_B.FIT</a> (Blue, 20 min, 5-min subs)<br>"
+    },
+    {
+      "label": "Processed by Tom Harrison",
+      "value": "<img src=\"/Images/m31_TomHarrison_100.jpg\">"
+    },
+    {
+      "label": "Processed by Andrea Tamanti",
+      "value": "<img src=\"/Images/m31_AndreaTamanti_100.jpg\">"
+    },
+    {
+      "label": "Processed by Fernando Bosch",
+      "value": "<img src=\"/Images/m31_FernandoBosch_100.jpg\">"
+    },
+    {
+      "label": "Processed by David Pastern",
+      "value": "<img src=\"/Images/DavidPastern_m31_100.jpg\">"
+    }
+  ]
+}

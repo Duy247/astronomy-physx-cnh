@@ -1,0 +1,15 @@
+# BEGIN Hostinger PHP settings
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Uncomment and edit the next line if you want to redirect all requests to index.php
+    # RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
+
+# Set default charset
+AddDefaultCharset UTF-8
+
+# Protect composer files
+<FilesMatch "composer\.(json|lock)">
+    Require all denied
+</FilesMatch>
+# END Hostinger PHP settings

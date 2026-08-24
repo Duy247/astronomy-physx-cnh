@@ -1,0 +1,18 @@
+{
+  "title": "ASTROPHOTOGRAPHY - M74",
+  "object": "M74",
+  "image": {
+    "large": "/Images/m74_041109_2000.jpg",
+    "thumb": "/Images/m74_041109_100.jpg",
+    "alt": "M74",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "M74"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/m74_041109_33i165mF_L.FIT\">m74_041109_33i165mF_L.FIT</a> (Luminance, 165 min, 5-min subs)<br><a href=\"/fits/m74_041109_7ila35m_R.FIT\">m74_041109_7ila35m_R.FIT</a> (Red, 35 min, 5-min subs)<br><a href=\"/fits/m74_041109_7ila35m_G.FIT\">m74_041109_7ila35m_G.FIT</a> (Green, 35 min, 5-min subs)<br><a href=\"/fits/m74_041109_7ila35m_B.FIT\">m74_041109_7ila35m_B.FIT</a> (Blue, 35 min, 5-min subs)<br>"
+    }
+  ]
+}

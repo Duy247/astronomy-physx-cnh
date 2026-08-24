@@ -1,0 +1,18 @@
+{
+  "title": "ASTROPHOTOGRAPHY - M92 - (GLOBULAR CLUSTER)",
+  "object": "M92 - (GLOBULAR CLUSTER)",
+  "image": {
+    "large": "/Images/m92_050503_2000.jpg",
+    "thumb": "/Images/m92_050503_100.jpg",
+    "alt": "M92 - (GLOBULAR CLUSTER)",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "m92"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/m92_050503_17i17mF_L.FIT\">m92_050503_17i17mF_L.FIT</a> (Luminance, 17 min, 1-min subs)<br><a href=\"/fits/m92_050503_6i6mF_R.FIT\">m92_050503_6i6mF_R.FIT</a> (Red, 6 min, 1-min subs)<br><a href=\"/fits/m92_050503_6i6mF_G.FIT\">m92_050503_6i6mF_G.FIT</a> (Green, 6 min, 1-min subs)<br><a href=\"/fits/m92_050503_6i6mF_B.FIT\">m92_050503_6i6mF_B.FIT</a> (Blue, 6 min, 1-min subs)<br>"
+    }
+  ]
+}

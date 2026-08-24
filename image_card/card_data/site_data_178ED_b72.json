@@ -1,0 +1,42 @@
+{
+  "title": "Astrophotography - B72 - Snake Nebula",
+  "object": "B72 (Snake Nebula)",
+  "image": {
+    "large": "/Images/b72R_050703_2000.jpg",
+    "thumb": "/Images/b72R_050703_800.jpg",
+    "alt": "B72 (Snake Nebula)",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "Barnard 72"
+  },
+  "details": [
+    {
+      "label": "Instrument",
+      "value": "      Meade 178ED 7\" Apochromatic Refractor Telescope\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Focal Ratio",
+      "value": "      f9 (prime focus)\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Camera",
+      "value": "<a href=\"http://www.sbig.com/sbwhtmls/large_format_cameras.htm\">SBIG STL-11000 CCD camera</a>\n<br/>(See product review in July, 2004 issue of <i>Sky &amp; Telescope</i> magazine.)\n      <br/>with <a href=\"http://www.astrodon.com\">Astrodon</a> Tru-Balance color filters.\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Exposure",
+      "value": "      20 x 1 minutes Luminance unbinned<br/>\n      8 x 1 minutes each R/G/B, all unbinned\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Guiding",
+      "value": "      Off-Axis with STV Autoguider\n      <a href=\"http://www.sbig.com\">\n      (Santa Barbara Instrument Group)</a><br/>\n      (See product review in May, 2003 issue of <i>Astronomy</i> magazine.)\n      <br/>See <a href=\"Equipment_PhotoGuide.htm\">Photo/Guiding Equipment.</a>\n</blockquote>\n</font>"
+    },
+    {
+      "label": "Date",
+      "value": "      7/03/05\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Post Processing",
+      "value": "      CCDSoft, CCDSharp, MaxIM DL, Photoshop CS\n      </blockquote>\n</font>"
+    }
+  ]
+}

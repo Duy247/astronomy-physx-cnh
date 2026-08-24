@@ -1,0 +1,18 @@
+{
+  "title": "ASTROPHOTOGRAPHY - NGC4725",
+  "object": "NGC4725",
+  "image": {
+    "large": "/Images/ngc4725_050311_2000.jpg",
+    "thumb": "/Images/ngc4725_050311_100.jpg",
+    "alt": "NGC4725",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "ngc4725"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/ngc4725_050311_15i75mF_L.FIT\">ngc4725_050311_15i75mF_L.FIT</a> (Luminance, 75 min, 5-min subs)<br><a href=\"/fits/ngc4725_050311_6i30mF_R.FIT\">ngc4725_050311_6i30mF_R.FIT</a> (Red, 30 min, 5-min subs)<br><a href=\"/fits/ngc4725_050311_6i30mF_G.FIT\">ngc4725_050311_6i30mF_G.FIT</a> (Green, 30 min, 5-min subs)<br><a href=\"/fits/ngc4725_050311_6i30mF_B.FIT\">ngc4725_050311_6i30mF_B.FIT</a> (Blue, 30 min, 5-min subs)<br>"
+    }
+  ]
+}

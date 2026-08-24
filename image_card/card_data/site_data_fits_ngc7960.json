@@ -1,0 +1,22 @@
+{
+  "title": "ASTROPHOTOGRAPHY - NGC7960/7979/7992",
+  "object": "NGC7960/7979/7992",
+  "image": {
+    "large": "/Images/Veil_060622_2000.jpg",
+    "thumb": "/Images/Veil_060622_100.jpg",
+    "alt": "NGC7960/7979/7992",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "ngc7960/7979/7992"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/Veil_060614_10i150m_H.FIT\">Veil_060614_10i150m_H.FIT</a> (H-A, 150 min, 15-min subs)<br><a href=\"/fits/Veil_060622_21i105m_L.FIT\">Veil_060622_21i105m_L.FIT</a> (Luminance, 105 min, 5-min subs)<br><a href=\"/fits/Veil_060622_5i25m_R.FIT\">Veil_060622_5i25m_R.FIT</a> (Red, 25 min, 5-min subs)<br><a href=\"/fits/Veil_060622_5i25m_G.FIT\">Veil_060622_5i25m_G.FIT</a> (Green, 25 min, 5-min subs)<br><a href=\"/fits/Veil_060622_5i25m_B.FIT\">Veil_060622_5i25m_B.FIT</a> (Blue, 25 min, 5-min subs)<br>"
+    },
+    {
+      "label": "Processed by Jim Misti",
+      "value": "<img src=\"/Images/Veil_060622_100.jpg\">"
+    }
+  ]
+}

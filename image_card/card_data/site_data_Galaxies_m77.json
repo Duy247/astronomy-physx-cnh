@@ -1,0 +1,46 @@
+{
+  "title": "Astrophotography - M77",
+  "object": "M77",
+  "image": {
+    "large": "/Images/m77_051031_2000.jpg",
+    "thumb": "/Images/m77_051031_800.jpg",
+    "alt": "M77",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "M77"
+  },
+  "details": [
+    {
+      "label": "Object Notes",
+      "value": "<ul>\n<li>Constellation: Cetus\n        <li>Location: RA: 02h 42m 42s  Dec: -00d 01' 00\"  Epoch 2000\n        <li>Size: 7.3 x 6.3 arc-minutes\n        <li>Magnitude: 12.8\n        <li>Type: Spiral Galaxy\n        <li>AKA: ngc1068\n      </li></li></li></li></li></li></ul>\n</blockquote>\n</font>"
+    },
+    {
+      "label": "Instrument",
+      "value": "<a href=\"Equipment_RC32.htm\">\n      Ritchey-Chretien 32\" Telescope</a>\n</blockquote>\n</font>"
+    },
+    {
+      "label": "Focal Ratio",
+      "value": "      f7.2 (prime focus)\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Camera",
+      "value": "<a href=\"http://www.sbig.com/sbwhtmls/large_format_cameras.htm\">SBIG STL-11000 CCD camera</a>\n<br/>(See product review in July, 2004 issue of <i>Sky &amp; Telescope</i> magazine.)\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Exposure",
+      "value": "      6 x 5 minutes Luminance unbinned<br/>\n      5 x 5 minutes each R/G/B unbinned\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Guiding",
+      "value": "      Off-Axis with STV Autoguider\n      <a href=\"http://www.sbig.com\">\n      (Santa Barbara Instrument Group)</a><br/>\n      (See product review in May, 2003 issue of <i>Astronomy</i> magazine.)\n      <br/>See <a href=\"Equipment_PhotoGuide.htm\">Photo/Guiding Equipment.</a>\n</blockquote>\n</font>"
+    },
+    {
+      "label": "Date",
+      "value": "      10/31/05\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Post Processing",
+      "value": "      CCDSoft, CCDSharp, MaxIM DL, Photoshop CS\n      </blockquote>\n</font>"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Astrophotography - pk 36-1.1",
+  "object": "PK 36-1.1",
+  "image": {
+    "large": "/Images/pk36_050907_2000.jpg",
+    "thumb": "/Images/pk36_050907_800.jpg",
+    "alt": "PK 36-1.1",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "Sh2-71"
+  },
+  "details": [
+    {
+      "label": "Object Notes",
+      "value": "<ul>\n<li>Constellation: Aquila\n        <li>Location: RA: 19h 02m 00.0s  Dec: +02d 09' 00\"  Epoch 2000\n        <li>Size: 124 x 75 arc-seconds\n        <li>Magnitude: 13.2\n        <li>Type: Planetary Nebula\n        <li>AKA: Sharpless 2-71 (SH2-71)\n      </li></li></li></li></li></li></ul>\n</blockquote>\n</font>"
+    },
+    {
+      "label": "Instrument",
+      "value": "<a href=\"Equipment_RC32.htm\">\n      Ritchey-Chretien 32\" Telescope</a>\n</blockquote>\n</font>"
+    },
+    {
+      "label": "Focal Ratio",
+      "value": "      f7.2 (prime focus)\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Camera",
+      "value": "<a href=\"http://www.sbig.com/sbwhtmls/large_format_cameras.htm\">SBIG STL-11000 CCD camera</a>\n<br/>(See product review in July, 2004 issue of <i>Sky &amp; Telescope</i> magazine.)\n      <br/>with <a href=\"http://www.astrodon.com\">Astrodon</a> Tru-Balance color filters.\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Exposure",
+      "value": "      6 x 5 minutes Luminance unbinned<br/>\n      3 x 5 minutes each R/G/B, all unbinned\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Guiding",
+      "value": "      Off-Axis with STV Autoguider\n      <a href=\"http://www.sbig.com\">\n      (Santa Barbara Instrument Group)</a><br/>\n      (See product review in May, 2003 issue of <i>Astronomy</i> magazine.)\n      <br/>See <a href=\"Equipment_PhotoGuide.htm\">Photo/Guiding Equipment.</a>\n</blockquote>\n</font>"
+    },
+    {
+      "label": "Date",
+      "value": "      9/07/05\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Post Processing",
+      "value": "      CCDSoft, CCDSharp, MaxIM DL, Photoshop CS\n      </blockquote>\n</font>"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Astrophotography - Mel-15 - Melotte 15 Cluster",
+  "object": "Mel-15 - Melotte 15 Cluster",
+  "image": {
+    "large": "/Images/mel15_040917_2000.jpg",
+    "thumb": "/Images/mel15_041110_051025H_2000.jpg",
+    "alt": "Mel-15 - Melotte 15 Cluster",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "Mel-15"
+  },
+  "details": [
+    {
+      "label": "Melotte 15 image comparison page",
+      "value": "<a href=\"/Compare_mel15_Med.php\">Melotte 15 image comparison page</a>"
+    },
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/mel15_051025_9i135m_H.FIT\">mel15_051025_9i135m_H.FIT</a> (H-Alpha, 135 min, 15-min subs)<br><a href=\"/fits/mel15_041110_14i70m_L.FIT\">mel15_041110_14i70m_L.FIT</a> (Luminance, 70 min, 5-min subs)<br><a href=\"/fits/mel15_041110_5i25m3_R.FIT\">mel15_041110_5i25m3_R.FIT</a> (Red, 25 min, 5-min subs)<br><a href=\"/fits/mel15_041110_5i25m3_G.FIT\">mel15_041110_5i25m3_G.FIT</a> (Green, 25 min, 5-min subs)<br><a href=\"/fits/mel15_041110_5i25m3_B.FIT\">mel15_041110_5i25m3_B.FIT</a> (Blue, 25 min, 5-min subs)"
+    },
+    {
+      "label": "Notes",
+      "value": "(Jim's color combine ratio was R : G : B = 1.6 : 1.0 : 1.8)\n      (The luminance file had a 3-iteration LR-Deconvolution in CCDSharp.  The RGB files were\n      taken with 3x3 binning, then resized to match the Luminance/Ha.)"
+    }
+  ]
+}

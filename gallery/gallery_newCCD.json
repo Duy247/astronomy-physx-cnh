@@ -1,0 +1,30 @@
+[
+  {
+    "link": "image_card/Galaxies_Abell1920.php",
+    "thumb": "/Images/Abell1920_060524_100.jpg",
+    "alt": "Abell 1920",
+    "title": "Cluster of Ursa Major",
+    "subtitle": "Abell 1920"
+  },
+  {
+    "link": "image_card/Galaxies_Abell1926.php",
+    "thumb": "/Images/Abell1926_060525_100.jpg",
+    "alt": "Abell 1926",
+    "title": "",
+    "subtitle": "Abell 1926"
+  },
+  {
+    "link": "image_card/Galaxies_Abell1940.php",
+    "thumb": "/Images/Abell1940_060523_100.jpg",
+    "alt": "Abell 1940",
+    "title": "",
+    "subtitle": "Abell 1940"
+  },
+  {
+    "link": "image_card/Galaxies_Abell2065.php",
+    "thumb": "/Images/Abell2065_060528_100.jpg",
+    "alt": "Abell 2065",
+    "title": "",
+    "subtitle": "Abell 2065"
+  }
+]

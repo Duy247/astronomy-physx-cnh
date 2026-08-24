@@ -1,0 +1,18 @@
+{
+  "title": "ASTROPHOTOGRAPHY - M51 - WHIRLPOOL GALAXY",
+  "object": "M51 - WHIRLPOOL GALAXY",
+  "image": {
+    "large": "/Images/m51_050414_2000.jpg",
+    "thumb": "/Images/m51_050414_100.jpg",
+    "alt": "M51 - WHIRLPOOL GALAXY",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "M51"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/m51_050414_15i75mF_L.FIT\">m51_050414_15i75mF_L.FIT</a> (Luminance, 75 min, 5-min subs)<br><a href=\"/fits/m51_050414_5i25mF_R.FIT\">m51_050414_5i25mF_R.FIT</a> (Red, 25 min, 5-min subs)<br><a href=\"/fits/m51_050414_5i25mF_G.FIT\">m51_050414_5i25mF_G.FIT</a> (Green, 25 min, 5-min subs)<br><a href=\"/fits/m51_050414_5i25mF_B.FIT\">m51_050414_5i25mF_B.FIT</a> (Blue, 25 min, 5-min subs)<br>"
+    }
+  ]
+}

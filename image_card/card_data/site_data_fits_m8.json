@@ -1,0 +1,26 @@
+{
+  "title": "Astrophotography - M8 - Lagoon Nebula",
+  "object": "M8 - LAGOON NEBULA",
+  "image": {
+    "large": "/Images/m8_050507_2000.jpg",
+    "thumb": "/Images/m8_050507_800.jpg",
+    "alt": "M8 - LAGOON NEBULA",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "M8"
+  },
+  "details": [
+    {
+      "label": "Processed Version",
+      "value": " See <a href=\"/Compare_m8_Med.php\">m8 image comparison page</a> of processed versions.<br>"
+    },
+    {
+      "label": "Example",
+      "value": " See <a href=\"/Process_m8.php\">Image Processing Example</a> for this data.<br><br>"
+    },
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/m8_050507_5i75m_H.FIT\">m8_050507_5i75m_H.FIT</a> (H-Alpha, 75 min, 15-min subs)<br> \n <a href=\"/fits/m8_050507_26i26m_L.FIT\">m8_050507_26i26m_L.FIT</a> (Luminance, 26 min, 1-min subs)<br>       \n <a href=\"/fits/m8_050507_9i9m_R.FIT\">m8_050507_9i9m_R.FIT</a> (Red, 9 min, 1-min subs)<br>       \n <a href=\"/fits/m8_050507_9i9m_G.FIT\">m8_050507_9i9m_G.FIT</a> (Green, 9 min, 1-min subs)<br>       \n <a href=\"/fits/m8_050507_9i9m_B.FIT\">m8_050507_9i9m_B.FIT</a> (Blue, 9 min, 1-min subs)<br>       \n (Jim's color combine ratio was R : G : B = 1.5 : 1.0 : 1.6)"
+    }
+  ]
+}

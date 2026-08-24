@@ -1,0 +1,22 @@
+{
+  "title": "ASTROPHOTOGRAPHY - NGC7000",
+  "object": "NGC7000 - NORTH AMERICA NEBULA",
+  "image": {
+    "large": "/Images/ngc7000_040621_2000.jpg",
+    "thumb": "/Images/ngc7000_040621_100.jpg",
+    "alt": "NGC7000",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "ngc7000 (North America Nebula)"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/ngc7000_060612_14i210m_H.FIT\">ngc7000_060612_14i210m_H.FIT</a> (H-A, 210 min, 15-min subs)<br><a href=\"/fits/ngc7000_060621_19i95m_L.FIT\">ngc7000_060621_19i95m_L.FIT</a> (Luminance, 95 min, 5-min subs)<br><a href=\"/fits/ngc7000_060621_4i20m_R.FIT\">ngc7000_060621_4i20m_R.FIT</a> (Red, 20 min, 5-min subs)<br><a href=\"/fits/ngc7000_060621_4i20m_G.FIT\">ngc7000_060621_4i20m_G.FIT</a> (Green, 20 min, 5-min subs)<br><a href=\"/fits/ngc7000_060621_4i20m_B.FIT\">ngc7000_060621_4i20m_B.FIT</a> (Blue, 20 min, 5-min subs)<br>"
+    },
+    {
+      "label": "Processed by Paolo Lazzarini",
+      "value": "<img src=\"/Images/ngc7000_PaoloLazzarini_100.jpg\">"
+    }
+  ]
+}

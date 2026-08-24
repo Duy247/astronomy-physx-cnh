@@ -1,0 +1,18 @@
+{
+  "title": "ASTROPHOTOGRAPHY - M104 - SOMERO GALAXY",
+  "object": "M104 - SOMBRERO GALAXY",
+  "image": {
+    "large": "/Images/m104_050406_2000.jpg",
+    "thumb": "/Images/m104_050406_100.jpg",
+    "alt": "M104 - SOMBRERO GALAXY",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "M104"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/m104_050406_12i60mF_L.FIT\">m104_050406_12i60mF_L.FIT</a> (Luminance, 60 min, 5-min subs)<br><a href=\"/fits/m104_050406_4i20mF_R.FIT\">m104_050406_4i20mF_R.FIT</a> (Red, 20 min, 5-min subs)<br><a href=\"/fits/m104_050406_4i20mF_G.FIT\">m104_050406_4i20mF_G.FIT</a> (Green, 20 min, 5-min subs)<br><a href=\"/fits/m104_050406_4i20mF_B.FIT\">m104_050406_4i20mF_B.FIT</a> (Blue, 20 min, 5-min subs)<br>"
+    }
+  ]
+}

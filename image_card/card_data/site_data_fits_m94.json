@@ -1,0 +1,18 @@
+{
+  "title": "ASTROPHOTOGRAPHY - M94",
+  "object": "M94",
+  "image": {
+    "large": "/Images/m94_050312_2000.jpg",
+    "thumb": "/Images/m94_050312_100.jpg",
+    "alt": "M94",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "M94"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/m94_050312_10i50mF_L.FIT\">m94_050312_10i50mF_L.FIT</a> (Luminance, 50 min, 5-min subs)<br><a href=\"/fits/m94_050312_5i25mF_R.FIT\">m94_050312_5i25mF_R.FIT</a> (Red, 25 min, 5-min subs)<br><a href=\"/fits/m94_050312_5i25mF_G.FIT\">m94_050312_5i25mF_G.FIT</a> (Green, 25 min, 5-min subs)<br><a href=\"/fits/m94_050312_5i25mF_B.FIT\">m94_050312_5i25mF_B.FIT</a> (Blue, 25 min, 5-min subs)<br>"
+    }
+  ]
+}

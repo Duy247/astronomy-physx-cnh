@@ -1,0 +1,18 @@
+{
+  "title": "ASTROPHOTOGRAPHY - NGC5907",
+  "object": "NGC5907",
+  "image": {
+    "large": "/Images/ngc5907_050413_2000.jpg",
+    "thumb": "/Images/ngc5907_050413_100.jpg",
+    "alt": "NGC5907",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "ngc5907"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/ngc5907_050413_12i60mF_L.FIT\">ngc5907_050413_12i60mF_L.FIT</a> (Luminance, 60 min, 5-min subs)<br><a href=\"/fits/ngc5907_050413_4i20mF_R.FIT\">ngc5907_050413_4i20mF_R.FIT</a> (Red, 20 min, 5-min subs)<br><a href=\"/fits/ngc5907_050413_4i20mF_G.FIT\">ngc5907_050413_4i20mF_G.FIT</a> (Green, 20 min, 5-min subs)<br><a href=\"/fits/ngc5907_050413_4i20mF_B.FIT\">ngc5907_050413_4i20mF_B.FIT</a> (Blue, 20 min, 5-min subs)<br>"
+    }
+  ]
+}

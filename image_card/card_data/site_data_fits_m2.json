@@ -1,0 +1,18 @@
+{
+  "title": "ASTROPHOTOGRAPHY - M2 - (GLOBULAR CLUSTER)",
+  "object": "M2 - (GLOBULAR CLUSTER)",
+  "image": {
+    "large": "/Images/m2_050907_2000.jpg",
+    "thumb": "/Images/m2_050907_100.jpg",
+    "alt": "M2 - (GLOBULAR CLUSTER)",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "m2"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/m2_050907_12i12m_L.FIT\">m2_050907_12i12m_L.FIT</a> (Luminance, 12 min, 1-min subs)<br><a href=\"/fits/m2_050907_6i6m_R.FIT\">m2_050907_6i6m_R.FIT</a> (Red, 6 min, 1-min subs)<br><a href=\"/fits/m2_050907_6i6m_G.FIT\">m2_050907_6i6m_G.FIT</a> (Green, 6 min, 1-min subs)<br><a href=\"/fits/m2_050907_6i6m_B.FIT\">m2_050907_6i6m_B.FIT</a> (Blue, 6 min, 1-min subs)<br>"
+    }
+  ]
+}

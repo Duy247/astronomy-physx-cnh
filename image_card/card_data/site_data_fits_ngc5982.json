@@ -1,0 +1,18 @@
+{
+  "title": "ASTROPHOTOGRAPHY - NGC5982",
+  "object": "NGC59812",
+  "image": {
+    "large": "/Images/ngc5982_050601_2000.jpg",
+    "thumb": "/Images/ngc5982_050601_100.jpg",
+    "alt": "NGC5982",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "ngc5982"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/ngc5982_050601_10i50mF_L.FIT\">ngc5982_050601_10i50mF_L.FIT</a> (Luminance, 50 min, 5-min subs)<br><a href=\"/fits/ngc5982_050601_3i15mF_R.FIT\">ngc5982_050601_3i15mF_R.FIT</a> (Red, 15 min, 5-min subs)<br><a href=\"/fits/ngc5982_050601_3i15mF_G.FIT\">ngc5982_050601_3i15mF_G.FIT</a> (Green, 15 min, 5-min subs)<br><a href=\"/fits/ngc5982_050601_3i15mF_B.FIT\">ngc5982_050601_3i15mF_B.FIT</a> (Blue, 15 min, 5-min subs)<br>"
+    }
+  ]
+}

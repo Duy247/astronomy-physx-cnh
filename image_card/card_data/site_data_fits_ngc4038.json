@@ -1,0 +1,18 @@
+{
+  "title": "ASTROPHOTOGRAPHY - NGC4038",
+  "object": "NGC4038 - The Antennae Galaxies",
+  "image": {
+    "large": "/Images/ngc4038_050306_2000.jpg",
+    "thumb": "/Images/ngc4038_050306_100.jpg",
+    "alt": "NGC4038",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "ngc4038"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/ngc4038_050306_9i45mF_L.FIT\">ngc4038_050306_9i45mF_L.FIT</a> (Luminance, 45 min, 5-min subs)<br><a href=\"/fits/ngc4038_050306_3i15mF_R.FIT\">ngc4038_050306_3i15mF_R.FIT</a> (Red, 15 min, 5-min subs)<br><a href=\"/fits/ngc4038_050306_3i15mF_G.FIT\">ngc4038_050306_3i15mF_G.FIT</a> (Green, 15 min, 5-min subs)<br><a href=\"/fits/ngc4038_050306_3i15mF_B.FIT\">ngc4038_050306_3i15mF_B.FIT</a> (Blue, 15 min, 5-min subs)<br>"
+    }
+  ]
+}

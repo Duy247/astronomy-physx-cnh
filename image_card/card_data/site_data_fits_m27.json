@@ -1,0 +1,18 @@
+{
+  "title": "ASTROPHOTOGRAPHY - M27 - DUMBBELL NEBULA",
+  "object": "M27 - DUMBBELL NEBULA",
+  "image": {
+    "large": "/Images/m27_050711_2000.jpg",
+    "thumb": "/Images/m27_050711_100.jpg",
+    "alt": "M27 - DUMBBELL NEBULA",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "M27"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/m27_050711_6i30m_L.FIT\">m27_050711_6i30m_L.FIT</a> (Luminance, 30 min, 5-min subs)<br><a href=\"/fits/m27_050711_3i15m_R.FIT\">m27_050711_3i15m_R.FIT</a> (Red, 15 min, 5-min subs)<br><a href=\"/fits/m27_050711_3i15m_G.FIT\">m27_050711_3i15m_G.FIT</a> (Green, 15 min, 5-min subs)<br><a href=\"/fits/m27_050711_3i15m_B.FIT\">m27_050711_3i15m_B.FIT</a> (Blue, 15 min, 5-min subs)<br>"
+    }
+  ]
+}

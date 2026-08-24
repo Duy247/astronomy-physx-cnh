@@ -1,0 +1,18 @@
+{
+  "title": "ASTROPHOTOGRAPHY - M12 - (GLOBULAR CLUSTER)",
+  "object": "M12 - (GLOBULAR CLUSTER)",
+  "image": {
+    "large": "/Images/m12_050512_2000.jpg",
+    "thumb": "/Images/m12_050512_100.jpg",
+    "alt": "M12 - (GLOBULAR CLUSTER)",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "m12"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/m12_050512_16i16mF_L.FIT\">m12_050512_16i16mF_L.FIT</a> (Luminance, 16 min, 1-min subs)<br><a href=\"/fits/m12_050512_6i6mF_R.FIT\">m12_050512_6i6mF_R.FIT</a> (Red, 6 min, 1-min subs)<br><a href=\"/fits/m12_050512_6i6mF_G.FIT\">m12_050512_6i6mF_G.FIT</a> (Green, 6 min, 1-min subs)<br><a href=\"/fits/m12_050512_6i6mF_B.FIT\">m12_050512_6i6mF_B.FIT</a> (Blue, 6 min, 1-min subs)<br>"
+    }
+  ]
+}

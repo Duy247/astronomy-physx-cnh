@@ -1,0 +1,26 @@
+{
+  "title": "ASTROPHOTOGRAPHY - NGC7635",
+  "object": "NGC7635 - BUBBLE NEBULA REGION",
+  "image": {
+    "large": "/Images/ngc7635_041008_2000.jpg",
+    "thumb": "/Images/ngc7635_041008_100.jpg",
+    "alt": "NGC7635",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "ngc7635"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/ngc7635_060615_10i150m_H.FIT\">ngc7635_060615_10i150m_H.FIT</a> (H-A, 150 min, 15-min subs)<br><a href=\"/fits/ngc7635_061022_16i80m_L.FIT\">ngc7635_061022_16i80m_L.FIT</a> (Luminance, 80 min, 5-min subs)<br><a href=\"/fits/ngc7635_061022_4i20m_R.FIT\">ngc7635_061022_4i20m_R.FIT</a> (Red, 20 min, 5-min subs)<br><a href=\"/fits/ngc7635_061022_4i20m_G.FIT\">ngc7635_061022_4i20m_G.FIT</a> (Green, 20 min, 5-min subs)<br><a href=\"/fits/ngc7635_061022_4i20m_B.FIT\">ngc7635_061022_4i20m_B.FIT</a> (Blue, 20 min, 5-min subs)<br>"
+    },
+    {
+      "label": "Processed by Tom Harrison",
+      "value": "<img src=\"/Images/ngc7635_TomHarrison_100.jpg\">"
+    },
+    {
+      "label": "Processed by Noel Carboni",
+      "value": "<img src=\"/Images/ngc7635_NoelCarboni_100.jpg\">"
+    }
+  ]
+}

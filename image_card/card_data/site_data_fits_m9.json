@@ -1,0 +1,18 @@
+{
+  "title": "ASTROPHOTOGRAPHY - M9 - (GLOBULAR CLUSTER)",
+  "object": "M9 - (GLOBULAR CLUSTER)",
+  "image": {
+    "large": "/Images/m9_050603_2000.jpg",
+    "thumb": "/Images/m9_050603_100.jpg",
+    "alt": "M9 - (GLOBULAR CLUSTER)",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "m9"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/m9_050603_14i14m_L.FIT\">m9_050603_14i14m_L.FIT</a> (Luminance, 14 min, 1-min subs)<br><a href=\"/fits/m9_050603_6i6m_R.FIT\">m9_050603_6i6m_R.FIT</a> (Red, 6 min, 1-min subs)<br><a href=\"/fits/m9_050603_6i6m_G.FIT\">m9_050603_6i6m_G.FIT</a> (Green, 6 min, 1-min subs)<br><a href=\"/fits/m9_050603_6i6m_B.FIT\">m9_050603_6i6m_B.FIT</a> (Blue, 6 min, 1-min subs)<br>"
+    }
+  ]
+}

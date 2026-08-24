@@ -1,0 +1,46 @@
+{
+  "title": "Astrophotography - ngc5907",
+  "object": "NGC5907",
+  "image": {
+    "large": "/Images/ngc5907_050413_2000.jpg",
+    "thumb": "/Images/ngc5907_050413_800.jpg",
+    "alt": "NGC5907",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "NGC5907"
+  },
+  "details": [
+    {
+      "label": "Object Notes",
+      "value": "<ul>\n<li>Constellation: Draco\n        <li>Location: RA:15h 15m 54.0s  Dec:+56d 19' 00\"  Epoch 2000\n        <li>Size: 11.8 x 1.3 arc-minutes\n        <li>Magnitude: 10.3\n        <li>Type: Spiral Galaxy\n        <li>AKA: ngc5906\n      </li></li></li></li></li></li></ul>\n</blockquote>\n</font>"
+    },
+    {
+      "label": "Instrument",
+      "value": "<a href=\"Equipment_RC32.htm\">\n      Ritchey-Chretien 32\" Telescope</a>\n</blockquote>\n</font>"
+    },
+    {
+      "label": "Focal Ratio",
+      "value": "      f7.2 (prime focus)\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Camera",
+      "value": "<a href=\"http://www.sbig.com/sbwhtmls/large_format_cameras.htm\">SBIG STL-11000 CCD camera</a>\n<br/>(See product review in July, 2004 issue of <i>Sky &amp; Telescope</i> magazine.)\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Exposure",
+      "value": "      12 x 5 minutes Luminance unbinned<br/>\n      4 x 5 minutes each R/G/B unbinned\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Guiding",
+      "value": "      Off-Axis with STV Autoguider\n      <a href=\"http://www.sbig.com\">\n      (Santa Barbara Instrument Group)</a><br/>\n      (See product review in May, 2003 issue of <i>Astronomy</i> magazine.)\n      <br/>See <a href=\"Equipment_PhotoGuide.htm\">Photo/Guiding Equipment.</a>\n</blockquote>\n</font>"
+    },
+    {
+      "label": "Date",
+      "value": "      4/13/05\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Post Processing",
+      "value": "      CCDSoft, CCDSharp, MaxIM DL, Photoshop CS\n      </blockquote>\n</font>"
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+/* Image Viewer Toolbar */
+.iv-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+}
+.iv-toolbar button, .iv-toolbar select, .iv-toolbar input[type=range] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    padding: 0.3em 0.7em;
+    margin: 0 0.2em;
+    background: #f7f7fa;
+    color: #222;
+    transition: background 0.2s, color 0.2s;
+}
+.iv-toolbar button:hover, .iv-toolbar select:focus {
+    background: var(--accent);
+    color: #fff;
+}
+.iv-color {
+    width: 1.5em; height: 1.5em; border-radius: 50%; border: 2px solid #fff; margin: 0 0.1em; cursor: pointer;
+    outline: 2px solid #bbb;
+    transition: outline 0.2s;
+}
+.iv-color.selected, .iv-color:focus {
+    outline: 2px solid #1e88e5;
+}
+#iv-canvas-wrap {
+    min-height: 400px;
+    min-width: 300px;
+    background: #222;
+    border: 1px solid #444;
+    position: relative;
+}
+#iv-image, #iv-draw {
+    border-radius: 8px;
+}
+.iv-menu {
+    position: relative;
+    margin-right: 1.2rem;
+}
+.iv-menu-btn {
+    background: #f7f7fa;
+    color: #222;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    padding: 0.3em 1.1em;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.iv-menu-btn:hover, .iv-menu-btn:focus {
+    background: var(--accent);
+    color: #fff;
+}
+.iv-menu-dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 2.2em;
+    min-width: 180px;
+    background: var(--card-bg);
+    border: 1px solid #bbb;
+    border-radius: 7px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+    padding: 0.7em 1em;
+    z-index: 10;
+}
+.iv-menu-dropdown label, .iv-menu-dropdown select, .iv-menu-dropdown button, .iv-menu-dropdown span {
+    display: block;
+    margin-bottom: 0.7em;
+}
+.iv-menu-dropdown label:last-child, .iv-menu-dropdown select:last-child, .iv-menu-dropdown button:last-child, .iv-menu-dropdown span:last-child {
+    margin-bottom: 0;
+}
+.iv-menu-dropdown input[type=range] {
+    width: 100%;
+}
+
+/* Photoshop-style menu bar */
+.iv-menubar-ps {
+    background: #23272e;
+    color: #f7f7fa;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #444;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 0;
+    margin-bottom: 1.2rem;
+    user-select: none;
+}
+.iv-menu-list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0 1.2rem;
+    height: 2.4em;
+}
+.iv-menu-item {
+    position: relative;
+    height: 100%;
+}
+.iv-menu-btn {
+    background: none;
+    color: #f7f7fa;
+    border: none;
+    font-size: 1.05em;
+    font-family: inherit;
+    padding: 0 1.1em;
+    height: 2.4em;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background 0.18s, color 0.18s;
+}
+.iv-menu-btn:hover, .iv-menu-btn:focus, .iv-menu-item.open > .iv-menu-btn {
+    background: #3a3f4b;
+    color: #fff;
+}
+.iv-menu-dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 200px;
+    background: #23272e;
+    color: #f7f7fa;
+    border: 1px solid #444;
+    border-radius: 0 0 7px 7px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    padding: 0.7em 1em;
+    z-index: 20;
+}
+.iv-menu-item.open > .iv-menu-dropdown {
+    display: block;
+}
+.iv-menu-dropdown label, .iv-menu-dropdown select, .iv-menu-dropdown button, .iv-menu-dropdown span, .iv-menu-dropdown li {
+    display: block;
+    margin-bottom: 0.7em;
+    color: #f7f7fa;
+}
+.iv-menu-dropdown label:last-child, .iv-menu-dropdown select:last-child, .iv-menu-dropdown button:last-child, .iv-menu-dropdown span:last-child, .iv-menu-dropdown li:last-child {
+    margin-bottom: 0;
+}
+.iv-menu-dropdown input[type=range] {
+    width: 100%;
+}
+.iv-menu-dropdown button, .iv-menu-dropdown select {
+    background: #2d313a;
+    color: #f7f7fa;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 0.3em 0.7em;
+    font-size: 1em;
+}
+.iv-menu-dropdown button:hover, .iv-menu-dropdown select:focus {
+    background: #3a3f4b;
+    color: #fff;
+}
+.iv-menu-hint {
+    color: #aaa;
+    font-size: 0.98em;
+    margin-left: 2em;
+    pointer-events: none;
+}
+#iv-colors {
+    display: flex;
+    gap: 0.4em;
+    margin-top: 0.2em;
+}
+.iv-color {
+    width: 1.5em; height: 1.5em; border-radius: 50%; border: 2px solid #fff; margin: 0 0.1em; cursor: pointer;
+    outline: 2px solid #bbb;
+    transition: outline 0.2s;
+}
+.iv-color.selected, .iv-color:focus {
+    outline: 2px solid #1e88e5;
+}
+
+/*
+ * Seamless, modern tool selection UI for Draw menu
+ * Remove button appearance from .iv-tool-btn, blend into dropdown, add hover/selected effects
+ */
+#iv-tools {
+    display: flex;
+    gap: 0.5em;
+    padding: 0.25em 0.5em;
+    background: none;
+    border: none;
+    box-shadow: none;
+    align-items: center;
+}
+.iv-tool-btn {
+    background: none;
+    border: none;
+    color: #e0e0e0;
+    font: inherit;
+    padding: 0.25em 0.9em 0.25em 0.5em;
+    margin: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    box-shadow: none;
+    outline: none;
+    position: relative;
+    min-width: 0;
+    min-height: 0;
+    letter-spacing: 0.01em;
+    opacity: 0.85;
+}
+.iv-tool-btn:hover,
+.iv-tool-btn:focus {
+    background: rgba(255,255,255,0.07);
+    color: #fff;
+    opacity: 1;
+}
+.iv-tool-btn.selected {
+    background: linear-gradient(90deg, #2d2f36 60%, #23242a 100%);
+    color: #fff;
+    font-weight: 600;
+    opacity: 1;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.08);
+}
+/* Remove button outline on click */
+.iv-tool-btn:active {
+    outline: none;
+}
+/* Remove default button styles for color buttons as well */
+#iv-colors .iv-color {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin: 0 0.15em;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: box-shadow 0.15s, border 0.15s;
+    border: 2px solid transparent;
+}
+#iv-colors .iv-color.selected {
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #1976d2;
+}
+#iv-colors {
+    display: flex;
+    gap: 0.2em;
+    padding: 0.25em 0.5em;
+    align-items: center;
+    background: none;
+}
+/* Remove button appearance from menu dropdowns */
+.iv-menu-dropdown button {
+    background: none;
+    border: none;
+    color: #e0e0e0;
+    font: inherit;
+    padding: 0.3em 1.2em 0.3em 1.2em;
+    margin: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    box-shadow: none;
+    outline: none;
+    min-width: 0;
+    min-height: 0;
+    letter-spacing: 0.01em;
+    opacity: 0.85;
+}
+.iv-menu-dropdown button:hover,
+.iv-menu-dropdown button:focus {
+    background: rgba(255,255,255,0.07);
+    color: #fff;
+    opacity: 1;
+}

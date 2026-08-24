@@ -1,0 +1,30 @@
+{
+  "title": "ASTROPHOTOGRAPHY - M13 - HERCULES CLUSTER",
+  "object": "M13 - HERCULES CLUSTER",
+  "image": {
+    "large": "/Images/m13_050414_2000.jpg",
+    "thumb": "/Images/m13_050414_100.jpg",
+    "alt": "M13 - HERCULES CLUSTER",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "M13"
+  },
+  "details": [
+    {
+      "label": "m13 image comparison page",
+      "value": "<a href=\"/Compare_m13_Med.php\">m13 image comparison page</a>"
+    },
+    {
+      "label": "Image Processing Example",
+      "value": "<a href=\"Process_m13.php\">Image Processing Example</a>"
+    },
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/m13_050414_14i14m_L.FIT\">m13_050414_14i14m_L.FIT</a> (Luminance, 14 min, 1-min subs)<br><a href=\"/fits/m13_050414_7i7m_R.FIT\">m13_050414_7i7m_R.FIT</a> (Red, 7 min, 1-min subs)<br><a href=\"/fits/m13_050414_7i7m_G.FIT\">m13_050414_7i7m_G.FIT</a> (Green, 7 min, 1-min subs)<br><a href=\"/fits/m13_050414_7i7m_B.FIT\">m13_050414_7i7m_B.FIT</a> (Blue, 7 min, 1-min subs)<br>"
+    },
+    {
+      "label": "Notes",
+      "value": "(Jim's color combine ratio was R : G : B = 1.5 : 1.0 : 1.8)"
+    }
+  ]
+}

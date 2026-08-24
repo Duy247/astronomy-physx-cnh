@@ -1,0 +1,18 @@
+{
+  "title": "ASTROPHOTOGRAPHY - M1 - CRAB NEBULA",
+  "object": "M1 - CRAB NEBULA",
+  "image": {
+    "large": "/Images/m1_041117_2000.jpg",
+    "thumb": "/Images/m1_041117_100.jpg",
+    "alt": "M1 - CRAB NEBULA",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "M1"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/m1_041117_9i45m_L.FIT\">m1_041117_9i45m_L.FIT</a> (Luminance, 45 min, 5-min subs)<br><a href=\"/fits/m1_041117_3i15m_R.FIT\">m1_041117_3i15m_R.FIT</a> (Red, 15 min, 5-min subs)<br><a href=\"/fits/m1_041117_3i15m_G.FIT\">m1_041117_3i15m_G.FIT</a> (Green, 15 min, 5-min subs)<br><a href=\"/fits/m1_041117_3i15m_B.FIT\">m1_041117_3i15m_B.FIT</a> (Blue, 15 min, 5-min subs)<br>"
+    }
+  ]
+}

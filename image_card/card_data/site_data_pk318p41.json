@@ -1,0 +1,27 @@
+{
+  "title": "Astrophotography - pk 318 +41.1",
+  "object": "pk 318 +41.1 (Abell 36)",
+  "image": {
+    "thumb": "/Images/pk318_050530_800.jpg",
+    "large": "/Images/pk318_050530_2000.jpg",
+    "alt": "Planetary Nebula pk 318 +41.1 (Abell 36)",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "Abell 36"
+  },
+  "details": [
+    { "label": "Constellation", "value": "Virgo" },
+    { "label": "Location", "value": "RA: 13h 40m 36s  Dec: -19d 53m 00s  Epoch 2000" },
+    { "label": "Size", "value": "478 x 281 arc-seconds" },
+    { "label": "Magnitude", "value": "13.0" },
+    { "label": "Type", "value": "Planetary Nebula" },
+    { "label": "AKA", "value": "Abell 36" },
+    { "label": "Instrument", "value": "<a href=\"Equipment_RC32.htm\">Ritchey-Chretien 32\" Telescope</a>" },
+    { "label": "Focal Ratio", "value": "f7.2 (prime focus)" },
+    { "label": "Camera", "value": "<a href=\"http://www.sbig.com/sbwhtmls/large_format_cameras.htm\">SBIG STL-11000 CCD camera</a> (See product review in July, 2004 issue of <i>Sky & Telescope</i> magazine.)" },
+    { "label": "Exposure", "value": "12 x 5 minutes Luminance unbinned, 3 x 5 minutes each R/G/B, all unbinned" },
+    { "label": "Guiding", "value": "Off-Axis with STV Autoguider (<a href=\"http://www.sbig.com\">Santa Barbara Instrument Group</a>), (See product review in May, 2003 issue of <i>Astronomy</i> magazine.) <br>See <a href=\"Equipment_PhotoGuide.htm\">Photo/Guiding Equipment.</a>" },
+    { "label": "Date", "value": "5/30/05" },
+    { "label": "Post Processing", "value": "CCDSoft, CCDSharp, MaxIM DL, Photoshop CS" }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "title": "ASTROPHOTOGRAPHY - M5 - (GLOBULAR CLUSTER)",
+  "object": "M5 - (GLOBULAR CLUSTER)",
+  "image": {
+    "large": "/Images/m5_050508_2000.jpg",
+    "thumb": "/Images/m5_050508_100.jpg",
+    "alt": "M5 - (GLOBULAR CLUSTER)",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "m5"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/m5_050508_16i16mF_L.FIT\">m5_050508_16i16mF_L.FIT</a> (Luminance, 16 min, 1-min subs)<br><a href=\"/fits/m5_050508_5i5mF_R.FIT\">m5_050508_5i5mF_R.FIT</a> (Red, 6 min, 1-min subs)<br><a href=\"/fits/m5_050508_5i5mF_G.FIT\">m5_050508_5i5mF_G.FIT</a> (Green, 6 min, 1-min subs)<br><a href=\"/fits/m5_050508_5i5mF_B.FIT\">m5_050508_5i5mF_B.FIT</a> (Blue, 6 min, 1-min subs)<br>"
+    }
+  ]
+}

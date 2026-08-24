@@ -1,0 +1,21 @@
+{
+  "title": "Misti Mountain Observatory - Astronomy Pages",
+  "object": "M31 (Andromeda Galaxy)",
+  "image": {
+    "large": "/Images/m31_040913_2000.jpg",
+    "thumb": "/Images/m31_040913_800.jpg",
+    "alt": "M31 Andromeda Galaxy",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "M31"
+  },
+  "details": [
+    {"label": "Instrument", "value": "Meade 178ED 7\" Apochromatic Refractor Telescope"},
+    {"label": "Focal Ratio", "value": "f9 (prime focus)"},
+    {"label": "Camera", "value": "<a href=\"http://www.sbig.com/sbwhtmls/large_format_cameras.htm\" target=\"_blank\">SBIG STL-11000 CCD camera</a><br><span style=\"font-size: 0.9em;\">(See product review in July, 2004 issue of <i>Sky & Telescope</i> magazine.)</span>"},
+    {"label": "Exposure", "value": "Mosaic of three images, each with following:<br>6 x 5 minutes Luminance unbinned<br>2 x 5 minutes each R/G/B, all binned 3x3"},
+    {"label": "Guiding", "value": "Off-Axis with STV Autoguider <a href=\"http://www.sbig.com\" target=\"_blank\">(Santa Barbara Instrument Group)</a><br><span style=\"font-size: 0.9em;\">(See product review in May, 2003 issue of <i>Astronomy</i> magazine.)</span><br>See <a href=\"Equipment_PhotoGuide.php\">Photo/Guiding Equipment.</a>"},
+    {"label": "Date", "value": "9/13/04"},
+    {"label": "Post Processing", "value": "CCDSoft, CCDSharp, MaxIM DL, Photoshop CS"}
+  ]
+}

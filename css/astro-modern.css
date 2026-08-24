@@ -1,0 +1,337 @@
+/* Astro Modern UI - Dark/Light Mode */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+:root {
+    --main-bg: #f4f8fb;
+    --card-bg: #fff;
+    --primary: #003366;
+    --accent: #0175ea;
+    --nav-link: #0667c8;
+    --nav-link-hover: #0055aa;
+    --shadow: 0 2px 12px rgba(0,0,0,0.10);
+    --radius: 10px;
+    --header-bg: #181c24;
+    --header-text: #fff;
+    --header-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    --td-bg: #f7fbff;
+    --td-color: #222;
+    --body-text: #222;
+}
+[data-theme="dark"] {
+    --main-bg: #181c24;
+    --card-bg: #23283a;
+    --primary: #e0e6f0;
+    --accent: #4ea1ff;
+    --nav-link: #e0e6f0;
+    --nav-link-hover: #4ea1ff;
+    --header-bg: #10131a;
+    --header-text: #fff;
+    --td-bg: #23283a;
+    --td-color: #e0e6f0;
+    --body-text: #e0e6f0;
+}
+body {
+    background: var(--main-bg);
+    transition: background 0.3s;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+p {
+    color: var(--body-text);
+}
+.astro-header {
+    background: var(--header-bg);
+    color: var(--header-text);
+    box-shadow: var(--header-shadow);
+    padding: 1.2rem 0 0.7rem 0;
+    border-radius: 0 0 0 0;
+    margin-bottom: 2.2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+}
+.astro-header-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    gap: 1rem; /* space between logo and title */
+}
+.astro-logo {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+.astro-header-title {
+    font-size: 2.1rem;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.astro-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+.astro-nav a {
+    color: var(--nav-link);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.08rem;
+    padding: 0.4em 1.1em;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.astro-nav a:hover, .astro-nav a:focus {
+    background: var(--accent);
+    color: #fff;
+}
+.astro-dark-toggle {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--header-text);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.astro-dark-toggle:hover { color: var(--accent); }
+.astro-card {
+    max-width: 850px;
+    margin: 6rem auto 2.5rem auto;
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 2.5rem 2rem 2rem 2rem;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    animation: fadeIn 0.7s;
+    font-weight: 300;
+}
+@keyframes fadeIn { from { opacity: 0; transform: translateY(30px);} to { opacity: 1; transform: none; } }
+.astro-section {
+    text-align: center;
+}
+.astro-section h3 {
+    color: var(--accent);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+.astro-section img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.13);
+    margin-bottom: 0.7rem;
+    transition: transform 0.2s;
+}
+.astro-section img:hover {
+    transform: scale(1.025);
+}
+.astro-details {
+    margin-top: 2.2rem;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+    background: none;
+}
+.astro-details td {
+    background: var(--td-bg);
+    color: var(--td-color);
+    padding: 0.7rem 0.8rem;
+    border-radius: 6px;
+    font-size: 1.08rem;
+    vertical-align: top;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+.astro-details td:first-child {
+    font-weight: 400;
+    color: var(--primary);
+    width: 32%;
+}
+.astro-dim-overlay {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    width: 100vw;
+    background: rgba(10, 15, 25, 0.72);
+    z-index: 90; /* Lower than .astro-header (z-index: 100) */
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.25s;
+    /* By default, overlay covers everything. We'll adjust top for desktop below. */
+}
+.astro-dim-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.astro-skymap-section h3{
+    color: var(--accent);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+@media (min-width: 601px) {
+    .astro-dim-overlay {
+        /* Only cover below the header on desktop */
+        top: 4.1rem; /* header height: 1.2rem + 0.5rem + 2.4rem approx */
+        height: auto;
+    }
+}
+@media (max-width: 600px) {
+    .astro-dim-overlay {
+        top: 0;
+        height: 100vh;
+        z-index: 299; /* below nav (z-index: 300), above rest */
+    }
+    .astro-header {
+        padding: 0.7rem 0 0.7rem 0;
+        border-radius: 0 0 0 0;
+        margin-bottom: 1.2rem;
+        position: static;
+        width: 100%;
+    }
+    .astro-header-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.7rem;
+        font-weight: bold;
+    }
+    .astro-logo {
+        height: 40px;
+        width: auto;
+        object-fit: contain;
+        display: block;
+    }
+    .astro-nav-toggle {
+        display: block;
+        background: none;
+        color: var(--accent);
+        border: none;
+        border-radius: 0;
+        font-size: 1.08rem;
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        padding: 0.5em 1.2em 0.5em 0.7rem;
+        margin: 0.5rem 0 0.5rem 0.7rem;
+        cursor: pointer;
+        transition: color 0.2s;
+        z-index: 201;
+        position: relative;
+        box-shadow: none;
+        outline: none;
+        text-align: left;
+        max-width: 100%;
+        border-bottom: 1px solid var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        font-weight: 600;
+        opacity: 0.85;
+    }
+    .astro-nav-toggle:active, .astro-nav-toggle:focus {
+        color: var(--nav-link-hover);
+        background: none;
+    }
+    .astro-nav-toggle[aria-expanded="true"] {
+        color: var(--nav-link-hover);
+        opacity: 1;
+    }
+    .astro-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin-bottom: 0.2rem;
+        width: 100vw;
+        max-width: 100vw;
+        background: var(--header-bg);
+        padding: 0.5rem 0 0.5rem 0.7rem;
+        box-sizing: border-box;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 300;
+        border-radius: 0 0 16px 16px;
+        box-shadow: var(--header-shadow);
+        display: none;
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.35s cubic-bezier(.4,2,.6,1), opacity 0.25s;
+    }
+    .astro-nav.show {
+        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+        animation: navDrop 0.35s cubic-bezier(.4,2,.6,1);
+    }
+    @keyframes navDrop {
+        from { transform: translateY(-100%); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+    .astro-nav a {
+        width: 95vw;
+        max-width: 320px;
+        text-align: left;
+        padding: 0.7em 0.5em;
+        font-size: 1.05rem;
+        border-radius: 8px;
+        margin: 0;
+        opacity: 0;
+        transform: translateX(-30px);
+        animation: navLinkFade 0.4s forwards;
+    }
+    .astro-nav.show a {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .astro-nav.show a:nth-child(1) { animation-delay: 0.08s; }
+    .astro-nav.show a:nth-child(2) { animation-delay: 0.16s; }
+    .astro-nav.show a:nth-child(3) { animation-delay: 0.24s; }
+    .astro-nav.show a:nth-child(4) { animation-delay: 0.32s; }
+    .astro-nav.show a:nth-child(5) { animation-delay: 0.40s; }
+    .astro-nav.show a:nth-child(6) { animation-delay: 0.48s; }
+    .astro-nav.show a:nth-child(7) { animation-delay: 0.56s; }
+    .astro-nav.show a:nth-child(8) { animation-delay: 0.64s; }
+    .astro-nav.show a:nth-child(9) { animation-delay: 0.72s; }
+    @keyframes navLinkFade {
+        from { opacity: 0; transform: translateX(-30px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+    .astro-card {
+        padding: 1.2rem 0.3rem;
+        margin-top: 0.5rem;
+    }
+    .astro-section h3 { font-size: 1.1rem; }
+    .astro-details td { font-size: 0.98rem; }
+    .astro-dark-toggle { right: 0.7rem; top: 1rem; }
+    body.astro-nav-open {
+        overflow: hidden;
+    }
+}
+
+/* Link styles */
+a, a:visited {
+    color: var(--accent);
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+a:hover, a:focus {
+    color: var(--nav-link-hover);
+    text-decoration: underline;
+}
+[data-theme="dark"] a, [data-theme="dark"] a:visited {
+    color: var(--nav-link);
+}
+[data-theme="dark"] a:hover, [data-theme="dark"] a:focus {
+    color: var(--accent);
+}

@@ -1,0 +1,18 @@
+{
+  "title": "ASTROPHOTOGRAPHY - M33 - PINWHEEL GALAXY",
+  "object": "M33 - PINWHEEL GALAXY",
+  "image": {
+    "large": "/Images/m33_041012_2000.jpg",
+    "thumb": "/Images/m33_041012_100.jpg",
+    "alt": "M33 - PINWHEEL GALAXY",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "M33"
+  },
+  "details": [
+    {
+      "label": "Files",
+      "value": "<a href=\"/fits/m33_041012_11i55m_L.FIT\">m33_041012_11i55m_L.FIT</a> (Luminance, 55 min, 5-min subs)<br><a href=\"/fits/m33_041012_3i15m3_R.FIT\">m33_041012_3i15m3_R.FIT</a> (Red, 15 min, 5-min subs)<br><a href=\"/fits/m33_041012_3i15m3_G.FIT\">m33_041012_3i15m3_G.FIT</a> (Green, 15 min, 5-min subs)<br><a href=\"/fits/m33_041012_3i15m3_B.FIT\">m33_041012_3i15m3_B.FIT</a> (Blue, 15 min, 5-min subs)<br>"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Astrophotography - Moon - Third Quarter",
+  "object": "MOON - THIRD QUARTER",
+  "image": {
+    "large": "/Images/moon_040905_2000.jpg",
+    "thumb": "/Images/moon_040905_800.jpg",
+    "alt": "MOON - THIRD QUARTER",
+    "survey": "P/DSS2/color",
+    "fov": 25,
+    "target": "MOON"
+  },
+  "details": [
+    {
+      "label": "Instrument",
+      "value": "<a href=\"Equipment_RC32.htm\">\n      Ritchey-Chretien 32\" Telescope</a>\n</blockquote>\n</font>"
+    },
+    {
+      "label": "Focal Ratio",
+      "value": "      f25 (prime focus - 9\" clear aperture mask)\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Camera",
+      "value": "<a href=\"http://www.sbig.com/sbwhtmls/large_format_cameras.htm\">SBIG STL-11000 CCD camera</a>\n<br/>(See product review in July, 2004 issue of <i>Sky &amp; Telescope</i> magazine.)\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Exposure",
+      "value": "      .001 Second Luminance only (Clear Filter)<br/>\n      Mosaic of 4 images to cover field\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Guiding",
+      "value": "      None\n      </blockquote>\n</font>"
+    },
+    {
+      "label": "Date",
+      "value": "      9/05/04\n      </blockquote>\n</font>"
+    }
+  ]
+}
