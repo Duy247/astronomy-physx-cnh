@@ -114,9 +114,17 @@ h2 { font-size: clamp(2.8rem, 6.5vw, 6.8rem); }
 .astro-nav { display: flex; justify-content: flex-end; gap: 24px; }
 .astro-nav a { color: #9aaab3; font-size: .88rem; font-weight: 500; text-decoration: none; white-space: nowrap; }
 .astro-nav a:hover, .astro-nav a:focus-visible { color: var(--cyan); }
+.astro-nav-index, .astro-nav-arrow { display: none; }
 .astro-hub-link { min-height: 40px; padding: 8px 12px; display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line-bright); color: #c8d6dc; font: 650 .68rem var(--font-mono); letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
 .astro-hub-link:hover { color: var(--void); background: var(--cyan); }
-.astro-nav-toggle { display: none; min-height: 42px; padding: 8px 12px; align-items: center; gap: 8px; border: 1px solid var(--line-bright); background: rgba(9, 19, 28, .72); color: var(--text); cursor: pointer; }
+.astro-nav-toggle { display: none; min-height: 42px; padding: 8px 12px; align-items: center; gap: 10px; border: 1px solid var(--line-bright); background: rgba(9, 19, 28, .72); color: var(--text); cursor: pointer; transition: border-color .2s, background .2s, box-shadow .2s; }
+.astro-nav-toggle-icon { position: relative; width: 18px; height: 14px; display: block; }
+.astro-nav-toggle-icon::before, .astro-nav-toggle-icon::after { position: absolute; left: 0; width: 18px; height: 1px; content: ""; background: currentColor; transition: top .2s, bottom .2s, transform .2s, box-shadow .2s; }
+.astro-nav-toggle-icon::before { top: 2px; box-shadow: 0 5px currentColor; }
+.astro-nav-toggle-icon::after { bottom: 1px; }
+.astro-nav-toggle.is-open { border-color: rgba(233,203,118,.7); background: rgba(23,24,34,.92); box-shadow: 0 0 24px rgba(101,230,242,.1); color: var(--gold); }
+.astro-nav-toggle.is-open .astro-nav-toggle-icon::before { top: 7px; box-shadow: none; transform: rotate(45deg); }
+.astro-nav-toggle.is-open .astro-nav-toggle-icon::after { bottom: 6px; transform: rotate(-45deg); }
 .astro-dim-overlay { display: none; }
 
 .astro-page, .astro-card { width: min(100% - 48px, 1180px); margin: 0 auto 100px; }
@@ -264,14 +272,23 @@ h2 { font-size: clamp(2.8rem, 6.5vw, 6.8rem); }
     .astro-header-inner { grid-template-columns: auto 1fr auto; }
     .astro-hub-link { justify-self: end; }
     .astro-nav-toggle { display: inline-flex; grid-column: 3; justify-self: end; }
-    .astro-nav { position: fixed; top: 80px; right: 20px; width: min(330px, calc(100vw - 40px)); max-height: calc(100vh - 100px); padding: 10px; display: none; overflow: auto; border: 1px solid var(--line-bright); background: rgba(4,10,17,.97); box-shadow: 8px 8px 0 #000; }
-    .astro-nav.show { display: grid; }
-    .astro-nav a { padding: 12px 13px; border-bottom: 1px solid var(--line); }
-    .astro-dim-overlay { position: fixed; z-index: 90; inset: 80px 0 0; display: block; opacity: 0; pointer-events: none; background: rgba(0, 2, 6, .72); backdrop-filter: blur(4px); transition: opacity .2s; }
+    .astro-nav { position: fixed; top: 92px; right: 20px; width: min(360px, calc(100vw - 40px)); max-height: calc(100dvh - 112px); padding: 13px; display: none; grid-template-columns: minmax(0, 1fr); justify-content: stretch; gap: 0; overflow: auto; border: 1px solid rgba(101,230,242,.34); background: radial-gradient(circle at 100% 0, rgba(88,65,170,.2), transparent 46%), radial-gradient(circle at 0 100%, rgba(38,150,222,.12), transparent 45%), rgba(3,8,15,.96); box-shadow: 0 28px 90px rgba(0,0,0,.72), 7px 7px 0 rgba(0,0,0,.75); backdrop-filter: blur(22px) saturate(120%); }
+    .astro-nav::before { padding: 5px 7px 13px; content: "ARCHIVE INDEX"; border-bottom: 1px solid var(--line); color: #6f8490; font: 600 .52rem var(--font-mono); letter-spacing: .16em; }
+    .astro-nav.show { display: grid; animation: astro-nav-reveal .24s ease both; }
+    .astro-nav a { min-width: 0; min-height: 58px; padding: 10px 7px; display: grid; grid-template-columns: 32px minmax(0, 1fr) 22px; align-items: center; gap: 8px; border-bottom: 1px solid var(--line); color: #c2cdd2; font-size: .96rem; text-align: left; transition: color .18s, background .18s, padding .18s; }
+    .astro-nav a:last-child { border-bottom: 0; }
+    .astro-nav a:hover, .astro-nav a:focus-visible { padding-left: 11px; background: linear-gradient(90deg, rgba(101,230,242,.08), transparent); color: white; }
+    .astro-nav-index, .astro-nav-arrow { display: block; color: var(--violet); font: 600 .53rem var(--font-mono); letter-spacing: .08em; }
+    .astro-nav-arrow { color: #587581; text-align: right; transition: color .18s, transform .18s; }
+    .astro-nav a:hover .astro-nav-arrow, .astro-nav a:focus-visible .astro-nav-arrow { color: var(--cyan); transform: translate(2px, -2px); }
+    .astro-nav a:nth-of-type(4) .astro-nav-index { color: var(--gold); }
+    .astro-dim-overlay { position: fixed; z-index: 90; inset: 80px 0 0; display: block; opacity: 0; pointer-events: none; background: rgba(0, 2, 6, .66); backdrop-filter: blur(7px) saturate(75%); transition: opacity .24s; }
     .astro-dim-overlay.active { opacity: 1; pointer-events: auto; }
     body.astro-nav-open { overflow: hidden; }
     .astro-collection .astro-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
+
+@keyframes astro-nav-reveal { from { opacity: 0; transform: translateY(-9px) scale(.985); } to { opacity: 1; transform: none; } }
 
 @media (max-width: 760px) {
     body::after { right: -85vw; width: 150vw; }
@@ -279,7 +296,7 @@ h2 { font-size: clamp(2.8rem, 6.5vw, 6.8rem); }
     .astro-header-inner { min-height: 68px; gap: 10px; grid-template-columns: auto 1fr auto; }
     .astro-logo { width: 62px; height: 42px; }
     .astro-brand-context, .astro-hub-link { display: none; }
-    .astro-nav { top: 68px; right: 16px; }
+    .astro-nav { top: 78px; right: 16px; width: min(360px, calc(100vw - 32px)); max-height: calc(100dvh - 94px); }
     .astro-dim-overlay { inset-block-start: 68px; }
     .astro-page, .astro-card { margin-bottom: 70px; }
     .astro-hero { min-height: calc(100svh - 68px); padding: 92px 8px 70px 22px; grid-template-columns: 1fr; gap: 58px; }
