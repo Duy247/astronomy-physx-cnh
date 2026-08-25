@@ -4,10 +4,45 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/app/bootstrap.php';
 $pageTitle = 'Misti Mountain Observatory — AstroGallery';
+$surpriseCatalog = [];
+$surpriseSeen = [];
+$surpriseSources = [
+    ['Galaxy', __DIR__ . '/gallery/gallery_galaxies.json'],
+    ['Nebula', __DIR__ . '/gallery/gallery_nebulae.json'],
+    ['Star cluster', __DIR__ . '/gallery/gallery_clusters.json'],
+    ['Solar System', __DIR__ . '/gallery/gallery_solarsystem.json'],
+    ['Solar System', __DIR__ . '/gallery/gallery_solarsystem_moon.json'],
+];
+foreach ($surpriseSources as [$category, $source]) {
+    foreach (astro_load_json($source) as $item) {
+        $link = (string) ($item['link'] ?? '');
+        $title = trim((string) ($item['title'] ?? ''));
+        if ($link === '' || $title === '' || isset($surpriseSeen[$link])) {
+            continue;
+        }
+        $surpriseSeen[$link] = true;
+        $surpriseCatalog[] = [
+            'title' => $title,
+            'subtitle' => trim((string) ($item['subtitle'] ?? '')),
+            'category' => $category,
+            'url' => astro_url($link),
+        ];
+    }
+}
 require __DIR__ . '/includes/header.php';
 ?>
 <main class="astro-page astro-home" id="main-content">
-    <section class="astro-hero" aria-labelledby="home-title">
+    <section class="astro-hero" aria-labelledby="home-title" data-cosmic-hero>
+        <div class="astro-cosmic-stage" aria-hidden="true">
+            <canvas data-cosmic-canvas></canvas>
+        </div>
+        <div class="astro-cosmic-interface" data-cosmic-interface>
+            <svg class="astro-cosmic-leaders" data-cosmic-leaders aria-hidden="true"></svg>
+            <div class="astro-cosmic-discoveries" data-cosmic-discoveries></div>
+            <button class="astro-surprise" type="button" data-cosmic-surprise aria-label="Reveal five random objects from the archive">Surprise me</button>
+            <span class="astro-visually-hidden" data-cosmic-announcement aria-live="polite"></span>
+        </div>
+        <script type="application/json" data-cosmic-catalog><?= json_encode($surpriseCatalog, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_UNESCAPED_SLASHES) ?></script>
         <div class="astro-hero-meta" aria-hidden="true"><span>PHYSX-CNH / ASTRO ARCHIVE</span><span>35.2° N · 113.7° W</span></div>
         <div class="astro-hero-copy">
             <h1 id="home-title"><em>Beyond</em> the local system.</h1>
@@ -35,4 +70,5 @@ require __DIR__ . '/includes/header.php';
         </div>
     </section>
 </main>
+<script type="module" src="<?= astro_escape(astro_url('/js/cosmic-hero.js?v=20260825l')) ?>"></script>
 <?php require __DIR__ . '/includes/footer.php'; ?>
