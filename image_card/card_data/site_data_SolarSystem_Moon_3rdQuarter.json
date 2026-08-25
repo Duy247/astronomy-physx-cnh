@@ -15,9 +15,9 @@
     "large": "/Images/moon_040905_2000.jpg",
     "thumb": "/Images/moon_040905_800.jpg",
     "alt": "MOON - THIRD QUARTER",
-    "survey": "P/DSS2/color",
-    "fov": 25,
-    "target": "MOON"
+    "survey": "CDS/P/Moon/LROC-WAC-100m",
+    "fov": 180,
+    "target": "0 +0"
   },
   "details": [
     {

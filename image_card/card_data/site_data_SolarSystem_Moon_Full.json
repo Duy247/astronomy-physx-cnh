@@ -15,9 +15,9 @@
     "large": "/Images/FullMoon_800.jpg",
     "thumb": "/Images/FullMoon_200.jpg",
     "alt": "MOON - FULL",
-    "survey": "P/DSS2/color",
-    "fov": 25,
-    "target": "MOON"
+    "survey": "CDS/P/Moon/LROC-WAC-100m",
+    "fov": 180,
+    "target": "0 +0"
   },
   "details": [
     {

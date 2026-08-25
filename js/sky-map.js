@@ -14,22 +14,35 @@ window.addEventListener('load', async () => {
     }
     await window.A.init;
     const configuredSurvey = section.dataset.survey || 'P/DSS2/color';
-    // The primary CDS DSS host is not reachable from every network. Use the
-    // official CDS mirror directly so the viewer does not stall during lookup.
-    const survey = configuredSurvey === 'P/DSS2/color'
-      ? 'https://alaskybis.cds.unistra.fr/DSS/DSSColor'
-      : configuredSurvey;
-    window.A.aladin('#aladin-lite-div', {
+    const isMoonSurface = section.dataset.viewerMode === 'moon';
+    // The primary CDS host is not reachable from every network. Resolve the
+    // surveys used by this archive through the official CDS mirror directly.
+    const surveyMirrors = {
+      'P/DSS2/color': 'https://alaskybis.cds.unistra.fr/DSS/DSSColor',
+      'CDS/P/Moon/LROC-WAC-100m': 'https://alaskybis.cds.unistra.fr/Planets/CDS_P_Moon_LROC-WAC-100m'
+    };
+    const survey = surveyMirrors[configuredSurvey] || configuredSurvey;
+    const aladin = window.A.aladin('#aladin-lite-div', {
       survey,
       fov: Number(section.dataset.fov || 1),
       target: section.dataset.target || '',
+      projection: isMoonSurface ? 'SIN' : undefined,
+      cooFrame: isMoonSurface ? 'j2000d' : undefined,
       reticleColor: '#77d5ff',
       showCooGridControl: true,
-      showSimbadPointerControl: true,
+      showFrame: !isMoonSurface,
+      showGotoControl: !isMoonSurface,
+      showSimbadPointerControl: !isMoonSurface,
       showFullscreenControl: true
     });
+    if (isMoonSurface) {
+      aladin.setFrame('ICRSd');
+      aladin.setProjection('SIN');
+    }
     section.classList.add('is-loaded');
-    if (status) status.textContent = 'Interactive sky atlas loaded.';
+    if (status) status.textContent = isMoonSurface
+      ? 'Interactive lunar surface loaded.'
+      : 'Interactive sky atlas loaded.';
   } catch (error) {
     console.error('Unable to initialize the sky atlas.', error);
     fail('The interactive atlas could not be loaded on this device.');

@@ -1,3 +1,7 @@
+<?php
+$surveyId = (string) ($image['survey'] ?? 'P/DSS2/color');
+$isMoonSurface = str_contains($surveyId, '/Moon/');
+?>
 <main class="astro-page astro-object-page" id="main-content">
     <div class="astro-flex-row">
         <section class="astro-section astro-image-section">
@@ -14,10 +18,10 @@
             </tbody></table>
         </section>
     </div>
-    <section class="astro-skymap-section" data-sky-map data-survey="<?= astro_escape((string) ($image['survey'] ?? 'P/DSS2/color')) ?>" data-fov="<?= astro_escape((string) ($image['fov'] ?? 1)) ?>" data-target="<?= astro_escape((string) ($image['target'] ?? '')) ?>">
-        <div class="astro-section-heading"><h2>Sky atlas.</h2></div>
-        <div id="aladin-lite-div" class="astro-skymap" role="img" aria-label="Interactive sky map for <?= astro_escape($object) ?>"></div>
-        <p class="astro-skymap-status" data-sky-map-status>Loading the sky atlas…</p>
+    <section class="astro-skymap-section" data-sky-map data-viewer-mode="<?= $isMoonSurface ? 'moon' : 'sky' ?>" data-survey="<?= astro_escape($surveyId) ?>" data-fov="<?= astro_escape((string) ($image['fov'] ?? 1)) ?>" data-target="<?= astro_escape((string) ($image['target'] ?? '')) ?>">
+        <div class="astro-section-heading"><h2><?= $isMoonSurface ? 'Moon surface.' : 'Sky atlas.' ?></h2></div>
+        <div id="aladin-lite-div" class="astro-skymap" role="img" aria-label="<?= $isMoonSurface ? 'Interactive lunar surface map' : 'Interactive sky map for ' . astro_escape($object) ?>"></div>
+        <p class="astro-skymap-status" data-sky-map-status>Loading <?= $isMoonSurface ? 'the lunar surface' : 'the sky atlas' ?>…</p>
         <p class="astro-skymap-fallback"><a href="https://aladin.cds.unistra.fr/AladinLite/" rel="noopener">Open Aladin Lite</a> if the interactive map is unavailable.</p>
     </section>
 </main>

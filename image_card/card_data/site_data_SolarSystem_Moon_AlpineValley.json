@@ -15,9 +15,9 @@
     "large": "/Images/moon_041004_2000.jpg",
     "thumb": "/Images/moon_041004_800.jpg",
     "alt": "MOON - ALPINE VALLEY",
-    "survey": "P/DSS2/color",
-    "fov": 25,
-    "target": "MOON"
+    "survey": "CDS/P/Moon/LROC-WAC-100m",
+    "fov": 22,
+    "target": "3.2 +48.5"
   },
   "details": [
     {
