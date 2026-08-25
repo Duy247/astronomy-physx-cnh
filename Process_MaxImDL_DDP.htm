@@ -1,0 +1,278 @@
+<html>
+<head>
+<title>Astrophotography - Image Processing - MaxIm DL Non-Linear Stretch</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="description" content="Astrophotos taken with 32 inch Ritchey-Chretien telescope at amateur observatory in Arizona.  Lists film/exposure/other details for each astrophoto, and description of equipment used.">
+<meta name="keywords" content="Astronomy, Astrophotography, Astrophotographs, Ritchey Chretien, Galaxies, Nebula, Nebulae, Star Clusters, Planets, Solar System, Large Aperture, Telescope">
+</head>
+<body bgcolor="ccccff">
+
+<br>
+
+<table width="800" border="3" padding="3" bgcolor="#ffcccc" align="center">
+  <tr>
+    <td colspan="9">
+    <font face="Arial, Helvetica, sans-serif" size="5" color="#0000cc"><center>
+    Misti Mountain Observatory - Astronomy Pages
+    </center></font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="Galaxies.htm">
+    Galaxies</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="Nebulae.htm">
+    Nebulae</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="Clusters.htm">
+    Star Clusters</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="SolarSystem.htm">
+    Solar System</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="178ED.htm">
+    7" Refractor</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="FilmComparison.htm">
+    Film</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="Equipment.htm">
+    Equipment</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="Site.htm">
+    Site</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="index.htm">
+    Home</a>
+    </center></font>
+  </td></tr>
+
+</table>
+
+<br>
+
+<center>
+<table width="800" border="3" padding="3" bgcolor="#ffcccc">
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF"><center>
+      Image Processing - MaxIm DL Non-Linear Stretch
+      </center></font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Astronomical image data generally has most of the interesting signal in the lower
+      part of the range of possible pixel values.  While a few stars may have saturated
+      cores, the vast majority of the nebulosity or galaxy detail is not very bright.
+      <p>
+      As an example, a raw Luminance file is shown on the right with a screen stretch of
+      zero to 65536 (64k), the full range of this camera.  If the image were transferred
+      into Photoshop in this form, this is what it would look like.
+      <p>
+      Somehow, the data at the low end of the brightness scale needs to be raised to a level
+      that shows interesting detail, while not over-brightening the brightest stars (and
+      their halos).  This is generally done with a non-linear stretch.
+      <p>
+      One function which does this well is the MaxIm DL's DDP (Digital Development Process).
+      (There are many other ways and many other programs which can accomplish a non-linear
+      stretch.  This is just one that is fairly easy and robust.)
+      <p>
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_L_LR3_Linear_1280.jpg"><img src="process/m8_L_LR3_Linear_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF">
+      Step A: Estimate DDP Background Level and Mid-Level
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Start by measuring the average pixel values in the darkest portions of the
+      image.  This can be done by first loading the information window (<b>View | Information Window</b>)
+      and moving the cursor (circle-crosshair) to one of the darkest areas in the frame.
+      The green circle at the upper right in the frame shown here shows where the cursor was for the
+      measurements shown in the information window.
+      <p>
+      Note the value <b>Average Value</b> shown in the information window.  A good starting point for
+      the <b>Background</b> level will be about 200 less than this Average Value.
+      <p>
+      Establishing the appropriate <b>Mid-Level</b> value to use in the DDP is best done as
+      an iterative process, trying different values until one is found that gives the
+      results that look best to the imager.  A useful starting point is twice the <b>Background</b> level.
+      <p>
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_L_LR3_DDPSetup1_1280.jpg"><img src="process/m8_L_LR3_DDPSetup1_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF">
+      Step B: Invoke DDP, Set User Kernel to Unity Matrix
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      The Digital Development Process (DDP) includes a sharpening feature.  For our purposes, we
+      want to disable this feature and only use the non-linear stretch feature.  This is done by
+      setting the User Kernel to all zeros except the central box.
+      <p>
+      Invoke DDP by selecting <b>Filter | Digital Development</b>.
+      <p>
+      Enter the starting <b>Background</b> and <b>Mid-Level</b> values in the <b>DDP Parameters</b> box.
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_L_LR3_DDPSetup2_1280.jpg"><img src="process/m8_L_LR3_DDPSetup2_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      In the <b>Filter Type</b> box, click the radio-button labelled <b>Kernel - User Filter</b>.
+      Then click the button <b>Set User Filter</b>.
+      <p>
+      In the box that is next displayed, click <b>3x3</b> in the <b>Kernel Size</b> box, then
+      enter zeros in all the matrix boxes except the central one, where you'll enter a 1.
+      <p>
+      When you're done, click the <b>Close</b> button on the <b>User Filter</b> dialog box,
+      then click <b>OK</b> on the <b>Digital Development</b> dialog box.
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_L_LR3_DDPSetup3_1280.jpg"><img src="process/m8_L_LR3_DDPSetup3_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF">
+      Step C: Evaluate Results, Redo DDP if necessary
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      After the DDP has completed, first make sure the screen stretch is at the maximum
+      limits - red box all the way to the left, green box all the way to the right.
+      <p>
+      If the Histogram in the Screen Stretch box shows clipping on the left side, you'll
+      want to decrease the <b>Background</b> level.  If it shows a large black area on
+      the left, you'll want to increase the <b>Bacground</b> level.
+      <p>
+      In this example, the <b>Background</b> level is just about right, with a fairly small
+      black area on the left.
+      <p>
+      If the overall image brightness seems too bright, you'll want to increase the <b>Mid-Level</b>.
+      If the overall image brightness seems too dim, you'll want to decrease the <b>Mid-Level</b>.
+      <p>
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_L_LR3_DDPSetup4_1280.jpg"><img src="process/m8_L_LR3_DDPSetup4_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      While the results of the above DDP look reasonable, I generally prefer a bit less
+      brightness.  To try another DDP run, first undo the first one by selecting
+      <b>Edit | Undo Filter DDP</b>.  Then invoke <b>Filter - Digital Development</b>
+      again, enter the new parameters, and run the DDP again.
+      <p>
+      Repeat this iterative process, adjusting the <b>Background</b> and <b>Mid-Level</b>
+      parameters as needed, until the image looks just right to you.
+      <p>
+      Remember that you have to reset the <b>Screen Stretch</b> window to its maximum values
+      after each new DDP iteration.
+      <p>
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_L_LR3_DDPSetup5_1280.jpg"><img src="process/m8_L_LR3_DDPSetup5_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+
+
+</table>
+</center>
+
+<!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 START -->
+<script type='text/javascript' src='../app/count_server/count.js'></script>
+<script type='text/javascript'><!--
+wm_custnum='3638e3e58ddda42c';
+wm_page_name='Process_MaxImDL_DDP.htm';
+wm_group_name='/services/webpages/m/i/mistisoftware.com/public/astronomy';
+wm_campaign_key='campaign_id';
+wm_track_alt='';
+wiredminds.count();
+// -->
+</script>
+<!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 END -->
+</body>
+</html>

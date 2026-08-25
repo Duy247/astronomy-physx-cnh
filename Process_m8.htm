@@ -1,0 +1,1212 @@
+<html>
+<head>
+<title>Astrophotography - Image Processing Example - m8 (Lagoon Nebula)</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="description" content="Astrophotos taken with 32 inch Ritchey-Chretien telescope at amateur observatory in Arizona.  Lists film/exposure/other details for each astrophoto, and description of equipment used.">
+<meta name="keywords" content="Astronomy, Astrophotography, Astrophotographs, Ritchey Chretien, Galaxies, Nebula, Nebulae, Star Clusters, Planets, Solar System, Large Aperture, Telescope">
+</head>
+<body bgcolor="ccccff">
+
+<br>
+
+<table width="800" border="3" padding="3" bgcolor="#ffcccc" align="center">
+  <tr>
+    <td colspan="9">
+    <font face="Arial, Helvetica, sans-serif" size="5" color="#0000cc"><center>
+    Misti Mountain Observatory - Astronomy Pages
+    </center></font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="Galaxies.htm">
+    Galaxies</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="Nebulae.htm">
+    Nebulae</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="Clusters.htm">
+    Star Clusters</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="SolarSystem.htm">
+    Solar System</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="178ED.htm">
+    7" Refractor</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="FilmComparison.htm">
+    Film</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="Equipment.htm">
+    Equipment</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="Site.htm">
+    Site</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="index.htm">
+    Home</a>
+    </center></font>
+  </td></tr>
+
+</table>
+
+<br>
+
+<center>
+<table width="800" border="3" padding="3" bgcolor="#ffcccc">
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF"><center>
+      Image Processing Example - m8 (Lagoon Nebula)
+      </center></font>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      The following steps illustrate the processing of an image of m8, beginning with
+      calibrated image frames, and ending with a finished image ready for web display.
+      Please be aware that what follows is <b>One</b> way to process this image.  There
+      are as many other legitimate (some much better) procedures as there are other
+      image processors.
+      <p>
+      Each of the image thumbnails in the right column can be clicked to reveal a
+      full-screen image.  After displaying a full-screen image, use your browser's "back"
+      button to return to this page.
+      <p>
+      This processing example uses the following software packages:
+      <ul>
+        <li><b>CCDSharp</b> (Freeware available from <a href="http://www.sbig.com/sbwhtmls/softpage.htm">SBIG</a>)
+        <li><b>MaxIm DL</b> (Software available for purchase from <a href="http://www.cyanogen.com/products/maxim_main.htm">Diffraction Limited</a>)
+        <li><b>Photoshop CS</b> (Software available for purchase from <a href="http://www.adobe.com/products/photoshop/main.html">Adobe</a>)
+      </li></ul>
+      <p>
+      Where links appear in the text below, it generally leads to another page which contains
+      a detailed explanation of the steps necessary to carry out the indicated activity.
+      </p></blockquote>
+      </font>
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF">
+      Step 0: Images ready to process
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      These image files were taken with an Optical Guidance Systems 32" Ritchey-Chretien telescope
+      and SBIG STL-11000m camera, from very dark and transparent skies in northwestern Arizona.
+      <p>
+      The raw files have been calibrated (i.e., Dark Subtracted, Flat Fielded, Hot/Cold Pixels removed),
+      and aligned with each other.
+      <p>
+      <a href="index_fits.htm">These files</a> are available to interested users who wish to follow
+      along with their own software, and/or make their own alterations to the process.
+      </p></blockquote>
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      <b>Luminance</b> File.
+      <p>
+      This file is an added stack of 26 sub-frames, each exposed for 1 minute, unbinned,
+      through an SBIG Clear filter.
+      <p>
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_L_1280.jpg"><img src="process/m8_L_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      <b>Hydrogen-Alpha</b> File.
+      <p>
+      This file is an added stack of 5 sub-frames, each exposed for 15 minutes, unbinned,
+      through an Astrodon Hydrogen-Alpha filter.
+      <p>
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_H_1280.jpg"><img src="process/m8_H_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      <b>Red</b> File.
+      <p>
+      This file is an added stack of 9 sub-frames, each exposed for 1 minute, unbinned,
+      through an SBIG Red filter.
+      <p>
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_R_1280.jpg"><img src="process/m8_R_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      <b>Green</b> File.
+      <p>
+      This file is an added stack of 9 sub-frames, each exposed for 1 minute, unbinned,
+      through an SBIG Green filter.
+      <p>
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_G_1280.jpg"><img src="process/m8_G_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      <b>Blue</b> File.
+      <p>
+      This file is an added stack of 9 sub-frames, each exposed for 1 minute, unbinned,
+      through an SBIG Blue filter.
+      <p>
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_B_1280.jpg"><img src="process/m8_B_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF">
+      Step 1: Deconvolve Luminance and Hydrogen-Alpha Files
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      The Luminance and Hydrogen-Alpha files are going to be providing the fine
+      detail in the finished image.  Since the sampling scale with the 32" RC telescope
+      and STL-11000m camera yields about .32 arc-seconds per pixel, these images are what
+      imagers call "over-sampled."  
+      <p>
+      Generally, this means that they can benefit by some degree of deconvolution, which will
+      tighten up the star images and other details in the image.
+      <p>
+      </p></blockquote>
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Use CCDSharp to do a 3 iteration <a href="Process_CCDSharp_Deconvolution.htm">Richardson-Lucy Deconvolution</a>
+      on the Luminance Frame.  Luminance file shown after deconvolution at right. 
+      </blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_L_LR3_1280.jpg"><img src="process/m8_L_LR3_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Use CCDSharp to do a 3 iteration <a href="Process_CCDSharp_Deconvolution.htm">Richardson-Lucy Deconvolution</a>
+      on the Hydrogen-Alpha Frame.  Hydrogen-Alpha file shown after deconvolution at right. 
+      </blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_H_LR3_1280.jpg"><img src="process/m8_H_LR3_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF">
+      Step 2: Non-Linear Stretch of Luminance and Hydrogen-Alpha Files
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Astronomical image data generally has most of the interesting signal in the lower
+      part of the range of possible pixel values.  While a few stars may have saturated
+      cores, the vast majority of the nebulosity or galaxy detail is not very bright.
+      <p>
+      As an example, a raw Luminance file is shown on the right with a screen stretch of
+      zero to 65536 (64k), the full range of this camera.  If the image were transferred
+      into Photoshop in this form, this is what it would look like.
+      <p>
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_L_LR3_Linear_1280.jpg"><img src="process/m8_L_LR3_Linear_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Use MaxIM DL to do a <a href="Process_MaxImDL_DDP.htm">Non-Linear Stretch (DDP)</a>
+      on the Luminance Frame, with DDP parameters:
+      <ul>
+        <li>Background = 2600
+        <li>Mid-Level = 6000
+      </li></ul>
+      <p>
+      Luminance file shown after non-linear stretch at right. 
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_L_LR3_DDP_1280.jpg"><img src="process/m8_L_LR3_DDP_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Use MaxIM DL to do a <a href="Process_MaxImDL_DDP.htm">Non-Linear Stretch (DDP)</a>
+      on the Hydrogen-Alpha Frame, with DDP parameters:
+      <ul>
+        <li>Background = 2000
+        <li>Mid-Level = 9000
+      </li></ul>
+      <p>
+      Luminance file shown after non-linear stretch at right. 
+      <p>
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_H_LR3_DDP_1280.jpg"><img src="process/m8_H_LR3_DDP_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Note that I've done the non-linear stretches so that the background areas of
+      the Luminance frame are somewhat brighter than the background areas of the
+      Hydrogen-Alpha frame, while the highlights in the Hydrogen-Alpha frame are
+      somewhat brighter than the highlights in the Luminance frame.
+      <p>
+      When these frames are combined in Photoshop, I'll be using the brightest portions
+      of both frames, which will allow me to retain the subtle detail and star information
+      from the Luminance frame, while also keeping the dramatic highlights from the
+      Hydrogen-Alpha frame.
+    </p></blockquote></font></td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF">
+      Step 3: Color Combine Red/Green/Blue frames and do Non-Linear Stretch on result
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      In MaxIm DL, load all three color files and select <b>Color | Combine Color</b>.
+      <p>
+      Set the color mixing ratio for each filter.  These values can be determined experimentally,
+      by reference to other users of the same filter/camera combination, or by doing a G2V star
+      calibration.
+      <p>
+      The values I used for this data set are:
+      <ul>
+        <li>1.35 - Red
+        <li>1.00 - Green
+        <li>1.60 - Blue
+      </li></ul>
+      <p>
+      Note that I have checked the <b>Bgd Auto Equalize</b> button.
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_RGB_Setup1_1280.jpg"><img src="process/m8_RGB_Setup1_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      This is the result after the above <b>Color Combine</b> was executed.
+      <p>
+      Note the relatively low values that have to be used on the Screen Stretch in order
+      to be able to see the details in this image.  Some imagers prefer to load the RGB
+      image into Photoshop in this form and bring up the color with Levels and Curves, but
+      I prefer to do a non-linear stretch in MaxIm DL.
+      <p>
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_RGB_Setup2_1280.jpg"><img src="process/m8_RGB_Setup2_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Use MaxIM DL to do a <a href="Process_MaxImDL_DDP.htm">Non-Linear Stretch (DDP)</a>
+      on the RGB Frame, with DDP parameters:
+      <ul>
+        <li>Background = 2150
+        <li>Mid-Level = 3000
+      </li></ul>
+      <p>
+      RGB file shown after non-linear stretch at right.  Note that the color here seems a bit washed out,
+      but we'll deal with that in Photoshop below.
+      <p>
+      Save this file as a TIFF file in 16-bit uncompressed form.  
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_RGB_Setup3_1280.jpg"><img src="process/m8_RGB_Setup3_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF">
+      Step 4: Combine Luminance and Hydrogen-Alpha frames in Photoshop
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      The Luminance frame shows great detail in the dim regions and stars, while the
+      Hydrogen-Alpha frame shows interesting detail in the highlight areas.  What we
+      want is a merger of these two frames, keeping the best of both of them.
+      <p>
+      Load both frames into Photoshop.
+      <p>
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HaL_Merge1_1280.jpg"><img src="process/m8_HaL_Merge1_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Click on the Hydrogen-Alpha frame to make it active.  Copy its contents:
+      <ul>
+        <li>Menu selection <b>Select | All</b> or keyboard-shortcut <b>Ctrl-A</b>
+        <li>Menu selection <b>Edit | Copy</b> or keyboard-shortcut <b>Ctrl-C</b>
+      </li></ul>
+      <p>
+      Click on the Luminance frame to make it active.  Paste the Hydrogen-Alpha frame onto it:
+      <ul>
+        <li>Menu selection <b>Edit | Paste</b> or keyboard-shortcut <b>Ctrl-V</b>
+      </li></ul>
+      Maximize the size of the Hydrogen-Alpha Window:
+      <ul>
+        <li>Menu selection <b>View | Fit on Screen</b> or keyboard-shortcut <b>Ctrl-0</b>
+      </li></ul>
+      <p>
+      Note that at this point, all we can see is the Hydrogen-Alpha data.  The Luminance frame
+      is hidden in a layer beneath it.
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HaL_Merge2_1280.jpg"><img src="process/m8_HaL_Merge2_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Change the blend mode to <b>Lighten.</b>  This has the effect of showing the brightest
+      portion of each frame.  It allows the stars and dim backround of the Luminance frame to
+      show through, and keeps the highlights from the Hydrogen-Alpha frame.
+      </blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HaL_Merge3_1280.jpg"><img src="process/m8_HaL_Merge3_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Flatten the layers to make the merger permanent:
+      <ul>
+        <li>Menu selection <b>Layer | Flatten Image</b> (no keyboard-shortcut available)
+      </li></ul>
+      <p>
+      Click on the Hydrogen-Alpha frame and close it, as we won't need it again during this
+      processing run.
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HaL_Merge4_1280.jpg"><img src="process/m8_HaL_Merge4_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF">
+      Step 5: Reduce Background Noise using Inverted Layer Mask
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      At this point, there is generally some noise in the low-signal areas of the image.
+      <p>
+      The image at right shows some minor noise (magnified to 100% viewing level).
+      <p>
+      We can blur this noise, but want to protect the stars and other details from the
+      effect of the blur process.
+      <p>
+      One method of doing this is to use an <b>Inverted Layer Mask</b> to protect the
+      brighter portions of the image, as described below.
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HaL_Noise1_1280.jpg"><img src="process/m8_HaL_Noise1_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      First, create an <a href="Process_PS_ILM.htm">Inverted Layer Mask</a> for the image.
+      </blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HaL_Noise2_1280.jpg"><img src="process/m8_HaL_Noise2_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      We want additional protection to the bright areas, so we'll now darken the darkest parts of the layer mask
+      with <b>Levels</b>.
+      <p>
+      Invoke the <b>Levels</b> dialog box:
+      <ul>
+        <li>Menu selection <b>Image | Adjustments | Levels</b> or keyboard-shortcut <b>Ctrl-L</b>
+      </li></ul>
+      <p>
+      Change the <b>Input Levels</b> in the <b>Levels</b> dialog box to <b>150, 1.0, 225</b>.
+      The <b>150</b> darkens the darker areas, while the <b>225</b> lightens the lighter areas.
+      These parameters, of course, can be chosen to obtain the desired effect.
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HaL_Noise3_1280.jpg"><img src="process/m8_HaL_Noise3_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Since the <b>Inverted Layer Mask</b> itself is derived from our image, it contains the same
+      level of noise in the background areas.  It's best if we slightly blur the <b>Layer Mask</b>
+      before proceeding.
+      <p>
+      Invoke the <b>Gaussian Blur</b> dialog box:
+      <ul>
+        <li>Menu selection <b>Filter | Blur | Gaussian Blur</b> (no keyboard-shortcut)
+      </li></ul>
+      <p>
+      Use a blur radius of about 1 or 2 (2 was used here).
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HaL_Noise4_1280.jpg"><img src="process/m8_HaL_Noise4_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Now, make the top layer image active by clicking on its icon (circled in red at the bottom right
+      in the image).  Magnify it enough to clearly see the noise in the background area so that you can
+      monitor the effect of the following blur command.  (To magnify, press <b>Ctrl-0</b>, then press
+      <b>Ctrl-+</b> several times.)
+      <p>
+      Invoke the <b>Gaussian Blur</b> dialog box:
+      <ul>
+        <li>Menu selection <b>Filter | Blur | Gaussian Blur</b> (no keyboard-shortcut)
+      </li></ul>
+      <p>
+      Use a blur radius of 2.
+      <p>
+      To monitor and evaluate the effect of the Blur command, while the <b>Gaussian Blur</b> dialog box
+      is still open, repeatedly click on the <b>Preview</b> checkbox to see the effect the blur is
+      having.  The background noise should be substantially reduced.  The stars may be softened just
+      a little bit, but that can be recovered with an Unsharp Mask action a little later.
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HaL_Noise5_1280.jpg"><img src="process/m8_HaL_Noise5_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Flatten the layers to make the masked blur permanent:
+      <ul>
+        <li>Menu selection <b>Layer | Flatten Image</b> (no keyboard-shortcut available)
+      </li></ul>
+      Maximize the size of the image Window (remove prior magnification):
+      <ul>
+        <li>Menu selection <b>View | Fit on Screen</b> or keyboard-shortcut <b>Ctrl-0</b>
+      </li></ul>
+      <p>
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HaL_Noise6_1280.jpg"><img src="process/m8_HaL_Noise6_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF">
+      Step 6: Load RGB Image, Reduce Color Noise using Inverted Layer Mask
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Load the non-linear stretched RGB image.  Maximize the size of the RGB:
+      <ul>
+        <li>Menu selection <b>View | Fit on Screen</b> or keyboard-shortcut <b>Ctrl-0</b>
+      </li></ul>
+      <p>
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_RGB_Noise0_1280.jpg"><img src="process/m8_RGB_Noise0_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      As in the Hydrogen-Alpha/Luminance image, there is generally some noise in the low-signal areas of the image.
+      <p>
+      The image at right shows some minor noise (magnified to 100% viewing level).
+      <p>
+      We can blur this noise, but want to protect the stars and other details from the
+      effect of the blur process.
+      <p>
+      One method of doing this is to use an <b>Inverted Layer Mask</b> to protect the
+      brighter portions of the image, as described below.
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_RGB_Noise1_1280.jpg"><img src="process/m8_RGB_Noise1_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Create an <a href="Process_PS_ILM.htm">Inverted Layer Mask</a> for the image.
+      <p>
+      However, when you get to step <b>D</b> in that process, don't use the color image as the basis
+      for the layer mask.  Instead, use the Hydrogen-Alpha/Luminance image.  It better represents
+      which areas of the final image will in fact be background and which will be highlights:
+      Substitute the following in Step D:
+      <ul>
+        <li>Click on the Hydrogen-Alpha/Luminance Image to make it active  Copy its Contents:
+        <ul>
+          <li>Menu selection <b>Select | All</b> or keyboard-shortcut <b>Ctrl-A</b>
+          <li>Menu selection <b>Edit | Copy</b> or keyboard-shortcut <b>Ctrl-C</b>
+        </li></ul>
+        <li>Click on the RGB Image to make it active  Paste the Hydrogen-Alpha/Luminance into it:
+        <ul>
+          <li>Menu selection <b>Edit | Paste</b> or keyboard-shortcut <b>Ctrl-V</b>
+        </li></ul>
+      </li></ul>
+      </blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_RGB_Noise2_1280.jpg"><img src="process/m8_RGB_Noise2_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      We want additional protection to the bright areas, so we'll now darken the darkest parts of the layer mask
+      with <b>Levels</b>.
+      <p>
+      Invoke the <b>Levels</b> dialog box:
+      <ul>
+        <li>Menu selection <b>Image | Adjustments | Levels</b> or keyboard-shortcut <b>Ctrl-L</b>
+      </li></ul>
+      <p>
+      Change the <b>Input Levels</b> in the <b>Levels</b> dialog box to <b>100, 1.0, 225</b>.
+      The <b>100</b> darkens the darker areas, while the <b>225</b> lightens the lighter areas.
+      These parameters, of course, can be chosen to obtain the desired effect.
+      <p>
+      Note that we can afford to be more aggressive with blurring the color (only) data, so we
+      don't darken this layer mask as much as we did for the Hydrogen-Alpha/Luminance image.
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_RGB_Noise3_1280.jpg"><img src="process/m8_RGB_Noise3_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Since the <b>Inverted Layer Mask</b> itself is derived from our image, it contains the same
+      level of noise in the background areas.  It's best if we slightly blur the <b>Layer Mask</b>
+      before proceeding.
+      <p>
+      Invoke the <b>Gaussian Blur</b> dialog box:
+      <ul>
+        <li>Menu selection <b>Filter | Blur | Gaussian Blur</b> (no keyboard-shortcut)
+      </li></ul>
+      <p>
+      Use a blur radius of about 1 or 2 (2 was used here).
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_RGB_Noise4_1280.jpg"><img src="process/m8_RGB_Noise4_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Now, make the top layer image active by clicking on its icon (circled in red at the bottom right
+      in the image).  Magnify it enough to clearly see the noise in the background area so that you can
+      monitor the effect of the following blur command.  (To magnify, press <b>Ctrl-0</b>, then press
+      <b>Ctrl-+</b> several times.)
+      <p>
+      Invoke the <b>Gaussian Blur</b> dialog box:
+      <ul>
+        <li>Menu selection <b>Filter | Blur | Gaussian Blur</b> (no keyboard-shortcut)
+      </li></ul>
+      <p>
+      Use a blur radius of 4.
+      <p>
+      To monitor and evaluate the effect of the Blur command, while the <b>Gaussian Blur</b> dialog box
+      is still open, repeatedly click on the <b>Preview</b> checkbox to see the effect the blur is
+      having.  The background noise should be substantially reduced.  Again, we can afford to be more
+      aggressive blurring the color data as the fine detail will come from the Hydrogen-Alpha/Luminance
+      layer.  Just be careful not to blur so much that you lose color in the small stars.
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_RGB_Noise5_1280.jpg"><img src="process/m8_RGB_Noise5_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Flatten the layers to make the masked blur permanent:
+      <ul>
+        <li>Menu selection <b>Layer | Flatten Image</b> (no keyboard-shortcut available)
+      </li></ul>
+      Maximize the size of the image Window (remove prior magnification):
+      <ul>
+        <li>Menu selection <b>View | Fit on Screen</b> or keyboard-shortcut <b>Ctrl-0</b>
+      </li></ul>
+      <p>
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_RGB_Noise6_1280.jpg"><img src="process/m8_RGB_Noise6_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF">
+      Step 7: Merge Hydrogen-Alpha/Luminance image into RGB image
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Click on the Hydrogen-Alpha/Luminance image so make it active.  Copy its contents
+      <ul>
+        <li>Menu selection <b>Select | All</b> or keyboard-shortcut <b>Ctrl-A</b>
+        <li>Menu selection <b>Edit | Copy</b> or keyboard-shortcut <b>Ctrl-C</b>
+      </li></ul>
+      Click on the RGB image to make it active.  Paste the Hydrogen-Alpha/Luminance Image onto it.
+      <ul>
+        <li>Menu selection <b>Edit | Paste</b> or keyboard-shortcut <b>Ctrl-V</b>
+      </li></ul>
+      <p>
+      Set the <b>Blend Mode</b> to <b>Luminosity</b>
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HLRGB_Merge1_1280.jpg"><img src="process/m8_HLRGB_Merge1_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      The color is looking much too washed out, so we'll add a little <b>Color Saturation</b> at
+      this point.  More adjustments may be needed later after we get the brightness and contrast
+      where we want them.
+      <p>
+      Click on the <b>Background</b> layer icon (circled in Red at the bottom right of the image).
+      Adjust the <b>Color Saturation</b> level of the color layer:
+      <ul>
+        <li>Menu selection <b>Image | Adjustments | Hue/Saturation</b> or keyboard-shortcut <b>Ctrl-U</b>
+        <li>Enter <b>30</b> into the <b>Saturation</b> box.
+        <li>Click <b>OK</b>
+      </li></ul>
+      </blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HLRGB_Merge2_1280.jpg"><img src="process/m8_HLRGB_Merge2_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Flatten the layers to make the merger permanent:
+      <ul>
+        <li>Menu selection <b>Layer | Flatten Image</b> (no keyboard-shortcut available)
+      </li></ul>
+      <p>
+      Click on the Hydrogen-Alpha/Luminance frame and close it, as we won't need it again during this
+      processing run.
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HLRGB_Merge3_1280.jpg"><img src="process/m8_HLRGB_Merge3_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF">
+      Step 8: Final Adjustments/Tweaking Image
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      While some of what precedes this step depends on personal preferences of the imager,
+      all of what follows gets very personal and subjective.  At each step of the way, the
+      imager decides what adjustments will move the image toward his/her final vision.
+      </blockquote>
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Apply mild <b>Unsharp Mask</b>:
+      <ul>
+        <li>Menu selection <b>Filter | Sharpen | Unsharp Mask</b> (no keyboard-shortcut)
+        <li><b>Amount - 50%</b>
+        <li><b>Radius - 2.0 Pixels</b>
+        <li><b>Threshhold - 0 Levels</b>
+      </li></ul>
+      <p>
+      These entries will provide a very small boost in sharpness without invoking too
+      large a penalty in artifacts.  The main artifact to be concerned about is dark
+      rings around stars that overlay nebulosity.  Another artifact that can occur
+      with too-aggressive Unsharp Masking is hard-edged stars, rather than more natural
+      looking soft-edged stars.
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HLRGB_Adjust1_1280.jpg"><img src="process/m8_HLRGB_Adjust1_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      The image appears too bright for my tastes here.
+      <p>
+      Apply Curves to increase contrast/darken dimmer areas:
+      <ul>
+        <li>Menu selection <b>Image | Adjustments | Curves</b> (no keyboard-shortcut)
+        <li>Set one point and enter <b>64</b> for the <b>Input</b> and <b>44</b> for the <b>Output</b>.
+        This point will darken the background.
+        <li>Set another point and enter <b>190</b> for the <b>Input</b> and <b>190</b> for the <b>Output</b>.
+        This point will keep the highlights from also getting darker.
+      </li></ul>
+      </blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HLRGB_Adjust2_1280.jpg"><img src="process/m8_HLRGB_Adjust2_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      The image appears to be more pink where I'm expecting to see reds.
+      <p>
+      Apply a Color Balance Adjustment:
+      <ul>
+        <li>Menu selection <b>Image | Adjustments | Color Balance</b> or keyboard-shortcut <b>Ctrl-B</b>
+        <li>If we raise the <b>Red</b> level, the image brightens, which I don't want it to do.
+        Therefore enter -15 in each of the <b>Green</b> and <b>Blue</b> Color Levels.  This enhances the
+        <b>Red</b> color and darkens the image slightly.
+      </li></ul>
+      </blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HLRGB_Adjust3_1280.jpg"><img src="process/m8_HLRGB_Adjust3_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      At this point, I want to go just a little darker in both background and highlights:
+      <p>
+      Apply Curves to darken image:
+      <ul>
+        <li>Menu selection <b>Image | Adjustments | Curves</b> (no keyboard-shortcut)
+        <li>Set one point and enter <b>64</b> for the <b>Input</b> and <b>54</b> for the <b>Output</b>.
+        This point will darken the background.
+        <li>Set another point and enter <b>190</b> for the <b>Input</b> and <b>180</b> for the <b>Output</b>.
+        This point will darken the highlights.
+      </li></ul>
+      </blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HLRGB_Adjust4_1280.jpg"><img src="process/m8_HLRGB_Adjust4_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      At some point before finalizing the image, it's a good idea to magnify it and look for tiny defects that can
+      be fixed with the <b>Clone Stamp</b>.  (See red-circled icon on toolbar on left side of image).
+      <p>
+      Clone Stamp Image Defects:
+      <ul>
+        <li>Select <b>Clone Stamp</b> Tool
+        <li>Set a suitable Brush size - large enough to cover the defects, but small enough so as not to
+        cover too much image at a time.
+        <li>Alt-Click near a defect
+        <li>Click over top the defect to copy the tiny part of the image from one location over the defect.
+      </li></ul>
+      </blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HLRGB_Adjust5_1280.jpg"><img src="process/m8_HLRGB_Adjust5_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      This adjustment could be done at any time, but the raw data files have North at the bottom,
+      rather than the more conventional North at the top.
+      <p>
+      Rotate image 180 degrees.
+      <ul>
+        <li>Menu selection <b>Image | Rotate Canvas | 180 degrees</b> (no keyboard-shortcut)
+      </li></ul>
+      </blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HLRGB_Adjust6_1280.jpg"><img src="process/m8_HLRGB_Adjust6_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      The image has some lines and border issues due to the Hydrogen-Alpha image not being
+      taken with exactly the same framing as the other frames.
+      </blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HLRGB_Adjust7_1280.jpg"><img src="process/m8_HLRGB_Adjust7_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Select the <b>Crop</b> tool from the toolbar (circled in red on the left side of the image).
+      Outline the area that is within the border areas that aren't shared with the Hydrogen-Alpha
+      image, and press the <b>Enter</b> key.
+      </blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HLRGB_Adjust8_1280.jpg"><img src="process/m8_HLRGB_Adjust8_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF">
+      Step 9: Save the Results
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Save a TIFF version of the image:
+      <ul>
+        <li>Menu selection <b>File | Save As</b> (no keyboard-shortcut)
+        <li>Supply a name for the file (should be different from the RGB file in case you
+        want to start over at some point).
+        <li>Select <b>None</b> for <b>Image Compression</b> to maintain the highest quality
+        of the finished image.
+      </li></ul>
+      </blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HLRGB_Save1_1280.jpg"><img src="process/m8_HLRGB_Save1_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      If you want to share the image on the web or via email, save a JPEG version of the image:
+      <ul>
+        <li>Menu selection <b>Image | Duplicate</b> (no keyboard-shortcut)
+        <li>Menu selection <b>Image | Mode | 8-Bits/Channel</b> (no keyboard-shortcut)
+        <li>Menu selection <b>File | Save As</b> (no keyboard-shortcut)
+        <li>Supply a name for the file.
+        <li>Select a <b>Quality</b> of <b>9</b> to maintain a high quality in
+        the saved image.
+      </li></ul>
+      </blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HLRGB_Save2_1280.jpg"><img src="process/m8_HLRGB_Save2_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Enjoy the image, and start planning the next one...
+      </blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_HLRGB_Save3_1280.jpg"><img src="process/m8_HLRGB_Save3_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+
+
+</table>
+</center>
+
+<!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 START -->
+<script type='text/javascript' src='../app/count_server/count.js'></script>
+<script type='text/javascript'><!--
+wm_custnum='3638e3e58ddda42c';
+wm_page_name='Process_m8.htm';
+wm_group_name='/services/webpages/m/i/mistisoftware.com/public/astronomy';
+wm_campaign_key='campaign_id';
+wm_track_alt='';
+wiredminds.count();
+// -->
+</script>
+<!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 END -->
+</body>
+</html>

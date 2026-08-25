@@ -1,0 +1,224 @@
+<html>
+<head>
+<title>Astrophotography - Image Processing - CCDSharp Deconvolution</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="description" content="Astrophotos taken with 32 inch Ritchey-Chretien telescope at amateur observatory in Arizona.  Lists film/exposure/other details for each astrophoto, and description of equipment used.">
+<meta name="keywords" content="Astronomy, Astrophotography, Astrophotographs, Ritchey Chretien, Galaxies, Nebula, Nebulae, Star Clusters, Planets, Solar System, Large Aperture, Telescope">
+</head>
+<body bgcolor="ccccff">
+
+<br>
+
+<table width="800" border="3" padding="3" bgcolor="#ffcccc" align="center">
+  <tr>
+    <td colspan="9">
+    <font face="Arial, Helvetica, sans-serif" size="5" color="#0000cc"><center>
+    Misti Mountain Observatory - Astronomy Pages
+    </center></font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="Galaxies.htm">
+    Galaxies</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="Nebulae.htm">
+    Nebulae</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="Clusters.htm">
+    Star Clusters</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="SolarSystem.htm">
+    Solar System</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="178ED.htm">
+    7" Refractor</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="FilmComparison.htm">
+    Film</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="Equipment.htm">
+    Equipment</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="Site.htm">
+    Site</a>
+    </center></font>
+    </td>
+    <td>
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#0000cc"><center>
+    <a href="index.htm">
+    Home</a>
+    </center></font>
+  </td></tr>
+
+</table>
+
+<br>
+
+<center>
+<table width="800" border="3" padding="3" bgcolor="#ffcccc">
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF"><center>
+      Image Processing - CCDSharp Deconvolution
+      </center></font>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      CCDSharp is a freeware program available from <a href="http://www.sbig.com/sbwhtmls/softpage.htm">SBIG.</a>
+      <p>
+      As the title suggests, it is used to sharpen astronomical images (FITS files).  It does this by applying
+      the Richardson-Lucy Deconvolution algorithm to the image.
+      <p>
+      The user must specify:
+      <ul>
+        <li>Which stars should be used to determine the "Point Spread Function" for the algorithm.  Choose stars
+        that are not saturated.
+        <li>How many iterations of the deconvolution algorithm to run.  Many factors come into play, so this is
+        determined for a particular imaging setup by trial and error.  It's best to start with a small number (1),
+        and see what happens when the deconvolution is run with higher numbers.  At some point, artifacts will begin
+        to appear, and/or the image will start to take on an unrealistic appearance with hard edges.  Use the number
+        of iterations that will provide <i>some</i> sharpening, but no objectionable artifacts.
+      </li></ul>
+      </blockquote>
+      </font>
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF">
+      Step A: Load File, select stars
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Load the FITS file that is to be deconvolved.  If necesary, adjust the
+      "back" and "range" numbers so that a representative sample of stars can be viewed.
+      <p>
+      Click on the red plus sign in the tool bar at the top of the screen, and then click
+      on up to eight stars in the image.  For best results, select stars that are not close
+      to other stars or image features, and that are not saturated.  It is not necessary to
+      exactly center the red crosses on the selected stars.
+      <p>
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_L_DeconSetup1_1280.jpg"><img src="process/m8_L_DeconSetup1_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF">
+      Step B: Select Number of Iterations, Initiate Deconvolution
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      Click on the green <b>GO</b> button in the tool bar at the top of the screen.
+      In the popup-window, select the number of iterations to execute.
+      <p>
+      Note that CCDSharp actually performs 10 times the number of indicated Richardson-Lucy
+      iterations as indicated.  For instance, a selection of 3 iterations in CCDSharp will
+      cause 30 actual Richardson-Lucy iterations to occur.  This is only relevant for
+      comparison with other programs which provide deconvolution functionality, but do not
+      have this "10-times" multiplier in the iteration count selection
+      <p>
+      Click the <b>OK</b> button to start the deconvolution.
+      <p>
+      Deconvolution is a very computationally intense operation.  The 20-meg SBIG STL-11000m
+      files take about 40 minutes for a 3-iteration CCDSharp deconvolution on a 3 Ghz PC.
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_L_DeconSetup2_1280.jpg"><img src="process/m8_L_DeconSetup2_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF">
+      Step C: Save Deconvolved File
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial, Helvetica, sans-serif" size="2" color="#0000FF">
+      <blockquote>
+      The status bar at the bottom of the CCDSharp screen will indicate the status of
+      the ongoing deconvolution progress, and will list <b>Deconvolution Complete</b>
+      when it has been completed.
+      <p>
+      Save the file.  It is a good idea to rename the file when saving it so that you
+      don't lose the original non-deconvolved file.  You may want to use it as a starting
+      point later for another number of iterations, or try another program for deconvolution.
+      <p>
+      If you can open two browser windows and switch back and forth between this image and the first one above,
+      you will clearly see the improvement made by the deconvolution routine.
+      </p></blockquote>
+      </font>
+    </td>
+    <td>
+      <center>
+      <a href="process/m8_L_DeconDone_1280.jpg"><img src="process/m8_L_DeconDone_200.jpg"></a>
+      </center>
+    </td>
+  </tr>
+
+  
+</table>
+</center>
+
+<!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 START -->
+<script type='text/javascript' src='../app/count_server/count.js'></script>
+<script type='text/javascript'><!--
+wm_custnum='3638e3e58ddda42c';
+wm_page_name='Process_CCDSharp_Deconvolution.htm';
+wm_group_name='/services/webpages/m/i/mistisoftware.com/public/astronomy';
+wm_campaign_key='campaign_id';
+wm_track_alt='';
+wiredminds.count();
+// -->
+</script>
+<!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 END -->
+</body>
+</html>

@@ -1,1 +1,6 @@
-*.htm
+storage/logs/*
+!storage/logs/.gitkeep
+.cache/
+__pycache__/
+*.pyc
+*.bak
