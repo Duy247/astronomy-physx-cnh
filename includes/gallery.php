@@ -1,9 +1,7 @@
 <main class="astro-page astro-collection" id="main-content">
     <section class="astro-section">
         <div class="astro-collection-heading">
-            <p class="astro-eyebrow">Misti Mountain Observatory archive</p>
             <h1><?= astro_escape($heading) ?></h1>
-            <p class="astro-subtitle"><?= astro_escape($subtitle) ?></p>
         </div>
         <div class="astro-gallery">
             <?php foreach ($gallery as $item): ?>
