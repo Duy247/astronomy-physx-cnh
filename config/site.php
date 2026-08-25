@@ -12,6 +12,5 @@ return [
         ['href' => '/Nebulae.php', 'label' => 'Nebulae'],
         ['href' => '/Clusters.php', 'label' => 'Star Clusters'],
         ['href' => '/SolarSystem.php', 'label' => 'Solar System'],
-        ['href' => '/index_fits.php', 'label' => 'FITS Data'],
     ],
 ];

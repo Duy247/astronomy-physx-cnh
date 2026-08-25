@@ -200,6 +200,9 @@ if (hero && canvas && stage && interfaceLayer && surpriseButton && discoveriesLa
     const galaxyColors = new Float32Array(galaxyCount * 3);
     const galaxySizes = new Float32Array(galaxyCount);
     const galaxyPhases = new Float32Array(galaxyCount);
+    const galaxyOrbitCenters = new Float32Array(galaxyCount * 2);
+    const galaxyOrbitSpeeds = new Float32Array(galaxyCount);
+    const galaxyOrbitFlattenings = new Float32Array(galaxyCount);
     const cool = new THREE.Color(0x77d4e5);
     const violet = new THREE.Color(0x8379d8);
     const warm = new THREE.Color(0xffe6ad);
@@ -209,8 +212,9 @@ if (hero && canvas && stage && interfaceLayer && surpriseButton && discoveriesLa
     const bulgeEnd = Math.floor(galaxyCount * 0.82);
     const companionEnd = Math.floor(galaxyCount * 0.93);
 
-    const writeGalaxyParticle = (index, x, y, z, color, size) => {
+    const writeGalaxyParticle = (index, x, y, z, color, size, orbitSpeed = 0, orbitCenterX = 0, orbitCenterY = 0, orbitFlattening = 1) => {
       const offset = index * 3;
+      const orbitOffset = index * 2;
       galaxyPositions[offset] = x;
       galaxyPositions[offset + 1] = y;
       galaxyPositions[offset + 2] = z;
@@ -219,6 +223,10 @@ if (hero && canvas && stage && interfaceLayer && surpriseButton && discoveriesLa
       galaxyColors[offset + 2] = color.b;
       galaxySizes[index] = size;
       galaxyPhases[index] = random() * Math.PI * 2;
+      galaxyOrbitCenters[orbitOffset] = orbitCenterX;
+      galaxyOrbitCenters[orbitOffset + 1] = orbitCenterY;
+      galaxyOrbitSpeeds[index] = orbitSpeed;
+      galaxyOrbitFlattenings[index] = orbitFlattening;
     };
 
     for (let index = 0; index < galaxyCount; index += 1) {
@@ -238,7 +246,8 @@ if (hero && canvas && stage && interfaceLayer && surpriseButton && discoveriesLa
         const z = signedScatter(2.3) * (0.08 + radiusRatio * 0.14);
         const color = warm.clone().lerp(arm === 0 ? cool : violet, Math.min(1, radiusRatio * 1.15));
         color.multiplyScalar((inArm ? 0.42 : 0.24) + random() * (inArm ? 0.42 : 0.2));
-        writeGalaxyParticle(index, x, y, z, color, (inArm ? 0.72 : 0.48) + random() * (inArm ? 1.15 : 0.55));
+        const orbitSpeed = 0.008 + Math.pow(1 - radiusRatio, 0.72) * 0.03;
+        writeGalaxyParticle(index, x, y, z, color, (inArm ? 0.72 : 0.48) + random() * (inArm ? 1.15 : 0.55), orbitSpeed, 0, 0, 0.48);
       } else if (index < bulgeEnd) {
         const radius = Math.pow(random(), 2.35) * 0.92;
         const angle = random() * Math.PI * 2;
@@ -250,6 +259,10 @@ if (hero && canvas && stage && interfaceLayer && surpriseButton && discoveriesLa
           signedScatter(2.1) * 0.24,
           color,
           0.8 + random() * 1.65,
+          0.02 + (1 - radius / 0.92) * 0.024,
+          0,
+          0,
+          0.65,
         );
       } else if (index < companionEnd) {
         const radius = Math.pow(random(), 1.65) * 0.67;
@@ -265,6 +278,10 @@ if (hero && canvas && stage && interfaceLayer && surpriseButton && discoveriesLa
           signedScatter(2.2) * 0.15,
           color,
           0.66 + random() * 1.3,
+          0.016 + (1 - radius / 0.67) * 0.018,
+          -1.86,
+          0.82,
+          0.72,
         );
       } else {
         const progress = random();
@@ -272,7 +289,7 @@ if (hero && canvas && stage && interfaceLayer && surpriseButton && discoveriesLa
         const x = -1.72 + progress * 1.5 + signedScatter(2.4) * 0.12;
         const y = 0.72 - progress * 0.55 + curve * 0.2 + signedScatter(2.4) * 0.1;
         const color = cool.clone().lerp(warm, 1 - progress).multiplyScalar(0.35 + random() * 0.32);
-        writeGalaxyParticle(index, x, y, signedScatter(2.5) * 0.09, color, 0.58 + random() * 0.95);
+        writeGalaxyParticle(index, x, y, signedScatter(2.5) * 0.09, color, 0.58 + random() * 0.95, 0.0015, 0, 0, 0.8);
       }
     }
     const galaxyGeometry = new THREE.BufferGeometry();
@@ -280,6 +297,9 @@ if (hero && canvas && stage && interfaceLayer && surpriseButton && discoveriesLa
     galaxyGeometry.setAttribute("color", new THREE.BufferAttribute(galaxyColors, 3));
     galaxyGeometry.setAttribute("aSize", new THREE.BufferAttribute(galaxySizes, 1));
     galaxyGeometry.setAttribute("aPhase", new THREE.BufferAttribute(galaxyPhases, 1));
+    galaxyGeometry.setAttribute("aOrbitCenter", new THREE.BufferAttribute(galaxyOrbitCenters, 2));
+    galaxyGeometry.setAttribute("aOrbitSpeed", new THREE.BufferAttribute(galaxyOrbitSpeeds, 1));
+    galaxyGeometry.setAttribute("aOrbitFlattening", new THREE.BufferAttribute(galaxyOrbitFlattenings, 1));
     const galaxyMaterial = new THREE.ShaderMaterial({
       uniforms: {
         uTime: { value: 0 },
@@ -293,11 +313,24 @@ if (hero && canvas && stage && interfaceLayer && surpriseButton && discoveriesLa
         uniform float uScale;
         attribute float aSize;
         attribute float aPhase;
+        attribute vec2 aOrbitCenter;
+        attribute float aOrbitSpeed;
+        attribute float aOrbitFlattening;
         varying vec3 vColor;
         varying float vPulse;
 
         void main() {
-          vec4 viewPosition = modelViewMatrix * vec4(position, 1.0);
+          float orbitAngle = uTime * aOrbitSpeed;
+          float orbitCos = cos(orbitAngle);
+          float orbitSin = sin(orbitAngle);
+          vec2 orbitPosition = position.xy - aOrbitCenter;
+          vec2 orbitalPlane = vec2(orbitPosition.x, orbitPosition.y / max(0.01, aOrbitFlattening));
+          vec2 rotatedOrbit = vec2(
+            orbitalPlane.x * orbitCos - orbitalPlane.y * orbitSin,
+            (orbitalPlane.x * orbitSin + orbitalPlane.y * orbitCos) * aOrbitFlattening
+          );
+          vec3 animatedPosition = vec3(rotatedOrbit + aOrbitCenter, position.z);
+          vec4 viewPosition = modelViewMatrix * vec4(animatedPosition, 1.0);
           float pulse = 1.0 + sin(uTime * 0.55 + aPhase) * 0.1;
           gl_Position = projectionMatrix * viewPosition;
           gl_PointSize = max(1.0, aSize * uPixelRatio * uScale * pulse / max(1.0, -viewPosition.z));
@@ -365,6 +398,7 @@ if (hero && canvas && stage && interfaceLayer && surpriseButton && discoveriesLa
     deepField.add(companionCore);
 
     const discoveryGroup = new THREE.Group();
+    discoveryGroup.rotation.copy(galaxy.rotation);
     deepField.add(discoveryGroup);
     const discoveryColors = [0x65e6f2, 0xe9cb76, 0xa798ff, 0x86d6ff, 0xf0dca2];
     let activeDiscoveries = [];
@@ -442,7 +476,22 @@ if (hero && canvas && stage && interfaceLayer && surpriseButton && discoveriesLa
 
         const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
         leadersLayer.append(line);
-        activeDiscoveries.push({ marker, label, line, position, placementOrder: shuffled([0, 1, 2, 3, 4, 5, 6, 7]), placementChoice: null, index });
+        const orbitFlattening = compact ? 0.76 : 0.62;
+        const orbitRadius = Math.hypot(position.x, position.y / orbitFlattening);
+        activeDiscoveries.push({
+          marker,
+          label,
+          line,
+          position,
+          orbitFlattening,
+          orbitRadius,
+          orbitPhase: Math.atan2(position.y / orbitFlattening, position.x),
+          orbitSpeed: 0.014 + Math.max(0, 1.8 - orbitRadius) * 0.009 + Math.random() * 0.004,
+          orbitStartedAt: performance.now() * 0.001,
+          placementOrder: shuffled([0, 1, 2, 3, 4, 5, 6, 7]),
+          placementChoice: null,
+          index,
+        });
       });
 
       if (announcement) {
@@ -644,7 +693,11 @@ if (hero && canvas && stage && interfaceLayer && surpriseButton && discoveriesLa
       if (!reducedMotion) {
         solar.rotation.z = time * 0.014;
         boundary.rotation.z = Math.sin(time * 0.09) * 0.008;
-        galaxy.rotation.z = -0.2 + time * 0.006;
+        activeDiscoveries.forEach((discovery) => {
+          const orbitAngle = discovery.orbitPhase + (time - discovery.orbitStartedAt) * discovery.orbitSpeed;
+          discovery.marker.position.x = Math.cos(orbitAngle) * discovery.orbitRadius;
+          discovery.marker.position.y = Math.sin(orbitAngle) * discovery.orbitRadius * discovery.orbitFlattening;
+        });
         stars.rotation.y = time * 0.0018;
         updateMeteor(time);
       }

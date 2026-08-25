@@ -8,7 +8,7 @@ $navigation = astro_config('navigation');
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Astronomy images, observing details, processing resources, and raw FITS data from Misti Mountain Observatory.">
+    <meta name="description" content="Astronomy images, observing details, and historical resources from Misti Mountain Observatory.">
     <title><?= astro_escape($pageTitle) ?></title>
     <link rel="icon" href="<?= astro_escape(astro_url('/assets/branding/favicon.ico')) ?>" sizes="any">
     <link rel="stylesheet" href="<?= astro_escape(astro_url('/css/astro-modern.css?v=20260825m')) ?>">

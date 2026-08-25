@@ -48,7 +48,6 @@ require __DIR__ . '/includes/header.php';
             <h1 id="home-title"><em>Beyond</em> the local system.</h1>
             <div class="astro-hero-actions">
                 <a class="astro-button" href="#observation-fields">Enter the archive <span aria-hidden="true">↓</span></a>
-                <a class="astro-text-link" href="<?= astro_escape(astro_url('/index_fits.php')) ?>">Access raw FITS data <span aria-hidden="true">↗</span></a>
             </div>
         </div>
         <figure class="astro-hero-image">
@@ -70,5 +69,5 @@ require __DIR__ . '/includes/header.php';
         </div>
     </section>
 </main>
-<script type="module" src="<?= astro_escape(astro_url('/js/cosmic-hero.js?v=20260825l')) ?>"></script>
+<script type="module" src="<?= astro_escape(astro_url('/js/cosmic-hero.js?v=20260825n')) ?>"></script>
 <?php require __DIR__ . '/includes/footer.php'; ?>

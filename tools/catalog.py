@@ -21,7 +21,6 @@ CATEGORIES = {
     "gallery_178ed.json": "178ed",
     "gallery_500mm.json": "500mm",
     "gallery_clusters.json": "clusters",
-    "gallery_fits.json": "fits",
     "gallery_galaxies.json": "galaxies",
     "gallery_nebulae.json": "nebulae",
     "gallery_newCCD.json": "newccd",
@@ -37,7 +36,6 @@ CATEGORY_PAGES = {
     "Nebulae.php": ("gallery_nebulae.json", "Nebulae"),
     "SolarSystem.php": ("gallery_solarsystem.json", "Solar System"),
     "SolarSystem_Moon.php": ("gallery_solarsystem_moon.json", "The Moon"),
-    "index_fits.php": ("gallery_fits.json", "Unprocessed FITS Image Files"),
     "index_newCCD.php": ("gallery_newCCD.json", "Latest Images"),
 }
 
@@ -296,7 +294,6 @@ def build_indexes(apply: bool) -> int:
 
 
 def build_manifest(apply: bool) -> int:
-    fits_references = set()
     image_references = set()
     for path in DATA_DIR.glob("*.json"):
         data = load_json(path)
@@ -304,18 +301,13 @@ def build_manifest(apply: bool) -> int:
         for key in ("large", "thumb"):
             if image.get(key):
                 image_references.add(Path(image[key]).name.lower())
-        for row in data.get("details", []):
-            for link in row.get("links", []):
-                match = re.search(r"/fits/([^/?#]+\.FIT)", link.get("href", ""), re.I)
-                if match:
-                    fits_references.add(match.group(1).lower())
     resources = []
-    for folder, kinds in (("Images", {".jpg": "image", ".jpeg": "image", ".png": "image", ".mov": "video"}), ("fits", {".fit": "fits"}), ("process", {".jpg": "process-image", ".png": "process-image"})):
+    for folder, kinds in (("Images", {".jpg": "image", ".jpeg": "image", ".png": "image"}), ("process", {".jpg": "process-image", ".png": "process-image"})):
         for path in sorted((ROOT / folder).glob("*")):
             if not path.is_file() or path.suffix.lower() not in kinds:
                 continue
             key = path.name.lower()
-            referenced = key in (fits_references if folder == "fits" else image_references)
+            referenced = key in image_references
             resources.append({"path": path.relative_to(ROOT).as_posix(), "kind": kinds[path.suffix.lower()], "bytes": path.stat().st_size, "referenced_by_catalog": referenced})
     manifest = {"version": 1, "resources": resources}
     target = ROOT / "gallery" / "resource_manifest.json"

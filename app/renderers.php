@@ -38,6 +38,11 @@ function astro_render_legacy_page(string $page): void
     $pageTitle = trim(strip_tags(html_entity_decode($titleMatch[1] ?? $page))) ?: $page;
     $content = $bodyMatch[1] ?? $html;
     $content = preg_replace('~<(?:script|style)[^>]*>.*?</(?:script|style)>~is', '', $content) ?? '';
+    $content = preg_replace(
+        '~<a\b[^>]*href=(["\'])[^"\']*(?:index_fits\.htm|fits/[^"\']+\.FIT|\.mov)\1[^>]*>(.*?)</a>~is',
+        '$2',
+        $content
+    ) ?? '';
     $content = preg_replace_callback('~\b(href|src)=(["\'])(?!https?:|mailto:|tel:|#|/)([^"\']+)\2~i', static function (array $match): string {
         return $match[1] . '=' . $match[2] . astro_url('/' . $match[3]) . $match[2];
     }, $content) ?? '';

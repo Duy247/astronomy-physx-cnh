@@ -6,7 +6,7 @@
         <h2 style="margin-bottom:0.5em;">melotte 15 (in Heart Nebula) - Image Comparison</h2>
         <p class="astro-subtitle"><i>Comparison of processing by various imagers using the same data.<br>Click a name for their website, or Medium/Large for their version. "Composite" shows a tiled version.</i></p>
         <div style="margin-bottom:2em;">
-            <a href="index_fits.php" class="astro-btn">&larr; Back to FITS Gallery</a>
+            <a href="Clusters.php" class="astro-btn">&larr; Back to Star Clusters</a>
         </div>
         <table class="astro-compare-table">
             <tr>

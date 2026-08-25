@@ -2,16 +2,14 @@
 
 AstroGallery is an upload-ready PHP 8.1 modernization and preservation of the
 Misti Mountain Observatory astronomy archive. It serves processed images,
-observing details, historical articles, videos, and raw FITS exposures without
-a database or server-side build.
+observing details, and historical articles without a database or server-side
+build.
 
 ## Local development
 
-Requirements: PHP 8.1+, Python 3.10+ for content tools, Git, and Git LFS.
+Requirements: PHP 8.1+, Python 3.10+ for content tools, and Git.
 
 ```text
-git lfs install
-git lfs pull
 composer start
 ```
 
@@ -24,9 +22,8 @@ environment or edit `config/site.php` before upload.
 ## Content workflow
 
 Object JSON under `image_card/card_data/` is authoritative. Each record contains
-its stable ID, gallery memberships, canonical URL, image metadata, observing
-details, and optional FITS downloads. Existing `image_card/*.php` files are thin
-compatibility entry points.
+its stable ID, gallery memberships, canonical URL, image metadata, and observing
+details. Existing `image_card/*.php` files are thin compatibility entry points.
 
 After editing content:
 
@@ -42,16 +39,12 @@ layout.
 
 ## Resource layout
 
-- `Images/`: processed images, thumbnails, and videos
-- `fits/`: raw FITS exposures
+- `Images/`: processed images and thumbnails
 - `process/`: processing tutorial images
 - `gallery/`: generated indexes and resource manifest
 - `legacy/`: protected original HTML archive
 - `storage/`: protected runtime data and logs
 - `assets/vendor/`: pinned third-party browser libraries and their licenses
-
-FITS and MOV files use Git LFS but are ordinary complete files in a hydrated
-working checkout. The application never contacts Git LFS at runtime.
 
 Aladin Lite 3.8.1 is stored in `assets/vendor/aladin-lite/` so the application
 does not depend on a version-changing JavaScript CDN. Survey tiles are loaded

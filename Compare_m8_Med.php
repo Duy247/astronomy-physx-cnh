@@ -6,7 +6,7 @@
         <h2 style="margin-bottom:0.5em;">M8 (Lagoon Nebula) - Image Comparison</h2>
         <p class="astro-subtitle"><i>Comparison of processing by various imagers using the same data.<br>Click a name for their website, or Medium/Large for their version. "Composite" shows a tiled version.</i></p>
         <div style="margin-bottom:2em;">
-            <a href="index_fits.php" class="astro-btn">&larr; Back to FITS Gallery</a>
+            <a href="Nebulae.php" class="astro-btn">&larr; Back to Nebulae</a>
         </div>
         <table class="astro-compare-table">
             <tr>

@@ -1,3 +1,0 @@
-*.FIT filter=lfs diff=lfs merge=lfs -text
-*.fit filter=lfs diff=lfs merge=lfs -text
-*.mov filter=lfs diff=lfs merge=lfs -text

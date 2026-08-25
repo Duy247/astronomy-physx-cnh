@@ -7,15 +7,14 @@
         <h2 style="margin-bottom:0.5em;">Image Processing Example: m63 (Sunflower Galaxy)</h2>
         <p class="astro-subtitle"><i>Step-by-step processing of m63, from raw frames to finished image. Click images to enlarge.</i></p>
         <div style="margin-bottom:2em;">
-            <a href="/index_fits.php" class="astro-btn">&larr; Back to FITS Gallery</a>
+            <a href="/Galaxies.php" class="astro-btn">&larr; Back to Galaxies</a>
         </div>
         <div class="astro-step">
             <h3>Step 0: Images ready to process</h3>
             <div class="astro-step-content">
                 <div class="astro-step-text">
                     These image files were taken with an Optical Guidance Systems 32" Ritchey-Chretien telescope and SBIG STL-11000m camera, from very dark and transparent skies in northwestern Arizona.<br><br>
-                    The raw files have been calibrated (Dark Subtracted, Flat Fielded, Hot/Cold Pixels removed), and aligned with each other.<br><br>
-                    <a href="index_fits.php">These files</a> are available to interested users who wish to follow along with their own software, and/or make their own alterations to the process.
+                    The raw files were calibrated (Dark Subtracted, Flat Fielded, Hot/Cold Pixels removed), and aligned with each other.
                 </div>
             </div>
         </div>
