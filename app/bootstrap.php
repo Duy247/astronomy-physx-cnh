@@ -41,6 +41,27 @@ function astro_load_json(string $path): array
     return $data;
 }
 
+function astro_object_data_path(string $route): ?string
+{
+    if (!preg_match('/^[A-Za-z0-9_-]+$/', $route)) {
+        return null;
+    }
+
+    $direct = ASTRO_ROOT . '/image_card/card_data/site_data_' . $route . '.json';
+    if (is_file($direct)) {
+        return $direct;
+    }
+
+    $expected = strtolower('site_data_' . $route . '.json');
+    foreach (glob(ASTRO_ROOT . '/image_card/card_data/site_data_*.json') ?: [] as $path) {
+        if (strtolower(basename($path)) === $expected) {
+            return $path;
+        }
+    }
+
+    return null;
+}
+
 function astro_safe_html(string $html): string
 {
     $html = preg_replace('~<(?:script|iframe|object|embed)[^>]*>.*?</(?:script|iframe|object|embed)>~is', '', $html) ?? '';
@@ -71,17 +92,6 @@ function astro_render_detail(array $row): string
         return $output;
     }
     return astro_safe_html((string) ($row['value'] ?? ''));
-}
-
-function astro_is_equipment_detail(array $row): bool
-{
-    return in_array(strtolower(trim((string) ($row['label'] ?? ''))), [
-        'instrument',
-        'focal ratio',
-        'camera',
-        'guiding',
-        'film',
-    ], true);
 }
 
 function astro_redirect_home(): void

@@ -26,48 +26,9 @@
       "links": []
     },
     {
-      "label": "Instrument",
-      "text": "Ritchey-Chretien 32\" Telescope",
-      "links": [
-        {
-          "href": "/Equipment_RC32.php",
-          "label": "Ritchey-Chretien 32\" Telescope"
-        }
-      ]
-    },
-    {
-      "label": "Focal Ratio",
-      "text": "f7.2 (prime focus)",
-      "links": []
-    },
-    {
-      "label": "Camera",
-      "text": "SBIG STL-11000 CCD camera\n(See product review in July, 2004 issue of Sky & Telescope magazine.)",
-      "links": [
-        {
-          "href": "http://www.sbig.com/sbwhtmls/large_format_cameras.htm",
-          "label": "SBIG STL-11000 CCD camera"
-        }
-      ]
-    },
-    {
       "label": "Exposure",
       "text": "17 x 5 minutes Luminance unbinned\n3 x 5 minutes each R/G/B, all unbinned",
       "links": []
-    },
-    {
-      "label": "Guiding",
-      "text": "Off-Axis with STV Autoguider\n(Santa Barbara Instrument Group)\n(See product review in May, 2003 issue of Astronomy magazine.)\nSee Photo/Guiding Equipment.",
-      "links": [
-        {
-          "href": "http://www.sbig.com",
-          "label": "(Santa Barbara Instrument Group)"
-        },
-        {
-          "href": "/Equipment_PhotoGuide.php",
-          "label": "Photo/Guiding Equipment."
-        }
-      ]
     },
     {
       "label": "Date",

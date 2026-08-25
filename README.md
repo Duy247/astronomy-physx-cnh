@@ -7,7 +7,8 @@ build.
 
 ## Local development
 
-Requirements: PHP 8.1+, Python 3.10+ for content tools, and Git.
+Requirements: PHP 8.1+, Python 3.10+ for content tools, Git, and Apache
+`mod_rewrite` in production.
 
 ```text
 composer start
@@ -23,7 +24,8 @@ environment or edit `config/site.php` before upload.
 
 Object JSON under `image_card/card_data/` is authoritative. Each record contains
 its stable ID, gallery memberships, canonical URL, image metadata, and observing
-details. Existing `image_card/*.php` files are thin compatibility entry points.
+details. A shared object controller preserves the historical `image_card/*.php`
+URLs without maintaining a separate PHP wrapper for every object.
 
 After editing content:
 

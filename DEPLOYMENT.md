@@ -4,7 +4,8 @@
 
 1. Run `python tools/catalog.py validate`.
 2. Run `php tests/smoke.php` with PHP 8.1 or newer.
-3. Set the deployment base path in `config/site.php` or through
+3. Confirm Apache `mod_rewrite` and `.htaccess` overrides are enabled.
+4. Set the deployment base path in `config/site.php` or through
    `ASTRO_BASE_PATH` when the host supports environment variables.
 
 ## FileZilla synchronization

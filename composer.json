@@ -15,7 +15,7 @@
     "require-dev": {
     },
     "scripts": {
-        "start": "php -S localhost:8000 -t .",
+        "start": "php -S localhost:8000 router.php",
         "validate-content": "python tools/catalog.py validate",
         "test": [
             "@validate-content",

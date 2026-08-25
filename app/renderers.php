@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-function astro_render_object(string $dataFile, bool $withSky = true): void
+function astro_render_object(string $dataFile): void
 {
     $data = astro_load_json($dataFile);
     $pageTitle = (string) ($data['title'] ?? astro_config('site_name'));
@@ -10,7 +10,7 @@ function astro_render_object(string $dataFile, bool $withSky = true): void
     $image = is_array($data['image'] ?? null) ? $data['image'] : [];
     $details = is_array($data['details'] ?? null) ? $data['details'] : [];
     require ASTRO_ROOT . '/includes/header.php';
-    require ASTRO_ROOT . ($withSky ? '/includes/image_card.php' : '/includes/image_card_nosky.php');
+    require ASTRO_ROOT . '/includes/image_card.php';
     require ASTRO_ROOT . '/includes/footer.php';
 }
 
@@ -27,6 +27,17 @@ function astro_render_legacy_page(string $page): void
 {
     if (!preg_match('/^[A-Za-z0-9_-]+$/', $page)) {
         astro_not_found();
+    }
+    if (in_array(strtolower($page), [
+        '178ed',
+        '500mm',
+        'equipment',
+        'equipment_drives',
+        'equipment_ota',
+        'equipment_photoguide',
+        'equipment_rc32',
+    ], true)) {
+        astro_redirect_home();
     }
     $path = ASTRO_ROOT . '/legacy/pages/' . $page . '.htm';
     if (!is_file($path)) {

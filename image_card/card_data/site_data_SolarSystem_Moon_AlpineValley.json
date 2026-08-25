@@ -21,38 +21,8 @@
   },
   "details": [
     {
-      "label": "Instrument",
-      "text": "Ritchey-Chretien 32\" Telescope",
-      "links": [
-        {
-          "href": "/Equipment_RC32.php",
-          "label": "Ritchey-Chretien 32\" Telescope"
-        }
-      ]
-    },
-    {
-      "label": "Focal Ratio",
-      "text": "f25 (prime focus - 9\" clear aperture mask)",
-      "links": []
-    },
-    {
-      "label": "Camera",
-      "text": "SBIG STL-11000 CCD camera\n(See product review in July, 2004 issue of Sky & Telescope magazine.)",
-      "links": [
-        {
-          "href": "http://www.sbig.com/sbwhtmls/large_format_cameras.htm",
-          "label": "SBIG STL-11000 CCD camera"
-        }
-      ]
-    },
-    {
       "label": "Exposure",
       "text": ".001 Second Luminance only (Clear Filter)",
-      "links": []
-    },
-    {
-      "label": "Guiding",
-      "text": "None",
       "links": []
     },
     {

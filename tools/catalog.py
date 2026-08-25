@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CARD_DIR = ROOT / "image_card"
 DATA_DIR = CARD_DIR / "card_data"
 GALLERY_DIR = ROOT / "gallery"
+EQUIPMENT_DETAIL_LABELS = {"instrument", "focal ratio", "camera", "guiding", "film"}
 
 CATEGORIES = {
     "gallery_178ed.json": "178ed",
@@ -29,20 +30,14 @@ CATEGORIES = {
 }
 
 CATEGORY_PAGES = {
-    "178ED.php": ("gallery_178ed.json", "7-inch Refractor Images"),
-    "500mm.php": ("gallery_500mm.json", "500mm Lens Images"),
     "Clusters.php": ("gallery_clusters.json", "Star Clusters"),
     "Galaxies.php": ("gallery_galaxies.json", "Galaxies"),
     "Nebulae.php": ("gallery_nebulae.json", "Nebulae"),
     "SolarSystem.php": ("gallery_solarsystem.json", "Solar System"),
     "SolarSystem_Moon.php": ("gallery_solarsystem_moon.json", "The Moon"),
-    "index_newCCD.php": ("gallery_newCCD.json", "Latest Images"),
 }
 
 LINK_REPLACEMENTS = {
-    "Equipment_PhotoGuide.htm": "/Equipment_PhotoGuide.php",
-    "Equipment_PhotoGuide.php": "/Equipment_PhotoGuide.php",
-    "Equipment_RC32.htm": "/Equipment_RC32.php",
     "Process_m13.php": "/Process_m13.php",
 }
 
@@ -153,7 +148,11 @@ def normalize_data(apply: bool) -> int:
             },
             "galleries": memberships,
             "image": image,
-            "details": structured_details(data.get("details", [])),
+            "details": [
+                row
+                for row in structured_details(data.get("details", []))
+                if str(row.get("label", "")).strip().lower() not in EQUIPMENT_DETAIL_LABELS
+            ],
         }
         raw = json.dumps(normalized, indent=2, ensure_ascii=False) + "\n"
         if raw != path.read_text(encoding="utf-8"):
@@ -196,32 +195,6 @@ def fix_php_links(apply: bool) -> int:
     return changed
 
 
-def refactor_wrappers(apply: bool) -> int:
-    changed = 0
-    for path in sorted(CARD_DIR.glob("*.php")):
-        text = path.read_text(encoding="utf-8")
-        match = re.search(r"card_data/([^'\"]+\.json)", text)
-        if not match:
-            continue
-        json_name = match.group(1)
-        if json_name == "site_data_pk318p41.json":
-            json_name = "site_data_Nebulae_pk318p41.json"
-        renderer_match = re.search(r"astro_render_object\([^;]+,\s*(true|false)\s*\)", text)
-        with_sky = renderer_match.group(1) == "true" if renderer_match else "image_card_nosky.php" not in text
-        updated = (
-            "<?php\n\n"
-            "declare(strict_types=1);\n\n"
-            "require_once dirname(__DIR__) . '/app/bootstrap.php';\n"
-            f"astro_render_object(__DIR__ . '/card_data/{json_name}', {str(with_sky).lower()});\n"
-        )
-        if updated != text:
-            changed += 1
-            if apply:
-                path.write_text(updated, encoding="utf-8")
-    print(f"refactored object wrappers: {changed}")
-    return changed
-
-
 def archive_pages(apply: bool) -> int:
     destination = ROOT / "legacy" / "pages"
     pages = sorted(ROOT.glob("*.htm"))
@@ -234,14 +207,6 @@ def archive_pages(apply: bool) -> int:
         if target.exists():
             raise RuntimeError(f"Archive target already exists: {target}")
         shutil.move(source, target)
-        php = ROOT / f"{source.stem}.php"
-        if not php.exists():
-            php.write_text(
-                "<?php\n\ndeclare(strict_types=1);\n\n"
-                "require_once __DIR__ . '/app/bootstrap.php';\n"
-                f"astro_render_legacy_page('{source.stem}');\n",
-                encoding="utf-8",
-            )
     print(f"archived root pages: {len(pages)}")
     return len(pages)
 
@@ -332,8 +297,7 @@ def migrate_page(source_name: str | None, category: str | None, apply: bool) -> 
         raise RuntimeError(f"Unknown category: {category}")
     card_id = source.stem
     data_path = DATA_DIR / f"site_data_{card_id}.json"
-    php_path = CARD_DIR / f"{card_id}.php"
-    if data_path.exists() or php_path.exists():
+    if data_path.exists():
         raise RuntimeError(f"Refusing to replace existing object: {card_id}")
     html = source.read_text(encoding="utf-8", errors="replace")
     title_match = re.search(r"<title[^>]*>(.*?)</title>", html, re.I | re.S)
@@ -357,10 +321,9 @@ def migrate_page(source_name: str | None, category: str | None, apply: bool) -> 
     gallery_thumb = thumb.replace("_800.", "_100.")
     membership = {"category": category, "order": order, "link": f"/image_card/{card_id}.php", "thumb": gallery_thumb, "alt": object_name, "title": object_name, "subtitle": object_name}
     data = {"id": card_id, "category": category, "order": order, "canonical_url": membership["link"], "gallery": {key: membership[key] for key in ("title", "subtitle", "thumb", "alt")}, "galleries": [membership], "title": re.sub(r"<[^>]+>", "", title_match.group(1)).strip() if title_match else object_name, "object": object_name, "image": {"large": large, "thumb": thumb, "alt": object_name, "survey": "P/DSS2/color", "fov": 25, "target": object_name.split()[0]}, "details": structured_details(details)}
-    print(f"create {data_path.relative_to(ROOT)} and {php_path.relative_to(ROOT)}")
+    print(f"create {data_path.relative_to(ROOT)}")
     if apply:
         write_json(data_path, data)
-        php_path.write_text("<?php\n\ndeclare(strict_types=1);\n\nrequire_once dirname(__DIR__) . '/app/bootstrap.php';\n" f"astro_render_object(__DIR__ . '/card_data/{data_path.name}', true);\n", encoding="utf-8")
         build_indexes(True)
         build_manifest(True)
     return 0
@@ -386,9 +349,7 @@ def validate() -> int:
     errors = []
     warnings = []
     data_files = sorted(DATA_DIR.glob("site_data_*.json"))
-    php_files = sorted(CARD_DIR.glob("*.php"))
-    php_ids = {path.stem.lower() for path in php_files}
-    data_ids = set()
+    object_routes = {}
     for path in data_files:
         try:
             data = load_json(path)
@@ -396,11 +357,19 @@ def validate() -> int:
             errors.append(f"{path.relative_to(ROOT)}: invalid JSON: {error}")
             continue
         card_id = data.get("id", path.stem.removeprefix("site_data_"))
-        data_ids.add(str(card_id).lower())
         required = ("id", "category", "order", "canonical_url", "gallery", "galleries", "title", "object", "image", "details")
         missing = [key for key in required if key not in data]
         if missing:
             errors.append(f"{path.name}: missing required fields {', '.join(missing)}")
+        canonical = str(data.get("canonical_url", ""))
+        route_match = re.fullmatch(r"/image_card/([A-Za-z0-9_-]+)\.php", canonical, re.I)
+        if not route_match:
+            errors.append(f"{path.name}: invalid canonical object route {canonical}")
+        else:
+            route = route_match.group(1).lower()
+            if route in object_routes:
+                errors.append(f"duplicate object route: {canonical}")
+            object_routes[route] = path
         if not isinstance(data.get("details"), list) or any(not isinstance(row, dict) or not {"label", "text", "links"}.issubset(row) for row in data.get("details", [])):
             errors.append(f"{path.name}: details do not match the structured schema")
         for key in ("large", "thumb"):
@@ -419,12 +388,6 @@ def validate() -> int:
                     errors.append(f"{path.name}: broken link {url}")
                 elif local and local.is_file() and not has_exact_case(local):
                     errors.append(f"{path.name}: link has incorrect case {url}")
-    missing_php = sorted(data_ids - php_ids)
-    missing_data = sorted(php_ids - data_ids)
-    if missing_php:
-        errors.append(f"data without PHP wrapper: {', '.join(missing_php)}")
-    if missing_data:
-        errors.append(f"PHP wrapper without data: {', '.join(missing_data)}")
     gallery_count = 0
     for filename in CATEGORIES:
         seen_links = set()
@@ -438,12 +401,18 @@ def validate() -> int:
                 warnings.append(f"duplicate gallery link: {link}")
             seen_links.add(key)
             for field in ("link", "thumb"):
-                local = normalized_local_path(item.get(field, ""))
+                value = item.get(field, "")
+                route_match = re.fullmatch(r"/image_card/([A-Za-z0-9_-]+)\.php", value, re.I) if field == "link" else None
+                if route_match:
+                    if route_match.group(1).lower() not in object_routes:
+                        errors.append(f"{filename}: missing object route {value}")
+                    continue
+                local = normalized_local_path(value)
                 if local and not local.is_file():
-                    errors.append(f"{filename}: missing {field} {item.get(field)}")
+                    errors.append(f"{filename}: missing {field} {value}")
                 elif local and local.is_file() and not has_exact_case(local):
-                    errors.append(f"{filename}: {field} has incorrect case {item.get(field)}")
-    print(f"objects={len(data_files)} wrappers={len(php_files)} gallery_records={gallery_count}")
+                    errors.append(f"{filename}: {field} has incorrect case {value}")
+    print(f"objects={len(data_files)} routes={len(object_routes)} gallery_records={gallery_count}")
     for warning in warnings:
         print(f"WARNING: {warning}")
     for error in errors:
@@ -454,7 +423,7 @@ def validate() -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=("normalize", "fix-links", "fix-php-links", "refactor-wrappers", "refactor-category-pages", "archive-pages", "build-indexes", "build-manifest", "migrate-page", "audit-media", "validate"))
+    parser.add_argument("command", choices=("normalize", "fix-links", "fix-php-links", "refactor-category-pages", "archive-pages", "build-indexes", "build-manifest", "migrate-page", "audit-media", "validate"))
     parser.add_argument("--apply", action="store_true", help="Apply changes; mutation commands otherwise run as a dry-run")
     parser.add_argument("--source", help="Legacy HTML source for migrate-page")
     parser.add_argument("--category", help="Destination category for migrate-page")
@@ -463,7 +432,6 @@ def main() -> int:
         "normalize": normalize_data,
         "fix-links": fix_links,
         "fix-php-links": fix_php_links,
-        "refactor-wrappers": refactor_wrappers,
         "refactor-category-pages": refactor_category_pages,
         "archive-pages": archive_pages,
         "build-indexes": build_indexes,

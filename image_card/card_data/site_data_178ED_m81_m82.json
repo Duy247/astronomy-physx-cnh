@@ -21,52 +21,9 @@
   },
   "details": [
     {
-      "label": "Instrument",
-      "text": "Meade 178ED 7\" Apochromatic Refractor Telescope",
-      "links": []
-    },
-    {
-      "label": "Focal Ratio",
-      "text": "f9 (prime focus)",
-      "links": []
-    },
-    {
-      "label": "Film",
-      "text": "Fuji Provia 400 35mm Slide Film (unhypered)",
-      "links": []
-    },
-    {
       "label": "Exposure",
       "text": "90 minutes",
       "links": []
-    },
-    {
-      "label": "Camera",
-      "text": "Nikon F4 (with DW21 6x finder and type M focusing screen)\nSee Photo/Guiding Equipment.\nCustom camera/guider/telescope adapters made by\nPreciseParts.",
-      "links": [
-        {
-          "href": "/Equipment_PhotoGuide.php",
-          "label": "Photo/Guiding Equipment."
-        },
-        {
-          "href": "http://www.preciseparts.com",
-          "label": "PreciseParts."
-        }
-      ]
-    },
-    {
-      "label": "Guiding",
-      "text": "Off-Axis with STV Autoguider\n(Santa Barbara Instrument Group)\n(See product review in May, 2003 issue of Astronomy magazine.)\nSee Photo/Guiding Equipment.",
-      "links": [
-        {
-          "href": "http://www.sbig.com",
-          "label": "(Santa Barbara Instrument Group)"
-        },
-        {
-          "href": "/Equipment_PhotoGuide.php",
-          "label": "Photo/Guiding Equipment."
-        }
-      ]
     },
     {
       "label": "Date",

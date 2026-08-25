@@ -21,38 +21,8 @@
   },
   "details": [
     {
-      "label": "Instrument",
-      "text": "Ritchey-Chretien 32\" Telescope",
-      "links": [
-        {
-          "href": "/Equipment_RC32.php",
-          "label": "Ritchey-Chretien 32\" Telescope"
-        }
-      ]
-    },
-    {
-      "label": "Focal Ratio",
-      "text": "f7.2 (prime focus)",
-      "links": []
-    },
-    {
-      "label": "Film",
-      "text": "Kodak Tech Pan 120",
-      "links": []
-    },
-    {
       "label": "Exposure",
       "text": "???",
-      "links": []
-    },
-    {
-      "label": "Camera",
-      "text": "Pentax 6x7",
-      "links": []
-    },
-    {
-      "label": "Guiding",
-      "text": "None",
       "links": []
     },
     {
