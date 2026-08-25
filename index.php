@@ -50,6 +50,23 @@ require __DIR__ . '/includes/header.php';
                 <a class="astro-button" href="#observation-fields">Enter the archive <span aria-hidden="true">↓</span></a>
             </div>
         </div>
+        <a class="astro-tonight-gateway" href="<?= astro_escape(astro_url('/Tonight.php')) ?>" data-tonight-gateway
+           data-weather-url="<?= astro_escape(astro_url('/weather.php?city=hanoi')) ?>"
+           data-d3-url="<?= astro_escape(astro_url('/assets/vendor/d3-celestial/lib/d3.min.js')) ?>"
+           data-projection-url="<?= astro_escape(astro_url('/assets/vendor/d3-celestial/lib/d3.geo.projection.min.js')) ?>"
+           data-celestial-url="<?= astro_escape(astro_url('/assets/vendor/d3-celestial/celestial.min.js')) ?>"
+           data-astronomy-url="<?= astro_escape(astro_url('/assets/vendor/astronomy-engine/astronomy.browser.min.js')) ?>"
+           data-core-url="<?= astro_escape(astro_url('/js/tonight-core.js?v=20260826a')) ?>"
+           data-sky-data-path="<?= astro_escape(astro_url('/assets/vendor/d3-celestial/data/')) ?>">
+            <div class="astro-tonight-gateway-map" id="tonight-teaser-map" aria-hidden="true"></div>
+            <div class="astro-tonight-gateway-shade" aria-hidden="true"></div>
+            <div class="astro-tonight-gateway-copy">
+                <span class="astro-tonight-kicker">Live observing window · Hà Nội</span>
+                <strong>Tonight over Vietnam.</strong>
+                <span class="astro-tonight-gateway-status" data-gateway-status>Calculating the evening sky…</span>
+            </div>
+            <span class="astro-tonight-gateway-action">Explore tonight’s sky <span aria-hidden="true">↗</span></span>
+        </a>
         <figure class="astro-hero-image">
             <img src="<?= astro_escape(astro_url('/Images/m51_050414_2000.jpg')) ?>" alt="The Whirlpool Galaxy, M51">
             <figcaption><span>M51</span><span>13h 29m 53s / +47° 11′ 43″</span></figcaption>
@@ -70,4 +87,5 @@ require __DIR__ . '/includes/header.php';
     </section>
 </main>
 <script type="module" src="<?= astro_escape(astro_url('/js/cosmic-hero.js?v=20260825n')) ?>"></script>
+<script src="<?= astro_escape(astro_url('/js/tonight-gateway.js?v=20260826a')) ?>" defer></script>
 <?php require __DIR__ . '/includes/footer.php'; ?>

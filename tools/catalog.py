@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CARD_DIR = ROOT / "image_card"
 DATA_DIR = CARD_DIR / "card_data"
 GALLERY_DIR = ROOT / "gallery"
+CELESTIAL_DSO_PATH = ROOT / "assets" / "vendor" / "d3-celestial" / "data" / "dsos.6.json"
 EQUIPMENT_DETAIL_LABELS = {"instrument", "focal ratio", "camera", "guiding", "film"}
 
 CATEGORIES = {
@@ -284,6 +285,75 @@ def build_manifest(apply: bool) -> int:
     return int(changed)
 
 
+def normalized_designation(value: str) -> str:
+    return re.sub(r"[^A-Z0-9]", "", value.upper())
+
+
+def build_observable_targets(apply: bool) -> int:
+    if not CELESTIAL_DSO_PATH.is_file():
+        raise RuntimeError("Vendored D3-Celestial catalogue is missing")
+    features = load_json(CELESTIAL_DSO_PATH).get("features", [])
+    lookup = {}
+    for feature in features:
+        properties = feature.get("properties", {})
+        for value in (feature.get("id", ""), properties.get("desig", "")):
+            key = normalized_designation(str(value))
+            if key:
+                lookup.setdefault(key, feature)
+
+    type_labels = {
+        "g": "Galaxy", "s": "Galaxy", "s0": "Galaxy", "sd": "Galaxy", "e": "Galaxy", "i": "Galaxy",
+        "gg": "Galaxy cluster", "oc": "Open cluster", "gc": "Globular cluster", "en": "Emission nebula",
+        "bn": "Nebula", "sfr": "Star-forming region", "rn": "Reflection nebula", "pn": "Planetary nebula",
+        "snr": "Supernova remnant", "dn": "Dark nebula", "pos": "Deep-sky object",
+    }
+    targets = []
+    seen = set()
+    for path in sorted(DATA_DIR.glob("site_data_*.json")):
+        data = load_json(path)
+        target_name = str(data.get("image", {}).get("target", "")).strip()
+        feature = lookup.get(normalized_designation(target_name))
+        if not feature:
+            continue
+        properties = feature.get("properties", {})
+        designation = str(properties.get("desig") or feature.get("id") or target_name)
+        key = normalized_designation(designation)
+        if key in seen:
+            continue
+        coordinates = feature.get("geometry", {}).get("coordinates", [])
+        if len(coordinates) != 2:
+            continue
+        longitude, declination = (float(coordinates[0]), float(coordinates[1]))
+        magnitude = properties.get("mag")
+        try:
+            magnitude = float(magnitude)
+            if magnitude >= 99:
+                magnitude = None
+        except (TypeError, ValueError):
+            magnitude = None
+        object_name = str(data.get("object") or designation).strip()
+        targets.append({
+            "id": key.lower(),
+            "name": object_name if len(object_name) <= 70 else designation,
+            "designation": designation,
+            "url": str(data.get("canonical_url", "")),
+            "raHours": round((longitude % 360) / 15, 7),
+            "dec": round(declination, 7),
+            "magnitude": magnitude,
+            "type": str(properties.get("type", "pos")),
+            "typeLabel": type_labels.get(str(properties.get("type", "pos")), "Deep-sky object"),
+        })
+        seen.add(key)
+    targets.sort(key=lambda item: (item["typeLabel"], item["designation"]))
+    destination = GALLERY_DIR / "observable_targets.json"
+    raw = json.dumps(targets, indent=2, ensure_ascii=False) + "\n"
+    changed = not destination.exists() or destination.read_text(encoding="utf-8") != raw
+    if changed and apply:
+        write_json(destination, targets)
+    print(f"observable archive targets: {len(targets)}; changed: {changed}")
+    return int(changed)
+
+
 def migrate_page(source_name: str | None, category: str | None, apply: bool) -> int:
     if not source_name or not category:
         raise RuntimeError("migrate-page requires --source and --category")
@@ -412,6 +482,21 @@ def validate() -> int:
                     errors.append(f"{filename}: missing {field} {value}")
                 elif local and local.is_file() and not has_exact_case(local):
                     errors.append(f"{filename}: {field} has incorrect case {value}")
+    observable_path = GALLERY_DIR / "observable_targets.json"
+    if not observable_path.is_file():
+        errors.append("gallery/observable_targets.json is missing")
+    else:
+        observable = load_json(observable_path)
+        for target in observable:
+            required_target = {"id", "name", "designation", "url", "raHours", "dec", "magnitude", "type", "typeLabel"}
+            if not required_target.issubset(target):
+                errors.append("observable target is missing required fields")
+                continue
+            route = re.fullmatch(r"/image_card/([A-Za-z0-9_-]+)\.php", str(target["url"]), re.I)
+            if not route or route.group(1).lower() not in object_routes:
+                errors.append(f"observable target has invalid archive URL {target['url']}")
+            if not 0 <= float(target["raHours"]) < 24 or not -90 <= float(target["dec"]) <= 90:
+                errors.append(f"observable target has invalid coordinates {target['id']}")
     print(f"objects={len(data_files)} routes={len(object_routes)} gallery_records={gallery_count}")
     for warning in warnings:
         print(f"WARNING: {warning}")
@@ -423,7 +508,7 @@ def validate() -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=("normalize", "fix-links", "fix-php-links", "refactor-category-pages", "archive-pages", "build-indexes", "build-manifest", "migrate-page", "audit-media", "validate"))
+    parser.add_argument("command", choices=("normalize", "fix-links", "fix-php-links", "refactor-category-pages", "archive-pages", "build-indexes", "build-manifest", "build-observable-targets", "migrate-page", "audit-media", "validate"))
     parser.add_argument("--apply", action="store_true", help="Apply changes; mutation commands otherwise run as a dry-run")
     parser.add_argument("--source", help="Legacy HTML source for migrate-page")
     parser.add_argument("--category", help="Destination category for migrate-page")
@@ -436,6 +521,7 @@ def main() -> int:
         "archive-pages": archive_pages,
         "build-indexes": build_indexes,
         "build-manifest": build_manifest,
+        "build-observable-targets": build_observable_targets,
     }
     if args.command == "validate":
         return validate()

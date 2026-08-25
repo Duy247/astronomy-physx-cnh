@@ -11,6 +11,21 @@ function astro_config(?string $key = null): mixed
     return $key === null ? $config : ($config[$key] ?? null);
 }
 
+function astro_observing_cities(): array
+{
+    $cities = astro_config('observing_cities');
+    return is_array($cities) ? $cities : [];
+}
+
+function astro_observing_city(string $id): ?array
+{
+    $cities = astro_observing_cities();
+    if (!isset($cities[$id]) || !is_array($cities[$id])) {
+        return null;
+    }
+    return ['id' => $id, ...$cities[$id], 'timezone' => 'Asia/Ho_Chi_Minh'];
+}
+
 function astro_base_path(): string
 {
     return rtrim('/' . trim((string) astro_config('base_path'), '/'), '/');

@@ -54,6 +54,12 @@ from an official CDS HiPS mirror when an interactive sky map is opened.
 OpenSeadragon 6.1.0 is stored in `assets/vendor/openseadragon/` and powers the
 touch-friendly full-resolution image viewer.
 
+The “Tonight over Vietnam” horizon view uses self-hosted D3-Celestial 0.7.35
+and Astronomy Engine 2.1.19. Its city presets and sky calculations run in the
+browser. Hourly observing weather is normalized and cached by `weather.php`
+from Open-Meteo; if that service is unavailable, the astronomical view remains
+fully usable.
+
 ## Verification
 
 Run `composer test`, or run the two checks separately:

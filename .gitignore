@@ -1,5 +1,6 @@
 storage/logs/*
 !storage/logs/.gitkeep
+storage/cache/*
 .cache/
 __pycache__/
 *.pyc
