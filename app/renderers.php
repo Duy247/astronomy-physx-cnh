@@ -42,6 +42,6 @@ function astro_render_legacy_page(string $page): void
         return $match[1] . '=' . $match[2] . astro_url('/' . $match[3]) . $match[2];
     }, $content) ?? '';
     require ASTRO_ROOT . '/includes/header.php';
-    echo '<main class="astro-card legacy-content"><section class="astro-section">' . astro_safe_html($content) . '</section></main>';
+    echo '<main class="astro-card legacy-content" id="main-content"><section class="astro-section">' . astro_safe_html($content) . '</section></main>';
     require ASTRO_ROOT . '/includes/footer.php';
 }

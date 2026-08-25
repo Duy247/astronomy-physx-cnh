@@ -1,4 +1,4 @@
-<main class="astro-page astro-collection">
+<main class="astro-page astro-collection" id="main-content">
     <section class="astro-section">
         <div class="astro-collection-heading">
             <p class="astro-eyebrow">Misti Mountain Observatory archive</p>

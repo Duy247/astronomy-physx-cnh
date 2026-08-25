@@ -15,19 +15,20 @@ $navigation = astro_config('navigation');
     <script src="<?= astro_escape(astro_url('/js/site.js')) ?>" defer></script>
 </head>
 <body>
+<a class="astro-skip-link" href="#main-content">Skip to content</a>
 <div class="astro-dim-overlay" data-nav-overlay></div>
 <header class="astro-header">
     <div class="astro-header-inner">
         <a class="astro-header-brand" href="<?= astro_escape(astro_url('/index.php')) ?>">
             <img src="<?= astro_escape(astro_url('/assets/branding/physx-cnh-logo.png')) ?>" alt="PhysX-CNH" class="astro-logo">
-            <span><strong><?= astro_escape((string) astro_config('site_name')) ?></strong><small>Misti Mountain Observatory</small></span>
+            <span class="astro-brand-context">Astro<br>Archive</span>
         </a>
-        <button class="astro-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-navigation">Explore <span aria-hidden="true">☰</span></button>
         <nav class="astro-nav" id="site-navigation" data-nav aria-label="Primary navigation">
             <?php foreach ($navigation as $link): ?>
                 <a href="<?= astro_escape(astro_url((string) $link['href'])) ?>"><?= astro_escape((string) $link['label']) ?></a>
             <?php endforeach; ?>
         </nav>
-        <button class="astro-dark-toggle" type="button" data-theme-toggle aria-label="Toggle color theme" title="Toggle color theme">◐</button>
+        <a class="astro-hub-link" href="https://physx-cnh.com" rel="noopener">Study Hub <span aria-hidden="true">↗</span></a>
+        <button class="astro-nav-toggle" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-navigation"><span class="astro-nav-toggle-label">Explore</span><span aria-hidden="true">☰</span></button>
     </div>
 </header>

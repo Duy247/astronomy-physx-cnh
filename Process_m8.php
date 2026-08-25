@@ -1,66 +1,8 @@
 <?php include 'includes/header.php'; ?>
 
 <link rel="stylesheet" href="css/astro-modern.css">
-<style>
-.astro-card {
-    max-width: 950px;
-    margin: 6rem auto 2.5rem auto;
-    background: var(--card-bg, #fff);
-    border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
-    padding: 2.5rem 2rem 2rem 2rem;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    animation: fadeIn 0.7s;
-    font-weight: 300;
-}
-.astro-section {
-    text-align: center;
-}
-.astro-subtitle {
-    color: var(--accent, #0055aa);
-    font-size: 1.05em;
-    margin-bottom: 1.2em;
-}
-.astro-step {
-    margin: 2.5em 0 1.5em 0;
-    padding: 1.5em 1em 1.5em 1em;
-    background: #f7faff;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px #0001;
-    text-align: left;
-}
-.astro-step h3 {
-    color: var(--accent, #0055aa);
-    margin-top: 0;
-    font-size: 1.25em;
-}
-.astro-step img {
-    max-width: 220px;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px #0002;
-    margin: 0.5em 0 0.5em 0;
-}
-.astro-step-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-    align-items: flex-start;
-}
-.astro-step-text {
-    flex: 2 1 320px;
-    min-width: 220px;
-}
-.astro-step-image {
-    flex: 1 1 220px;
-    min-width: 180px;
-    text-align: center;
-}
-@media (max-width: 700px) {
-    .astro-step-content { flex-direction: column; gap: 1em; }
-}
-</style>
 
-<main class="astro-card">
+<main class="astro-card" id="main-content">
     <section class="astro-section">
         <h2 style="margin-bottom:0.5em;">Image Processing Example: m8 (Lagoon Nebula)</h2>
         <p class="astro-subtitle"><i>Step-by-step processing of m8, from raw frames to finished image. Click images to enlarge.</i></p>

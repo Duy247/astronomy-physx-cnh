@@ -1,4 +1,4 @@
-<main class="astro-card">
+<main class="astro-card" id="main-content">
     <div class="astro-flex-row">
         <section class="astro-section astro-image-section">
             <h1><?= astro_escape($object) ?></h1>

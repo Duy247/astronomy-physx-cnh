@@ -1,77 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
-<style>
-.astro-card {
-    max-width: 950px;
-    margin: 6rem auto 2.5rem auto;
-    background: var(--card-bg, #fff);
-    border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
-    padding: 2.5rem 2rem 2rem 2rem;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    animation: fadeIn 0.7s;
-    font-weight: 300;
-}
-.astro-section {
-    text-align: center;
-}
-.astro-subtitle {
-    color: var(--accent, #0055aa);
-    font-size: 1.05em;
-    margin-bottom: 1.5em;
-}
-.astro-compare-table {
-    width: 100%;
-    border-collapse: separate;
-    margin: 0 auto 2em auto;
-    background: none;
-}
-.astro-compare-table th, .astro-compare-table td {
-    background: #f7f7fa;
-    border-radius: 8px;
-    padding: 0.7em 0.3em;
-    font-size: 0.98em;
-    color: #003366;
-    vertical-align: top;
-}
-.astro-compare-table th {
-    background: var(--accent, #e3eaff);
-    color: #003366;
-    font-weight: 600;
-}
-.astro-compare-table a {
-    color: var(--accent, #0055aa);
-    text-decoration: none;
-    font-weight: 500;
-}
-.astro-compare-table a:hover {
-    text-decoration: underline;
-}
-.astro-compare-thumbs {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 1.2em;
-    justify-items: center;
-    margin: 2em 0 0 0;
-}
-.astro-thumb {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px #0002;
-    background: #fff;
-    transition: transform 0.15s;
-}
-.astro-thumb:hover {
-    transform: scale(1.04);
-}
-@media (max-width: 700px) {
-    .astro-card { padding: 1.2rem 0.3rem; }
-    .astro-compare-table th, .astro-compare-table td { font-size: 0.93em; }
-    .astro-compare-thumbs { grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); }
-}
-</style>
 
-<main class="astro-card">
+<main class="astro-card" id="main-content">
     <section class="astro-section">
         <h2 style="margin-bottom:0.5em;">melotte 15 (in Heart Nebula) - Image Comparison</h2>
         <p class="astro-subtitle"><i>Comparison of processing by various imagers using the same data.<br>Click a name for their website, or Medium/Large for their version. "Composite" shows a tiled version.</i></p>

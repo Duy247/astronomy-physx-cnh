@@ -82,7 +82,7 @@ function astro_not_found(string $message = 'The requested astronomy resource was
     http_response_code(404);
     $pageTitle = 'Not Found — ' . astro_config('site_name');
     require ASTRO_ROOT . '/includes/header.php';
-    echo '<main class="astro-card"><section class="astro-section"><h1>Not Found</h1><p>' . astro_escape($message) . '</p></section></main>';
+    echo '<main class="astro-card" id="main-content"><section class="astro-section"><h1>Not Found</h1><p>' . astro_escape($message) . '</p></section></main>';
     require ASTRO_ROOT . '/includes/footer.php';
     exit;
 }
@@ -92,7 +92,7 @@ set_exception_handler(static function (Throwable $error): void {
     http_response_code(500);
     $pageTitle = 'Application Error — ' . astro_config('site_name');
     require ASTRO_ROOT . '/includes/header.php';
-    echo '<main class="astro-card"><section class="astro-section"><h1>Unable to display this page</h1><p>Please try again later.</p></section></main>';
+    echo '<main class="astro-card" id="main-content"><section class="astro-section"><h1>Unable to display this page</h1><p>Please try again later.</p></section></main>';
     require ASTRO_ROOT . '/includes/footer.php';
 });
 

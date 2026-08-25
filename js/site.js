@@ -1,16 +1,7 @@
 (() => {
-  const root = document.documentElement;
   const nav = document.querySelector('[data-nav]');
   const toggle = document.querySelector('[data-nav-toggle]');
   const overlay = document.querySelector('[data-nav-overlay]');
-  const setTheme = (theme) => {
-    root.dataset.theme = theme;
-    localStorage.setItem('theme', theme);
-  };
-  setTheme(localStorage.getItem('theme') || 'dark');
-  document.querySelector('[data-theme-toggle]')?.addEventListener('click', () => {
-    setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark');
-  });
   const closeNav = () => {
     nav?.classList.remove('show');
     overlay?.classList.remove('active');
