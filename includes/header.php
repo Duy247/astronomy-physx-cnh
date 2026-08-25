@@ -19,8 +19,8 @@ $navigation = astro_config('navigation');
 <header class="astro-header">
     <div class="astro-header-inner">
         <a class="astro-header-brand" href="<?= astro_escape(astro_url('/index.php')) ?>">
-            <img src="<?= astro_escape(astro_url('/assets/logo.svg')) ?>" alt="" class="astro-logo">
-            <span><strong><?= astro_escape((string) astro_config('site_name')) ?></strong><small>Misti Mountain Observatory</small></span>
+            <img src="<?= astro_escape(astro_url('/assets/logo.svg')) ?>" alt="<?= astro_escape((string) astro_config('site_name')) ?>" class="astro-logo">
+            <small>Misti Mountain Observatory</small>
         </a>
         <button class="astro-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-navigation">Explore <span aria-hidden="true">☰</span></button>
         <nav class="astro-nav" id="site-navigation" data-nav aria-label="Primary navigation">

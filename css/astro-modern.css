@@ -92,10 +92,8 @@ h2 { font-size: clamp(1.75rem, 3vw, 3rem); }
     text-decoration: none;
 }
 .astro-header-brand:hover { color: inherit; }
-.astro-header-brand > span { display: grid; line-height: 1.15; }
-.astro-header-brand strong { font-size: 1.05rem; letter-spacing: -.02em; }
-.astro-header-brand small { margin-top: 4px; color: var(--muted); font-size: .68rem; letter-spacing: .04em; text-transform: uppercase; }
-.astro-logo { width: 42px; height: 42px; object-fit: contain; }
+.astro-header-brand small { color: var(--muted); font-size: .68rem; font-weight: 650; letter-spacing: .06em; line-height: 1.25; text-transform: uppercase; }
+.astro-logo { width: 154px; height: 42px; object-fit: contain; }
 .astro-nav { margin-left: auto; display: flex; align-items: center; gap: 2px; }
 .astro-nav a {
     padding: 10px 11px;
@@ -294,7 +292,7 @@ h2 { font-size: clamp(1.75rem, 3vw, 3rem); }
 @media (max-width: 760px) {
     .astro-header-inner, .astro-page, .astro-card { width: min(100% - 28px, 1180px); }
     .astro-header-inner { min-height: 68px; }
-    .astro-logo { width: 36px; height: 36px; }
+    .astro-logo { width: 132px; height: 36px; }
     .astro-header-brand small { display: none; }
     .astro-nav { top: 68px; right: 14px; }
     .astro-page, .astro-card { margin-top: 28px; }
@@ -312,7 +310,6 @@ h2 { font-size: clamp(1.75rem, 3vw, 3rem); }
 }
 
 @media (max-width: 440px) {
-    .astro-header-brand strong { font-size: .94rem; }
     .astro-dark-toggle { display: none; }
     .astro-gallery, .astro-collection .astro-gallery { grid-template-columns: 1fr; }
     .astro-gallery-item img { aspect-ratio: 16 / 10; }
