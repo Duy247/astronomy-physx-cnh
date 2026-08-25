@@ -56,6 +56,8 @@ working checkout. The application never contacts Git LFS at runtime.
 Aladin Lite 3.8.1 is stored in `assets/vendor/aladin-lite/` so the application
 does not depend on a version-changing JavaScript CDN. Survey tiles are loaded
 from an official CDS HiPS mirror when an interactive sky map is opened.
+OpenSeadragon 6.1.0 is stored in `assets/vendor/openseadragon/` and powers the
+touch-friendly full-resolution image viewer.
 
 ## Verification
 

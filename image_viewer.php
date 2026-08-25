@@ -12,16 +12,25 @@ if (!$imagesRoot || !$resolved || !str_starts_with($relative, 'Images/') || !str
     astro_not_found('The requested image is unavailable or is not an approved image type.');
 }
 $imageUrl = astro_url('/' . $relative);
+$imageLabel = trim(str_replace(['_', '-'], ' ', pathinfo($relative, PATHINFO_FILENAME)));
 ?>
 <!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Image Viewer — <?= astro_escape((string) astro_config('site_name')) ?></title>
-<link rel="stylesheet" href="<?= astro_escape(astro_url('/css/astro-modern.css')) ?>"><link rel="stylesheet" href="<?= astro_escape(astro_url('/css/image-viewer.css')) ?>">
-</head><body class="iv-page"><main class="iv-workspace">
-<nav class="iv-menubar-ps" aria-label="Image tools"><ul class="iv-menu-list">
-<li class="iv-menu-item"><button class="iv-menu-btn" type="button">File</button><ul class="iv-menu-dropdown"><li><button id="iv-reset" type="button">Reset</button></li><li><a id="iv-download" href="<?= astro_escape($imageUrl) ?>" download>Download</a></li></ul></li>
-<li class="iv-menu-item"><button class="iv-menu-btn" type="button">Edit</button><ul class="iv-menu-dropdown"><li><button id="iv-clear" type="button">Clear drawing</button></li></ul></li>
-<li class="iv-menu-item"><button class="iv-menu-btn" type="button">Image</button><ul class="iv-menu-dropdown"><li><label>Brightness <input type="range" id="iv-brightness" min="-100" max="100" value="0"></label></li><li><label>Contrast <input type="range" id="iv-contrast" min="-100" max="100" value="0"></label></li></ul></li>
-<li class="iv-menu-item"><button class="iv-menu-btn" type="button">Draw</button><ul class="iv-menu-dropdown" id="iv-tools"><li><button class="iv-tool-btn" data-tool="pen" type="button">Pen</button></li><li><button class="iv-tool-btn" data-tool="rect" type="button">Rectangle</button></li><li><button class="iv-tool-btn" data-tool="circle" type="button">Circle</button></li><li><button class="iv-tool-btn" data-tool="none" type="button">No drawing</button></li></ul></li>
-</ul></nav><div id="iv-canvas-wrap"><canvas id="iv-image" data-source="<?= astro_escape($imageUrl) ?>" aria-label="Editable astronomy image"></canvas></div><noscript><p><a href="<?= astro_escape($imageUrl) ?>">Open the original image</a></p></noscript>
-</main><script src="<?= astro_escape(astro_url('/js/image-viewer.js')) ?>"></script></body></html>
+<link rel="icon" href="<?= astro_escape(astro_url('/assets/branding/favicon.ico')) ?>" sizes="any">
+<link rel="stylesheet" href="<?= astro_escape(astro_url('/css/image-viewer.css')) ?>">
+</head><body class="iv-page">
+<main class="iv-workspace">
+    <header class="iv-header">
+        <button class="iv-back" type="button" data-viewer-back data-home="<?= astro_escape(astro_url('/index.php')) ?>" aria-label="Return to the previous page"><span aria-hidden="true">←</span> Back</button>
+        <div class="iv-title"><strong><?= astro_escape($imageLabel ?: 'Astronomy image') ?></strong><small>Pinch or scroll to zoom · drag to explore</small></div>
+        <a class="iv-download" href="<?= astro_escape($imageUrl) ?>" download>Download</a>
+    </header>
+    <div id="iv-viewer" class="iv-viewer" data-source="<?= astro_escape($imageUrl) ?>" data-prefix="<?= astro_escape(astro_url('/assets/vendor/openseadragon/images/')) ?>" aria-label="Zoomable astronomy image viewer">
+        <p class="iv-status" data-viewer-status>Loading full-resolution image…</p>
+    </div>
+    <noscript><p class="iv-noscript"><a href="<?= astro_escape($imageUrl) ?>">Open the original image</a></p></noscript>
+</main>
+<script src="<?= astro_escape(astro_url('/assets/vendor/openseadragon/openseadragon.min.js')) ?>"></script>
+<script src="<?= astro_escape(astro_url('/js/image-viewer.js')) ?>"></script>
+</body></html>

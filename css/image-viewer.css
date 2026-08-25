@@ -1,290 +1,97 @@
-/* Image Viewer Toolbar */
-.iv-page { height: 100vh; margin: 0; overflow: hidden; background: #181a20; }
-.iv-workspace { height: 100vh; display: flex; flex-direction: column; }
-#iv-canvas-wrap { flex: 1 1 auto; min-height: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #222; }
-#iv-image { display: block; width: 100%; height: 100%; background: #111; }
-.iv-menu-dropdown button, .iv-menu-dropdown a { width: 100%; padding: .35rem .5rem; border: 0; background: none; color: inherit; font: inherit; text-align: left; text-decoration: none; cursor: pointer; }
-.iv-toolbar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.7rem;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.2rem;
-    background: var(--card-bg);
-    border-radius: 8px;
-    padding: 0.7rem 1rem;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
-}
-.iv-toolbar button, .iv-toolbar select, .iv-toolbar input[type=range] {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #bbb;
-    padding: 0.3em 0.7em;
-    margin: 0 0.2em;
-    background: #f7f7fa;
-    color: #222;
-    transition: background 0.2s, color 0.2s;
-}
-.iv-toolbar button:hover, .iv-toolbar select:focus {
-    background: var(--accent);
-    color: #fff;
-}
-.iv-color {
-    width: 1.5em; height: 1.5em; border-radius: 50%; border: 2px solid #fff; margin: 0 0.1em; cursor: pointer;
-    outline: 2px solid #bbb;
-    transition: outline 0.2s;
-}
-.iv-color.selected, .iv-color:focus {
-    outline: 2px solid #1e88e5;
-}
-#iv-canvas-wrap {
-    min-height: 400px;
-    min-width: 300px;
-    background: #222;
-    border: 1px solid #444;
-    position: relative;
-}
-#iv-image, #iv-draw {
-    border-radius: 8px;
-}
-.iv-menu {
-    position: relative;
-    margin-right: 1.2rem;
-}
-.iv-menu-btn {
-    background: #f7f7fa;
-    color: #222;
-    border: 1px solid #bbb;
-    border-radius: 5px;
-    padding: 0.3em 1.1em;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.2s, color 0.2s;
-}
-.iv-menu-btn:hover, .iv-menu-btn:focus {
-    background: var(--accent);
-    color: #fff;
-}
-.iv-menu-dropdown {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 2.2em;
-    min-width: 180px;
-    background: var(--card-bg);
-    border: 1px solid #bbb;
-    border-radius: 7px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.13);
-    padding: 0.7em 1em;
-    z-index: 10;
-}
-.iv-menu-dropdown label, .iv-menu-dropdown select, .iv-menu-dropdown button, .iv-menu-dropdown span {
-    display: block;
-    margin-bottom: 0.7em;
-}
-.iv-menu-dropdown label:last-child, .iv-menu-dropdown select:last-child, .iv-menu-dropdown button:last-child, .iv-menu-dropdown span:last-child {
-    margin-bottom: 0;
-}
-.iv-menu-dropdown input[type=range] {
-    width: 100%;
+:root {
+    color-scheme: dark;
+    --iv-bg: #05070a;
+    --iv-surface: rgba(13, 18, 27, .92);
+    --iv-line: rgba(255, 255, 255, .12);
+    --iv-text: #f5f7fb;
+    --iv-muted: #9ba8b9;
+    --iv-accent: #42b8f5;
 }
 
-/* Photoshop-style menu bar */
-.iv-menubar-ps {
-    background: #23272e;
-    color: #f7f7fa;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    border-bottom: 1px solid #444;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    padding: 0;
-    margin-bottom: 1.2rem;
-    user-select: none;
+* { box-sizing: border-box; }
+html, body { width: 100%; height: 100%; }
+body { margin: 0; }
+button, a { font: inherit; }
+
+.iv-page {
+    overflow: hidden;
+    background: var(--iv-bg);
+    color: var(--iv-text);
+    font: 500 15px/1.35 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
-.iv-menu-list {
+.iv-workspace {
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    list-style: none;
-    margin: 0;
-    padding: 0 1.2rem;
-    height: 2.4em;
+    flex-direction: column;
+    overflow: hidden;
 }
-.iv-menu-item {
+.iv-header {
     position: relative;
-    height: 100%;
-}
-.iv-menu-btn {
-    background: none;
-    color: #f7f7fa;
-    border: none;
-    font-size: 1.05em;
-    font-family: inherit;
-    padding: 0 1.1em;
-    height: 2.4em;
-    cursor: pointer;
-    border-radius: 0;
-    transition: background 0.18s, color 0.18s;
-}
-.iv-menu-btn:hover, .iv-menu-btn:focus, .iv-menu-item.open > .iv-menu-btn {
-    background: #3a3f4b;
-    color: #fff;
-}
-.iv-menu-dropdown {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    min-width: 200px;
-    background: #23272e;
-    color: #f7f7fa;
-    border: 1px solid #444;
-    border-radius: 0 0 7px 7px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
-    padding: 0.7em 1em;
     z-index: 20;
+    min-height: 64px;
+    padding: max(9px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right)) 9px max(14px, env(safe-area-inset-left));
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid var(--iv-line);
+    background: var(--iv-surface);
+    backdrop-filter: blur(18px) saturate(140%);
 }
-.iv-menu-item.open > .iv-menu-dropdown {
-    display: block;
+.iv-back, .iv-download {
+    min-height: 40px;
+    padding: 8px 13px;
+    border: 1px solid var(--iv-line);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .05);
+    color: var(--iv-text);
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
 }
-.iv-menu-dropdown label, .iv-menu-dropdown select, .iv-menu-dropdown button, .iv-menu-dropdown span, .iv-menu-dropdown li {
-    display: block;
-    margin-bottom: 0.7em;
-    color: #f7f7fa;
-}
-.iv-menu-dropdown label:last-child, .iv-menu-dropdown select:last-child, .iv-menu-dropdown button:last-child, .iv-menu-dropdown span:last-child, .iv-menu-dropdown li:last-child {
-    margin-bottom: 0;
-}
-.iv-menu-dropdown input[type=range] {
-    width: 100%;
-}
-.iv-menu-dropdown button, .iv-menu-dropdown select {
-    background: #2d313a;
-    color: #f7f7fa;
-    border: 1px solid #555;
-    border-radius: 4px;
-    padding: 0.3em 0.7em;
-    font-size: 1em;
-}
-.iv-menu-dropdown button:hover, .iv-menu-dropdown select:focus {
-    background: #3a3f4b;
-    color: #fff;
-}
-.iv-menu-hint {
-    color: #aaa;
-    font-size: 0.98em;
-    margin-left: 2em;
+.iv-back:hover, .iv-back:focus-visible, .iv-download:hover, .iv-download:focus-visible { border-color: var(--iv-accent); background: rgba(66, 184, 245, .12); }
+.iv-title { min-width: 0; text-align: center; }
+.iv-title strong, .iv-title small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.iv-title strong { font-size: .96rem; }
+.iv-title small { margin-top: 3px; color: var(--iv-muted); font-size: .72rem; font-weight: 500; }
+.iv-viewer { position: relative; flex: 1 1 auto; min-height: 0; width: 100%; background: #000; touch-action: none; }
+.iv-status {
+    position: absolute;
+    left: 50%;
+    bottom: max(18px, env(safe-area-inset-bottom));
+    z-index: 15;
+    margin: 0;
+    padding: 7px 11px;
+    transform: translateX(-50%);
+    border: 1px solid var(--iv-line);
+    border-radius: 999px;
+    background: rgba(5, 7, 10, .78);
+    color: var(--iv-muted);
+    font-size: .72rem;
+    white-space: nowrap;
     pointer-events: none;
+    transition: opacity .3s;
 }
-#iv-colors {
-    display: flex;
-    gap: 0.4em;
-    margin-top: 0.2em;
-}
-.iv-color {
-    width: 1.5em; height: 1.5em; border-radius: 50%; border: 2px solid #fff; margin: 0 0.1em; cursor: pointer;
-    outline: 2px solid #bbb;
-    transition: outline 0.2s;
-}
-.iv-color.selected, .iv-color:focus {
-    outline: 2px solid #1e88e5;
+.iv-viewer.is-ready .iv-status { opacity: 0; }
+.iv-viewer.has-error .iv-status { color: #ffaaaa; opacity: 1; }
+.iv-noscript { margin: 0; padding: 20px; background: #000; color: white; }
+.iv-noscript a { color: var(--iv-accent); }
+
+.iv-viewer .openseadragon-canvas { outline: none; }
+.iv-viewer .openseadragon-container:focus-visible { outline: 2px solid var(--iv-accent); outline-offset: -2px; }
+
+@media (max-width: 600px) {
+    .iv-header { min-height: 56px; padding-block: max(7px, env(safe-area-inset-top)) 7px; gap: 8px; }
+    .iv-back, .iv-download { min-height: 38px; padding: 7px 10px; font-size: .82rem; }
+    .iv-title strong { font-size: .8rem; }
+    .iv-title small { display: none; }
+    .iv-viewer .openseadragon-container [title] { width: 44px !important; height: 44px !important; }
+    .iv-viewer .openseadragon-container [title] img { width: 44px !important; height: 44px !important; }
 }
 
-/*
- * Seamless, modern tool selection UI for Draw menu
- * Remove button appearance from .iv-tool-btn, blend into dropdown, add hover/selected effects
- */
-#iv-tools {
-    display: flex;
-    gap: 0.5em;
-    padding: 0.25em 0.5em;
-    background: none;
-    border: none;
-    box-shadow: none;
-    align-items: center;
-}
-.iv-tool-btn {
-    background: none;
-    border: none;
-    color: #e0e0e0;
-    font: inherit;
-    padding: 0.25em 0.9em 0.25em 0.5em;
-    margin: 0;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.15s, color 0.15s;
-    box-shadow: none;
-    outline: none;
-    position: relative;
-    min-width: 0;
-    min-height: 0;
-    letter-spacing: 0.01em;
-    opacity: 0.85;
-}
-.iv-tool-btn:hover,
-.iv-tool-btn:focus {
-    background: rgba(255,255,255,0.07);
-    color: #fff;
-    opacity: 1;
-}
-.iv-tool-btn.selected {
-    background: linear-gradient(90deg, #2d2f36 60%, #23242a 100%);
-    color: #fff;
-    font-weight: 600;
-    opacity: 1;
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.08);
-}
-/* Remove button outline on click */
-.iv-tool-btn:active {
-    outline: none;
-}
-/* Remove default button styles for color buttons as well */
-#iv-colors .iv-color {
-    border: none;
-    outline: none;
-    box-shadow: none;
-    margin: 0 0.15em;
-    width: 1.2em;
-    height: 1.2em;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: box-shadow 0.15s, border 0.15s;
-    border: 2px solid transparent;
-}
-#iv-colors .iv-color.selected {
-    border: 2px solid #fff;
-    box-shadow: 0 0 0 2px #1976d2;
-}
-#iv-colors {
-    display: flex;
-    gap: 0.2em;
-    padding: 0.25em 0.5em;
-    align-items: center;
-    background: none;
-}
-/* Remove button appearance from menu dropdowns */
-.iv-menu-dropdown button {
-    background: none;
-    border: none;
-    color: #e0e0e0;
-    font: inherit;
-    padding: 0.3em 1.2em 0.3em 1.2em;
-    margin: 0;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.15s, color 0.15s;
-    box-shadow: none;
-    outline: none;
-    min-width: 0;
-    min-height: 0;
-    letter-spacing: 0.01em;
-    opacity: 0.85;
-}
-.iv-menu-dropdown button:hover,
-.iv-menu-dropdown button:focus {
-    background: rgba(255,255,255,0.07);
-    color: #fff;
-    opacity: 1;
+@media (max-width: 390px) {
+    .iv-title { display: none; }
+    .iv-header { grid-template-columns: 1fr auto; }
 }
