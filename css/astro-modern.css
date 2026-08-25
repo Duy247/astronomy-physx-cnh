@@ -92,8 +92,10 @@ h2 { font-size: clamp(1.75rem, 3vw, 3rem); }
     text-decoration: none;
 }
 .astro-header-brand:hover { color: inherit; }
-.astro-header-brand small { color: var(--muted); font-size: .68rem; font-weight: 650; letter-spacing: .06em; line-height: 1.25; text-transform: uppercase; }
-.astro-logo { width: 154px; height: 42px; object-fit: contain; }
+.astro-header-brand > span { display: grid; line-height: 1.15; }
+.astro-header-brand strong { font-size: 1.05rem; letter-spacing: -.02em; }
+.astro-header-brand small { margin-top: 4px; color: var(--muted); font-size: .64rem; font-weight: 650; letter-spacing: .05em; text-transform: uppercase; }
+.astro-logo { width: 66px; height: 46px; object-fit: contain; }
 .astro-nav { margin-left: auto; display: flex; align-items: center; gap: 2px; }
 .astro-nav a {
     padding: 10px 11px;
@@ -259,7 +261,7 @@ h2 { font-size: clamp(1.75rem, 3vw, 3rem); }
 .astro-footer { margin-top: 100px; padding: 42px 20px; border-top: 1px solid var(--line); background: rgba(4, 7, 11, .5); color: var(--text); }
 .astro-footer-inner { width: min(100%, 1180px); margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 40px; }
 .astro-footer-brand { display: flex; align-items: center; gap: 16px; }
-.astro-footer-logo { width: 155px; max-width: 36vw; }
+.astro-footer-logo { width: 96px; max-width: 30vw; }
 .astro-footer-notice { max-width: 520px; text-align: right; color: var(--muted); }
 .astro-footer-notice p { margin-bottom: 6px; }
 .legacy-content { overflow-wrap: anywhere; }
@@ -292,7 +294,7 @@ h2 { font-size: clamp(1.75rem, 3vw, 3rem); }
 @media (max-width: 760px) {
     .astro-header-inner, .astro-page, .astro-card { width: min(100% - 28px, 1180px); }
     .astro-header-inner { min-height: 68px; }
-    .astro-logo { width: 132px; height: 36px; }
+    .astro-logo { width: 58px; height: 38px; }
     .astro-header-brand small { display: none; }
     .astro-nav { top: 68px; right: 14px; }
     .astro-page, .astro-card { margin-top: 28px; }

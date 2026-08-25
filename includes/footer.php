@@ -1,7 +1,7 @@
 <footer class="astro-footer">
     <div class="astro-footer-inner">
         <div class="astro-footer-brand">
-            <img src="<?= astro_escape(astro_url('/assets/logo.svg')) ?>" alt="" class="astro-footer-logo">
+            <img src="<?= astro_escape(astro_url('/assets/branding/physx-cnh-logo.png')) ?>" alt="PhysX-CNH" class="astro-footer-logo">
             <span><strong>AstroGallery</strong><br><small>Misti Mountain Observatory archive</small></span>
         </div>
         <div class="astro-footer-notice">
