@@ -133,7 +133,7 @@ def normalize_data(apply: bool) -> int:
     for path in sorted(DATA_DIR.glob("site_data_*.json")):
         card_id = path.stem.removeprefix("site_data_")
         data = load_json(path)
-        memberships = records.get(card_id.lower(), data.get("galleries", []))
+        memberships = data.get("galleries") or records.get(card_id.lower(), [])
         primary = memberships[0] if memberships else {"category": "uncategorized", "order": 9999}
         gallery = {key: primary.get(key, "") for key in ("title", "subtitle", "thumb", "alt")}
         image = data.get("image", {})

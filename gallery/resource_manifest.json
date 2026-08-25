@@ -310,7 +310,7 @@
     {
       "path": "Images/Eclipse_Video_K0002_720.mov",
       "kind": "video",
-      "bytes": 134,
+      "bytes": 199123836,
       "referenced_by_catalog": false
     },
     {
@@ -322,7 +322,7 @@
     {
       "path": "Images/Eclipse_Video_K137_720.mov",
       "kind": "video",
-      "bytes": 133,
+      "bytes": 13126331,
       "referenced_by_catalog": false
     },
     {
@@ -334,7 +334,7 @@
     {
       "path": "Images/Eclipse_Video_K140_720.mov",
       "kind": "video",
-      "bytes": 133,
+      "bytes": 24443354,
       "referenced_by_catalog": false
     },
     {
@@ -346,7 +346,7 @@
     {
       "path": "Images/Eclipse_Video_K141_720.mov",
       "kind": "video",
-      "bytes": 133,
+      "bytes": 37450262,
       "referenced_by_catalog": false
     },
     {
@@ -358,7 +358,7 @@
     {
       "path": "Images/Eclipse_Video_K142_720.mov",
       "kind": "video",
-      "bytes": 133,
+      "bytes": 12822905,
       "referenced_by_catalog": false
     },
     {
@@ -370,7 +370,7 @@
     {
       "path": "Images/Eclipse_Video_K143_720.mov",
       "kind": "video",
-      "bytes": 133,
+      "bytes": 50371635,
       "referenced_by_catalog": false
     },
     {
@@ -382,7 +382,7 @@
     {
       "path": "Images/Eclipse_Video_K144_720.mov",
       "kind": "video",
-      "bytes": 133,
+      "bytes": 25145242,
       "referenced_by_catalog": false
     },
     {
@@ -394,13 +394,13 @@
     {
       "path": "Images/Eclipse_Video_K145_720.mov",
       "kind": "video",
-      "bytes": 133,
+      "bytes": 62865818,
       "referenced_by_catalog": false
     },
     {
       "path": "Images/Eclipse_Video_KTotality_720.mov",
       "kind": "video",
-      "bytes": 133,
+      "bytes": 38148300,
       "referenced_by_catalog": false
     },
     {
@@ -412,7 +412,7 @@
     {
       "path": "Images/Eclipse_Video_L_720.mov",
       "kind": "video",
-      "bytes": 134,
+      "bytes": 257570523,
       "referenced_by_catalog": false
     },
     {
@@ -424,7 +424,7 @@
     {
       "path": "Images/Eclipse_Video_M_720.mov",
       "kind": "video",
-      "bytes": 134,
+      "bytes": 257387083,
       "referenced_by_catalog": false
     },
     {
@@ -436,7 +436,7 @@
     {
       "path": "Images/Eclipse_Video_O_720.mov",
       "kind": "video",
-      "bytes": 134,
+      "bytes": 150088759,
       "referenced_by_catalog": false
     },
     {
@@ -448,7 +448,7 @@
     {
       "path": "Images/Eclipse_Video_Q_720.mov",
       "kind": "video",
-      "bytes": 134,
+      "bytes": 149794952,
       "referenced_by_catalog": false
     },
     {
@@ -8032,1345 +8032,1345 @@
     {
       "path": "fits/ic1396_041006_12i60m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21424512,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ic1396_041006_3i15m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ic1396_041006_3i15m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ic1396_041006_3i15m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ic434_041109_14i70m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ic434_041109_5i25m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ic434_041109_5i25m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ic434_041109_5i25m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m101_050511_12i60m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m101_050511_3i15m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m101_050511_3i15m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m101_050511_3i15m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m104_050406_12i60mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m104_050406_4i20mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m104_050406_4i20mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m104_050406_4i20mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m10_050530_14i14mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m10_050530_14i14mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m10_050530_14i14mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m10_050530_40i40mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m11_050830_11i8x3mc11m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": false
     },
     {
       "path": "fits/m11_050830_6i6m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": false
     },
     {
       "path": "fits/m11_050830_6i6m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": false
     },
     {
       "path": "fits/m11_050830_6i6m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": false
     },
     {
       "path": "fits/m12_050512_16i16mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m12_050512_6i6mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m12_050512_6i6mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m12_050512_6i6mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m13_050414_14i14m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m13_050414_7i7m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m13_050414_7i7m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m13_050414_7i7m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m15_050710_15i15m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m15_050710_6i6m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m15_050710_6i6m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m15_050710_6i6m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m1_041117_3i15m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m1_041117_3i15m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m1_041117_3i15m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m1_041117_9i45m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m22_050831_18i18m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m22_050831_6i6m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m22_050831_6i6m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m22_050831_6i6m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m24_060530_13i65m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m24_060530_3i15m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m24_060530_3i15m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m24_060530_3i15m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m27_050711_3i15m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m27_050711_3i15m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m27_050711_3i15m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m27_050711_6i30m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m2_050907_12i12m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m2_050907_6i6m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m2_050907_6i6m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m2_050907_6i6m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m31_061022_12i60m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m31_061022_4i20m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m31_061022_4i20m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m31_061022_4i20m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m33_041012_11i55m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m33_041012_3i15m3_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m33_041012_3i15m3_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m33_041012_3i15m3_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m3_050503_6i6mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m3_050503_6i6mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m3_050503_6i6mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m3_050503_9i9mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m51_050414_15i75mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m51_050414_5i25mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m51_050414_5i25mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m51_050414_5i25mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m5_050508_16i16mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m5_050508_5i5mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m5_050508_5i5mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m5_050508_5i5mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m63_050306_12i60m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m63_050306_4i20m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m63_050306_4i20m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m63_050306_4i20m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m64_050604_3i15m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m64_050604_3i15m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m64_050604_3i15m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m64_050604_9i45m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m74_041109_33i165mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m74_041109_7ila35m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m74_041109_7ila35m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m74_041109_7ila35m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m81_050201_4i20mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m81_050201_4i20mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m81_050201_4i20mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m81_050201_9i45mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m82_050208_2i10mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m82_050208_2i10mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m82_050208_2i10mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m82_050208_9i45mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m82_050307_6i180mF_H.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m87_050208_10i50mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m87_050208_4i20mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m87_050208_4i20mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m87_050208_4i20mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m8_050507_26i26m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m8_050507_5i75m_H.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m8_050507_9i9m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m8_050507_9i9m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m8_050507_9i9m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m8_060527_11i55m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m8_060527_3i15m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m8_060527_3i15m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m8_060527_3i15m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m92_050503_17i17mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m92_050503_6i6mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m92_050503_6i6mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m92_050503_6i6mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m94_050312_10i50mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m94_050312_5i25mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m94_050312_5i25mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m94_050312_5i25mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m9_050603_14i14m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m9_050603_6i6m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m9_050603_6i6m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/m9_050603_6i6m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/mel15_041110_14i70m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/mel15_041110_5i25m3_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/mel15_041110_5i25m3_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/mel15_041110_5i25m3_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/mel15_051025_9i135m_H.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc1499_061028_18i90m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc1499_061028_2i30m_H.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc1499_061028_6i30m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc1499_061028_6i30m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc1499_061028_6i30m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc2264_061028_16i80m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc2264_061028_5i25m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc2264_061028_5i25m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc2264_061028_5i25m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc2359_041212_10i50m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc2359_041212_5i25m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc2359_041212_5i25m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc2359_041212_5i25m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc2403_050205_15i75mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc2403_050205_5i25mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc2403_050205_5i25mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc2403_050205_5i25mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc2841_041214_13i65mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc2841_041214_5i25mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc2841_041214_5i25mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc2841_041214_5i25mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc3628_050205_12i60mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc3628_050205_6i30mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc3628_050205_6i30mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc3628_050205_6i30mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc3718_050531_050601_17i85m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc3718_050531_050601_6i30m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc3718_050531_050601_6i30m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc3718_050531_050601_6i30m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4038_050306_3i15mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4038_050306_3i15mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4038_050306_3i15mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4038_050306_9i45mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4438_050508_12i60mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4438_050508_4i20mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4438_050508_4i20mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4438_050508_4i20mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4565_050411_12i60mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4565_050411_4i20mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4565_050411_4i20mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4565_050411_4i20mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4631_050307_6i30mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4631_050307_6i30mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4631_050307_6i30mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4631_060302_22i110m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4725_050311_15i75mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4725_050311_6i30mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4725_050311_6i30mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc4725_050311_6i30mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc5907_050413_12i60mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc5907_050413_4i20mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc5907_050413_4i20mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc5907_050413_4i20mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc5982_050601_10i50mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc5982_050601_3i15mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc5982_050601_3i15mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc5982_050601_3i15mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7000_060612_14i210m_H.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7000_060621_19i95m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7000_060621_4i20m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7000_060621_4i20m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7000_060621_4i20m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7023_041014_17i85m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7023_041014_5i25m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7023_041014_5i25m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7023_041014_5i25m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7129_051026_4i20m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7129_051026_4i20m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7129_051026_4i20m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7129_Combine_20i100m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7293_050906_3i15m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7293_050906_3i15m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7293_050906_3i15m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7293_050906_8i40m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7635_041008_15i75m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21424512,
       "referenced_by_catalog": false
     },
     {
       "path": "fits/ngc7635_041008_4i20m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": false
     },
     {
       "path": "fits/ngc7635_041008_4i20m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": false
     },
     {
       "path": "fits/ngc7635_041008_4i20m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": false
     },
     {
       "path": "fits/ngc7635_051031_10i150m_H.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": false
     },
     {
       "path": "fits/ngc7635_060615_10i150m_H.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7635_061022_16i80m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7635_061022_4i20m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7635_061022_4i20m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc7635_061022_4i20m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc891_041117_19i95mF_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc891_041117_6i30mF_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc891_041117_6i30mF_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/ngc891_041117_6i30mF_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/OrionBS_SW_061026_5i25m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427198,
       "referenced_by_catalog": false
     },
     {
       "path": "fits/OrionBS_SW_061026_5i25m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427198,
       "referenced_by_catalog": false
     },
     {
       "path": "fits/OrionBS_SW_061026_5i25m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427198,
       "referenced_by_catalog": false
     },
     {
       "path": "fits/OrionBS_SW_061026_9i45m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427193,
       "referenced_by_catalog": false
     },
     {
       "path": "fits/Veil_060614_10i150m_H.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/Veil_060622_21i105m_L.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/Veil_060622_5i25m_B.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/Veil_060622_5i25m_G.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
       "path": "fits/Veil_060622_5i25m_R.FIT",
       "kind": "fits",
-      "bytes": 133,
+      "bytes": 21427200,
       "referenced_by_catalog": true
     },
     {
