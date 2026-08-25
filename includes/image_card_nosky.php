@@ -1,7 +1,8 @@
+<?php $objectTitle = implode('/<wbr>', array_map(static fn (string $part): string => astro_escape($part), explode('/', $object))); ?>
 <main class="astro-card" id="main-content">
     <div class="astro-flex-row">
         <section class="astro-section astro-image-section">
-            <h1><?= astro_escape($object) ?></h1>
+            <h1><?= $objectTitle ?></h1>
             <a href="<?= astro_escape(astro_url('/image_viewer.php?img=' . rawurlencode((string) ($image['large'] ?? '')))) ?>" aria-label="Open full-size image of <?= astro_escape($object) ?>">
                 <img src="<?= astro_escape(astro_url((string) ($image['thumb'] ?? ''))) ?>" alt="<?= astro_escape((string) ($image['alt'] ?? $object)) ?>">
             </a>

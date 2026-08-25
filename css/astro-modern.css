@@ -186,7 +186,7 @@ h2 { font-size: clamp(2.8rem, 6.5vw, 6.8rem); }
 
 .astro-flex-row { padding-top: 72px; display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(330px, .92fr); gap: clamp(38px, 7vw, 86px); align-items: start; }
 .astro-image-section, .astro-details-section { min-width: 0; }
-.astro-image-section h1 { max-width: 100%; margin-bottom: 32px; overflow-wrap: break-word; word-break: normal; font-size: clamp(3rem, 6vw, 6.2rem); }
+.astro-image-section h1 { max-width: 100%; margin-bottom: 32px; overflow-wrap: normal; word-break: normal; font-size: clamp(3rem, 6vw, 6.2rem); }
 .astro-image-section > a { display: block; overflow: hidden; border: 1px solid var(--line); background: #010205; box-shadow: var(--shadow); }
 .astro-image-section img { width: 100%; max-height: 720px; object-fit: contain; transition: transform .3s; }
 .astro-image-section a:hover img { transform: scale(1.012); }
@@ -290,7 +290,7 @@ h2 { font-size: clamp(2.8rem, 6.5vw, 6.8rem); }
     .astro-collection-heading { max-width: 100%; margin: 50px 0 34px; }
     .astro-collection-heading h1 { max-width: 100%; margin-bottom: 0; overflow-wrap: anywhere; font-size: clamp(2.4rem, 11vw, 3.4rem); line-height: .92; letter-spacing: -.045em; }
     .astro-flex-row { padding-top: 48px; }
-    .astro-image-section h1 { font-size: clamp(2.3rem, 11vw, 3rem); line-height: .94; }
+    .astro-image-section h1 { font-size: clamp(2.15rem, 9.5vw, 2.65rem); line-height: .94; }
     .astro-details, .astro-details tbody, .astro-details tr, .astro-details th, .astro-details td { display: block; width: 100%; }
     .astro-details th { padding: 17px 0 7px; }
     .astro-details td { padding: 0 0 17px; font-size: .86rem; }
