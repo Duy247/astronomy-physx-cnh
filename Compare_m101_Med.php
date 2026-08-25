@@ -18,23 +18,23 @@
                 <th>Links</th>
             </tr>
             <tr>
-                <td><a href="http://www.mistisoftware.com/astronomy">Jim Misti</a></td>
+                <td>Jim Misti</td>
                 <td><a href="/Images/m101_JimMisti_800.jpg">Medium</a> / <a href="/Images/m101_JimMisti_2000.jpg">Large</a></td>
-                <td><a href="http://www.astroden.com/">Michael Downing</a></td>
+                <td>Michael Downing</td>
                 <td><a href="/Images/m101_MichaelDowning_800.jpg">Medium</a> / <a href="/Images/m101_MichaelDowning_2000.jpg">Large</a></td>
-                <td><a href="http://www.cosmicimage.com">Rick Yandrick</a></td>
+                <td>Rick Yandrick</td>
                 <td><a href="/Images/m101_RickYandrick_800.jpg">Medium</a> / <a href="/Images/m101_RickYandrick_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://starryforge.com/">Larry Citro</a></td>
+                <td>Larry Citro</td>
                 <td><a href="/Images/m101_LarryCitro_800.jpg">Medium</a> / <a href="/Images/m101_LarryCitro_2000.jpg">Large</a></td>
-                <td><a href="http://www.tamanti.it/astronomy.htm">Andrea Tamanti</a></td>
+                <td>Andrea Tamanti</td>
                 <td><a href="/Images/m101_AndreaTamanti_800.jpg">Medium</a> / <a href="/Images/m101_AndreaTamanti_2000.jpg">Large</a></td>
-                <td><a href="http://www.orbitjetobservatory.com/">Mike O'Connor</a></td>
+                <td>Mike O'Connor</td>
                 <td><a href="/Images/m101_MikeOConnor_800.jpg">Medium</a> / <a href="/Images/m101_MikeOConnor_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://www.jnoble.darkhorizons.org">John Noble</a></td>
+                <td>John Noble</td>
                 <td><a href="/Images/m101_JohnNoble_800.jpg">Medium</a> / <a href="/Images/m101_JohnNoble_2000.jpg">Large</a></td>
                 <td>Paul Phelps</td>
                 <td><a href="/Images/m101_PaulPhelps_800.jpg">Medium</a> / <a href="/Images/m101_PaulPhelps_2000.jpg">Large</a></td>
@@ -42,7 +42,7 @@
                 <td></td>
             </tr>
             <tr>
-                <td><a href="http://pk.darkhorizons.org/">Paul K</a></td>
+                <td>Paul K</td>
                 <td><a href="/Images/m101_PaulK_800.jpg">Medium</a> / <a href="/Images/m101_PaulK_2000.jpg">Large</a></td>
                 <td>Ryan Hannahoe</td>
                 <td><a href="/Images/m101_RyanHannahoe_800.jpg">Medium</a> / <a href="/Images/m101_RyanHannahoe_2000.jpg">Large</a></td>
@@ -52,21 +52,21 @@
             <tr>
                 <td>Steve Timmons</td>
                 <td><a href="/Images/m101_SteveTimmons_800.jpg">Medium</a> / <a href="/Images/m101_SteveTimmons_2000.jpg">Large</a></td>
-                <td><a href="http://www.luluobservatorium.de/">Guido Rettig</a></td>
+                <td>Guido Rettig</td>
                 <td><a href="/Images/m101_GuidoRettig_800.jpg">Medium</a> / <a href="/Images/m101_GuidoRettig_2000.jpg">Large</a></td>
-                <td><a href="http://ncarboni.home.att.net/Astrophotography.html">Noel Carboni</a></td>
+                <td>Noel Carboni</td>
                 <td><a href="/Images/m101_NoelCarboni_800.jpg">Medium</a> / <a href="/Images/m101_NoelCarboni_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://astrosurf.com/astrocaza/Index.html">Tomas Mazon</a></td>
+                <td>Tomas Mazon</td>
                 <td><a href="/Images/m101_TomasMazon_800.jpg">Medium</a> / <a href="/Images/m101_TomasMazon_2000.jpg">Large</a></td>
-                <td><a href="http://paginas.terra.com.br/arte/astrophotography3/RC32/">Marcos Mataratzis<br>& Vivek Hira</a></td>
+                <td>Marcos Mataratzis<br>& Vivek Hira</td>
                 <td><a href="/Images/m101_MarcosMataratzisVivekHira_800.jpg">Medium</a> / <a href="/Images/m101_MarcosMataratzisVivekHira_2000.jpg">Large</a></td>
-                <td><a href="http://www.manoprietoobservatory.com/">Tom Harrison</a></td>
+                <td>Tom Harrison</td>
                 <td><a href="/Images/m101_TomHarrison_800.jpg">Medium</a> / <a href="/Images/m101_TomHarrison_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://www.highdesertsky.com/">Jimmy Stewart</a></td>
+                <td>Jimmy Stewart</td>
                 <td><a href="/Images/m101_JimStewart_800.jpg">Medium</a> / <a href="/Images/m101_JimStewart_2000.jpg">Large</a></td>
                 <td></td>
                 <td></td>

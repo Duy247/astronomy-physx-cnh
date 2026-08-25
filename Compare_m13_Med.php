@@ -18,19 +18,19 @@
                 <th>Links</th>
             </tr>
             <tr>
-                <td><a href="http://www.mistisoftware.com/astronomy">Jim Misti</a></td>
+                <td>Jim Misti</td>
                 <td><a href="/Images/m13_JimMisti_800.jpg">Medium</a> / <a href="/Images/m13_JimMisti_2000.jpg">Large</a></td>
-                <td><a href="http://www.robgendlerastropics.com/">Rob Gendler</a></td>
+                <td>Rob Gendler</td>
                 <td><a href="/Images/m13_RobGendler_800.jpg">Medium</a> / <a href="/Images/m13_RobGendler_2000.jpg">Large</a></td>
-                <td><a href="http://www.starrywonders.com/">Steve Cannistra</a></td>
+                <td>Steve Cannistra</td>
                 <td><a href="/Images/m13_SteveCannistra_800.jpg">Medium</a> / <a href="/Images/m13_SteveCannistra_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://www.tamanti.it/astronomy.htm">Andrea Tamanti</a></td>
+                <td>Andrea Tamanti</td>
                 <td><a href="/Images/m13_AndreaTamanti_800.jpg">Medium</a> / <a href="/Images/m13_AndreaTamanti_2000.jpg">Large</a></td>
-                <td><a href="http://www.teamgs.org/astronomy.htm">Gary Blevins</a></td>
+                <td>Gary Blevins</td>
                 <td><a href="/Images/m13_GaryBlevins_800.jpg">Medium</a> / <a href="/Images/m13_GaryBlevins_2000.jpg">Large</a></td>
-                <td><a href="http://pk.darkhorizons.org/">Paul K</a></td>
+                <td>Paul K</td>
                 <td><a href="/Images/m13_PaulK_800.jpg">Medium</a> / <a href="/Images/m13_PaulK_2000.jpg">Large</a></td>
             </tr>
             <tr>
@@ -42,11 +42,11 @@
                 <td></td>
             </tr>
             <tr>
-                <td><a href="http://www.manoprietoobservatory.com/">Tom Harrison</a></td>
+                <td>Tom Harrison</td>
                 <td><a href="/Images/m13_TomHarrison_800.jpg">Medium</a> / <a href="/Images/m13_TomHarrison_2000.jpg">Large</a></td>
-                <td><a href="http://starryforge.com/">Larry Citro</a></td>
+                <td>Larry Citro</td>
                 <td><a href="/Images/m13_LarryCitro_800.jpg">Medium</a> / <a href="/Images/m13_LarryCitro_2000.jpg">Large</a></td>
-                <td><a href="http://www.luluobservatorium.de/">Guido Rettig</a></td>
+                <td>Guido Rettig</td>
                 <td><a href="/Images/m13_GuidoRettig_800.jpg">Medium</a> / <a href="/Images/m13_GuidoRettig_2000.jpg">Large</a></td>
             </tr>
             <tr>
@@ -54,13 +54,13 @@
                 <td><a href="/Images/m13_DarrellHilde_800.jpg">Medium</a> / <a href="/Images/m13_DarrellHilde_2000.jpg">Large</a></td>
                 <td>Steve Timmons</td>
                 <td><a href="/Images/m13_SteveTimmons_800.jpg">Medium</a> / <a href="/Images/m13_SteveTimmons_2000.jpg">Large</a></td>
-                <td><a href="http://ncarboni.home.att.net/Astrophotography.html">Noel Carboni</a></td>
+                <td>Noel Carboni</td>
                 <td><a href="/Images/m13_NoelCarboni_800.jpg">Medium</a> / <a href="/Images/m13_NoelCarboni_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://paginas.terra.com.br/arte/astrophotography3/RC32/">Marcos Mataratzis<br>& Vivek Hira</a></td>
+                <td>Marcos Mataratzis<br>& Vivek Hira</td>
                 <td><a href="/Images/m13_MarcosMataratzisVivekHira_800.jpg">Medium</a> / <a href="/Images/m13_MarcosMataratzisVivekHira_2000.jpg">Large</a></td>
-                <td><a href="http://www.highdesertsky.com/">Jimmy Stewart</a></td>
+                <td>Jimmy Stewart</td>
                 <td><a href="/Images/m13_JimStewart_800.jpg">Medium</a> / <a href="/Images/m13_JimStewart_2000.jpg">Large</a></td>
                 <td></td>
                 <td></td>

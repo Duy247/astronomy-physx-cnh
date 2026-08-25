@@ -32,14 +32,7 @@ require __DIR__ . '/includes/header.php';
             <a href="<?= astro_escape(astro_url('/Nebulae.php')) ?>" class="astro-gallery-item"><img src="<?= astro_escape(astro_url('/Images/ngc2359_041212_200.jpg')) ?>" alt="Thor's Helmet nebula" class="astro-thumb"><strong>Nebulae</strong></a>
             <a href="<?= astro_escape(astro_url('/Clusters.php')) ?>" class="astro-gallery-item"><img src="<?= astro_escape(astro_url('/Images/m22_040914_200.jpg')) ?>" alt="M22 star cluster" class="astro-thumb"><strong>Star clusters</strong></a>
             <a href="<?= astro_escape(astro_url('/SolarSystem.php')) ?>" class="astro-gallery-item"><img src="<?= astro_escape(astro_url('/Images/FullMoon_200.jpg')) ?>" alt="The full Moon" class="astro-thumb"><strong>Solar System</strong></a>
-            <a href="<?= astro_escape(astro_url('/178ED.php')) ?>" class="astro-gallery-item"><img src="<?= astro_escape(astro_url('/Images/ic5067_041013_200.jpg')) ?>" alt="IC 5067 photographed with a refractor" class="astro-thumb"><strong>7-inch refractor</strong></a>
-            <a href="<?= astro_escape(astro_url('/500mm.php')) ?>" class="astro-gallery-item"><img src="<?= astro_escape(astro_url('/Images/m31_040723_200.jpg')) ?>" alt="Andromeda photographed with a 500mm lens" class="astro-thumb"><strong>500mm lens</strong></a>
         </div>
-    </section>
-
-    <section class="astro-section astro-observatory-panel">
-        <div><h2>Misti Mountain Observatory.</h2></div>
-        <nav aria-label="Observatory resources"><a href="<?= astro_escape(astro_url('/Equipment.php')) ?>">Equipment <span>↗</span></a><a href="<?= astro_escape(astro_url('/Site.php')) ?>">Site history <span>↗</span></a><a href="<?= astro_escape(astro_url('/178ED.php')) ?>">7-inch refractor <span>↗</span></a><a href="<?= astro_escape(astro_url('/500mm.php')) ?>">500mm lens <span>↗</span></a></nav>
     </section>
 </main>
 <?php require __DIR__ . '/includes/footer.php'; ?>

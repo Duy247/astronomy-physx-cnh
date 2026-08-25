@@ -3,4 +3,4 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/app/bootstrap.php';
-astro_render_gallery(__DIR__ . '/gallery/gallery_178ed.json', '7-inch Refractor Images');
+astro_redirect_home();

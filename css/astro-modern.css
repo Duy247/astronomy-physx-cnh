@@ -158,9 +158,8 @@ h2 { font-size: clamp(2.8rem, 6.5vw, 6.8rem); }
 .astro-gallery-item strong { margin-top: 11px; font-size: 1rem; font-weight: 400; line-height: 1.2; }
 .astro-gallery-item > span { margin-top: 6px; color: var(--muted); font: 500 .6rem var(--font-mono); letter-spacing: .04em; }
 .astro-gallery-item .astro-gallery-meta { color: var(--violet); font-size: .58rem; letter-spacing: .12em; text-transform: uppercase; }
-.astro-home-gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.astro-home-gallery .astro-gallery-item:nth-child(1), .astro-home-gallery .astro-gallery-item:nth-child(4) { grid-column: span 2; }
-.astro-home-gallery .astro-gallery-item:nth-child(1) img, .astro-home-gallery .astro-gallery-item:nth-child(4) img { aspect-ratio: 2 / 1; }
+.astro-home-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.astro-home-gallery .astro-gallery-item img { aspect-ratio: 16 / 10; }
 
 .astro-manifesto { position: relative; }
 .astro-manifesto::before { position: absolute; z-index: -1; inset: -80px -20vw; content: ""; background: radial-gradient(ellipse, rgba(18,31,55,.8), transparent 66%); }
@@ -171,13 +170,6 @@ h2 { font-size: clamp(2.8rem, 6.5vw, 6.8rem); }
 .astro-info-card h3 { margin: 0; font-size: 2rem; font-weight: 400; }
 .astro-info-card p { align-self: end; margin: 0; color: var(--muted); font-size: .9rem; }
 .astro-info-card a { color: var(--cyan); font: 650 .68rem var(--font-mono); letter-spacing: .06em; text-decoration: none; text-transform: uppercase; }
-.astro-observatory-panel { padding: clamp(34px, 6vw, 74px); display: grid; grid-template-columns: 1.2fr .8fr; gap: 70px; border: 1px solid var(--line-bright); background: linear-gradient(120deg, rgba(8,42,53,.82), rgba(9,13,29,.9) 64%, rgba(30,18,62,.56)); box-shadow: var(--shadow), inset 0 1px rgba(255,255,255,.08); }
-.astro-observatory-panel h2 { max-width: 650px; margin-bottom: 26px; font-size: clamp(3.2rem, 6vw, 6rem); }
-.astro-observatory-panel > div > p:last-child { max-width: 660px; color: #a6b5bd; }
-.astro-observatory-panel nav { display: grid; align-content: center; }
-.astro-observatory-panel nav a { padding: 16px 0; display: flex; justify-content: space-between; border-bottom: 1px solid var(--line); color: #c8d6dc; text-decoration: none; }
-.astro-observatory-panel nav a:first-child { border-top: 1px solid var(--line); }
-.astro-observatory-panel nav a:hover { color: var(--cyan); }
 
 .astro-collection-heading { max-width: 850px; margin: 90px 0 56px; }
 .astro-collection-heading h1 { margin-bottom: 22px; font-size: clamp(4rem, 9vw, 8.5rem); }
@@ -281,12 +273,10 @@ h2 { font-size: clamp(2.8rem, 6.5vw, 6.8rem); }
     .astro-section-heading { grid-template-columns: 1fr; gap: 22px; margin-bottom: 42px; }
     .astro-section-heading h2 { font-size: clamp(3.4rem, 16vw, 5rem); }
     .astro-gallery, .astro-home-gallery, .astro-collection .astro-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-    .astro-home-gallery .astro-gallery-item:nth-child(1), .astro-home-gallery .astro-gallery-item:nth-child(4) { grid-column: span 2; }
     .astro-home-grid { grid-template-columns: 1fr; }
     .astro-info-card { min-height: 220px; padding: 26px 10px; }
     .astro-info-card + .astro-info-card { border-top: 1px solid var(--line); border-left: 0; }
-    .astro-observatory-panel, .astro-flex-row { grid-template-columns: 1fr; }
-    .astro-observatory-panel { gap: 36px; }
+    .astro-flex-row { grid-template-columns: 1fr; }
     .astro-collection-heading { max-width: 100%; margin: 50px 0 34px; }
     .astro-collection-heading h1 { max-width: 100%; margin-bottom: 0; overflow-wrap: anywhere; font-size: clamp(2.4rem, 11vw, 3.4rem); line-height: .92; letter-spacing: -.045em; }
     .astro-flex-row { padding-top: 48px; }
@@ -311,8 +301,6 @@ h2 { font-size: clamp(2.8rem, 6.5vw, 6.8rem); }
 @media (max-width: 460px) {
     .astro-nav-toggle-label { display: none; }
     .astro-home-gallery { grid-template-columns: 1fr; }
-    .astro-home-gallery .astro-gallery-item:nth-child(1), .astro-home-gallery .astro-gallery-item:nth-child(4) { grid-column: auto; }
-    .astro-home-gallery .astro-gallery-item img, .astro-home-gallery .astro-gallery-item:nth-child(1) img, .astro-home-gallery .astro-gallery-item:nth-child(4) img { aspect-ratio: 16 / 10; }
     .astro-hero-actions { display: grid; justify-items: start; }
     .astro-footer-end { display: grid; gap: 8px; }
 }

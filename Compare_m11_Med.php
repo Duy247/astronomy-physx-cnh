@@ -18,11 +18,11 @@
                 <th>Links</th>
             </tr>
             <tr>
-                <td><a href="http://www.mistisoftware.com/astronomy">Jim Misti</a></td>
+                <td>Jim Misti</td>
                 <td><a href="/Images/m11_JimMisti_800.jpg">Medium</a> / <a href="/Images/m11_JimMisti_2000.jpg">Large</a></td>
-                <td><a href="http://starryforge.com/">Larry Citro</a></td>
+                <td>Larry Citro</td>
                 <td><a href="/Images/m11_LarryCitro_800.jpg">Medium</a> / <a href="/Images/m11_LarryCitro_2000.jpg">Large</a></td>
-                <td><a href="http://pk.darkhorizons.org/">Paul K</a></td>
+                <td>Paul K</td>
                 <td><a href="/Images/m11_PaulK_800.jpg">Medium</a> / <a href="/Images/m11_PaulK_2000.jpg">Large</a></td>
             </tr>
             <tr>
@@ -30,13 +30,13 @@
                 <td><a href="/Images/m11_PaulPhelps_800.jpg">Medium</a> / <a href="/Images/m11_PaulPhelps_2000.jpg">Large</a></td>
                 <td>Darrell Hilde</td>
                 <td><a href="/Images/m11_DarrellHilde_800.jpg">Medium</a> / <a href="/Images/m11_DarrellHilde_2000.jpg">Large</a></td>
-                <td><a href="http://ncarboni.home.att.net/Astrophotography.html">Noel Carboni</a></td>
+                <td>Noel Carboni</td>
                 <td><a href="/Images/m11_NoelCarboni_800.jpg">Medium</a> / <a href="/Images/m11_NoelCarboni_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://paginas.terra.com.br/arte/astrophotography3/RC32/">Marcos Mataratzis<br>& Vivek Hira</a></td>
+                <td>Marcos Mataratzis<br>& Vivek Hira</td>
                 <td><a href="/Images/m11_MarcosMataratzisVivekHira_800.jpg">Medium</a> / <a href="/Images/m11_MarcosMataratzisVivekHira_2000.jpg">Large</a></td>
-                <td><a href="http://www.highdesertsky.com/">Jimmy Stewart</a></td>
+                <td>Jimmy Stewart</td>
                 <td><a href="/Images/m11_JimStewart_800.jpg">Medium</a> / <a href="/Images/m11_JimStewart_2000.jpg">Large</a></td>
                 <td><a href="Compare_m11_Med.php">Composite</a></td>
                 <td></td>

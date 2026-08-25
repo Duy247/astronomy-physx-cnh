@@ -54,10 +54,15 @@ function astro_render_detail(array $row): string
     if (array_key_exists('text', $row) || array_key_exists('links', $row)) {
         $output = nl2br(astro_escape((string) ($row['text'] ?? '')));
         $links = is_array($row['links'] ?? null) ? $row['links'] : [];
+        $links = array_values(array_filter($links, static fn (array $link): bool => !preg_match(
+            '~^https?://~i',
+            (string) ($link['href'] ?? '')
+        )));
         if ($links) {
             $output .= '<ul class="astro-detail-links">';
             foreach ($links as $link) {
-                $href = astro_url((string) ($link['href'] ?? ''));
+                $rawHref = (string) ($link['href'] ?? '');
+                $href = astro_url($rawHref);
                 $label = (string) ($link['label'] ?? $href);
                 $output .= '<li><a href="' . astro_escape($href) . '">' . astro_escape($label) . '</a></li>';
             }
@@ -66,6 +71,23 @@ function astro_render_detail(array $row): string
         return $output;
     }
     return astro_safe_html((string) ($row['value'] ?? ''));
+}
+
+function astro_is_equipment_detail(array $row): bool
+{
+    return in_array(strtolower(trim((string) ($row['label'] ?? ''))), [
+        'instrument',
+        'focal ratio',
+        'camera',
+        'guiding',
+        'film',
+    ], true);
+}
+
+function astro_redirect_home(): void
+{
+    header('Location: ' . astro_url('/index.php'), true, 302);
+    exit;
 }
 
 function astro_log(Throwable $error): void

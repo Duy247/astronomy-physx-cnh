@@ -10,6 +10,7 @@
         <section class="astro-details-section" aria-label="Observation details">
             <table class="astro-details"><tbody>
                 <?php foreach ($details as $row): ?>
+                    <?php if (astro_is_equipment_detail($row)) continue; ?>
                     <tr><th scope="row"><?= astro_escape((string) ($row['label'] ?? 'Detail')) ?></th><td><?= astro_render_detail($row) ?></td></tr>
                 <?php endforeach; ?>
             </tbody></table>

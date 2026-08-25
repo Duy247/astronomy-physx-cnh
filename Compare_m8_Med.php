@@ -18,39 +18,39 @@
                 <th>Links</th>
             </tr>
             <tr>
-                <td><a href="http://www.mistisoftware.com/astronomy">Jim Misti</a></td>
+                <td>Jim Misti</td>
                 <td><a href="/Images/m8_JimMisti_800.jpg">Medium</a> / <a href="/Images/m8_JimMisti_2000.jpg">Large</a></td>
-                <td><a href="http://www.robgendlerastropics.com/">Rob Gendler</a></td>
+                <td>Rob Gendler</td>
                 <td><a href="/Images/m8_RobGendler_800.jpg">Medium</a> / <a href="/Images/m8_RobGendler_2000.jpg">Large</a></td>
-                <td><a href="http://members.cox.net/jonc97/astro.htm">Jon Christensen</a></td>
+                <td>Jon Christensen</td>
                 <td><a href="/Images/m8_JonChristensen_800.jpg">Medium</a> / <a href="/Images/m8_JonChristensen_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://www.starrywonders.com/">Steve Cannistra</a></td>
+                <td>Steve Cannistra</td>
                 <td><a href="/Images/m8_SteveCannistra_800.jpg">Medium</a> / <a href="/Images/m8_SteveCannistra_2000.jpg">Large</a></td>
-                <td><a href="http://starryforge.com/">Larry Citro</a></td>
+                <td>Larry Citro</td>
                 <td><a href="/Images/m8_LarryCitro_800.jpg">Medium</a> / <a href="/Images/m8_LarryCitro_2000.jpg">Large</a></td>
-                <td><a href="http://pk.darkhorizons.org/">Paul K</a></td>
+                <td>Paul K</td>
                 <td><a href="/Images/m8_PaulK_800.jpg">Medium</a> / <a href="/Images/m8_PaulK_2000.jpg">Large</a></td>
             </tr>
             <tr>
                 <td>Michael Coelho</td>
                 <td><a href="/Images/m8_MichaelCoelho_800.jpg">Medium</a> / <a href="/Images/m8_MichaelCoelho_2000.jpg">Large</a></td>
-                <td><a href="http://www.tamanti.it/astronomy.htm">Andrea Tamanti</a></td>
+                <td>Andrea Tamanti</td>
                 <td><a href="/Images/m8_AndreaTamanti_800.jpg">Medium</a> / <a href="/Images/m8_AndreaTamanti_2000.jpg">Large</a></td>
                 <td>Paul Phelps</td>
                 <td><a href="/Images/m8_PaulPhelps_800.jpg">Medium</a> / <a href="/Images/m8_PaulPhelps_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://www.wittich.com/">Reinhold Wittich</a></td>
+                <td>Reinhold Wittich</td>
                 <td><a href="/Images/m8_ReinholdWittich_800.jpg">Medium</a> / <a href="/Images/m8_ReinholdWittich_2000.jpg">Large</a></td>
-                <td><a href="http://www.tvdavisastropics.com/">Tom Davis</a></td>
+                <td>Tom Davis</td>
                 <td><a href="/Images/m8_TomDavis_800.jpg">Medium</a> / <a href="/Images/m8_TomDavis_2000.jpg">Large</a></td>
                 <td>Ryan Hannahoe</td>
                 <td><a href="/Images/m8_RyanHannahoe_800.jpg">Medium</a> / <a href="/Images/m8_RyanHannahoe_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://www.sky-image.com/">Daniel Marquardt</a></td>
+                <td>Daniel Marquardt</td>
                 <td><a href="/Images/m8_DanielMarquardt_800.jpg">Medium</a> / <a href="/Images/m8_DanielMarquardt_2000.jpg">Large</a></td>
                 <td>Darrell Hilde</td>
                 <td><a href="/Images/m8_DarrellHilde_800.jpg">Medium</a> / <a href="/Images/m8_DarrellHilde_2000.jpg">Large</a></td>
@@ -58,34 +58,34 @@
                 <td><a href="/Images/m8_SteveTimmons_800.jpg">Medium</a> / <a href="/Images/m8_SteveTimmons_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://www.skyfactory.org">Davide De Martin</a></td>
+                <td>Davide De Martin</td>
                 <td><a href="/Images/m8_DavideDeMartin_800.jpg">Medium</a> / <a href="/Images/m8_DavideDeMartin_2000.jpg">Large</a></td>
-                <td><a href="http://ncarboni.home.att.net/Astrophotography.html">Noel Carboni</a></td>
+                <td>Noel Carboni</td>
                 <td><a href="/Images/m8_NoelCarboni_800.jpg">Medium</a> / <a href="/Images/m8_NoelCarboni_2000.jpg">Large</a></td>
-                <td><a href="http://www.worton-astronomy.co.uk/">Tommi Worton</a></td>
+                <td>Tommi Worton</td>
                 <td><a href="/Images/m8_TommiWorton_800.jpg">Medium</a> / <a href="/Images/m8_TommiWorton_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://paginas.terra.com.br/arte/astrophotography3/RC32/">Marcos Mataratzis<br>& Vivek Hira</a></td>
+                <td>Marcos Mataratzis<br>& Vivek Hira</td>
                 <td><a href="/Images/m8_MarcosMataratzisVivekHira_800.jpg">Medium</a> / <a href="/Images/m8_MarcosMataratzisVivekHira_2000.jpg">Large</a></td>
-                <td><a href="http://www.highdesertsky.com/">Jimmy Stewart</a></td>
+                <td>Jimmy Stewart</td>
                 <td><a href="/Images/m8_JimStewart_800.jpg">Medium</a> / <a href="/Images/m8_JimStewart_2000.jpg">Large</a></td>
-                <td><a href="http://www.astroneyer.ch.vu/">Fabian Neyer</a></td>
+                <td>Fabian Neyer</td>
                 <td><a href="/Images/m8_FabianNeyer_800.jpg">Medium</a> / <a href="/Images/m8_FabianNeyer_2000.jpg">Large</a></td>
             </tr>
             <tr>
                 <th colspan="6" style="background:#e3eaff;">Hydrogen Alpha</th>
             </tr>
             <tr>
-                <td><a href="http://www.starrywonders.com/">Steve Cannistra</a></td>
+                <td>Steve Cannistra</td>
                 <td><a href="/Images/m8_SteveCannistraHa_800.jpg">Medium</a> / <a href="/Images/m8_SteveCannistraHa_2000.jpg">Large</a></td>
-                <td><a href="http://pk.darkhorizons.org/">Paul K</a></td>
+                <td>Paul K</td>
                 <td><a href="/Images/m8_PaulKHa_800.jpg">Medium</a> / <a href="/Images/m8_PaulKHa_2000.jpg">Large</a></td>
-                <td><a href="http://starryforge.com/">Larry Citro</a></td>
+                <td>Larry Citro</td>
                 <td><a href="/Images/m8_LarryCitroHa_800.jpg">Medium</a> / <a href="/Images/m8_LarryCitroHa_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://ncarboni.home.att.net/Astrophotography.html">Noel Carboni</a></td>
+                <td>Noel Carboni</td>
                 <td><a href="/Images/m8_NoelCarboniHa_800.jpg">Medium</a> / <a href="/Images/m8_NoelCarboniHa_2000.jpg">Large</a></td>
                 <td colspan="4"></td>
             </tr>

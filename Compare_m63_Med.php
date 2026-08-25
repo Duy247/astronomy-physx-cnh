@@ -18,63 +18,63 @@
                 <th>Links</th>
             </tr>
             <tr>
-                <td><a href="http://www.mistisoftware.com/astronomy">Jim Misti</a></td>
+                <td>Jim Misti</td>
                 <td><a href="/Images/m63_JimMisti_800.jpg">Medium</a> / <a href="/Images/m63_JimMisti_2000.jpg">Large</a></td>
-                <td><a href="http://www.robgendlerastropics.com/">Rob Gendler</a></td>
+                <td>Rob Gendler</td>
                 <td><a href="/Images/m63_RobGendler_800.jpg">Medium</a> / <a href="/Images/m63_RobGendler_2000.jpg">Large</a></td>
-                <td><a href="http://www.astroden.com/">Michael Downing</a></td>
+                <td>Michael Downing</td>
                 <td><a href="/Images/m63_MichaelDowning_800.jpg">Medium</a> / <a href="/Images/m63_MichaelDowning_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://starryforge.com/">Larry Citro</a></td>
+                <td>Larry Citro</td>
                 <td><a href="/Images/m63_LarryCitro_800.jpg">Medium</a> / <a href="/Images/m63_LarryCitro_2000.jpg">Large</a></td>
-                <td><a href="http://www.orbitjetobservatory.com/">Mike O'Connor</a></td>
+                <td>Mike O'Connor</td>
                 <td><a href="/Images/m63_MikeOConnor_800.jpg">Medium</a> / <a href="/Images/m63_MikeOConnor_2000.jpg">Large</a></td>
-                <td><a href="http://www.tamanti.it/astronomy.htm">Andrea Tamanti</a></td>
+                <td>Andrea Tamanti</td>
                 <td><a href="/Images/m63_AndreaTamanti_800.jpg">Medium</a> / <a href="/Images/m63_AndreaTamanti_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://www.astro-image.com/">Cord Scholz</a></td>
+                <td>Cord Scholz</td>
                 <td><a href="/Images/m63_CordScholz_800.jpg">Medium</a> / <a href="/Images/m63_CordScholz_2000.jpg">Large</a></td>
-                <td><a href="http://www.starrywonders.com/">Steve Cannistra</a></td>
+                <td>Steve Cannistra</td>
                 <td><a href="/Images/m63_SteveCannistra_800.jpg">Medium</a> / <a href="/Images/m63_SteveCannistra_2000.jpg">Large</a></td>
-                <td><a href="http://www.jnoble.darkhorizons.org">John Noble</a></td>
+                <td>John Noble</td>
                 <td><a href="/Images/m63_JohnNoble_800.jpg">Medium</a> / <a href="/Images/m63_JohnNoble_2000.jpg">Large</a></td>
             </tr>
             <tr>
                 <td>Paul Phelps</td>
                 <td><a href="/Images/m63_PaulPhelps_800.jpg">Medium</a> / <a href="/Images/m63_PaulPhelps_2000.jpg">Large</a></td>
-                <td><a href="http://pk.darkhorizons.org/">Paul K</a></td>
+                <td>Paul K</td>
                 <td><a href="/Images/m63_PaulK_800.jpg">Medium</a> / <a href="/Images/m63_PaulK_2000.jpg">Large</a></td>
                 <td>Giovanni Paglioli</td>
                 <td><a href="/Images/m63_GiovanniPaglioli_800.jpg">Medium</a> / <a href="/Images/m63_GiovanniPaglioli_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://www.tvdavisastropics.com/">Tom Davis</a></td>
+                <td>Tom Davis</td>
                 <td><a href="/Images/m63_TomDavis_800.jpg">Medium</a> / <a href="/Images/m63_TomDavis_2000.jpg">Large</a></td>
                 <td>Darrell Hilde</td>
                 <td><a href="/Images/m63_DarrellHilde_800.jpg">Medium</a> / <a href="/Images/m63_DarrellHilde_2000.jpg">Large</a></td>
-                <td><a href="http://www.astro.uni-bonn.de/~mischa/mbo/">Mischa Schirmer</a></td>
+                <td>Mischa Schirmer</td>
                 <td><a href="/Images/m63_MischaSchirmer_800.jpg">Medium</a> / <a href="/Images/m63_MischaSchirmer_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://www.luluobservatorium.de/">Guido Rettig</a></td>
+                <td>Guido Rettig</td>
                 <td><a href="/Images/m63_GuidoRettig_800.jpg">Medium</a> / <a href="/Images/m63_GuidoRettig_2000.jpg">Large</a></td>
-                <td><a href="http://ncarboni.home.att.net/Astrophotography.html">Noel Carboni</a></td>
+                <td>Noel Carboni</td>
                 <td><a href="/Images/m63_NoelCarboni_800.jpg">Medium</a> / <a href="/Images/m63_NoelCarboni_2000.jpg">Large</a></td>
-                <td><a href="http://pleiades-astrophoto.com/tutorials/index.html">Juan Conejero</a></td>
+                <td>Juan Conejero</td>
                 <td><a href="/Images/m63_JuanConejero_800.jpg">Medium</a> / <a href="/Images/m63_JuanConejero_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://paginas.terra.com.br/arte/astrophotography3/RC32/">Marcos Mataratzis <br>& Vivek Hira</a></td>
+                <td>Marcos Mataratzis <br>& Vivek Hira</td>
                 <td><a href="/Images/m63_MarcosMataratzisVivekHira_800.jpg">Medium</a> / <a href="/Images/m63_MarcosMataratzisVivekHira_2000.jpg">Large</a></td>
-                <td><a href="http://www.manoprietoobservatory.com/">Tom Harrison</a></td>
+                <td>Tom Harrison</td>
                 <td><a href="/Images/m63_TomHarrison_800.jpg">Medium</a> / <a href="/Images/m63_TomHarrison_2000.jpg">Large</a></td>
-                <td><a href="http://www.highdesertsky.com/">Jimmy Stewart</a></td>
+                <td>Jimmy Stewart</td>
                 <td><a href="/Images/m63_JimStewart_800.jpg">Medium</a> / <a href="/Images/m63_JimStewart_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://www.robertb.darkhorizons.org/Jmm63.htm">Robert Bateman</a></td>
+                <td>Robert Bateman</td>
                 <td><a href="/Images/m63_RobertBateman_800.jpg">Medium</a> / <a href="/Images/m63_RobertBateman_2000.jpg">Large</a></td>
                 <td></td>
                 <td></td>

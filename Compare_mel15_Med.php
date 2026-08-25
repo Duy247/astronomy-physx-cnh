@@ -18,17 +18,17 @@
                 <th>Links</th>
             </tr>
             <tr>
-                <td><a href="http://www.mistisoftware.com/astronomy">Jim Misti</a></td>
+                <td>Jim Misti</td>
                 <td><a href="/Images/mel15_JimMisti_800.jpg">Medium</a> / <a href="/Images/mel15_JimMisti_2000.jpg">Large</a></td>
-                <td><a href="http://www.robgendlerastropics.com/">Rob Gendler</a></td>
+                <td>Rob Gendler</td>
                 <td><a href="/Images/mel15_RobGendler_800.jpg">Medium</a> / <a href="/Images/mel15_RobGendler_2000.jpg">Large</a></td>
-                <td><a href="http://www.astroden.com/">Michael Downing</a></td>
+                <td>Michael Downing</td>
                 <td><a href="/Images/mel15_MichaelDowning_800.jpg">Medium</a> / <a href="/Images/mel15_MichaelDowning_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://www.tamanti.it/astronomy.htm">Andrea Tamanti</a></td>
+                <td>Andrea Tamanti</td>
                 <td><a href="/Images/mel15_AndreaTamanti_800.jpg">Medium</a> / <a href="/Images/mel15_AndreaTamanti_2000.jpg">Large</a></td>
-                <td><a href="http://starryforge.com/">Larry Citro</a></td>
+                <td>Larry Citro</td>
                 <td><a href="/Images/mel15_LarryCitro_800.jpg">Medium</a> / <a href="/Images/mel15_LarryCitro_2000.jpg">Large</a></td>
                 <td>Larry Van Vleet</td>
                 <td><a href="/Images/mel15_LarryVanVleet_800.jpg">Medium</a> / <a href="/Images/mel15_LarryVanVleet_2000.jpg">Large</a></td>
@@ -36,13 +36,13 @@
             <tr>
                 <td>Paul Phelps</td>
                 <td><a href="/Images/mel15_PaulPhelps_800.jpg">Medium</a> / <a href="/Images/mel15_PaulPhelps_2000.jpg">Large</a></td>
-                <td><a href="http://pk.darkhorizons.org/">Paul K</a></td>
+                <td>Paul K</td>
                 <td><a href="/Images/mel15_PaulK_800.jpg">Medium</a> / <a href="/Images/mel15_PaulK_2000.jpg">Large</a></td>
-                <td><a href="/../astronomy/Images/mel15_Combined_800.jpg">Composite</a></td>
+                <td>Composite unavailable</td>
                 <td></td>
             </tr>
             <tr>
-                <td><a href="http://www.galaxies.com/darrellccd.aspx?photoid=56">Darrell Crofford</a></td>
+                <td>Darrell Crofford</td>
                 <td><a href="/Images/mel15_DarrellCrofford_800.jpg">Medium</a> / <a href="/Images/mel15_DarrellCrofford_2000.jpg">Large</a></td>
                 <td>Ryan Hannahoe</td>
                 <td><a href="/Images/mel15_RyanHannahoe_800.jpg">Medium</a> / <a href="/Images/mel15_RyanHannahoe_2000.jpg">Large</a></td>
@@ -50,23 +50,23 @@
                 <td><a href="/Images/mel15_GiovanniPaglioli_800.jpg">Medium</a> / <a href="/Images/mel15_GiovanniPaglioli_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://www.tvdavisastropics.com/">Tom Davis</a></td>
+                <td>Tom Davis</td>
                 <td><a href="/Images/mel15_TomDavis_800.jpg">Medium</a> / <a href="/Images/mel15_TomDavis_2000.jpg">Large</a></td>
                 <td>Darrell Hilde</td>
                 <td><a href="/Images/mel15_DarrellHilde_800.jpg">Medium</a> / <a href="/Images/mel15_DarrellHilde_2000.jpg">Large</a></td>
-                <td><a href="http://www.luluobservatorium.de/">Guido Rettig</a></td>
+                <td>Guido Rettig</td>
                 <td><a href="/Images/mel15_GuidoRettig_800.jpg">Medium</a> / <a href="/Images/mel15_GuidoRettig_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://ncarboni.home.att.net/Astrophotography.html">Noel Carboni</a></td>
+                <td>Noel Carboni</td>
                 <td><a href="/Images/mel15_NoelCarboni_800.jpg">Medium</a> / <a href="/Images/mel15_NoelCarboni_2000.jpg">Large</a></td>
-                <td><a href="http://paginas.terra.com.br/arte/astrophotography3/RC32/">Marcos Mataratzis<br>& Vivek Hira</a></td>
+                <td>Marcos Mataratzis<br>& Vivek Hira</td>
                 <td><a href="/Images/mel15_MarcosMataratzisVivekHira_800.jpg">Medium</a> / <a href="/Images/mel15_MarcosMataratzisVivekHira_2000.jpg">Large</a></td>
-                <td><a href="http://www.highdesertsky.com/">Jimmy Stewart</a></td>
+                <td>Jimmy Stewart</td>
                 <td><a href="/Images/mel15_JimStewart_800.jpg">Medium</a> / <a href="/Images/mel15_JimStewart_2000.jpg">Large</a></td>
             </tr>
             <tr>
-                <td><a href="http://www.astroneyer.ch.vu/">Fabian Neyer</a></td>
+                <td>Fabian Neyer</td>
                 <td><a href="/Images/mel15_FabianNeyer_800.jpg">Medium</a> / <a href="/Images/mel15_FabianNeyer_2000.jpg">Large</a></td>
                 <td></td>
                 <td></td>
