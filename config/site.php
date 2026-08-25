@@ -10,18 +10,21 @@ return [
     'observing_cities' => [
         'hanoi' => [
             'name' => 'Hà Nội',
+            'short_name' => 'Hà Nội',
             'latitude' => 21.0285,
             'longitude' => 105.8542,
             'elevation' => 12,
         ],
         'hochiminh' => [
             'name' => 'Hồ Chí Minh City',
+            'short_name' => 'Hồ Chí Minh',
             'latitude' => 10.8231,
             'longitude' => 106.6297,
             'elevation' => 19,
         ],
         'danang' => [
             'name' => 'Đà Nẵng',
+            'short_name' => 'Đà Nẵng',
             'latitude' => 16.0544,
             'longitude' => 108.2022,
             'elevation' => 7,

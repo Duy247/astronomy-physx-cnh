@@ -178,7 +178,7 @@ h2 { font-size: clamp(2.8rem, 6.5vw, 6.8rem); }
 .astro-hero-coordinate { position: absolute; z-index: 3; right: 0; bottom: 34px; display: grid; justify-items: end; color: #586a79; font: 600 .55rem var(--font-mono); letter-spacing: .14em; }
 .astro-hero-coordinate strong { margin-top: 7px; color: #74d7b5; font-weight: 600; }
 
-.astro-tonight-gateway { position: relative; z-index: 5; grid-column: 2; grid-row: 1; width: min(100%, 440px); min-height: 224px; align-self: end; justify-self: end; overflow: hidden; border: 1px solid rgba(101,230,242,.38); background: rgba(3,8,15,.78); color: var(--text); text-decoration: none; box-shadow: 0 28px 80px rgba(0,0,0,.54), inset 0 1px rgba(255,255,255,.04); backdrop-filter: blur(10px); transition: border-color .25s, transform .25s, box-shadow .25s; }
+.astro-tonight-gateway { position: relative; z-index: 5; width: min(100%, 520px); min-height: 224px; margin: 28px 0 0 auto; display: block; overflow: hidden; border: 1px solid rgba(101,230,242,.38); background: rgba(3,8,15,.78); color: var(--text); text-decoration: none; box-shadow: 0 28px 80px rgba(0,0,0,.54), inset 0 1px rgba(255,255,255,.04); backdrop-filter: blur(10px); transition: border-color .25s, transform .25s, box-shadow .25s; }
 .astro-tonight-gateway:hover, .astro-tonight-gateway:focus-visible { color: var(--text); border-color: var(--gold); transform: translateY(-5px); box-shadow: 0 34px 90px rgba(0,0,0,.62), 0 0 45px rgba(101,230,242,.12); }
 .astro-tonight-gateway-map { position: absolute; inset: -26% -12% -18% 28%; opacity: .62; transition: opacity .6s; }
 .astro-tonight-gateway-map canvas { width: 100% !important; height: 100% !important; }
@@ -192,21 +192,19 @@ h2 { font-size: clamp(2.8rem, 6.5vw, 6.8rem); }
 
 .astro-tonight-page { padding-top: clamp(66px, 9vw, 110px); }
 .astro-tonight-intro { max-width: 980px; }
-.astro-tonight-intro h1 { margin-bottom: 30px; font-size: clamp(4.3rem, 10vw, 9rem); line-height: .82; }
+.astro-tonight-intro h1 { margin-bottom: 32px; font-size: clamp(4.3rem, 10vw, 9rem); line-height: .82; }
 .astro-tonight-intro h1 em { color: transparent; font-style: normal; -webkit-text-stroke: 1px #b7c5df; }
-.astro-tonight-intro > p:not(.astro-eyebrow) { max-width: 690px; color: var(--muted); font-size: 1.02rem; }
-.astro-tonight-city-picker { margin-top: 35px; display: flex; flex-wrap: wrap; gap: 10px; }
-.astro-tonight-city-picker button, .astro-time-control button { min-height: 42px; padding: 9px 14px; border: 1px solid var(--line-bright); background: rgba(8,16,27,.75); color: #aebdc5; cursor: pointer; font: 650 .63rem var(--font-mono); letter-spacing: .05em; text-transform: uppercase; }
+.astro-tonight-city-picker { width: min(100%, 540px); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.astro-tonight-city-picker button, .astro-time-control button { min-height: 46px; padding: 9px 12px; border: 1px solid var(--line-bright); background: rgba(8,16,27,.75); color: #aebdc5; cursor: pointer; font: 650 .61rem var(--font-mono); letter-spacing: .045em; text-align: center; text-transform: uppercase; }
 .astro-tonight-city-picker button[aria-pressed="true"], .astro-tonight-city-picker button:hover, .astro-time-control button:hover { border-color: var(--gold); background: rgba(233,203,118,.1); color: var(--gold); }
-.astro-tonight-dashboard { margin-top: 62px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-block: 1px solid var(--line); }
-.astro-tonight-dashboard article { min-width: 0; min-height: 142px; padding: 24px 20px; display: grid; align-content: space-between; gap: 6px; }
-.astro-tonight-dashboard article + article { border-left: 1px solid var(--line); }
+.astro-tonight-dashboard { margin-top: 34px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.astro-tonight-dashboard article { min-width: 0; min-height: 136px; padding: 20px; display: grid; grid-template-rows: auto auto 1fr; align-content: start; gap: 8px; border: 1px solid var(--line); background: linear-gradient(145deg, rgba(14,24,40,.72), rgba(5,9,16,.9)); }
 .astro-tonight-dashboard span { color: #617784; font: 600 .55rem var(--font-mono); letter-spacing: .12em; text-transform: uppercase; }
-.astro-tonight-dashboard strong { overflow-wrap: anywhere; font-size: clamp(1rem, 2vw, 1.4rem); font-weight: 400; line-height: 1.1; }
+.astro-tonight-dashboard strong { overflow-wrap: anywhere; font-size: clamp(1rem, 2vw, 1.35rem); font-weight: 400; line-height: 1.1; }
 .astro-tonight-dashboard strong[data-tone="excellent"], .astro-tonight-dashboard strong[data-tone="good"] { color: #76deb9; }
 .astro-tonight-dashboard strong[data-tone="fair"] { color: var(--gold); }
 .astro-tonight-dashboard strong[data-tone="poor"] { color: #ff9d9d; }
-.astro-tonight-dashboard small { color: var(--muted); font: 500 .58rem/1.45 var(--font-mono); }
+.astro-tonight-dashboard small { align-self: end; color: var(--muted); font: 500 .58rem/1.45 var(--font-mono); }
 .astro-tonight-map-section, .astro-tonight-details, .astro-tonight-targets, .astro-weather-timeline { margin-top: clamp(105px, 13vw, 165px); }
 .astro-tonight-map-shell { position: relative; min-height: 680px; overflow: hidden; border: 1px solid var(--line-bright); background: #02050b; box-shadow: var(--shadow); }
 .astro-tonight-map { width: 100%; min-height: 680px; }
@@ -376,7 +374,7 @@ h2 { font-size: clamp(2.8rem, 6.5vw, 6.8rem); }
     .astro-hero h1 { font-size: clamp(4.3rem, 21vw, 6.4rem); }
     .astro-hero-copy > p:not(.astro-eyebrow) { max-width: 92%; }
     .astro-hero-image { grid-column: 1; grid-row: 2; width: min(86vw, 520px); justify-self: center; }
-    .astro-tonight-gateway { grid-column: 1; grid-row: 2; width: min(100%, 520px); min-height: 206px; align-self: end; justify-self: center; }
+    .astro-tonight-gateway { width: 100%; min-height: 206px; margin: 24px auto 0; }
     .astro-tonight-gateway-copy { min-height: 158px; padding: 22px 18px; }
     .astro-tonight-gateway-copy strong { max-width: 230px; font-size: 1.75rem; }
     .astro-tonight-gateway-action { right: 16px; bottom: 14px; left: 18px; }
@@ -404,11 +402,9 @@ h2 { font-size: clamp(2.8rem, 6.5vw, 6.8rem); }
     .astro-gallery-item strong { margin-top: 8px; font-size: .82rem; line-height: 1.2; }
     .astro-gallery-item > span { margin-top: 4px; font-size: .51rem; line-height: 1.35; }
     .astro-card { width: min(100% - 24px, 950px); margin-top: 38px; padding: 24px 14px; }
-    .astro-tonight-page { padding-top: 58px; }
-    .astro-tonight-intro h1 { font-size: clamp(4rem, 19vw, 5.8rem); }
+    .astro-tonight-page { padding-top: 52px; }
+    .astro-tonight-intro h1 { margin-bottom: 26px; font-size: clamp(3.7rem, 17vw, 5.5rem); }
     .astro-tonight-dashboard { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .astro-tonight-dashboard article:nth-child(3) { border-left: 0; border-top: 1px solid var(--line); }
-    .astro-tonight-dashboard article:nth-child(4) { border-top: 1px solid var(--line); }
     .astro-tonight-map-shell, .astro-tonight-map { min-height: 510px; }
     .astro-time-control { grid-template-columns: 1fr; }
     .astro-time-control button { justify-self: start; }
@@ -423,10 +419,13 @@ h2 { font-size: clamp(2.8rem, 6.5vw, 6.8rem); }
     .astro-nav-toggle-label { display: none; }
     .astro-home-gallery { grid-template-columns: 1fr; }
     .astro-hero-actions { display: grid; justify-items: start; }
-    .astro-tonight-dashboard, .astro-planet-grid, .astro-target-grid { grid-template-columns: 1fr; }
-    .astro-tonight-dashboard article + article { border-left: 0; border-top: 1px solid var(--line); }
+    .astro-tonight-dashboard { gap: 8px; }
+    .astro-tonight-dashboard article { min-height: 126px; padding: 14px; }
+    .astro-tonight-dashboard strong { font-size: .98rem; }
+    .astro-tonight-dashboard small { font-size: .52rem; }
+    .astro-planet-grid, .astro-target-grid { grid-template-columns: 1fr; }
     .astro-tonight-map-shell, .astro-tonight-map { min-height: 440px; }
-    .astro-tonight-city-picker button { flex: 1 1 100%; }
+    .astro-tonight-city-picker button { min-height: 44px; padding-inline: 6px; font-size: .55rem; }
     .astro-footer-end { display: grid; gap: 8px; }
 }
 

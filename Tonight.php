@@ -15,10 +15,9 @@ require __DIR__ . '/includes/header.php';
     <section class="astro-tonight-intro" aria-labelledby="tonight-title">
         <p class="astro-eyebrow">Vietnam observing desk / live model</p>
         <h1 id="tonight-title">Tonight over <em>Vietnam.</em></h1>
-        <p>A calculated horizon view of the stars, Moon, planets, and archive objects visible from your selected city. Weather is forecast guidance, not a live camera feed.</p>
         <div class="astro-tonight-city-picker" role="group" aria-label="Observing city">
             <?php foreach ($cities as $id => $city): ?>
-                <button type="button" data-city="<?= astro_escape($id) ?>" aria-pressed="<?= $id === 'hanoi' ? 'true' : 'false' ?>"><?= astro_escape((string) $city['name']) ?></button>
+                <button type="button" data-city="<?= astro_escape($id) ?>" aria-pressed="<?= $id === 'hanoi' ? 'true' : 'false' ?>"><?= astro_escape((string) ($city['short_name'] ?? $city['name'])) ?></button>
             <?php endforeach; ?>
         </div>
     </section>
