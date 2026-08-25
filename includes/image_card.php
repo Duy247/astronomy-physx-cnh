@@ -1,4 +1,4 @@
-<main class="astro-card">
+<main class="astro-page astro-object-page">
     <div class="astro-flex-row">
         <section class="astro-section astro-image-section">
             <h1><?= astro_escape($object) ?></h1>
@@ -16,11 +16,11 @@
         </section>
     </div>
     <section class="astro-skymap-section" data-sky-map data-survey="<?= astro_escape((string) ($image['survey'] ?? 'P/DSS2/color')) ?>" data-fov="<?= astro_escape((string) ($image['fov'] ?? 1)) ?>" data-target="<?= astro_escape((string) ($image['target'] ?? '')) ?>">
-        <h2>Sky Map</h2>
+        <div class="astro-section-heading"><div><p class="astro-eyebrow">Interactive atlas</p><h2>Locate this object</h2></div><p>Pan, zoom, and compare this field with the Digitized Sky Survey.</p></div>
         <div id="aladin-lite-div" class="astro-skymap" role="img" aria-label="Interactive sky map for <?= astro_escape($object) ?>"></div>
+        <p class="astro-skymap-status" data-sky-map-status>Loading the sky atlas…</p>
         <p class="astro-skymap-fallback"><a href="https://aladin.cds.unistra.fr/AladinLite/" rel="noopener">Open Aladin Lite</a> if the interactive map is unavailable.</p>
     </section>
 </main>
-<link rel="stylesheet" href="https://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.css">
-<script src="https://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.js" defer></script>
+<script src="<?= astro_escape(astro_url('/assets/vendor/aladin-lite/aladin.js')) ?>" defer></script>
 <script src="<?= astro_escape(astro_url('/js/sky-map.js')) ?>" defer></script>

@@ -17,15 +17,17 @@ $navigation = astro_config('navigation');
 <body>
 <div class="astro-dim-overlay" data-nav-overlay></div>
 <header class="astro-header">
-    <button class="astro-dark-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">◐</button>
-    <a class="astro-header-brand" href="<?= astro_escape(astro_url('/index.php')) ?>">
-        <img src="<?= astro_escape(astro_url('/assets/logo.svg')) ?>" alt="AstroGallery" class="astro-logo">
-        <span class="astro-header-title"><?= astro_escape((string) astro_config('site_name')) ?></span>
-    </a>
-    <button class="astro-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-navigation">Menu</button>
-    <nav class="astro-nav" id="site-navigation" data-nav aria-label="Primary navigation">
-        <?php foreach ($navigation as $link): ?>
-            <a href="<?= astro_escape(astro_url((string) $link['href'])) ?>"><?= astro_escape((string) $link['label']) ?></a>
-        <?php endforeach; ?>
-    </nav>
+    <div class="astro-header-inner">
+        <a class="astro-header-brand" href="<?= astro_escape(astro_url('/index.php')) ?>">
+            <img src="<?= astro_escape(astro_url('/assets/logo.svg')) ?>" alt="" class="astro-logo">
+            <span><strong><?= astro_escape((string) astro_config('site_name')) ?></strong><small>Misti Mountain Observatory</small></span>
+        </a>
+        <button class="astro-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-navigation">Explore <span aria-hidden="true">☰</span></button>
+        <nav class="astro-nav" id="site-navigation" data-nav aria-label="Primary navigation">
+            <?php foreach ($navigation as $link): ?>
+                <a href="<?= astro_escape(astro_url((string) $link['href'])) ?>"><?= astro_escape((string) $link['label']) ?></a>
+            <?php endforeach; ?>
+        </nav>
+        <button class="astro-dark-toggle" type="button" data-theme-toggle aria-label="Toggle color theme" title="Toggle color theme">◐</button>
+    </div>
 </header>

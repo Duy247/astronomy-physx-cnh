@@ -1,379 +1,325 @@
-/* Astro Modern UI - Dark/Light Mode */
 :root {
-    --main-bg: #f4f8fb;
-    --card-bg: #fff;
-    --primary: #003366;
-    --accent: #0175ea;
-    --nav-link: #0667c8;
-    --nav-link-hover: #0055aa;
-    --shadow: 0 2px 12px rgba(0,0,0,0.10);
-    --radius: 10px;
-    --header-bg: #181c24;
-    --header-text: #fff;
-    --header-shadow: 0 2px 12px rgba(0,0,0,0.18);
-    --td-bg: #f7fbff;
-    --td-color: #222;
-    --body-text: #222;
+    color-scheme: dark;
+    --bg: #080b11;
+    --surface: #101621;
+    --surface-raised: #171e2b;
+    --surface-soft: #202838;
+    --text: #f4f7fb;
+    --muted: #9ca9bc;
+    --line: rgba(255, 255, 255, .1);
+    --accent: #65c7ff;
+    --accent-strong: #1fa8f4;
+    --accent-soft: rgba(101, 199, 255, .12);
+    --primary: #f4f7fb;
+    --card-bg: var(--surface);
+    --header-bg: rgba(8, 11, 17, .88);
+    --header-text: var(--text);
+    --body-text: var(--text);
+    --td-bg: var(--surface-raised);
+    --td-color: var(--text);
+    --radius: 18px;
+    --shadow: 0 24px 80px rgba(0, 0, 0, .34);
 }
-[data-theme="dark"] {
-    --main-bg: #181c24;
-    --card-bg: #23283a;
-    --primary: #e0e6f0;
-    --accent: #4ea1ff;
-    --nav-link: #e0e6f0;
-    --nav-link-hover: #4ea1ff;
-    --header-bg: #10131a;
-    --header-text: #fff;
-    --td-bg: #23283a;
-    --td-color: #e0e6f0;
-    --body-text: #e0e6f0;
+
+[data-theme="light"] {
+    color-scheme: light;
+    --bg: #edf2f7;
+    --surface: #fff;
+    --surface-raised: #f5f8fb;
+    --surface-soft: #e8eef5;
+    --text: #101827;
+    --muted: #5b6677;
+    --line: rgba(16, 24, 39, .12);
+    --accent: #006ea9;
+    --accent-strong: #005b91;
+    --accent-soft: rgba(0, 110, 169, .1);
+    --primary: #101827;
+    --card-bg: var(--surface);
+    --header-bg: rgba(255, 255, 255, .9);
+    --header-text: var(--text);
+    --body-text: var(--text);
+    --td-bg: var(--surface-raised);
+    --td-color: var(--text);
+    --shadow: 0 24px 70px rgba(37, 54, 75, .14);
 }
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 body {
-    background: var(--main-bg);
-    transition: background 0.3s;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-weight: 300;
+    margin: 0;
+    min-width: 320px;
+    background:
+        radial-gradient(circle at 8% -10%, rgba(39, 110, 169, .2), transparent 33rem),
+        radial-gradient(circle at 90% 8%, rgba(68, 52, 130, .18), transparent 30rem),
+        var(--bg);
+    color: var(--text);
+    font: 400 16px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    transition: background-color .2s, color .2s;
 }
-p {
-    color: var(--body-text);
-}
+
+img { display: block; max-width: 100%; }
+button, input, select { font: inherit; }
+a { color: var(--accent); text-underline-offset: .2em; }
+a:hover, a:focus-visible { color: var(--text); }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { line-height: 1.08; letter-spacing: -.035em; }
+h1 { font-size: clamp(2.3rem, 6vw, 5.6rem); }
+h2 { font-size: clamp(1.75rem, 3vw, 3rem); }
+
 .astro-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--line);
     background: var(--header-bg);
     color: var(--header-text);
-    box-shadow: var(--header-shadow);
-    padding: 1.2rem 0 0.7rem 0;
-    border-radius: 0 0 0 0;
-    margin-bottom: 2.2rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    z-index: 100;
+    backdrop-filter: blur(18px) saturate(140%);
+}
+.astro-header-inner {
+    width: min(100% - 40px, 1240px);
+    min-height: 76px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 22px;
 }
 .astro-header-brand {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center horizontally */
-    gap: 1rem; /* space between logo and title */
-}
-.astro-logo {
-    height: 80px;
-    width: auto;
-    object-fit: contain;
-    display: block;
-}
-.astro-header-title {
-    font-size: 2.1rem;
-    text-align: center;
-    letter-spacing: 1px;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-}
-.astro-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.2rem;
-    margin-bottom: 0.2rem;
-}
-.astro-nav a {
-    color: var(--nav-link);
+    gap: 11px;
+    min-width: max-content;
+    color: inherit;
     text-decoration: none;
-    font-weight: 400;
-    font-size: 1.08rem;
-    padding: 0.4em 1.1em;
-    border-radius: 6px;
-    transition: background 0.2s, color 0.2s;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
-.astro-nav a:hover, .astro-nav a:focus {
-    background: var(--accent);
-    color: #fff;
+.astro-header-brand:hover { color: inherit; }
+.astro-header-brand > span { display: grid; line-height: 1.15; }
+.astro-header-brand strong { font-size: 1.05rem; letter-spacing: -.02em; }
+.astro-header-brand small { margin-top: 4px; color: var(--muted); font-size: .68rem; letter-spacing: .04em; text-transform: uppercase; }
+.astro-logo { width: 42px; height: 42px; object-fit: contain; }
+.astro-nav { margin-left: auto; display: flex; align-items: center; gap: 2px; }
+.astro-nav a {
+    padding: 10px 11px;
+    border-radius: 9px;
+    color: var(--muted);
+    font-size: .84rem;
+    font-weight: 650;
+    text-decoration: none;
+    white-space: nowrap;
 }
-.astro-dark-toggle {
-    position: absolute;
-    right: 2rem;
-    top: 1.5rem;
-    background: none;
-    border: none;
-    color: var(--header-text);
-    font-size: 1.5rem;
+.astro-nav a:hover, .astro-nav a:focus-visible { color: var(--text); background: var(--accent-soft); }
+.astro-dark-toggle, .astro-nav-toggle {
+    min-height: 40px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--surface-raised);
+    color: var(--text);
     cursor: pointer;
-    transition: color 0.2s;
 }
-.astro-dark-toggle:hover { color: var(--accent); }
+.astro-dark-toggle { width: 40px; flex: 0 0 40px; }
+.astro-dark-toggle:hover { border-color: var(--accent); }
+.astro-nav-toggle { display: none; padding: 7px 12px; }
+.astro-dim-overlay { display: none; }
+
+.astro-page, .astro-card {
+    width: min(100% - 40px, 1180px);
+    margin: 42px auto 72px;
+}
 .astro-card {
-    max-width: 850px;
-    margin: 6rem auto 2.5rem auto;
-    background: var(--card-bg);
+    padding: clamp(22px, 4vw, 52px);
+    border: 1px solid var(--line);
     border-radius: var(--radius);
+    background: var(--surface);
     box-shadow: var(--shadow);
-    padding: 2.5rem 2rem 2rem 2rem;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    animation: fadeIn 0.7s;
-    font-weight: 300;
 }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(30px);} to { opacity: 1; transform: none; } }
-.astro-section {
-    text-align: center;
-}
-.astro-section h3 {
+.astro-section { margin-top: clamp(62px, 9vw, 112px); }
+.astro-section:first-child { margin-top: 0; }
+.astro-eyebrow {
+    margin-bottom: 12px;
     color: var(--accent);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-weight: 300;
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: .14em;
+    text-transform: uppercase;
 }
-.astro-section img {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 1px 8px rgba(0,0,0,0.13);
-    margin-bottom: 0.7rem;
-    transition: transform 0.2s;
+.astro-section-heading {
+    margin-bottom: 28px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 40px;
 }
-.astro-section img:hover {
-    transform: scale(1.025);
-}
-.astro-details {
-    margin-top: 2.2rem;
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0 0.5rem;
-    background: none;
-}
-.astro-details td {
-    background: var(--td-bg);
-    color: var(--td-color);
-    padding: 0.7rem 0.8rem;
-    border-radius: 6px;
-    font-size: 1.08rem;
-    vertical-align: top;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-weight: 300;
-}
-.astro-details td:first-child {
-    font-weight: 400;
-    color: var(--primary);
-    width: 32%;
-}
-.astro-dim-overlay {
-    position: fixed;
-    left: 0; right: 0; bottom: 0;
-    width: 100vw;
-    background: rgba(10, 15, 25, 0.72);
-    z-index: 90; /* Lower than .astro-header (z-index: 100) */
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.25s;
-    /* By default, overlay covers everything. We'll adjust top for desktop below. */
-}
-.astro-dim-overlay.active {
-    opacity: 1;
-    pointer-events: auto;
-}
+.astro-section-heading h2 { margin-bottom: 0; }
+.astro-section-heading > p { max-width: 480px; margin-bottom: 4px; color: var(--muted); }
 
-.astro-skymap-section h3{
-    color: var(--accent);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-weight: 300;
+.astro-hero {
+    min-height: min(680px, calc(100vh - 118px));
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(360px, 1.1fr);
+    align-items: center;
+    gap: clamp(36px, 7vw, 92px);
 }
-@media (min-width: 601px) {
-    .astro-dim-overlay {
-        /* Only cover below the header on desktop */
-        top: 4.1rem; /* header height: 1.2rem + 0.5rem + 2.4rem approx */
-        height: auto;
-    }
+.astro-hero-copy { position: relative; z-index: 1; }
+.astro-hero h1 { max-width: 760px; margin-bottom: 24px; }
+.astro-hero-copy > p:not(.astro-eyebrow) { max-width: 610px; color: var(--muted); font-size: clamp(1.05rem, 1.6vw, 1.25rem); }
+.astro-hero-actions { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 12px; }
+.astro-button {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    background: var(--accent-strong);
+    color: #fff;
+    font-weight: 750;
+    text-decoration: none;
 }
-@media (max-width: 600px) {
-    .astro-dim-overlay {
-        top: 0;
-        height: 100vh;
-        z-index: 299; /* below nav (z-index: 300), above rest */
-    }
-    .astro-header {
-        padding: 0.7rem 0 0.7rem 0;
-        border-radius: 0 0 0 0;
-        margin-bottom: 1.2rem;
-        position: static;
-        width: 100%;
-    }
-    .astro-header-title {
-        font-size: 1.1rem;
-        margin-bottom: 0.7rem;
-        font-weight: bold;
-    }
-    .astro-logo {
-        height: 40px;
-        width: auto;
-        object-fit: contain;
-        display: block;
-    }
-    .astro-nav-toggle {
-        display: block;
-        background: none;
-        color: var(--accent);
-        border: none;
-        border-radius: 0;
-        font-size: 1.08rem;
-        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-        font-weight: 400;
-        padding: 0.5em 1.2em 0.5em 0.7rem;
-        margin: 0.5rem 0 0.5rem 0.7rem;
-        cursor: pointer;
-        transition: color 0.2s;
-        z-index: 201;
-        position: relative;
-        box-shadow: none;
-        outline: none;
-        text-align: left;
-        max-width: 100%;
-        border-bottom: 1px solid var(--accent);
-        text-transform: uppercase;
-        letter-spacing: 0.04em;
-        font-weight: 600;
-        opacity: 0.85;
-    }
-    .astro-nav-toggle:active, .astro-nav-toggle:focus {
-        color: var(--nav-link-hover);
-        background: none;
-    }
-    .astro-nav-toggle[aria-expanded="true"] {
-        color: var(--nav-link-hover);
-        opacity: 1;
-    }
-    .astro-nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-        margin-bottom: 0.2rem;
-        width: 100vw;
-        max-width: 100vw;
-        background: var(--header-bg);
-        padding: 0.5rem 0 0.5rem 0.7rem;
-        box-sizing: border-box;
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 300;
-        border-radius: 0 0 16px 16px;
-        box-shadow: var(--header-shadow);
-        display: none;
-        transform: translateY(-100%);
-        opacity: 0;
-        pointer-events: none;
-        transition: transform 0.35s cubic-bezier(.4,2,.6,1), opacity 0.25s;
-    }
-    .astro-nav.show {
-        display: flex;
-        transform: translateY(0);
-        opacity: 1;
-        pointer-events: auto;
-        animation: navDrop 0.35s cubic-bezier(.4,2,.6,1);
-    }
-    @keyframes navDrop {
-        from { transform: translateY(-100%); opacity: 0; }
-        to { transform: translateY(0); opacity: 1; }
-    }
-    .astro-nav a {
-        width: 95vw;
-        max-width: 320px;
-        text-align: left;
-        padding: 0.7em 0.5em;
-        font-size: 1.05rem;
-        border-radius: 8px;
-        margin: 0;
-        opacity: 0;
-        transform: translateX(-30px);
-        animation: navLinkFade 0.4s forwards;
-    }
-    .astro-nav.show a {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    .astro-nav.show a:nth-child(1) { animation-delay: 0.08s; }
-    .astro-nav.show a:nth-child(2) { animation-delay: 0.16s; }
-    .astro-nav.show a:nth-child(3) { animation-delay: 0.24s; }
-    .astro-nav.show a:nth-child(4) { animation-delay: 0.32s; }
-    .astro-nav.show a:nth-child(5) { animation-delay: 0.40s; }
-    .astro-nav.show a:nth-child(6) { animation-delay: 0.48s; }
-    .astro-nav.show a:nth-child(7) { animation-delay: 0.56s; }
-    .astro-nav.show a:nth-child(8) { animation-delay: 0.64s; }
-    .astro-nav.show a:nth-child(9) { animation-delay: 0.72s; }
-    @keyframes navLinkFade {
-        from { opacity: 0; transform: translateX(-30px); }
-        to { opacity: 1; transform: translateX(0); }
-    }
-    .astro-card {
-        padding: 1.2rem 0.3rem;
-        margin-top: 0.5rem;
-    }
-    .astro-section h3 { font-size: 1.1rem; }
-    .astro-details td { font-size: 0.98rem; }
-    .astro-dark-toggle { right: 0.7rem; top: 1rem; }
-    body.astro-nav-open {
-        overflow: hidden;
-    }
+.astro-button:hover, .astro-button:focus-visible { background: var(--text); border-color: var(--text); color: var(--bg); }
+.astro-button-secondary { background: transparent; color: var(--text); border-color: var(--line); }
+.astro-hero-image { position: relative; margin: 0; }
+.astro-hero-image::before {
+    content: "";
+    position: absolute;
+    inset: 5% -7% -7% 8%;
+    z-index: -1;
+    border-radius: 50%;
+    background: rgba(26, 126, 191, .2);
+    filter: blur(60px);
 }
+.astro-hero-image img { width: 100%; aspect-ratio: 1; object-fit: cover; border: 1px solid var(--line); border-radius: 50%; box-shadow: var(--shadow); }
+.astro-hero-image figcaption { position: absolute; right: 5%; bottom: 6%; padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px; background: rgba(8, 11, 17, .75); color: #dbe8f5; font-size: .78rem; backdrop-filter: blur(10px); }
 
-/* Link styles */
-a, a:visited {
-    color: var(--accent);
-    text-decoration: underline;
-    transition: color 0.2s;
-}
-a:hover, a:focus {
-    color: var(--nav-link-hover);
-    text-decoration: underline;
-}
-[data-theme="dark"] a, [data-theme="dark"] a:visited {
-    color: var(--nav-link);
-}
-[data-theme="dark"] a:hover, [data-theme="dark"] a:focus {
-    color: var(--accent);
-}
-
-/* Shared gallery and footer components */
-.astro-header-brand { color: inherit; text-decoration: none; }
-.astro-header-brand:hover { text-decoration: none; }
-.astro-nav-toggle { display: none; }
 .astro-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 1.5rem 1rem;
-    align-items: end;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
 }
 .astro-gallery-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .35rem;
-    color: inherit;
-    text-align: center;
+    min-width: 0;
+    padding-bottom: 18px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 15px;
+    background: var(--surface);
+    color: var(--text);
     text-decoration: none;
+    transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
 }
-.astro-gallery-item:hover { text-decoration: none; }
-.astro-gallery-item span { color: var(--accent); font-size: .95rem; }
-.astro-thumb { max-width: 100%; border-radius: 8px; box-shadow: 0 2px 12px #0002; }
-.astro-subtitle, .astro-hint { color: var(--accent); }
-.astro-details th { width: 32%; color: var(--primary); font-weight: 500; text-align: left; vertical-align: top; }
-.astro-skymap { width: 100%; height: 400px; margin: auto; }
-.astro-skymap-fallback { text-align: center; }
-.astro-skymap-section.is-loaded .astro-skymap-fallback { display: none; }
-.astro-footer { margin-top: 3rem; padding: 2rem 1rem; background: var(--header-bg); color: var(--header-text); }
-.astro-footer-inner { max-width: 1100px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
-.astro-footer-brand { display: flex; align-items: center; gap: 1rem; }
-.astro-footer-logo { width: 180px; max-width: 40vw; }
-.astro-footer-notice { max-width: 540px; text-align: right; opacity: .85; }
+.astro-gallery-item:hover, .astro-gallery-item:focus-visible { transform: translateY(-5px); border-color: rgba(101, 199, 255, .48); color: var(--text); box-shadow: 0 18px 50px rgba(0,0,0,.24); }
+.astro-gallery-item img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 0; }
+.astro-gallery-item strong, .astro-gallery-item > span { display: block; margin-inline: 17px; }
+.astro-gallery-item strong { margin-top: 5px; font-size: 1.08rem; line-height: 1.25; }
+.astro-gallery-item > span { margin-top: 6px; color: var(--muted); font-size: .82rem; }
+.astro-gallery-item .astro-gallery-meta { color: var(--accent); font-size: .68rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.astro-home-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.astro-info-card { padding: clamp(26px, 4vw, 44px); border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(145deg, var(--surface-raised), var(--surface)); }
+.astro-info-card h2 { max-width: 560px; font-size: clamp(1.55rem, 2.7vw, 2.5rem); }
+.astro-info-card p:not(.astro-eyebrow) { color: var(--muted); }
+.astro-info-card a { font-weight: 750; text-decoration: none; }
+.astro-about-card { grid-column: 1 / -1; }
+
+.astro-collection-heading { max-width: 800px; margin: 72px 0 38px; }
+.astro-collection-heading h1 { margin-bottom: 16px; font-size: clamp(2.6rem, 6vw, 5rem); }
+.astro-subtitle { color: var(--muted); font-size: 1.08rem; }
+.astro-collection .astro-gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+.astro-flex-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(320px, .9fr);
+    gap: clamp(30px, 5vw, 64px);
+    align-items: start;
+}
+.astro-image-section h1 { font-size: clamp(2rem, 4vw, 4.1rem); }
+.astro-image-section > a { display: block; overflow: hidden; border-radius: var(--radius); background: #030508; }
+.astro-image-section img { width: 100%; max-height: 700px; object-fit: contain; transition: transform .25s ease; }
+.astro-image-section a:hover img { transform: scale(1.012); }
+.astro-hint { margin-top: 12px; color: var(--muted); font-size: .82rem; }
+.astro-details { width: 100%; border-collapse: collapse; }
+.astro-details tr { border-bottom: 1px solid var(--line); }
+.astro-details th, .astro-details td { padding: 15px 0; vertical-align: top; text-align: left; overflow-wrap: anywhere; }
+.astro-details th { width: 32%; padding-right: 18px; color: var(--muted); font-size: .73rem; letter-spacing: .08em; text-transform: uppercase; }
+.astro-details td { color: var(--text); font-size: .92rem; }
+.astro-detail-links { margin: 8px 0 0; padding-left: 18px; }
+
+.astro-skymap-section { margin-top: 72px; }
+.astro-skymap {
+    width: 100%;
+    height: clamp(420px, 58vw, 650px);
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: #020409;
+    box-shadow: var(--shadow);
+}
+.astro-skymap-status { margin-top: 12px; color: var(--muted); font-size: .82rem; }
+.astro-skymap-fallback { display: none; }
+.astro-skymap-section.is-loaded .astro-skymap-status { color: #65d6a4; }
+.astro-skymap-section.has-error .astro-skymap-fallback { display: block; }
+.astro-skymap-section.has-error .astro-skymap-status { color: #ff9d9d; }
+
+.astro-footer { margin-top: 100px; padding: 42px 20px; border-top: 1px solid var(--line); background: rgba(4, 7, 11, .5); color: var(--text); }
+.astro-footer-inner { width: min(100%, 1180px); margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+.astro-footer-brand { display: flex; align-items: center; gap: 16px; }
+.astro-footer-logo { width: 155px; max-width: 36vw; }
+.astro-footer-notice { max-width: 520px; text-align: right; color: var(--muted); }
+.astro-footer-notice p { margin-bottom: 6px; }
 .legacy-content { overflow-wrap: anywhere; }
-.legacy-content img { max-width: 100%; height: auto; }
+.legacy-content img { height: auto; }
 .legacy-content table { max-width: 100%; }
 
-@media (max-width: 600px) {
-    .astro-nav-toggle { display: block; }
-    .astro-footer-inner { flex-direction: column; text-align: center; }
-    .astro-footer-notice { text-align: center; }
-    .astro-details th { width: 38%; }
+@media (max-width: 1040px) {
+    .astro-nav-toggle { display: block; margin-left: auto; }
+    .astro-nav {
+        position: fixed;
+        top: 76px;
+        right: 20px;
+        width: min(330px, calc(100vw - 40px));
+        max-height: calc(100vh - 96px);
+        margin: 0;
+        padding: 10px;
+        display: none;
+        overflow: auto;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: var(--surface-raised);
+        box-shadow: var(--shadow);
+    }
+    .astro-nav.show { display: grid; }
+    .astro-nav a { padding: 12px 14px; font-size: .94rem; }
+    .astro-hero { grid-template-columns: 1fr 1fr; }
+    .astro-collection .astro-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 760px) {
+    .astro-header-inner, .astro-page, .astro-card { width: min(100% - 28px, 1180px); }
+    .astro-header-inner { min-height: 68px; }
+    .astro-logo { width: 36px; height: 36px; }
+    .astro-header-brand small { display: none; }
+    .astro-nav { top: 68px; right: 14px; }
+    .astro-page, .astro-card { margin-top: 28px; }
+    .astro-hero { min-height: auto; grid-template-columns: 1fr; gap: 38px; padding-top: 32px; }
+    .astro-hero h1 { font-size: clamp(2.6rem, 13vw, 4.4rem); }
+    .astro-hero-image { width: min(88vw, 520px); justify-self: center; }
+    .astro-section-heading { display: block; }
+    .astro-section-heading > p { margin-top: 12px; }
+    .astro-gallery, .astro-collection .astro-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .astro-home-grid, .astro-flex-row { grid-template-columns: 1fr; }
+    .astro-about-card { grid-column: auto; }
+    .astro-footer-inner { flex-direction: column; align-items: flex-start; }
+    .astro-footer-notice { text-align: left; }
+    .astro-skymap { height: 430px; }
+}
+
+@media (max-width: 440px) {
+    .astro-header-brand strong { font-size: .94rem; }
+    .astro-dark-toggle { display: none; }
+    .astro-gallery, .astro-collection .astro-gallery { grid-template-columns: 1fr; }
+    .astro-gallery-item img { aspect-ratio: 16 / 10; }
+    .astro-hero-actions { display: grid; }
+    .astro-button { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }

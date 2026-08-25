@@ -48,9 +48,14 @@ layout.
 - `gallery/`: generated indexes and resource manifest
 - `legacy/`: protected original HTML archive
 - `storage/`: protected runtime data and logs
+- `assets/vendor/`: pinned third-party browser libraries and their licenses
 
 FITS and MOV files use Git LFS but are ordinary complete files in a hydrated
 working checkout. The application never contacts Git LFS at runtime.
+
+Aladin Lite 3.8.1 is stored in `assets/vendor/aladin-lite/` so the application
+does not depend on a version-changing JavaScript CDN. Survey tiles are loaded
+from an official CDS HiPS mirror when an interactive sky map is opened.
 
 ## Verification
 
