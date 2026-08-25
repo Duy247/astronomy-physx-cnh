@@ -1,4 +1,14 @@
 {
+  "id": "fits_m74",
+  "category": "fits",
+  "order": 18,
+  "canonical_url": "/image_card/fits_m74.php",
+  "gallery": {
+    "title": "Spiral Galaxy of Pisces",
+    "subtitle": "M74",
+    "thumb": "Images/m74_041109_100.jpg",
+    "alt": "M74"
+  },
   "title": "ASTROPHOTOGRAPHY - M74",
   "object": "M74",
   "image": {
@@ -12,7 +22,36 @@
   "details": [
     {
       "label": "Files",
-      "value": "<a href=\"/fits/m74_041109_33i165mF_L.FIT\">m74_041109_33i165mF_L.FIT</a> (Luminance, 165 min, 5-min subs)<br><a href=\"/fits/m74_041109_7ila35m_R.FIT\">m74_041109_7ila35m_R.FIT</a> (Red, 35 min, 5-min subs)<br><a href=\"/fits/m74_041109_7ila35m_G.FIT\">m74_041109_7ila35m_G.FIT</a> (Green, 35 min, 5-min subs)<br><a href=\"/fits/m74_041109_7ila35m_B.FIT\">m74_041109_7ila35m_B.FIT</a> (Blue, 35 min, 5-min subs)<br>"
+      "text": "m74_041109_33i165mF_L.FIT (Luminance, 165 min, 5-min subs)\nm74_041109_7ila35m_R.FIT (Red, 35 min, 5-min subs)\nm74_041109_7ila35m_G.FIT (Green, 35 min, 5-min subs)\nm74_041109_7ila35m_B.FIT (Blue, 35 min, 5-min subs)",
+      "links": [
+        {
+          "href": "/fits/m74_041109_33i165mF_L.FIT",
+          "label": "m74_041109_33i165mF_L.FIT"
+        },
+        {
+          "href": "/fits/m74_041109_7ila35m_R.FIT",
+          "label": "m74_041109_7ila35m_R.FIT"
+        },
+        {
+          "href": "/fits/m74_041109_7ila35m_G.FIT",
+          "label": "m74_041109_7ila35m_G.FIT"
+        },
+        {
+          "href": "/fits/m74_041109_7ila35m_B.FIT",
+          "label": "m74_041109_7ila35m_B.FIT"
+        }
+      ]
+    }
+  ],
+  "galleries": [
+    {
+      "category": "fits",
+      "order": 18,
+      "link": "image_card/fits_m74.php",
+      "thumb": "Images/m74_041109_100.jpg",
+      "alt": "M74",
+      "title": "Spiral Galaxy of Pisces",
+      "subtitle": "M74"
     }
   ]
 }

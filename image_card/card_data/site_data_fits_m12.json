@@ -1,4 +1,14 @@
 {
+  "id": "fits_m12",
+  "category": "fits",
+  "order": 11,
+  "canonical_url": "/image_card/fits_m12.php",
+  "gallery": {
+    "title": "Globular Cluster of Ophiuchus",
+    "subtitle": "M12",
+    "thumb": "Images/m12_050512_100.jpg",
+    "alt": "M12"
+  },
   "title": "ASTROPHOTOGRAPHY - M12 - (GLOBULAR CLUSTER)",
   "object": "M12 - (GLOBULAR CLUSTER)",
   "image": {
@@ -12,7 +22,36 @@
   "details": [
     {
       "label": "Files",
-      "value": "<a href=\"/fits/m12_050512_16i16mF_L.FIT\">m12_050512_16i16mF_L.FIT</a> (Luminance, 16 min, 1-min subs)<br><a href=\"/fits/m12_050512_6i6mF_R.FIT\">m12_050512_6i6mF_R.FIT</a> (Red, 6 min, 1-min subs)<br><a href=\"/fits/m12_050512_6i6mF_G.FIT\">m12_050512_6i6mF_G.FIT</a> (Green, 6 min, 1-min subs)<br><a href=\"/fits/m12_050512_6i6mF_B.FIT\">m12_050512_6i6mF_B.FIT</a> (Blue, 6 min, 1-min subs)<br>"
+      "text": "m12_050512_16i16mF_L.FIT (Luminance, 16 min, 1-min subs)\nm12_050512_6i6mF_R.FIT (Red, 6 min, 1-min subs)\nm12_050512_6i6mF_G.FIT (Green, 6 min, 1-min subs)\nm12_050512_6i6mF_B.FIT (Blue, 6 min, 1-min subs)",
+      "links": [
+        {
+          "href": "/fits/m12_050512_16i16mF_L.FIT",
+          "label": "m12_050512_16i16mF_L.FIT"
+        },
+        {
+          "href": "/fits/m12_050512_6i6mF_R.FIT",
+          "label": "m12_050512_6i6mF_R.FIT"
+        },
+        {
+          "href": "/fits/m12_050512_6i6mF_G.FIT",
+          "label": "m12_050512_6i6mF_G.FIT"
+        },
+        {
+          "href": "/fits/m12_050512_6i6mF_B.FIT",
+          "label": "m12_050512_6i6mF_B.FIT"
+        }
+      ]
+    }
+  ],
+  "galleries": [
+    {
+      "category": "fits",
+      "order": 11,
+      "link": "image_card/fits_m12.php",
+      "thumb": "Images/m12_050512_100.jpg",
+      "alt": "M12",
+      "title": "Globular Cluster of Ophiuchus",
+      "subtitle": "M12"
     }
   ]
 }

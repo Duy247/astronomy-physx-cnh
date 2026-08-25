@@ -1,4 +1,14 @@
 {
+  "id": "Galaxies_ngc3166",
+  "category": "galaxies",
+  "order": 43,
+  "canonical_url": "/image_card/Galaxies_ngc3166.php",
+  "gallery": {
+    "title": "Lenticular Galaxy of Sextans",
+    "subtitle": "NGC3166/NGC3169/NGC3165",
+    "thumb": "/Images/ngc3166_060301_100.jpg",
+    "alt": "NGC3166/NGC3169/NGC3165"
+  },
   "title": "Astrophotography - ngc3166 ngc3169 ngc3165",
   "object": "NGC3166/NGC3169/NGC3165",
   "image": {
@@ -12,35 +22,73 @@
   "details": [
     {
       "label": "Object Notes",
-      "value": "<ul>\n<li>Constellation: Sextens\n        <li>ngc3166\n        <ul>\n<li>Location: RA: 10h 13m 48s  Dec: 03d 26' 00\"  Epoch 2000\n          <li>Size: 4.8 x 1.9 arc-minutes\n          <li>Magnitude: 10.4\n          <li>Type: Elliptical\n          <li>AKA: ugc5516\n        </li></li></li></li></li></ul>\n<li>ngc3169\n        <ul>\n<li>Location: RA: 10h 14m 12s  Dec: 03d 28' 00\"  Epoch 2000\n          <li>Size: 4.2 x 2.9 arc-minutes\n          <li>Magnitude: 10.2\n          <li>Type: Elliptical\n          <li>AKA: ugc5525\n        </li></li></li></li></li></ul>\n<li>ngc3165\n        <ul>\n<li>Location: RA: 10h 13m 30s  Dec: 03d 22' 00\"  Epoch 2000\n          <li>Size: 1.3 x 0.7 arc-minutes\n          <li>Magnitude: 13.9\n          <li>Type: Spiral\n          <li>AKA: ugc5512\n        </li></li></li></li></li></ul>\n</li></li></li></li></ul>\n</blockquote>\n</font>"
+      "text": "Constellation: Sextens\nngc3166\nLocation: RA: 10h 13m 48s Dec: 03d 26' 00\" Epoch 2000\nSize: 4.8 x 1.9 arc-minutes\nMagnitude: 10.4\nType: Elliptical\nAKA: ugc5516\nngc3169\nLocation: RA: 10h 14m 12s Dec: 03d 28' 00\" Epoch 2000\nSize: 4.2 x 2.9 arc-minutes\nMagnitude: 10.2\nType: Elliptical\nAKA: ugc5525\nngc3165\nLocation: RA: 10h 13m 30s Dec: 03d 22' 00\" Epoch 2000\nSize: 1.3 x 0.7 arc-minutes\nMagnitude: 13.9\nType: Spiral\nAKA: ugc5512",
+      "links": []
     },
     {
       "label": "Instrument",
-      "value": "<a href=\"Equipment_RC32.htm\">\n      Ritchey-Chretien 32\" Telescope</a>\n</blockquote>\n</font>"
+      "text": "Ritchey-Chretien 32\" Telescope",
+      "links": [
+        {
+          "href": "/Equipment_RC32.php",
+          "label": "Ritchey-Chretien 32\" Telescope"
+        }
+      ]
     },
     {
       "label": "Focal Ratio",
-      "value": "      f7.2 (prime focus)\n      </blockquote>\n</font>"
+      "text": "f7.2 (prime focus)",
+      "links": []
     },
     {
       "label": "Camera",
-      "value": "<a href=\"http://www.sbig.com/sbwhtmls/large_format_cameras.htm\">SBIG STL-11000 CCD camera</a>\n<br/>(See product review in July, 2004 issue of <i>Sky &amp; Telescope</i> magazine.)\n      </blockquote>\n</font>"
+      "text": "SBIG STL-11000 CCD camera\n(See product review in July, 2004 issue of Sky & Telescope magazine.)",
+      "links": [
+        {
+          "href": "http://www.sbig.com/sbwhtmls/large_format_cameras.htm",
+          "label": "SBIG STL-11000 CCD camera"
+        }
+      ]
     },
     {
       "label": "Exposure",
-      "value": "      12 x 5 minutes Luminance unbinned<br/>\n      4 x 5 minutes each R/G/B unbinned\n      </blockquote>\n</font>"
+      "text": "12 x 5 minutes Luminance unbinned\n4 x 5 minutes each R/G/B unbinned",
+      "links": []
     },
     {
       "label": "Guiding",
-      "value": "      Off-Axis with STV Autoguider\n      <a href=\"http://www.sbig.com\">\n      (Santa Barbara Instrument Group)</a><br/>\n      (See product review in May, 2003 issue of <i>Astronomy</i> magazine.)\n      <br/>See <a href=\"Equipment_PhotoGuide.htm\">Photo/Guiding Equipment.</a>\n</blockquote>\n</font>"
+      "text": "Off-Axis with STV Autoguider\n(Santa Barbara Instrument Group)\n(See product review in May, 2003 issue of Astronomy magazine.)\nSee Photo/Guiding Equipment.",
+      "links": [
+        {
+          "href": "http://www.sbig.com",
+          "label": "(Santa Barbara Instrument Group)"
+        },
+        {
+          "href": "/Equipment_PhotoGuide.php",
+          "label": "Photo/Guiding Equipment."
+        }
+      ]
     },
     {
       "label": "Date",
-      "value": "      3/1/06\n      </blockquote>\n</font>"
+      "text": "3/1/06",
+      "links": []
     },
     {
       "label": "Post Processing",
-      "value": "      CCDSoft, CCDSharp, MaxIM DL, Photoshop CS\n      </blockquote>\n</font>"
+      "text": "CCDSoft, CCDSharp, MaxIM DL, Photoshop CS",
+      "links": []
+    }
+  ],
+  "galleries": [
+    {
+      "category": "galaxies",
+      "order": 43,
+      "link": "image_card/Galaxies_ngc3166.php",
+      "thumb": "/Images/ngc3166_060301_100.jpg",
+      "alt": "NGC3166/NGC3169/NGC3165",
+      "title": "Lenticular Galaxy of Sextans",
+      "subtitle": "NGC3166/NGC3169/NGC3165"
     }
   ]
 }

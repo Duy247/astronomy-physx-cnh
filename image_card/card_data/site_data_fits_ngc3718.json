@@ -1,4 +1,14 @@
 {
+  "id": "fits_ngc3718",
+  "category": "fits",
+  "order": 28,
+  "canonical_url": "/image_card/fits_ngc3718.php",
+  "gallery": {
+    "title": "Arp 214",
+    "subtitle": "NGC3718",
+    "thumb": "Images/ngc3718_050531_050601_100.jpg",
+    "alt": "NGC3718"
+  },
   "title": "ASTROPHOTOGRAPHY - NGC3718",
   "object": "NGC3718 - Arp 214",
   "image": {
@@ -12,7 +22,36 @@
   "details": [
     {
       "label": "Files",
-      "value": "<a href=\"/fits/ngc3718_050531_050601_17i85m_L.FIT\">ngc3718_050531_050601_17i85m_L.FIT</a> (Luminance, 85 min, 5-min subs)<br><a href=\"/fits/ngc3718_050531_050601_6i30m_R.FIT\">ngc3718_050531_050601_6i30m_R.FIT</a> (Red, 30 min, 5-min subs)<br><a href=\"/fits/ngc3718_050531_050601_6i30m_G.FIT\">ngc3718_050531_050601_6i30m_G.FIT</a> (Green, 30 min, 5-min subs)<br><a href=\"/fits/ngc3718_050531_050601_6i30m_B.FIT\">ngc3718_050531_050601_6i30m_B.FIT</a> (Blue, 30 min, 5-min subs)<br>"
+      "text": "ngc3718_050531_050601_17i85m_L.FIT (Luminance, 85 min, 5-min subs)\nngc3718_050531_050601_6i30m_R.FIT (Red, 30 min, 5-min subs)\nngc3718_050531_050601_6i30m_G.FIT (Green, 30 min, 5-min subs)\nngc3718_050531_050601_6i30m_B.FIT (Blue, 30 min, 5-min subs)",
+      "links": [
+        {
+          "href": "/fits/ngc3718_050531_050601_17i85m_L.FIT",
+          "label": "ngc3718_050531_050601_17i85m_L.FIT"
+        },
+        {
+          "href": "/fits/ngc3718_050531_050601_6i30m_R.FIT",
+          "label": "ngc3718_050531_050601_6i30m_R.FIT"
+        },
+        {
+          "href": "/fits/ngc3718_050531_050601_6i30m_G.FIT",
+          "label": "ngc3718_050531_050601_6i30m_G.FIT"
+        },
+        {
+          "href": "/fits/ngc3718_050531_050601_6i30m_B.FIT",
+          "label": "ngc3718_050531_050601_6i30m_B.FIT"
+        }
+      ]
+    }
+  ],
+  "galleries": [
+    {
+      "category": "fits",
+      "order": 28,
+      "link": "image_card/fits_ngc3718.php",
+      "thumb": "Images/ngc3718_050531_050601_100.jpg",
+      "alt": "NGC3718",
+      "title": "Arp 214",
+      "subtitle": "NGC3718"
     }
   ]
 }

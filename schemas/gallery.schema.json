@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AstroGallery gallery index",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["link", "thumb", "alt", "title", "subtitle"],
+    "properties": {
+      "link": {"type": "string", "pattern": "^/image_card/"},
+      "thumb": {"type": "string"},
+      "alt": {"type": "string"},
+      "title": {"type": "string"},
+      "subtitle": {"type": "string"}
+    }
+  }
+}

@@ -1,4 +1,14 @@
 {
+  "id": "fits_m3",
+  "category": "fits",
+  "order": 7,
+  "canonical_url": "/image_card/fits_m3.php",
+  "gallery": {
+    "title": "Globular Cluster of  Canes Venatici",
+    "subtitle": "M3",
+    "thumb": "Images/m3_050503_100.jpg",
+    "alt": "M3"
+  },
   "title": "ASTROPHOTOGRAPHY - M3 - (GLOBULAR CLUSTER)",
   "object": "M3 - (GLOBULAR CLUSTER)",
   "image": {
@@ -12,7 +22,36 @@
   "details": [
     {
       "label": "Files",
-      "value": "<a href=\"/fits/m3_050503_9i9mF_L.FIT\">m3_050503_9i9mF_L.FIT</a> (Luminance, 9 min, 1-min subs)<br><a href=\"/fits/m3_050503_6i6mF_R.FIT\">m3_050503_6i6mF_R.FIT</a> (Red, 6 min, 1-min subs)<br><a href=\"/fits/m3_050503_6i6mF_G.FIT\">m3_050503_6i6mF_G.FIT</a> (Green, 6 min, 1-min subs)<br><a href=\"/fits/m3_050503_6i6mF_B.FIT\">m3_050503_6i6mF_B.FIT</a> (Blue, 6 min, 1-min subs)<br>"
+      "text": "m3_050503_9i9mF_L.FIT (Luminance, 9 min, 1-min subs)\nm3_050503_6i6mF_R.FIT (Red, 6 min, 1-min subs)\nm3_050503_6i6mF_G.FIT (Green, 6 min, 1-min subs)\nm3_050503_6i6mF_B.FIT (Blue, 6 min, 1-min subs)",
+      "links": [
+        {
+          "href": "/fits/m3_050503_9i9mF_L.FIT",
+          "label": "m3_050503_9i9mF_L.FIT"
+        },
+        {
+          "href": "/fits/m3_050503_6i6mF_R.FIT",
+          "label": "m3_050503_6i6mF_R.FIT"
+        },
+        {
+          "href": "/fits/m3_050503_6i6mF_G.FIT",
+          "label": "m3_050503_6i6mF_G.FIT"
+        },
+        {
+          "href": "/fits/m3_050503_6i6mF_B.FIT",
+          "label": "m3_050503_6i6mF_B.FIT"
+        }
+      ]
+    }
+  ],
+  "galleries": [
+    {
+      "category": "fits",
+      "order": 7,
+      "link": "image_card/fits_m3.php",
+      "thumb": "Images/m3_050503_100.jpg",
+      "alt": "M3",
+      "title": "Globular Cluster of  Canes Venatici",
+      "subtitle": "M3"
     }
   ]
 }

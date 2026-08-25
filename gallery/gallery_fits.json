@@ -1,370 +1,363 @@
 [
   {
-    "link": "image_card/fits_m8.php",
+    "link": "/image_card/fits_m8.php",
     "thumb": "Images/m8_050507_100.jpg",
     "alt": "M8",
     "title": "Lagoon Nebula",
     "subtitle": "M8"
   },
   {
-    "link": "image_card/fits_mel_15.php",
+    "link": "/image_card/fits_mel_15.php",
     "thumb": "Images/mel15_041110_051025H_100.jpg",
     "alt": "Mel-15",
     "title": "Melotte 15 Cluster",
     "subtitle": "Mel-15"
   },
   {
-    "link": "image_card/fits_m63.php",
+    "link": "/image_card/fits_m63.php",
     "thumb": "Images/m63_050306_100.jpg",
     "alt": "M63",
     "title": "Sunflower Galaxy",
     "subtitle": "M63"
   },
   {
-    "link": "image_card/fits_m101.php",
+    "link": "/image_card/fits_m101.php",
     "thumb": "Images/m101_050511_100.jpg",
     "alt": "M101",
     "title": "M101",
     "subtitle": "M101"
   },
   {
-    "link": "image_card/fits_m11.php",
+    "link": "/image_card/fits_m11.php",
     "thumb": "Images/m11_050830_100.jpg",
     "alt": "M11",
     "title": "Wild Duck Cluster",
     "subtitle": "M11"
   },
   {
-    "link": "image_card/fits_m13.php",
+    "link": "/image_card/fits_m13.php",
     "thumb": "Images/m13_050414_100.jpg",
     "alt": "M13",
     "title": "Hercules Cluster",
     "subtitle": "M13"
   },
   {
-    "link": "image_card/fits_m2.php",
+    "link": "/image_card/fits_m2.php",
     "thumb": "Images/m2_050907_100.jpg",
     "alt": "M2",
     "title": "Globular Cluster of  Aquarius",
     "subtitle": "M2"
   },
   {
-    "link": "image_card/fits_m3.php",
+    "link": "/image_card/fits_m3.php",
     "thumb": "Images/m3_050503_100.jpg",
     "alt": "M3",
     "title": "Globular Cluster of  Canes Venatici",
     "subtitle": "M3"
   },
   {
-    "link": "image_card/fits_m5.php",
+    "link": "/image_card/fits_m5.php",
     "thumb": "Images/m5_050508_100.jpg",
     "alt": "M5",
     "title": "Globular Cluster of Serpens",
     "subtitle": "M5"
   },
   {
-    "link": "image_card/fits_m9.php",
+    "link": "/image_card/fits_m9.php",
     "thumb": "Images/m9_050603_100.jpg",
     "alt": "M9",
     "title": "Globular Cluster of Ophiuchus",
     "subtitle": "M9"
   },
   {
-    "link": "image_card/fits_m10.php",
+    "link": "/image_card/fits_m10.php",
     "thumb": "Images/m10_050530_100.jpg",
     "alt": "M10",
     "title": "Globular Cluster of Ophiuchus",
     "subtitle": "M10"
   },
   {
-    "link": "image_card/fits_m12.php",
+    "link": "/image_card/fits_m12.php",
     "thumb": "Images/m12_050512_100.jpg",
     "alt": "M12",
     "title": "Globular Cluster of Ophiuchus",
     "subtitle": "M12"
   },
   {
-    "link": "image_card/fits_m15.php",
+    "link": "/image_card/fits_m15.php",
     "thumb": "Images/m15_050710_100.jpg",
     "alt": "M15",
     "title": "Globular Cluster of Pegasus",
     "subtitle": "M15"
   },
   {
-    "link": "image_card/fits_m22.php",
+    "link": "/image_card/fits_m22.php",
     "thumb": "Images/m22_050831_100.jpg",
     "alt": "M22",
     "title": "Great Sagittarius Cluster",
     "subtitle": "M22"
   },
   {
-    "link": "image_card/fits_m92.php",
+    "link": "/image_card/fits_m92.php",
     "thumb": "Images/m92_050503_100.jpg",
     "alt": "M92",
     "title": "Globular Cluster of Hercules",
     "subtitle": "M92"
   },
   {
-    "link": "image_card/fits_m33.php",
+    "link": "/image_card/fits_m33.php",
     "thumb": "Images/m33_041012_100.jpg",
     "alt": "M33",
     "title": "Pinwheel Galaxy",
     "subtitle": "M33"
   },
   {
-    "link": "image_card/fits_m51.php",
+    "link": "/image_card/fits_m51.php",
     "thumb": "Images/m51_050414_100.jpg",
     "alt": "M51",
     "title": "Whirlpool Galaxy",
     "subtitle": "M51"
   },
   {
-    "link": "image_card/fits_m64.php",
+    "link": "/image_card/fits_m64.php",
     "thumb": "Images/m64_050604_100.jpg",
     "alt": "M64",
     "title": "Black Eye Galaxy",
     "subtitle": "M64"
   },
   {
-    "link": "image_card/fits_m74.php",
+    "link": "/image_card/fits_m74.php",
     "thumb": "Images/m74_041109_100.jpg",
     "alt": "M74",
     "title": "Spiral Galaxy of Pisces",
     "subtitle": "M74"
   },
   {
-    "link": "image_card/fits_m81.php",
+    "link": "/image_card/fits_m81.php",
     "thumb": "Images/m81_050201_100.jpg",
     "alt": "M81",
     "title": "Spiral Galaxy of Ursa Major",
     "subtitle": "M81"
   },
   {
-    "link": "image_card/fits_m82.php",
+    "link": "/image_card/fits_m82.php",
     "thumb": "Images/m82_050208_100.jpg",
     "alt": "M82",
     "title": "Starburst Galaxy of Ursa Major",
     "subtitle": "M82"
   },
   {
-    "link": "image_card/fits_m87.php",
+    "link": "/image_card/fits_m87.php",
     "thumb": "Images/m87_050208_100.jpg",
     "alt": "M87",
     "title": "Elliptical Galaxy of Virgo",
     "subtitle": "M87"
   },
   {
-    "link": "image_card/fits_m94.php",
+    "link": "/image_card/fits_m94.php",
     "thumb": "Images/m94_050312_100.jpg",
     "alt": "M94",
     "title": "Spiral Galaxy of Canes Venatici",
     "subtitle": "M94"
   },
   {
-    "link": "image_card/fits_m104.php",
+    "link": "/image_card/fits_m104.php",
     "thumb": "Images/m104_050406_100.jpg",
     "alt": "M104",
     "title": "Sombrero Galaxy",
     "subtitle": "M104"
   },
   {
-    "link": "image_card/fits_ngc891.php",
+    "link": "/image_card/fits_ngc891.php",
     "thumb": "Images/ngc891_041117_100.jpg",
     "alt": "NGC891",
     "title": "Silver Sliver Galaxy",
     "subtitle": "NGC891"
   },
   {
-    "link": "image_card/fits_ngc2403.php",
+    "link": "/image_card/fits_ngc2403.php",
     "thumb": "Images/ngc2403_050205_100.jpg",
     "alt": "NGC2403",
     "title": "Caldwell 7 of Camelopardalis",
     "subtitle": "NGC2403"
   },
   {
-    "link": "image_card/fits_ngc2841.php",
+    "link": "/image_card/fits_ngc2841.php",
     "thumb": "Images/ngc2841_041214_100.jpg",
     "alt": "NGC2841",
     "title": "Unbarred spiral of Ursa Major",
     "subtitle": "NGC2841"
   },
   {
-    "link": "image_card/fits_ngc3628.php",
+    "link": "/image_card/fits_ngc3628.php",
     "thumb": "Images/ngc3628_050205_100.jpg",
     "alt": "NGC3628",
     "title": "Hamburger Galaxy",
     "subtitle": "NGC3628"
   },
   {
-    "link": "image_card/fits_ngc3718.php",
+    "link": "/image_card/fits_ngc3718.php",
     "thumb": "Images/ngc3718_050531_050601_100.jpg",
     "alt": "NGC3718",
     "title": "Arp 214",
     "subtitle": "NGC3718"
   },
   {
-    "link": "image_card/fits_ngc4038.php",
+    "link": "/image_card/fits_ngc4038.php",
     "thumb": "Images/ngc4038_050306_100.jpg",
     "alt": "NGC4038",
     "title": "The Antennae Galaxies",
     "subtitle": "NGC4038"
   },
   {
-    "link": "image_card/fits_ngc4438.php",
+    "link": "/image_card/fits_ngc4438.php",
     "thumb": "Images/ngc4438_050508_100.jpg",
     "alt": "NGC4438",
     "title": "The Eyes Galaxies",
     "subtitle": "NGC4438"
   },
   {
-    "link": "image_card/fits_ngc4565.php",
+    "link": "/image_card/fits_ngc4565.php",
     "thumb": "Images/ngc4565_050411_100.jpg",
     "alt": "NGC4565",
     "title": "Needle Galaxy",
     "subtitle": "NGC4565"
   },
   {
-    "link": "image_card/fits_ngc4631.php",
+    "link": "/image_card/fits_ngc4631.php",
     "thumb": "Images/ngc4631_060302_100.jpg",
     "alt": "NGC4631",
     "title": "Whale Galaxy",
     "subtitle": "NGC4631"
   },
   {
-    "link": "image_card/fits_ngc4725.php",
+    "link": "/image_card/fits_ngc4725.php",
     "thumb": "Images/ngc4725_050311_100.jpg",
     "alt": "NGC4725",
     "title": "Spiral Galaxy of Coma Berenices",
     "subtitle": "NGC4725"
   },
   {
-    "link": "image_card/fits_ngc5907.php",
+    "link": "/image_card/fits_ngc5907.php",
     "thumb": "Images/ngc5907_050413_100.jpg",
     "alt": "NGC5907",
     "title": "Knife Edgfe Galaxy",
     "subtitle": "NGC5907"
   },
   {
-    "link": "image_card/fits_ngc5982.php",
+    "link": "/image_card/fits_ngc5982.php",
     "thumb": "Images/ngc5982_050601_100.jpg",
     "alt": "NGC5982",
     "title": "Eliptical Galaxy of Draco",
     "subtitle": "NGC5982"
   },
   {
-    "link": "image_card/fits_m1.php",
+    "link": "/image_card/fits_m1.php",
     "thumb": "Images/m1_041117_100.jpg",
     "alt": "M1",
     "title": "Crab Nebula",
     "subtitle": "M1"
   },
   {
-    "link": "image_card/fits_m27.php",
+    "link": "/image_card/fits_m27.php",
     "thumb": "Images/m27_050711_100.jpg",
     "alt": "M27",
     "title": "Dumbbell Nebula",
     "subtitle": "M27"
   },
   {
-    "link": "image_card/fits_ic434.php",
+    "link": "/image_card/fits_ic434.php",
     "thumb": "Images/ic434_041109_100.jpg",
     "alt": "IC434",
     "title": "Horsehead Nebula",
     "subtitle": "IC434"
   },
   {
-    "link": "image_card/fits_ic1396_1.php",
+    "link": "/image_card/fits_ic1396_1.php",
     "thumb": "Images/ic1396_041006_100.jpg",
     "alt": "IC1396",
     "title": "Elephant Trunk Nebula",
     "subtitle": "IC1396"
   },
   {
-    "link": "image_card/fits_ngc2359.php",
+    "link": "/image_card/fits_ngc2359.php",
     "thumb": "Images/ngc2359_041212_100.jpg",
     "alt": "NGC2359",
     "title": "Thor's Helmet",
     "subtitle": "NGC2359"
   },
   {
-    "link": "image_card/fits_ngc7023.php",
+    "link": "/image_card/fits_ngc7023.php",
     "thumb": "Images/ngc7023_041014_100.jpg",
     "alt": "NGC7023",
     "title": "Iris Nebula",
     "subtitle": "NGC7023"
   },
   {
-    "link": "image_card/fits_ngc7129.php",
+    "link": "/image_card/fits_ngc7129.php",
     "thumb": "Images/ngc7129_Combine_100.jpg",
     "alt": "NGC7129",
     "title": "Reflection Nebula of Cepheus",
     "subtitle": "NGC7129"
   },
   {
-    "link": "image_card/fits_ngc7293.php",
+    "link": "/image_card/fits_ngc7293.php",
     "thumb": "Images/ngc7293_050906_100.jpg",
     "alt": "NGC7293",
     "title": "Helix Nebula",
     "subtitle": "NGC7293"
   },
   {
-    "link": "image_card/fits_ngc7635.php",
+    "link": "/image_card/fits_ngc7635.php",
     "thumb": "Images/ngc7635_041008_100.jpg",
     "alt": "NGC7635",
     "title": "Bubble Nebula",
     "subtitle": "NGC7635"
   },
   {
-    "link": "image_card/fits_m8_region.php",
+    "link": "/image_card/fits_m8_region.php",
     "thumb": "Images/WarrenKeller_m8m20_100.jpg",
     "alt": "M8 Region",
     "title": "M20, NGC6559 and more",
     "subtitle": "M8 Region"
   },
   {
-    "link": "image_card/fits_m24.php",
+    "link": "/image_card/fits_m24.php",
     "thumb": "Images/m24_060530_100.jpg",
     "alt": "M24",
     "title": "Sagittarius Star Clouds",
     "subtitle": "M24"
   },
   {
-    "link": "image_card/fits_m31.php",
+    "link": "/image_card/fits_m31.php",
     "thumb": "Images/m31_TomHarrison_100.jpg",
     "alt": "M31",
     "title": "Andromeda Galaxy",
     "subtitle": "M31"
   },
   {
-    "link": "image_card/fits_ngc1499.php",
+    "link": "/image_card/fits_ngc1499.php",
     "thumb": "Images/ngc1499_SimonWalton_100.jpg",
     "alt": "NGC1499",
     "title": "California Nebula",
     "subtitle": "NGC1499"
   },
   {
-    "link": "image_card/fits_ngc2264.php",
+    "link": "/image_card/fits_ngc2264.php",
     "thumb": "Images/ngc2264_041211_100.jpg",
     "alt": "NGC2264",
     "title": "Cone Nebula/FoxFur Region",
     "subtitle": "NGC2264"
   },
   {
-    "link": "image_card/fits_ngc7000.php",
+    "link": "/image_card/fits_ngc7000.php",
     "thumb": "Images/ngc7000_040621_100.jpg",
     "alt": "NGC7000",
     "title": "North America Nebula",
     "subtitle": "NGC7000"
   },
   {
-    "link": "image_card/fits_ngc7635.php",
-    "thumb": "Images/ngc7635_041008_100.jpg",
-    "alt": "NGC7635",
-    "title": "Bubble Nebula Region",
-    "subtitle": "NGC7635"
-  },
-  {
-    "link": "image_card/fits_ngc7960.php",
+    "link": "/image_card/fits_ngc7960.php",
     "thumb": "Images/Veil_060622_100.jpg",
     "alt": "NGC7960/7979/7992",
     "title": "Veil  Nebula Region",

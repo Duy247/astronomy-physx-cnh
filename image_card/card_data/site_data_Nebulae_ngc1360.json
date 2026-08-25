@@ -1,4 +1,14 @@
 {
+  "id": "Nebulae_ngc1360",
+  "category": "nebulae",
+  "order": 24,
+  "canonical_url": "/image_card/Nebulae_ngc1360.php",
+  "gallery": {
+    "title": "Robin's Egg Nebula",
+    "subtitle": "NGC1360",
+    "thumb": "/Images/ngc1360_041113_100.jpg",
+    "alt": "NGC1360"
+  },
   "title": "Astrophotography - ngc1360",
   "object": "NGC1360",
   "image": {
@@ -12,35 +22,73 @@
   "details": [
     {
       "label": "Object Notes",
-      "value": "<ul>\n<li>Constellation: Fornax\n        <li>Location: RA: 03h 33m 17.9s  Dec: -25d 51' 00\"  Epoch 2000\n        <li>Size: 360 x 270 arc-seconds\n        <li>Magnitude: 9.4\n        <li>Type: Planetary Nebula\n        <li>AKA: PK 220-53.1\n      </li></li></li></li></li></li></ul>\n</blockquote>\n</font>"
+      "text": "Constellation: Fornax\nLocation: RA: 03h 33m 17.9s Dec: -25d 51' 00\" Epoch 2000\nSize: 360 x 270 arc-seconds\nMagnitude: 9.4\nType: Planetary Nebula\nAKA: PK 220-53.1",
+      "links": []
     },
     {
       "label": "Instrument",
-      "value": "<a href=\"Equipment_RC32.htm\">\n      Ritchey-Chretien 32\" Telescope</a>\n</blockquote>\n</font>"
+      "text": "Ritchey-Chretien 32\" Telescope",
+      "links": [
+        {
+          "href": "/Equipment_RC32.php",
+          "label": "Ritchey-Chretien 32\" Telescope"
+        }
+      ]
     },
     {
       "label": "Focal Ratio",
-      "value": "      f7.2 (prime focus)\n      </blockquote>\n</font>"
+      "text": "f7.2 (prime focus)",
+      "links": []
     },
     {
       "label": "Camera",
-      "value": "<a href=\"http://www.sbig.com/sbwhtmls/large_format_cameras.htm\">SBIG STL-11000 CCD camera</a>\n<br/>(See product review in July, 2004 issue of <i>Sky &amp; Telescope</i> magazine.)\n      </blockquote>\n</font>"
+      "text": "SBIG STL-11000 CCD camera\n(See product review in July, 2004 issue of Sky & Telescope magazine.)",
+      "links": [
+        {
+          "href": "http://www.sbig.com/sbwhtmls/large_format_cameras.htm",
+          "label": "SBIG STL-11000 CCD camera"
+        }
+      ]
     },
     {
       "label": "Exposure",
-      "value": "      9 x 5 minutes Luminance unbinned,<br/>\n      3 x 5 minutes each R/G/B, all unbinned\n      </blockquote>\n</font>"
+      "text": "9 x 5 minutes Luminance unbinned,\n3 x 5 minutes each R/G/B, all unbinned",
+      "links": []
     },
     {
       "label": "Guiding",
-      "value": "      Off-Axis with STV Autoguider\n      <a href=\"http://www.sbig.com\">\n      (Santa Barbara Instrument Group)</a><br/>\n      (See product review in May, 2003 issue of <i>Astronomy</i> magazine.)\n      <br/>See <a href=\"Equipment_PhotoGuide.htm\">Photo/Guiding Equipment.</a>\n</blockquote>\n</font>"
+      "text": "Off-Axis with STV Autoguider\n(Santa Barbara Instrument Group)\n(See product review in May, 2003 issue of Astronomy magazine.)\nSee Photo/Guiding Equipment.",
+      "links": [
+        {
+          "href": "http://www.sbig.com",
+          "label": "(Santa Barbara Instrument Group)"
+        },
+        {
+          "href": "/Equipment_PhotoGuide.php",
+          "label": "Photo/Guiding Equipment."
+        }
+      ]
     },
     {
       "label": "Date",
-      "value": "      11/13/04\n      </blockquote>\n</font>"
+      "text": "11/13/04",
+      "links": []
     },
     {
       "label": "Post Processing",
-      "value": "      CCDSoft, CCDSharp, MaxIM DL, Photoshop CS\n      </blockquote>\n</font>"
+      "text": "CCDSoft, CCDSharp, MaxIM DL, Photoshop CS",
+      "links": []
+    }
+  ],
+  "galleries": [
+    {
+      "category": "nebulae",
+      "order": 24,
+      "link": "image_card/Nebulae_ngc1360.php",
+      "thumb": "/Images/ngc1360_041113_100.jpg",
+      "alt": "NGC1360",
+      "title": "Robin's Egg Nebula",
+      "subtitle": "NGC1360"
     }
   ]
 }

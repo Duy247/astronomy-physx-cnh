@@ -266,7 +266,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     });
     // Auto-load image if present
-    let imgParam = (new URLSearchParams(window.location.search)).get('img');
+    let imgParam = imgLayer.dataset.source;
     if(imgParam) {
         img.src = imgParam;
         img.onload = function() { fitImageToCenter(); redrawAll(); };

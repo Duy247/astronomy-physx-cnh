@@ -1,4 +1,9 @@
 /* Image Viewer Toolbar */
+.iv-page { height: 100vh; margin: 0; overflow: hidden; background: #181a20; }
+.iv-workspace { height: 100vh; display: flex; flex-direction: column; }
+#iv-canvas-wrap { flex: 1 1 auto; min-height: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #222; }
+#iv-image { display: block; width: 100%; height: 100%; background: #111; }
+.iv-menu-dropdown button, .iv-menu-dropdown a { width: 100%; padding: .35rem .5rem; border: 0; background: none; color: inherit; font: inherit; text-align: left; text-decoration: none; cursor: pointer; }
 .iv-toolbar {
     display: flex;
     flex-wrap: wrap;

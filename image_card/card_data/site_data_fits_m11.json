@@ -1,4 +1,14 @@
 {
+  "id": "fits_m11",
+  "category": "fits",
+  "order": 4,
+  "canonical_url": "/image_card/fits_m11.php",
+  "gallery": {
+    "title": "Wild Duck Cluster",
+    "subtitle": "M11",
+    "thumb": "Images/m11_050830_100.jpg",
+    "alt": "M11"
+  },
   "title": "ASTROPHOTOGRAPHY - M13 - HERCULES CLUSTER",
   "object": "M13 - HERCULES CLUSTER",
   "image": {
@@ -12,19 +22,61 @@
   "details": [
     {
       "label": "m13 image comparison page",
-      "value": "<a href=\"/Compare_m13_Med.php\">m13 image comparison page</a>"
+      "text": "m13 image comparison page",
+      "links": [
+        {
+          "href": "/Compare_m13_Med.php",
+          "label": "m13 image comparison page"
+        }
+      ]
     },
     {
       "label": "Image Processing Example",
-      "value": "<a href=\"Process_m13.php\">Image Processing Example</a>"
+      "text": "Image Processing Example",
+      "links": [
+        {
+          "href": "/Process_m13.php",
+          "label": "Image Processing Example"
+        }
+      ]
     },
     {
       "label": "Files",
-      "value": "<a href=\"/fits/m13_050414_14i14m_L.FIT\">m13_050414_14i14m_L.FIT</a> (Luminance, 14 min, 1-min subs)<br><a href=\"/fits/m13_050414_7i7m_R.FIT\">m13_050414_7i7m_R.FIT</a> (Red, 7 min, 1-min subs)<br><a href=\"/fits/m13_050414_7i7m_G.FIT\">m13_050414_7i7m_G.FIT</a> (Green, 7 min, 1-min subs)<br><a href=\"/fits/m13_050414_7i7m_B.FIT\">m13_050414_7i7m_B.FIT</a> (Blue, 7 min, 1-min subs)<br>"
+      "text": "m13_050414_14i14m_L.FIT (Luminance, 14 min, 1-min subs)\nm13_050414_7i7m_R.FIT (Red, 7 min, 1-min subs)\nm13_050414_7i7m_G.FIT (Green, 7 min, 1-min subs)\nm13_050414_7i7m_B.FIT (Blue, 7 min, 1-min subs)",
+      "links": [
+        {
+          "href": "/fits/m13_050414_14i14m_L.FIT",
+          "label": "m13_050414_14i14m_L.FIT"
+        },
+        {
+          "href": "/fits/m13_050414_7i7m_R.FIT",
+          "label": "m13_050414_7i7m_R.FIT"
+        },
+        {
+          "href": "/fits/m13_050414_7i7m_G.FIT",
+          "label": "m13_050414_7i7m_G.FIT"
+        },
+        {
+          "href": "/fits/m13_050414_7i7m_B.FIT",
+          "label": "m13_050414_7i7m_B.FIT"
+        }
+      ]
     },
     {
       "label": "Notes",
-      "value": "(Jim's color combine ratio was R : G : B = 1.5 : 1.0 : 1.8)"
+      "text": "(Jim's color combine ratio was R : G : B = 1.5 : 1.0 : 1.8)",
+      "links": []
+    }
+  ],
+  "galleries": [
+    {
+      "category": "fits",
+      "order": 4,
+      "link": "image_card/fits_m11.php",
+      "thumb": "Images/m11_050830_100.jpg",
+      "alt": "M11",
+      "title": "Wild Duck Cluster",
+      "subtitle": "M11"
     }
   ]
 }

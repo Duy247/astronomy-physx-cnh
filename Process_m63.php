@@ -73,7 +73,7 @@
                 <div class="astro-step-text">
                     These image files were taken with an Optical Guidance Systems 32" Ritchey-Chretien telescope and SBIG STL-11000m camera, from very dark and transparent skies in northwestern Arizona.<br><br>
                     The raw files have been calibrated (Dark Subtracted, Flat Fielded, Hot/Cold Pixels removed), and aligned with each other.<br><br>
-                    <a href="index_fits.htm">These files</a> are available to interested users who wish to follow along with their own software, and/or make their own alterations to the process.
+                    <a href="index_fits.php">These files</a> are available to interested users who wish to follow along with their own software, and/or make their own alterations to the process.
                 </div>
             </div>
         </div>
@@ -125,7 +125,7 @@
             <h3>Step 1: Deconvolve Luminance File</h3>
             <div class="astro-step-content">
                 <div class="astro-step-text">
-                    Use CCDSharp to do a 3-iteration <a href="Process_CCDSharp_Deconvolution.htm">Richardson-Lucy Deconvolution</a> on the Luminance frame. Luminance file shown after deconvolution at right.
+                    Use CCDSharp to do a 3-iteration <a href="Process_CCDSharp_Deconvolution.php">Richardson-Lucy Deconvolution</a> on the Luminance frame. Luminance file shown after deconvolution at right.
                 </div>
                 <div class="astro-step-image">
                     <a href="process/m63_L_LR3_1280.jpg" target="_blank"><img src="process/m63_L_LR3_200.jpg" alt="Luminance Deconvolved"></a>
@@ -136,7 +136,7 @@
             <h3>Step 2: Non-Linear Stretch of Luminance File</h3>
             <div class="astro-step-content">
                 <div class="astro-step-text">
-                    Use MaxIm DL to do a <a href="Process_MaxImDL_DDP.htm">Non-Linear Stretch (DDP)</a> on the Luminance frame. DDP parameters: Background = 4200, Mid-Level = 5400. Luminance file shown after non-linear stretch at right.
+                    Use MaxIm DL to do a <a href="Process_MaxImDL_DDP.php">Non-Linear Stretch (DDP)</a> on the Luminance frame. DDP parameters: Background = 4200, Mid-Level = 5400. Luminance file shown after non-linear stretch at right.
                 </div>
                 <div class="astro-step-image">
                     <a href="process/m63_L_LR3_DDP_1280.jpg" target="_blank"><img src="process/m63_L_LR3_DDP_200.jpg" alt="Luminance DDP"></a>
@@ -163,7 +163,7 @@
             <h3>Step 4: Load Luminance into Photoshop, Reduce Background Noise using Inverted Layer Mask</h3>
             <div class="astro-step-content">
                 <div class="astro-step-text">
-                    Load the non-linear stretched Luminance frame into Photoshop. Use <a href="Process_PS_ILM.htm">Inverted Layer Mask</a> and Gaussian Blur to reduce noise in the low-signal areas, protecting stars and details. Adjust Levels as needed.
+                    Load the non-linear stretched Luminance frame into Photoshop. Use <a href="Process_PS_ILM.php">Inverted Layer Mask</a> and Gaussian Blur to reduce noise in the low-signal areas, protecting stars and details. Adjust Levels as needed.
                 </div>
                 <div class="astro-step-image">
                     <a href="process/m63_L_Noise0_1280.jpg" target="_blank"><img src="process/m63_L_Noise0_200.jpg" alt="Luminance Noise 0"></a>
@@ -180,7 +180,7 @@
             <h3>Step 5: Load RGB Image, Reduce Color Noise using Inverted Layer Mask</h3>
             <div class="astro-step-content">
                 <div class="astro-step-text">
-                    Load the non-linear stretched RGB image. Use <a href="Process_PS_ILM.htm">Inverted Layer Mask</a> (using the Luminance image as the mask) and Gaussian Blur to reduce color noise. Adjust Levels as needed.
+                    Load the non-linear stretched RGB image. Use <a href="Process_PS_ILM.php">Inverted Layer Mask</a> (using the Luminance image as the mask) and Gaussian Blur to reduce color noise. Adjust Levels as needed.
                 </div>
                 <div class="astro-step-image">
                     <a href="process/m63_RGB_Noise0_1280.jpg" target="_blank"><img src="process/m63_RGB_Noise0_200.jpg" alt="RGB Noise 0"></a>

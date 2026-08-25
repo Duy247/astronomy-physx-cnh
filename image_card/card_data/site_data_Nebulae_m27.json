@@ -1,4 +1,14 @@
 {
+  "id": "Nebulae_m27",
+  "category": "nebulae",
+  "order": 5,
+  "canonical_url": "/image_card/Nebulae_m27.php",
+  "gallery": {
+    "title": "Dumbbell Nebula",
+    "subtitle": "M27",
+    "thumb": "/Images/m27_050711_100.jpg",
+    "alt": "M27"
+  },
   "title": "Astrophotography - M27 (Dumbbell Nebula)",
   "object": "M27 (DUMBBELL NEBULA)",
   "image": {
@@ -12,35 +22,77 @@
   "details": [
     {
       "label": "Object Notes",
-      "value": "<ul>\n<li>Constellation: Vulpecula\n        <li>Location:  RA: 19h 59m 36.0s  Dec: +22d 43' 00\"  Epoch 2000\n        <li>Size: 480 x 340 arc-seconds\n        <li>Magnitude: 7.3\n        <li>Type: Planetary Nebula\n        <li>AKA: ngc6853, PK 60-3.1\n      </li></li></li></li></li></li></ul>\n</blockquote>\n</font>"
+      "text": "Constellation: Vulpecula\nLocation: RA: 19h 59m 36.0s Dec: +22d 43' 00\" Epoch 2000\nSize: 480 x 340 arc-seconds\nMagnitude: 7.3\nType: Planetary Nebula\nAKA: ngc6853, PK 60-3.1",
+      "links": []
     },
     {
       "label": "Instrument",
-      "value": "<a href=\"Equipment_RC32.htm\">\n      Ritchey-Chretien 32\" Telescope</a>\n</blockquote>\n</font>"
+      "text": "Ritchey-Chretien 32\" Telescope",
+      "links": [
+        {
+          "href": "/Equipment_RC32.php",
+          "label": "Ritchey-Chretien 32\" Telescope"
+        }
+      ]
     },
     {
       "label": "Focal Ratio",
-      "value": "      f7.2 (prime focus)\n      </blockquote>\n</font>"
+      "text": "f7.2 (prime focus)",
+      "links": []
     },
     {
       "label": "Camera",
-      "value": "<a href=\"http://www.sbig.com/sbwhtmls/large_format_cameras.htm\">SBIG STL-11000 CCD camera</a>\n<br/>(See product review in July, 2004 issue of <i>Sky &amp; Telescope</i> magazine.)\n      <br/>with <a href=\"http://www.astrodon.com\">Astrodon</a> Tru-Balance color filters.\n      </blockquote>\n</font>"
+      "text": "SBIG STL-11000 CCD camera\n(See product review in July, 2004 issue of Sky & Telescope magazine.)\nwith Astrodon Tru-Balance color filters.",
+      "links": [
+        {
+          "href": "http://www.sbig.com/sbwhtmls/large_format_cameras.htm",
+          "label": "SBIG STL-11000 CCD camera"
+        },
+        {
+          "href": "http://www.astrodon.com",
+          "label": "Astrodon"
+        }
+      ]
     },
     {
       "label": "Exposure",
-      "value": "      6 x 5 minute Luminance unbinned<br/>\n      3 x 5 minute each R/G/B, all unbinned\n      </blockquote>\n</font>"
+      "text": "6 x 5 minute Luminance unbinned\n3 x 5 minute each R/G/B, all unbinned",
+      "links": []
     },
     {
       "label": "Guiding",
-      "value": "      Off-Axis with STV Autoguider\n      <a href=\"http://www.sbig.com\">\n      (Santa Barbara Instrument Group)</a><br/>\n      (See product review in May, 2003 issue of <i>Astronomy</i> magazine.)\n      <br/>See <a href=\"Equipment_PhotoGuide.htm\">Photo/Guiding Equipment.</a>\n</blockquote>\n</font>"
+      "text": "Off-Axis with STV Autoguider\n(Santa Barbara Instrument Group)\n(See product review in May, 2003 issue of Astronomy magazine.)\nSee Photo/Guiding Equipment.",
+      "links": [
+        {
+          "href": "http://www.sbig.com",
+          "label": "(Santa Barbara Instrument Group)"
+        },
+        {
+          "href": "/Equipment_PhotoGuide.php",
+          "label": "Photo/Guiding Equipment."
+        }
+      ]
     },
     {
       "label": "Date",
-      "value": "      7/11/05\n      </blockquote>\n</font>"
+      "text": "7/11/05",
+      "links": []
     },
     {
       "label": "Post Processing",
-      "value": "      CCDSoft, CCDSharp, MaxIM DL, Photoshop CS\n      </blockquote>\n</font>"
+      "text": "CCDSoft, CCDSharp, MaxIM DL, Photoshop CS",
+      "links": []
+    }
+  ],
+  "galleries": [
+    {
+      "category": "nebulae",
+      "order": 5,
+      "link": "image_card/Nebulae_m27.php",
+      "thumb": "/Images/m27_050711_100.jpg",
+      "alt": "M27",
+      "title": "Dumbbell Nebula",
+      "subtitle": "M27"
     }
   ]
 }

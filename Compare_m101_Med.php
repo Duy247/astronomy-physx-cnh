@@ -108,7 +108,7 @@
                 <td><a href="/Images/m101_JohnNoble_800.jpg">Medium</a> / <a href="/Images/m101_JohnNoble_2000.jpg">Large</a></td>
                 <td>Paul Phelps</td>
                 <td><a href="/Images/m101_PaulPhelps_800.jpg">Medium</a> / <a href="/Images/m101_PaulPhelps_2000.jpg">Large</a></td>
-                <td><a href="Compare_m101_Med.htm">Composite</a></td>
+                <td><a href="Compare_m101_Med.php">Composite</a></td>
                 <td></td>
             </tr>
             <tr>

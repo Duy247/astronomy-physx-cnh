@@ -1,4 +1,14 @@
 {
+  "id": "fits_ngc2264",
+  "category": "fits",
+  "order": 49,
+  "canonical_url": "/image_card/fits_ngc2264.php",
+  "gallery": {
+    "title": "Cone Nebula/FoxFur Region",
+    "subtitle": "NGC2264",
+    "thumb": "Images/ngc2264_041211_100.jpg",
+    "alt": "NGC2264"
+  },
   "title": "ASTROPHOTOGRAPHY - NGC2264",
   "object": "NGC2264",
   "image": {
@@ -12,15 +22,46 @@
   "details": [
     {
       "label": "Files",
-      "value": "<a href=\"/fits/ngc2264_061028_16i80m_L.FIT\">ngc2264_061028_16i80m_L.FIT</a> (Luminance, 80 min, 5-min subs)<br><a href=\"/fits/ngc2264_061028_5i25m_R.FIT\">ngc2264_061028_5i25m_R.FIT</a> (Red, 25 min, 5-min subs)<br><a href=\"/fits/ngc2264_061028_5i25m_G.FIT\">ngc2264_061028_5i25m_G.FIT</a> (Green, 25 min, 5-min subs)<br><a href=\"/fits/ngc2264_061028_5i25m_B.FIT\">ngc2264_061028_5i25m_B.FIT</a> (Blue, 25 min, 5-min subs)<br>"
+      "text": "ngc2264_061028_16i80m_L.FIT (Luminance, 80 min, 5-min subs)\nngc2264_061028_5i25m_R.FIT (Red, 25 min, 5-min subs)\nngc2264_061028_5i25m_G.FIT (Green, 25 min, 5-min subs)\nngc2264_061028_5i25m_B.FIT (Blue, 25 min, 5-min subs)",
+      "links": [
+        {
+          "href": "/fits/ngc2264_061028_16i80m_L.FIT",
+          "label": "ngc2264_061028_16i80m_L.FIT"
+        },
+        {
+          "href": "/fits/ngc2264_061028_5i25m_R.FIT",
+          "label": "ngc2264_061028_5i25m_R.FIT"
+        },
+        {
+          "href": "/fits/ngc2264_061028_5i25m_G.FIT",
+          "label": "ngc2264_061028_5i25m_G.FIT"
+        },
+        {
+          "href": "/fits/ngc2264_061028_5i25m_B.FIT",
+          "label": "ngc2264_061028_5i25m_B.FIT"
+        }
+      ]
     },
     {
       "label": "Processed by Inaki Lizaso",
-      "value": "<img src=\"/Images/ngc2264_InakiLizaso_100.jpg\">"
+      "text": "",
+      "links": []
     },
     {
       "label": "Processed by Ivette Rodríguez & Oriol Lehmkuhl",
-      "value": "<img src=\"/Images/IvetteRodriguez_Oriol_Lehmkuhl_ngc2264_100.jpg\">"
+      "text": "",
+      "links": []
+    }
+  ],
+  "galleries": [
+    {
+      "category": "fits",
+      "order": 49,
+      "link": "image_card/fits_ngc2264.php",
+      "thumb": "Images/ngc2264_041211_100.jpg",
+      "alt": "NGC2264",
+      "title": "Cone Nebula/FoxFur Region",
+      "subtitle": "NGC2264"
     }
   ]
 }

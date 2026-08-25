@@ -1,4 +1,14 @@
 {
+  "id": "fits_m2",
+  "category": "fits",
+  "order": 6,
+  "canonical_url": "/image_card/fits_m2.php",
+  "gallery": {
+    "title": "Globular Cluster of  Aquarius",
+    "subtitle": "M2",
+    "thumb": "Images/m2_050907_100.jpg",
+    "alt": "M2"
+  },
   "title": "ASTROPHOTOGRAPHY - M2 - (GLOBULAR CLUSTER)",
   "object": "M2 - (GLOBULAR CLUSTER)",
   "image": {
@@ -12,7 +22,36 @@
   "details": [
     {
       "label": "Files",
-      "value": "<a href=\"/fits/m2_050907_12i12m_L.FIT\">m2_050907_12i12m_L.FIT</a> (Luminance, 12 min, 1-min subs)<br><a href=\"/fits/m2_050907_6i6m_R.FIT\">m2_050907_6i6m_R.FIT</a> (Red, 6 min, 1-min subs)<br><a href=\"/fits/m2_050907_6i6m_G.FIT\">m2_050907_6i6m_G.FIT</a> (Green, 6 min, 1-min subs)<br><a href=\"/fits/m2_050907_6i6m_B.FIT\">m2_050907_6i6m_B.FIT</a> (Blue, 6 min, 1-min subs)<br>"
+      "text": "m2_050907_12i12m_L.FIT (Luminance, 12 min, 1-min subs)\nm2_050907_6i6m_R.FIT (Red, 6 min, 1-min subs)\nm2_050907_6i6m_G.FIT (Green, 6 min, 1-min subs)\nm2_050907_6i6m_B.FIT (Blue, 6 min, 1-min subs)",
+      "links": [
+        {
+          "href": "/fits/m2_050907_12i12m_L.FIT",
+          "label": "m2_050907_12i12m_L.FIT"
+        },
+        {
+          "href": "/fits/m2_050907_6i6m_R.FIT",
+          "label": "m2_050907_6i6m_R.FIT"
+        },
+        {
+          "href": "/fits/m2_050907_6i6m_G.FIT",
+          "label": "m2_050907_6i6m_G.FIT"
+        },
+        {
+          "href": "/fits/m2_050907_6i6m_B.FIT",
+          "label": "m2_050907_6i6m_B.FIT"
+        }
+      ]
+    }
+  ],
+  "galleries": [
+    {
+      "category": "fits",
+      "order": 6,
+      "link": "image_card/fits_m2.php",
+      "thumb": "Images/m2_050907_100.jpg",
+      "alt": "M2",
+      "title": "Globular Cluster of  Aquarius",
+      "subtitle": "M2"
     }
   ]
 }

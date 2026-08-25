@@ -1,4 +1,14 @@
 {
+  "id": "SolarSystem_Moon_3rdQuarter",
+  "category": "solar-system-moon",
+  "order": 1,
+  "canonical_url": "/image_card/SolarSystem_Moon_3rdQuarter.php",
+  "gallery": {
+    "title": "",
+    "subtitle": "3rd Quarter Moon",
+    "thumb": "Images/moon_040905_200.jpg",
+    "alt": "3rd Quarter Moon"
+  },
   "title": "Astrophotography - Moon - Third Quarter",
   "object": "MOON - THIRD QUARTER",
   "image": {
@@ -12,27 +22,54 @@
   "details": [
     {
       "label": "Instrument",
-      "value": "<a href=\"Equipment_RC32.htm\">\n      Ritchey-Chretien 32\" Telescope</a>\n</blockquote>\n</font>"
+      "text": "Ritchey-Chretien 32\" Telescope",
+      "links": [
+        {
+          "href": "/Equipment_RC32.php",
+          "label": "Ritchey-Chretien 32\" Telescope"
+        }
+      ]
     },
     {
       "label": "Focal Ratio",
-      "value": "      f25 (prime focus - 9\" clear aperture mask)\n      </blockquote>\n</font>"
+      "text": "f25 (prime focus - 9\" clear aperture mask)",
+      "links": []
     },
     {
       "label": "Camera",
-      "value": "<a href=\"http://www.sbig.com/sbwhtmls/large_format_cameras.htm\">SBIG STL-11000 CCD camera</a>\n<br/>(See product review in July, 2004 issue of <i>Sky &amp; Telescope</i> magazine.)\n      </blockquote>\n</font>"
+      "text": "SBIG STL-11000 CCD camera\n(See product review in July, 2004 issue of Sky & Telescope magazine.)",
+      "links": [
+        {
+          "href": "http://www.sbig.com/sbwhtmls/large_format_cameras.htm",
+          "label": "SBIG STL-11000 CCD camera"
+        }
+      ]
     },
     {
       "label": "Exposure",
-      "value": "      .001 Second Luminance only (Clear Filter)<br/>\n      Mosaic of 4 images to cover field\n      </blockquote>\n</font>"
+      "text": ".001 Second Luminance only (Clear Filter)\nMosaic of 4 images to cover field",
+      "links": []
     },
     {
       "label": "Guiding",
-      "value": "      None\n      </blockquote>\n</font>"
+      "text": "None",
+      "links": []
     },
     {
       "label": "Date",
-      "value": "      9/05/04\n      </blockquote>\n</font>"
+      "text": "9/05/04",
+      "links": []
+    }
+  ],
+  "galleries": [
+    {
+      "category": "solar-system-moon",
+      "order": 1,
+      "link": "/image_card/SolarSystem_Moon_3rdQuarter.php",
+      "thumb": "Images/moon_040905_200.jpg",
+      "alt": "3rd Quarter Moon",
+      "title": "",
+      "subtitle": "3rd Quarter Moon"
     }
   ]
 }

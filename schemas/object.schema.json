@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AstroGallery object",
+  "type": "object",
+  "required": ["id", "category", "order", "canonical_url", "gallery", "galleries", "title", "object", "image", "details"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "category": {"type": "string", "minLength": 1},
+    "order": {"type": "integer", "minimum": 0},
+    "canonical_url": {"type": "string", "pattern": "^/image_card/"},
+    "gallery": {"type": "object", "required": ["title", "subtitle", "thumb", "alt"]},
+    "galleries": {"type": "array"},
+    "title": {"type": "string"},
+    "object": {"type": "string"},
+    "image": {"type": "object", "required": ["large", "thumb", "alt"]},
+    "details": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "text", "links"],
+        "properties": {
+          "label": {"type": "string"},
+          "text": {"type": "string"},
+          "links": {"type": "array", "items": {"type": "object", "required": ["href", "label"]}}
+        }
+      }
+    }
+  }
+}

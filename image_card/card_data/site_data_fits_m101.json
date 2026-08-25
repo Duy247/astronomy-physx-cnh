@@ -1,4 +1,14 @@
 {
+  "id": "fits_m101",
+  "category": "fits",
+  "order": 3,
+  "canonical_url": "/image_card/fits_m101.php",
+  "gallery": {
+    "title": "M101",
+    "subtitle": "M101",
+    "thumb": "Images/m101_050511_100.jpg",
+    "alt": "M101"
+  },
   "title": "ASTROPHOTOGRAPHY - M101",
   "object": "M101",
   "image": {
@@ -12,15 +22,51 @@
   "details": [
     {
       "label": "m101 image comparison page",
-      "value": "<a href=\"/Compare_m101_Med.php\">m101 image comparison page</a>"
+      "text": "m101 image comparison page",
+      "links": [
+        {
+          "href": "/Compare_m101_Med.php",
+          "label": "m101 image comparison page"
+        }
+      ]
     },
     {
       "label": "Files",
-      "value": "<a href=\"/fits/m101_050511_12i60m_L.FIT\">m101_050511_12i60m_L.FIT</a> (Luminance, 60 min, 5-min subs)<br><a href=\"/fits/m101_050511_3i15m_R.FIT\">m101_050511_3i15m_R.FIT</a> (Red, 15 min, 5-min subs)<br><a href=\"/fits/m101_050511_3i15m_G.FIT\">m101_050511_3i15m_G.FIT</a> (Green, 15 min, 5-min subs)<br><a href=\"/fits/m101_050511_3i15m_B.FIT\">m101_050511_3i15m_B.FIT</a> (Blue, 15 min, 5-min subs)<br>"
+      "text": "m101_050511_12i60m_L.FIT (Luminance, 60 min, 5-min subs)\nm101_050511_3i15m_R.FIT (Red, 15 min, 5-min subs)\nm101_050511_3i15m_G.FIT (Green, 15 min, 5-min subs)\nm101_050511_3i15m_B.FIT (Blue, 15 min, 5-min subs)",
+      "links": [
+        {
+          "href": "/fits/m101_050511_12i60m_L.FIT",
+          "label": "m101_050511_12i60m_L.FIT"
+        },
+        {
+          "href": "/fits/m101_050511_3i15m_R.FIT",
+          "label": "m101_050511_3i15m_R.FIT"
+        },
+        {
+          "href": "/fits/m101_050511_3i15m_G.FIT",
+          "label": "m101_050511_3i15m_G.FIT"
+        },
+        {
+          "href": "/fits/m101_050511_3i15m_B.FIT",
+          "label": "m101_050511_3i15m_B.FIT"
+        }
+      ]
     },
     {
       "label": "Notes",
-      "value": "(Jim's color combine ratio was R : G : B = 1.3 : 1.0 : 1.6)"
+      "text": "(Jim's color combine ratio was R : G : B = 1.3 : 1.0 : 1.6)",
+      "links": []
+    }
+  ],
+  "galleries": [
+    {
+      "category": "fits",
+      "order": 3,
+      "link": "image_card/fits_m101.php",
+      "thumb": "Images/m101_050511_100.jpg",
+      "alt": "M101",
+      "title": "M101",
+      "subtitle": "M101"
     }
   ]
 }

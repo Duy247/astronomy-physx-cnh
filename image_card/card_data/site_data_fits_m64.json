@@ -1,4 +1,14 @@
 {
+  "id": "fits_m64",
+  "category": "fits",
+  "order": 17,
+  "canonical_url": "/image_card/fits_m64.php",
+  "gallery": {
+    "title": "Black Eye Galaxy",
+    "subtitle": "M64",
+    "thumb": "Images/m64_050604_100.jpg",
+    "alt": "M64"
+  },
   "title": "ASTROPHOTOGRAPHY - M64 - BLACK EYE GALAXY",
   "object": "M64 - BLACK EYE GALAXY",
   "image": {
@@ -12,7 +22,36 @@
   "details": [
     {
       "label": "Files",
-      "value": "<a href=\"/fits/m64_050604_9i45m_L.FIT\">m64_050604_9i45m_L.FIT</a> (Luminance, 45 min, 5-min subs)<br><a href=\"/fits/m64_050604_3i15m_R.FIT\">m64_050604_3i15m_R.FIT</a> (Red, 15 min, 5-min subs)<br><a href=\"/fits/m64_050604_3i15m_G.FIT\">m64_050604_3i15m_G.FIT</a> (Green, 15 min, 5-min subs)<br><a href=\"/fits/m64_050604_3i15m_B.FIT\">m64_050604_3i15m_B.FIT</a> (Blue, 15 min, 5-min subs)<br>"
+      "text": "m64_050604_9i45m_L.FIT (Luminance, 45 min, 5-min subs)\nm64_050604_3i15m_R.FIT (Red, 15 min, 5-min subs)\nm64_050604_3i15m_G.FIT (Green, 15 min, 5-min subs)\nm64_050604_3i15m_B.FIT (Blue, 15 min, 5-min subs)",
+      "links": [
+        {
+          "href": "/fits/m64_050604_9i45m_L.FIT",
+          "label": "m64_050604_9i45m_L.FIT"
+        },
+        {
+          "href": "/fits/m64_050604_3i15m_R.FIT",
+          "label": "m64_050604_3i15m_R.FIT"
+        },
+        {
+          "href": "/fits/m64_050604_3i15m_G.FIT",
+          "label": "m64_050604_3i15m_G.FIT"
+        },
+        {
+          "href": "/fits/m64_050604_3i15m_B.FIT",
+          "label": "m64_050604_3i15m_B.FIT"
+        }
+      ]
+    }
+  ],
+  "galleries": [
+    {
+      "category": "fits",
+      "order": 17,
+      "link": "image_card/fits_m64.php",
+      "thumb": "Images/m64_050604_100.jpg",
+      "alt": "M64",
+      "title": "Black Eye Galaxy",
+      "subtitle": "M64"
     }
   ]
 }

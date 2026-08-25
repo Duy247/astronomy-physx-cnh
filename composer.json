@@ -10,21 +10,19 @@
         }
     ],
     "require": {
-        "php": ">=7.4"
+        "php": ">=8.1"
     },
     "require-dev": {
     },
-    "autoload": {
-        "psr-4": {
-            "App\\": "src/"
-        }
-    },
     "scripts": {
-        "start": "php -S localhost:8000 -t public",
-        "test": "echo 'No tests configured yet'"
+        "start": "php -S localhost:8000 -t .",
+        "validate-content": "python tools/catalog.py validate",
+        "test": [
+            "@validate-content",
+            "php tests/smoke.php"
+        ]
     },
     "config": {
-        "optimize-autoloader": true,
         "sort-packages": true
     },
     "minimum-stability": "stable",

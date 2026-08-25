@@ -1,5 +1,4 @@
 /* Astro Modern UI - Dark/Light Mode */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 :root {
     --main-bg: #f4f8fb;
     --card-bg: #fff;
@@ -334,4 +333,47 @@ a:hover, a:focus {
 }
 [data-theme="dark"] a:hover, [data-theme="dark"] a:focus {
     color: var(--accent);
+}
+
+/* Shared gallery and footer components */
+.astro-header-brand { color: inherit; text-decoration: none; }
+.astro-header-brand:hover { text-decoration: none; }
+.astro-nav-toggle { display: none; }
+.astro-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem 1rem;
+    align-items: end;
+}
+.astro-gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .35rem;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+}
+.astro-gallery-item:hover { text-decoration: none; }
+.astro-gallery-item span { color: var(--accent); font-size: .95rem; }
+.astro-thumb { max-width: 100%; border-radius: 8px; box-shadow: 0 2px 12px #0002; }
+.astro-subtitle, .astro-hint { color: var(--accent); }
+.astro-details th { width: 32%; color: var(--primary); font-weight: 500; text-align: left; vertical-align: top; }
+.astro-skymap { width: 100%; height: 400px; margin: auto; }
+.astro-skymap-fallback { text-align: center; }
+.astro-skymap-section.is-loaded .astro-skymap-fallback { display: none; }
+.astro-footer { margin-top: 3rem; padding: 2rem 1rem; background: var(--header-bg); color: var(--header-text); }
+.astro-footer-inner { max-width: 1100px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+.astro-footer-brand { display: flex; align-items: center; gap: 1rem; }
+.astro-footer-logo { width: 180px; max-width: 40vw; }
+.astro-footer-notice { max-width: 540px; text-align: right; opacity: .85; }
+.legacy-content { overflow-wrap: anywhere; }
+.legacy-content img { max-width: 100%; height: auto; }
+.legacy-content table { max-width: 100%; }
+
+@media (max-width: 600px) {
+    .astro-nav-toggle { display: block; }
+    .astro-footer-inner { flex-direction: column; text-align: center; }
+    .astro-footer-notice { text-align: center; }
+    .astro-details th { width: 38%; }
 }

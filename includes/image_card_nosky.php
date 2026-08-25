@@ -1,23 +1,18 @@
-<link rel="stylesheet" href="https://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.css" />
-<script src="https://code.jquery.com/jquery-1.9.1.min.js" charset="utf-8"></script>
 <main class="astro-card">
     <div class="astro-flex-row">
         <section class="astro-section astro-image-section">
-            <h3><?= htmlspecialchars($object) ?></h3>
-            <a href="/image_viewer.php?img=<?= urlencode($image['large']) ?>" id="astro-image-link">
-                <img src="<?= htmlspecialchars($image['thumb']) ?>" alt="<?= htmlspecialchars($image['alt']) ?>" id="astro-image-thumb">
+            <h1><?= astro_escape($object) ?></h1>
+            <a href="<?= astro_escape(astro_url('/image_viewer.php?img=' . rawurlencode((string) ($image['large'] ?? '')))) ?>">
+                <img src="<?= astro_escape(astro_url((string) ($image['thumb'] ?? ''))) ?>" alt="<?= astro_escape((string) ($image['alt'] ?? $object)) ?>">
             </a>
-            <p style="color: var(--accent); font-size: 0.97rem; margin:0"><i>Click on photo for a larger image.</i></p>
+            <p class="astro-hint"><em>Click the photo for a larger image.</em></p>
         </section>
-        <section class="astro-details-section">
-            <table class="astro-details">
-                <?php foreach ($details as $row) : ?>
-                    <tr>
-                        <td><?= htmlspecialchars($row['label']) ?>:</td>
-                        <td><?= $row['value'] ?></td>
-                    </tr>
+        <section class="astro-details-section" aria-label="Observation details">
+            <table class="astro-details"><tbody>
+                <?php foreach ($details as $row): ?>
+                    <tr><th scope="row"><?= astro_escape((string) ($row['label'] ?? 'Detail')) ?></th><td><?= astro_render_detail($row) ?></td></tr>
                 <?php endforeach; ?>
-            </table>
+            </tbody></table>
         </section>
     </div>
 </main>

@@ -1,4 +1,14 @@
 {
+  "id": "fits_m8_region",
+  "category": "fits",
+  "order": 45,
+  "canonical_url": "/image_card/fits_m8_region.php",
+  "gallery": {
+    "title": "M20, NGC6559 and more",
+    "subtitle": "M8 Region",
+    "thumb": "Images/WarrenKeller_m8m20_100.jpg",
+    "alt": "M8 Region"
+  },
   "title": "ASTROPHOTOGRAPHY - M8 Region",
   "object": "M8 Region",
   "image": {
@@ -12,7 +22,36 @@
   "details": [
     {
       "label": "Files",
-      "value": "<a href=\"/fits/m8_060527_11i55m_L.FIT\">m8_060527_11i55m_L.FIT</a> (Luminance, 55 min, 5-min subs)<br><a href=\"/fits/m8_060527_3i15m_R.FIT\">m8_060527_3i15m_R.FIT</a> (Red, 15 min, 5-min subs)<br><a href=\"/fits/m8_060527_3i15m_G.FIT\">m8_060527_3i15m_G.FIT</a> (Green, 15 min, 5-min subs)<br><a href=\"/fits/m8_060527_3i15m_B.FIT\">m8_060527_3i15m_B.FIT</a> (Blue, 15 min, 5-min subs)<br>"
+      "text": "m8_060527_11i55m_L.FIT (Luminance, 55 min, 5-min subs)\nm8_060527_3i15m_R.FIT (Red, 15 min, 5-min subs)\nm8_060527_3i15m_G.FIT (Green, 15 min, 5-min subs)\nm8_060527_3i15m_B.FIT (Blue, 15 min, 5-min subs)",
+      "links": [
+        {
+          "href": "/fits/m8_060527_11i55m_L.FIT",
+          "label": "m8_060527_11i55m_L.FIT"
+        },
+        {
+          "href": "/fits/m8_060527_3i15m_R.FIT",
+          "label": "m8_060527_3i15m_R.FIT"
+        },
+        {
+          "href": "/fits/m8_060527_3i15m_G.FIT",
+          "label": "m8_060527_3i15m_G.FIT"
+        },
+        {
+          "href": "/fits/m8_060527_3i15m_B.FIT",
+          "label": "m8_060527_3i15m_B.FIT"
+        }
+      ]
+    }
+  ],
+  "galleries": [
+    {
+      "category": "fits",
+      "order": 45,
+      "link": "image_card/fits_m8_region.php",
+      "thumb": "Images/WarrenKeller_m8m20_100.jpg",
+      "alt": "M8 Region",
+      "title": "M20, NGC6559 and more",
+      "subtitle": "M8 Region"
     }
   ]
 }

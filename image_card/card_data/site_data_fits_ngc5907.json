@@ -1,4 +1,14 @@
 {
+  "id": "fits_ngc5907",
+  "category": "fits",
+  "order": 34,
+  "canonical_url": "/image_card/fits_ngc5907.php",
+  "gallery": {
+    "title": "Knife Edgfe Galaxy",
+    "subtitle": "NGC5907",
+    "thumb": "Images/ngc5907_050413_100.jpg",
+    "alt": "NGC5907"
+  },
   "title": "ASTROPHOTOGRAPHY - NGC5907",
   "object": "NGC5907",
   "image": {
@@ -12,7 +22,36 @@
   "details": [
     {
       "label": "Files",
-      "value": "<a href=\"/fits/ngc5907_050413_12i60mF_L.FIT\">ngc5907_050413_12i60mF_L.FIT</a> (Luminance, 60 min, 5-min subs)<br><a href=\"/fits/ngc5907_050413_4i20mF_R.FIT\">ngc5907_050413_4i20mF_R.FIT</a> (Red, 20 min, 5-min subs)<br><a href=\"/fits/ngc5907_050413_4i20mF_G.FIT\">ngc5907_050413_4i20mF_G.FIT</a> (Green, 20 min, 5-min subs)<br><a href=\"/fits/ngc5907_050413_4i20mF_B.FIT\">ngc5907_050413_4i20mF_B.FIT</a> (Blue, 20 min, 5-min subs)<br>"
+      "text": "ngc5907_050413_12i60mF_L.FIT (Luminance, 60 min, 5-min subs)\nngc5907_050413_4i20mF_R.FIT (Red, 20 min, 5-min subs)\nngc5907_050413_4i20mF_G.FIT (Green, 20 min, 5-min subs)\nngc5907_050413_4i20mF_B.FIT (Blue, 20 min, 5-min subs)",
+      "links": [
+        {
+          "href": "/fits/ngc5907_050413_12i60mF_L.FIT",
+          "label": "ngc5907_050413_12i60mF_L.FIT"
+        },
+        {
+          "href": "/fits/ngc5907_050413_4i20mF_R.FIT",
+          "label": "ngc5907_050413_4i20mF_R.FIT"
+        },
+        {
+          "href": "/fits/ngc5907_050413_4i20mF_G.FIT",
+          "label": "ngc5907_050413_4i20mF_G.FIT"
+        },
+        {
+          "href": "/fits/ngc5907_050413_4i20mF_B.FIT",
+          "label": "ngc5907_050413_4i20mF_B.FIT"
+        }
+      ]
+    }
+  ],
+  "galleries": [
+    {
+      "category": "fits",
+      "order": 34,
+      "link": "image_card/fits_ngc5907.php",
+      "thumb": "Images/ngc5907_050413_100.jpg",
+      "alt": "NGC5907",
+      "title": "Knife Edgfe Galaxy",
+      "subtitle": "NGC5907"
     }
   ]
 }

@@ -108,7 +108,7 @@
                 <td><a href="/Images/m11_MarcosMataratzisVivekHira_800.jpg">Medium</a> / <a href="/Images/m11_MarcosMataratzisVivekHira_2000.jpg">Large</a></td>
                 <td><a href="http://www.highdesertsky.com/">Jimmy Stewart</a></td>
                 <td><a href="/Images/m11_JimStewart_800.jpg">Medium</a> / <a href="/Images/m11_JimStewart_2000.jpg">Large</a></td>
-                <td><a href="Compare_m11_Med.htm">Composite</a></td>
+                <td><a href="Compare_m11_Med.php">Composite</a></td>
                 <td></td>
             </tr>
         </table>

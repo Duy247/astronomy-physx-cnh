@@ -1,4 +1,14 @@
 {
+  "id": "fits_m87",
+  "category": "fits",
+  "order": 21,
+  "canonical_url": "/image_card/fits_m87.php",
+  "gallery": {
+    "title": "Elliptical Galaxy of Virgo",
+    "subtitle": "M87",
+    "thumb": "Images/m87_050208_100.jpg",
+    "alt": "M87"
+  },
   "title": "ASTROPHOTOGRAPHY - M87",
   "object": "M87",
   "image": {
@@ -12,7 +22,36 @@
   "details": [
     {
       "label": "Files",
-      "value": "<a href=\"/fits/m87_050208_10i50mF_L.FIT\">m87_050208_10i50mF_L.FIT</a> (Luminance, 50 min, 5-min subs)<br><a href=\"/fits/m87_050208_4i20mF_R.FIT\">m87_050208_4i20mF_R.FIT</a> (Red, 20 min, 5-min subs)<br><a href=\"/fits/m87_050208_4i20mF_G.FIT\">m87_050208_4i20mF_G.FIT</a> (Green, 20 min, 5-min subs)<br><a href=\"/fits/m87_050208_4i20mF_B.FIT\">m87_050208_4i20mF_B.FIT</a> (Blue, 20 min, 5-min subs)<br>"
+      "text": "m87_050208_10i50mF_L.FIT (Luminance, 50 min, 5-min subs)\nm87_050208_4i20mF_R.FIT (Red, 20 min, 5-min subs)\nm87_050208_4i20mF_G.FIT (Green, 20 min, 5-min subs)\nm87_050208_4i20mF_B.FIT (Blue, 20 min, 5-min subs)",
+      "links": [
+        {
+          "href": "/fits/m87_050208_10i50mF_L.FIT",
+          "label": "m87_050208_10i50mF_L.FIT"
+        },
+        {
+          "href": "/fits/m87_050208_4i20mF_R.FIT",
+          "label": "m87_050208_4i20mF_R.FIT"
+        },
+        {
+          "href": "/fits/m87_050208_4i20mF_G.FIT",
+          "label": "m87_050208_4i20mF_G.FIT"
+        },
+        {
+          "href": "/fits/m87_050208_4i20mF_B.FIT",
+          "label": "m87_050208_4i20mF_B.FIT"
+        }
+      ]
+    }
+  ],
+  "galleries": [
+    {
+      "category": "fits",
+      "order": 21,
+      "link": "image_card/fits_m87.php",
+      "thumb": "Images/m87_050208_100.jpg",
+      "alt": "M87",
+      "title": "Elliptical Galaxy of Virgo",
+      "subtitle": "M87"
     }
   ]
 }

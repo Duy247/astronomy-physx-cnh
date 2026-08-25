@@ -1,4 +1,14 @@
 {
+  "id": "Galaxies_ngc5350_53_54_55_58",
+  "category": "galaxies",
+  "order": 55,
+  "canonical_url": "/image_card/Galaxies_ngc5350_53_54_55_58.php",
+  "gallery": {
+    "title": "Galaxy Group of Canes Venatici",
+    "subtitle": "NGC5350-53-55-58",
+    "thumb": "/Images/ngc5350_050603_100.jpg",
+    "alt": "NGC5350-53-55-58"
+  },
   "title": "Astrophotography - ngc5350_53_54_55_58",
   "object": "NGC5350, NGC5353, NGC5354, NGC5355, NGC5358",
   "image": {
@@ -12,35 +22,73 @@
   "details": [
     {
       "label": "Object Notes",
-      "value": "<ul>\n<li><b>ngc5350</b>\n<li>Constellation: Canes Venatici\n        <li>Location: RA: 13h 53m 24.0s  Dec: +40d 22' 00\"  Epoch 2000\n        <li>Size: 3.2 x 2.6 arc-minutes\n        <li>Magnitude: 11.3\n        <li>Type: Spiral Galaxy\n        <li><b>ngc5353</b>\n<li>Constellation: Canes Venatici\n        <li>Location: RA: 13h 53m 30.0s  Dec: +40d 17' 00\"  Epoch 2000\n        <li>Size: 2.8 x 1.9 arc-minutes\n        <li>Magnitude: 11.0\n        <li>Type: Spiral Galaxy\n        <li><b>ngc5355</b>\n<li>Constellation: Canes Venatici\n        <li>Location: RA: 13h 53m 30.0s  Dec: +40d 18' 00\"  Epoch 2000\n        <li>Size: 2.2 x 2.0 arc-minutes\n        <li>Magnitude: 11.4\n        <li>Type: Spiral Galaxy\n        <li><b>ngc5355</b>\n<li>Constellation: Canes Venatici\n        <li>Location: RA: 13h 53m 48.0s  Dec: +40d 21' 00\"  Epoch 2000\n        <li>Size: 1.2 x 0.7 arc-minutes\n        <li>Magnitude: 13.1\n        <li>Type: Spiral Galaxy\n        <li><b>ngc5358</b>\n<li>Constellation: Canes Venatici\n        <li>Location: RA: 13h 54m  6.0s  Dec: +40d 17' 00\"  Epoch 2000\n        <li>Size: 1.1 x 0.3 arc-minutes\n        <li>Magnitude: 13.6\n        <li>Type: Spiral Galaxy\n      </li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></ul>\n</blockquote>\n</font>"
+      "text": "ngc5350\nConstellation: Canes Venatici\nLocation: RA: 13h 53m 24.0s Dec: +40d 22' 00\" Epoch 2000\nSize: 3.2 x 2.6 arc-minutes\nMagnitude: 11.3\nType: Spiral Galaxy\nngc5353\nConstellation: Canes Venatici\nLocation: RA: 13h 53m 30.0s Dec: +40d 17' 00\" Epoch 2000\nSize: 2.8 x 1.9 arc-minutes\nMagnitude: 11.0\nType: Spiral Galaxy\nngc5355\nConstellation: Canes Venatici\nLocation: RA: 13h 53m 30.0s Dec: +40d 18' 00\" Epoch 2000\nSize: 2.2 x 2.0 arc-minutes\nMagnitude: 11.4\nType: Spiral Galaxy\nngc5355\nConstellation: Canes Venatici\nLocation: RA: 13h 53m 48.0s Dec: +40d 21' 00\" Epoch 2000\nSize: 1.2 x 0.7 arc-minutes\nMagnitude: 13.1\nType: Spiral Galaxy\nngc5358\nConstellation: Canes Venatici\nLocation: RA: 13h 54m 6.0s Dec: +40d 17' 00\" Epoch 2000\nSize: 1.1 x 0.3 arc-minutes\nMagnitude: 13.6\nType: Spiral Galaxy",
+      "links": []
     },
     {
       "label": "Instrument",
-      "value": "<a href=\"Equipment_RC32.htm\">\n      Ritchey-Chretien 32\" Telescope</a>\n</blockquote>\n</font>"
+      "text": "Ritchey-Chretien 32\" Telescope",
+      "links": [
+        {
+          "href": "/Equipment_RC32.php",
+          "label": "Ritchey-Chretien 32\" Telescope"
+        }
+      ]
     },
     {
       "label": "Focal Ratio",
-      "value": "      f7.2 (prime focus)\n      </blockquote>\n</font>"
+      "text": "f7.2 (prime focus)",
+      "links": []
     },
     {
       "label": "Camera",
-      "value": "<a href=\"http://www.sbig.com/sbwhtmls/large_format_cameras.htm\">SBIG STL-11000 CCD camera</a>\n<br/>(See product review in July, 2004 issue of <i>Sky &amp; Telescope</i> magazine.)\n      </blockquote>\n</font>"
+      "text": "SBIG STL-11000 CCD camera\n(See product review in July, 2004 issue of Sky & Telescope magazine.)",
+      "links": [
+        {
+          "href": "http://www.sbig.com/sbwhtmls/large_format_cameras.htm",
+          "label": "SBIG STL-11000 CCD camera"
+        }
+      ]
     },
     {
       "label": "Exposure",
-      "value": "      45 x 5 minutes Luminance unbinned<br/>\n      15 x 5 minutes each R/G/B, all unbinned\n      </blockquote>\n</font>"
+      "text": "45 x 5 minutes Luminance unbinned\n15 x 5 minutes each R/G/B, all unbinned",
+      "links": []
     },
     {
       "label": "Guiding",
-      "value": "      Off-Axis with STV Autoguider\n      <a href=\"http://www.sbig.com\">\n      (Santa Barbara Instrument Group)</a><br/>\n      (See product review in May, 2003 issue of <i>Astronomy</i> magazine.)\n      <br/>See <a href=\"Equipment_PhotoGuide.htm\">Photo/Guiding Equipment.</a>\n</blockquote>\n</font>"
+      "text": "Off-Axis with STV Autoguider\n(Santa Barbara Instrument Group)\n(See product review in May, 2003 issue of Astronomy magazine.)\nSee Photo/Guiding Equipment.",
+      "links": [
+        {
+          "href": "http://www.sbig.com",
+          "label": "(Santa Barbara Instrument Group)"
+        },
+        {
+          "href": "/Equipment_PhotoGuide.php",
+          "label": "Photo/Guiding Equipment."
+        }
+      ]
     },
     {
       "label": "Date",
-      "value": "      6/03/05\n      </blockquote>\n</font>"
+      "text": "6/03/05",
+      "links": []
     },
     {
       "label": "Post Processing",
-      "value": "      CCDSoft, CCDSharp, MaxIM DL, Photoshop CS\n      </blockquote>\n</font>"
+      "text": "CCDSoft, CCDSharp, MaxIM DL, Photoshop CS",
+      "links": []
+    }
+  ],
+  "galleries": [
+    {
+      "category": "galaxies",
+      "order": 55,
+      "link": "image_card/Galaxies_ngc5350_53_54_55_58.php",
+      "thumb": "/Images/ngc5350_050603_100.jpg",
+      "alt": "NGC5350-53-55-58",
+      "title": "Galaxy Group of Canes Venatici",
+      "subtitle": "NGC5350-53-55-58"
     }
   ]
 }

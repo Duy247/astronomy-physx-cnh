@@ -1,4 +1,14 @@
 {
+  "id": "fits_ngc2841",
+  "category": "fits",
+  "order": 26,
+  "canonical_url": "/image_card/fits_ngc2841.php",
+  "gallery": {
+    "title": "Unbarred spiral of Ursa Major",
+    "subtitle": "NGC2841",
+    "thumb": "Images/ngc2841_041214_100.jpg",
+    "alt": "NGC2841"
+  },
   "title": "ASTROPHOTOGRAPHY - NGC2841",
   "object": "NGC2841",
   "image": {
@@ -12,7 +22,36 @@
   "details": [
     {
       "label": "Files",
-      "value": "<a href=\"/fits/ngc2841_041214_13i65mF_L.FIT\">ngc2841_041214_13i65mF_L.FIT</a> (Luminance, 65 min, 5-min subs)<br><a href=\"/fits/ngc2841_041214_5i25mF_R.FIT\">ngc2841_041214_5i25mF_R.FIT</a> (Red, 25 min, 5-min subs)<br><a href=\"/fits/ngc2841_041214_5i25mF_G.FIT\">ngc2841_041214_5i25mF_G.FIT</a> (Green, 25 min, 5-min subs)<br><a href=\"/fits/ngc2841_041214_5i25mF_B.FIT\">ngc2841_041214_5i25mF_B.FIT</a> (Blue, 25 min, 5-min subs)<br>"
+      "text": "ngc2841_041214_13i65mF_L.FIT (Luminance, 65 min, 5-min subs)\nngc2841_041214_5i25mF_R.FIT (Red, 25 min, 5-min subs)\nngc2841_041214_5i25mF_G.FIT (Green, 25 min, 5-min subs)\nngc2841_041214_5i25mF_B.FIT (Blue, 25 min, 5-min subs)",
+      "links": [
+        {
+          "href": "/fits/ngc2841_041214_13i65mF_L.FIT",
+          "label": "ngc2841_041214_13i65mF_L.FIT"
+        },
+        {
+          "href": "/fits/ngc2841_041214_5i25mF_R.FIT",
+          "label": "ngc2841_041214_5i25mF_R.FIT"
+        },
+        {
+          "href": "/fits/ngc2841_041214_5i25mF_G.FIT",
+          "label": "ngc2841_041214_5i25mF_G.FIT"
+        },
+        {
+          "href": "/fits/ngc2841_041214_5i25mF_B.FIT",
+          "label": "ngc2841_041214_5i25mF_B.FIT"
+        }
+      ]
+    }
+  ],
+  "galleries": [
+    {
+      "category": "fits",
+      "order": 26,
+      "link": "image_card/fits_ngc2841.php",
+      "thumb": "Images/ngc2841_041214_100.jpg",
+      "alt": "NGC2841",
+      "title": "Unbarred spiral of Ursa Major",
+      "subtitle": "NGC2841"
     }
   ]
 }

@@ -117,7 +117,7 @@
             <div class="astro-step-content">
                 <div class="astro-step-text">
                     Use CCDSharp to perform 3-iteration Richardson-Lucy Deconvolution on Luminance and H-alpha frames.<br>
-                    <a href="Process_CCDSharp_Deconvolution.htm">Learn more about this step</a>.
+                    <a href="Process_CCDSharp_Deconvolution.php">Learn more about this step</a>.
                 </div>
                 <div class="astro-step-image">
                     <a href="process/m8_L_LR3_1280.jpg" target="_blank"><img src="process/m8_L_LR3_200.jpg" alt="Luminance Deconvolved"></a>
@@ -130,7 +130,7 @@
             <div class="astro-step-content">
                 <div class="astro-step-text">
                     Use MaxIm DL to apply Non-Linear Stretch (DDP) to Luminance, H-alpha, and RGB frames.<br>
-                    <a href="Process_MaxImDL_DDP.htm">Learn more about DDP</a>.
+                    <a href="Process_MaxImDL_DDP.php">Learn more about DDP</a>.
                 </div>
                 <div class="astro-step-image">
                     <a href="process/m8_L_LR3_DDP_1280.jpg" target="_blank"><img src="process/m8_L_LR3_DDP_200.jpg" alt="Luminance DDP"></a>
@@ -156,7 +156,7 @@
             <div class="astro-step-content">
                 <div class="astro-step-text">
                     Merge Luminance and H-alpha in Photoshop using Lighten blend mode. Flatten layers, then use Inverted Layer Mask and Gaussian Blur to reduce background noise. Repeat for RGB as needed.<br>
-                    <a href="Process_PS_ILM.htm">Learn more about Inverted Layer Mask</a>.
+                    <a href="Process_PS_ILM.php">Learn more about Inverted Layer Mask</a>.
                 </div>
                 <div class="astro-step-image">
                     <a href="process/m8_HaL_Merge1_1280.jpg" target="_blank"><img src="process/m8_HaL_Merge1_200.jpg" alt="HaL Merge 1"></a>

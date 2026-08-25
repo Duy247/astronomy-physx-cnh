@@ -1,15 +1,19 @@
-# BEGIN Hostinger PHP settings
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    # Uncomment and edit the next line if you want to redirect all requests to index.php
-    # RewriteRule ^(.*)$ index.php [QSA,L]
-</IfModule>
-
-# Set default charset
+Options -Indexes
 AddDefaultCharset UTF-8
 
-# Protect composer files
-<FilesMatch "composer\.(json|lock)">
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^([A-Za-z0-9_-]+)\.htm$ legacy_page.php?page=$1 [QSA,L]
+</IfModule>
+
+<FilesMatch "^(?:composer\.(?:json|lock)|requirements\.txt|phpunit\.xml|\.gitattributes|\.gitignore)$">
     Require all denied
 </FilesMatch>
-# END Hostinger PHP settings
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' https://aladin.u-strasbg.fr; style-src 'self' 'unsafe-inline' https://aladin.u-strasbg.fr; img-src 'self' data: blob: https:; connect-src 'self' https:; worker-src 'self' blob:; frame-src https:; object-src 'none'; base-uri 'self'; frame-ancestors 'self'"
+</IfModule>

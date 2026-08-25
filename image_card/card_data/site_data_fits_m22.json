@@ -1,4 +1,14 @@
 {
+  "id": "fits_m22",
+  "category": "fits",
+  "order": 13,
+  "canonical_url": "/image_card/fits_m22.php",
+  "gallery": {
+    "title": "Great Sagittarius Cluster",
+    "subtitle": "M22",
+    "thumb": "Images/m22_050831_100.jpg",
+    "alt": "M22"
+  },
   "title": "ASTROPHOTOGRAPHY - M22 - (GLOBULAR CLUSTER)",
   "object": "M22 - (GLOBULAR CLUSTER)",
   "image": {
@@ -12,7 +22,36 @@
   "details": [
     {
       "label": "Files",
-      "value": "<a href=\"/fits/m22_050831_18i18m_L.FIT\">m22_050831_18i18m_L.FIT</a> (Luminance, 18 min, 1-min subs)<br><a href=\"/fits/m22_050831_6i6m_R.FIT\">m22_050831_6i6m_R.FIT</a> (Red, 6 min, 1-min subs)<br><a href=\"/fits/m22_050831_6i6m_G.FIT\">m22_050831_6i6m_G.FIT</a> (Green, 6 min, 1-min subs)<br><a href=\"/fits/m22_050831_6i6m_B.FIT\">m22_050831_6i6m_B.FIT</a> (Blue, 6 min, 1-min subs)<br>"
+      "text": "m22_050831_18i18m_L.FIT (Luminance, 18 min, 1-min subs)\nm22_050831_6i6m_R.FIT (Red, 6 min, 1-min subs)\nm22_050831_6i6m_G.FIT (Green, 6 min, 1-min subs)\nm22_050831_6i6m_B.FIT (Blue, 6 min, 1-min subs)",
+      "links": [
+        {
+          "href": "/fits/m22_050831_18i18m_L.FIT",
+          "label": "m22_050831_18i18m_L.FIT"
+        },
+        {
+          "href": "/fits/m22_050831_6i6m_R.FIT",
+          "label": "m22_050831_6i6m_R.FIT"
+        },
+        {
+          "href": "/fits/m22_050831_6i6m_G.FIT",
+          "label": "m22_050831_6i6m_G.FIT"
+        },
+        {
+          "href": "/fits/m22_050831_6i6m_B.FIT",
+          "label": "m22_050831_6i6m_B.FIT"
+        }
+      ]
+    }
+  ],
+  "galleries": [
+    {
+      "category": "fits",
+      "order": 13,
+      "link": "image_card/fits_m22.php",
+      "thumb": "Images/m22_050831_100.jpg",
+      "alt": "M22",
+      "title": "Great Sagittarius Cluster",
+      "subtitle": "M22"
     }
   ]
 }

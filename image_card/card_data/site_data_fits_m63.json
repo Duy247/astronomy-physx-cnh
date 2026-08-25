@@ -1,4 +1,14 @@
 {
+  "id": "fits_m63",
+  "category": "fits",
+  "order": 2,
+  "canonical_url": "/image_card/fits_m63.php",
+  "gallery": {
+    "title": "Sunflower Galaxy",
+    "subtitle": "M63",
+    "thumb": "Images/m63_050306_100.jpg",
+    "alt": "M63"
+  },
   "title": "Astrophotography - M63 - Sunflower Galaxy",
   "object": "M63 - Sunflower Galaxy",
   "image": {
@@ -12,19 +22,61 @@
   "details": [
     {
       "label": "m63 image comparison page",
-      "value": "<a href=\"/Compare_m63_Med.php\">m63 image comparison page</a>"
+      "text": "m63 image comparison page",
+      "links": [
+        {
+          "href": "/Compare_m63_Med.php",
+          "label": "m63 image comparison page"
+        }
+      ]
     },
     {
       "label": "Image Processing Example",
-      "value": "<a href=\"/Process_m63.php\">Image Processing Example</a>"
+      "text": "Image Processing Example",
+      "links": [
+        {
+          "href": "/Process_m63.php",
+          "label": "Image Processing Example"
+        }
+      ]
     },
     {
       "label": "Files",
-      "value": "<a href=\"/fits/m63_050306_12i60m_L.FIT\">m63_050306_12i60m_L.FIT</a> (Luminance, 60 min, 5-min subs)<br><a href=\"/fits/m63_050306_4i20m_R.FIT\"><br>m63_050306_4i20m_R.FIT</a> (Red, 20 min, 5-min subs)<a href=\"/fits/m63_050306_4i20m_G.FIT\"><br>m63_050306_4i20m_G.FIT</a> (Green, 20 min, 5-min subs)<a href=\"/fits/m63_050306_4i20m_B.FIT\"><br>m63_050306_4i20m_B.FIT</a> (Blue, 20 min, 5-min subs)"
+      "text": "m63_050306_12i60m_L.FIT (Luminance, 60 min, 5-min subs)\nm63_050306_4i20m_R.FIT (Red, 20 min, 5-min subs)\nm63_050306_4i20m_G.FIT (Green, 20 min, 5-min subs)\nm63_050306_4i20m_B.FIT (Blue, 20 min, 5-min subs)",
+      "links": [
+        {
+          "href": "/fits/m63_050306_12i60m_L.FIT",
+          "label": "m63_050306_12i60m_L.FIT"
+        },
+        {
+          "href": "/fits/m63_050306_4i20m_R.FIT",
+          "label": "m63_050306_4i20m_R.FIT"
+        },
+        {
+          "href": "/fits/m63_050306_4i20m_G.FIT",
+          "label": "m63_050306_4i20m_G.FIT"
+        },
+        {
+          "href": "/fits/m63_050306_4i20m_B.FIT",
+          "label": "m63_050306_4i20m_B.FIT"
+        }
+      ]
     },
     {
       "label": "Notes",
-      "value": "(Jim's color combine ratio was R : G : B = 1.0 : 1.2 : 1.2)"
+      "text": "(Jim's color combine ratio was R : G : B = 1.0 : 1.2 : 1.2)",
+      "links": []
+    }
+  ],
+  "galleries": [
+    {
+      "category": "fits",
+      "order": 2,
+      "link": "image_card/fits_m63.php",
+      "thumb": "Images/m63_050306_100.jpg",
+      "alt": "M63",
+      "title": "Sunflower Galaxy",
+      "subtitle": "M63"
     }
   ]
 }

@@ -1,4 +1,14 @@
 {
+  "id": "SolarSystem_Moon_Full",
+  "category": "solar-system-moon",
+  "order": 0,
+  "canonical_url": "/image_card/SolarSystem_Moon_Full.php",
+  "gallery": {
+    "title": "",
+    "subtitle": "Full Moon",
+    "thumb": "Images/FullMoon_200.jpg",
+    "alt": "Full Moon"
+  },
   "title": "Astrophotography - Moon - Full",
   "object": "MOON - FULL",
   "image": {
@@ -12,31 +22,54 @@
   "details": [
     {
       "label": "Instrument",
-      "value": "<a href=\"Equipment_RC32.htm\">\n      Ritchey-Chretien 32\" Telescope</a>\n</blockquote>\n</font>"
+      "text": "Ritchey-Chretien 32\" Telescope",
+      "links": [
+        {
+          "href": "/Equipment_RC32.php",
+          "label": "Ritchey-Chretien 32\" Telescope"
+        }
+      ]
     },
     {
       "label": "Focal Ratio",
-      "value": "      f7.2 (prime focus)\n      </blockquote>\n</font>"
+      "text": "f7.2 (prime focus)",
+      "links": []
     },
     {
       "label": "Film",
-      "value": "      Kodak Tech Pan 120\n      </blockquote>\n</font>"
+      "text": "Kodak Tech Pan 120",
+      "links": []
     },
     {
       "label": "Exposure",
-      "value": "      ???\n      </blockquote>\n</font>"
+      "text": "???",
+      "links": []
     },
     {
       "label": "Camera",
-      "value": "      Pentax 6x7\n      </blockquote>\n</font>"
+      "text": "Pentax 6x7",
+      "links": []
     },
     {
       "label": "Guiding",
-      "value": "      None\n      </blockquote>\n</font>"
+      "text": "None",
+      "links": []
     },
     {
       "label": "Date",
-      "value": "      ??/??/2002\n      </blockquote>\n</font>"
+      "text": "??/??/2002",
+      "links": []
+    }
+  ],
+  "galleries": [
+    {
+      "category": "solar-system-moon",
+      "order": 0,
+      "link": "/image_card/SolarSystem_Moon_Full.php",
+      "thumb": "Images/FullMoon_200.jpg",
+      "alt": "Full Moon",
+      "title": "",
+      "subtitle": "Full Moon"
     }
   ]
 }

@@ -1,4 +1,14 @@
 {
+  "id": "fits_m27",
+  "category": "fits",
+  "order": 37,
+  "canonical_url": "/image_card/fits_m27.php",
+  "gallery": {
+    "title": "Dumbbell Nebula",
+    "subtitle": "M27",
+    "thumb": "Images/m27_050711_100.jpg",
+    "alt": "M27"
+  },
   "title": "ASTROPHOTOGRAPHY - M27 - DUMBBELL NEBULA",
   "object": "M27 - DUMBBELL NEBULA",
   "image": {
@@ -12,7 +22,36 @@
   "details": [
     {
       "label": "Files",
-      "value": "<a href=\"/fits/m27_050711_6i30m_L.FIT\">m27_050711_6i30m_L.FIT</a> (Luminance, 30 min, 5-min subs)<br><a href=\"/fits/m27_050711_3i15m_R.FIT\">m27_050711_3i15m_R.FIT</a> (Red, 15 min, 5-min subs)<br><a href=\"/fits/m27_050711_3i15m_G.FIT\">m27_050711_3i15m_G.FIT</a> (Green, 15 min, 5-min subs)<br><a href=\"/fits/m27_050711_3i15m_B.FIT\">m27_050711_3i15m_B.FIT</a> (Blue, 15 min, 5-min subs)<br>"
+      "text": "m27_050711_6i30m_L.FIT (Luminance, 30 min, 5-min subs)\nm27_050711_3i15m_R.FIT (Red, 15 min, 5-min subs)\nm27_050711_3i15m_G.FIT (Green, 15 min, 5-min subs)\nm27_050711_3i15m_B.FIT (Blue, 15 min, 5-min subs)",
+      "links": [
+        {
+          "href": "/fits/m27_050711_6i30m_L.FIT",
+          "label": "m27_050711_6i30m_L.FIT"
+        },
+        {
+          "href": "/fits/m27_050711_3i15m_R.FIT",
+          "label": "m27_050711_3i15m_R.FIT"
+        },
+        {
+          "href": "/fits/m27_050711_3i15m_G.FIT",
+          "label": "m27_050711_3i15m_G.FIT"
+        },
+        {
+          "href": "/fits/m27_050711_3i15m_B.FIT",
+          "label": "m27_050711_3i15m_B.FIT"
+        }
+      ]
+    }
+  ],
+  "galleries": [
+    {
+      "category": "fits",
+      "order": 37,
+      "link": "image_card/fits_m27.php",
+      "thumb": "Images/m27_050711_100.jpg",
+      "alt": "M27",
+      "title": "Dumbbell Nebula",
+      "subtitle": "M27"
     }
   ]
 }

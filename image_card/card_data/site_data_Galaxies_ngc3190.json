@@ -1,4 +1,14 @@
 {
+  "id": "Galaxies_ngc3190",
+  "category": "galaxies",
+  "order": 44,
+  "canonical_url": "/image_card/Galaxies_ngc3190.php",
+  "gallery": {
+    "title": "Spiral Galaxy of Leo",
+    "subtitle": "NGC3190",
+    "thumb": "/Images/ngc3190_050406_100.jpg",
+    "alt": "NGC3190"
+  },
   "title": "Astrophotography - NGC3190 Galaxy Group",
   "object": "NGC3190 GALAXY GROUP",
   "image": {
@@ -12,35 +22,73 @@
   "details": [
     {
       "label": "Object Notes",
-      "value": "<ul>\n<li>Constellation: Leo\n        <li>Location: RA: 10h 18m 06s  Dec: 21d 50' 00\"  Epoch 2000\n        <li>Size: 4.0 x 1.5 arc-minutes\n        <li>Magnitude: 11.1\n        <li>Type: Spiral Galaxy\n        <li>AKA: UGC 5559\n      </li></li></li></li></li></li></ul>\n</blockquote>\n</font>"
+      "text": "Constellation: Leo\nLocation: RA: 10h 18m 06s Dec: 21d 50' 00\" Epoch 2000\nSize: 4.0 x 1.5 arc-minutes\nMagnitude: 11.1\nType: Spiral Galaxy\nAKA: UGC 5559",
+      "links": []
     },
     {
       "label": "Instrument",
-      "value": "<a href=\"Equipment_RC32.htm\">\n      Ritchey-Chretien 32\" Telescope</a>\n</blockquote>\n</font>"
+      "text": "Ritchey-Chretien 32\" Telescope",
+      "links": [
+        {
+          "href": "/Equipment_RC32.php",
+          "label": "Ritchey-Chretien 32\" Telescope"
+        }
+      ]
     },
     {
       "label": "Focal Ratio",
-      "value": "      f7.2 (prime focus)\n      </blockquote>\n</font>"
+      "text": "f7.2 (prime focus)",
+      "links": []
     },
     {
       "label": "Camera",
-      "value": "<a href=\"http://www.sbig.com/sbwhtmls/large_format_cameras.htm\">SBIG STL-11000 CCD camera</a>\n<br/>(See product review in July, 2004 issue of <i>Sky &amp; Telescope</i> magazine.)\n      </blockquote>\n</font>"
+      "text": "SBIG STL-11000 CCD camera\n(See product review in July, 2004 issue of Sky & Telescope magazine.)",
+      "links": [
+        {
+          "href": "http://www.sbig.com/sbwhtmls/large_format_cameras.htm",
+          "label": "SBIG STL-11000 CCD camera"
+        }
+      ]
     },
     {
       "label": "Exposure",
-      "value": "      12 x 5 minutes Luminance unbinned<br/>\n      3 x 5 minutes each R/G/B unbinned\n      </blockquote>\n</font>"
+      "text": "12 x 5 minutes Luminance unbinned\n3 x 5 minutes each R/G/B unbinned",
+      "links": []
     },
     {
       "label": "Guiding",
-      "value": "      Off-Axis with STV Autoguider\n      <a href=\"http://www.sbig.com\">\n      (Santa Barbara Instrument Group)</a><br/>\n      (See product review in May, 2003 issue of <i>Astronomy</i> magazine.)\n      <br/>See <a href=\"Equipment_PhotoGuide.htm\">Photo/Guiding Equipment.</a>\n</blockquote>\n</font>"
+      "text": "Off-Axis with STV Autoguider\n(Santa Barbara Instrument Group)\n(See product review in May, 2003 issue of Astronomy magazine.)\nSee Photo/Guiding Equipment.",
+      "links": [
+        {
+          "href": "http://www.sbig.com",
+          "label": "(Santa Barbara Instrument Group)"
+        },
+        {
+          "href": "/Equipment_PhotoGuide.php",
+          "label": "Photo/Guiding Equipment."
+        }
+      ]
     },
     {
       "label": "Date",
-      "value": "      4/06/05\n      </blockquote>\n</font>"
+      "text": "4/06/05",
+      "links": []
     },
     {
       "label": "Post Processing",
-      "value": "      CCDSoft, CCDSharp, MaxIM DL, Photoshop CS\n      </blockquote>\n</font>"
+      "text": "CCDSoft, CCDSharp, MaxIM DL, Photoshop CS",
+      "links": []
+    }
+  ],
+  "galleries": [
+    {
+      "category": "galaxies",
+      "order": 44,
+      "link": "image_card/Galaxies_ngc3190.php",
+      "thumb": "/Images/ngc3190_050406_100.jpg",
+      "alt": "NGC3190",
+      "title": "Spiral Galaxy of Leo",
+      "subtitle": "NGC3190"
     }
   ]
 }

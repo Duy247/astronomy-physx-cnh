@@ -1,4 +1,14 @@
 {
+  "id": "fits_ngc7293",
+  "category": "fits",
+  "order": 43,
+  "canonical_url": "/image_card/fits_ngc7293.php",
+  "gallery": {
+    "title": "Helix Nebula",
+    "subtitle": "NGC7293",
+    "thumb": "Images/ngc7293_050906_100.jpg",
+    "alt": "NGC7293"
+  },
   "title": "ASTROPHOTOGRAPHY - NGC7293 - HELIX NEBULA",
   "object": "NGC7293 - HELIX NEBULA",
   "image": {
@@ -12,7 +22,36 @@
   "details": [
     {
       "label": "Files",
-      "value": "<a href=\"/fits/ngc7293_050906_8i40m_L.FIT\">ngc7293_050906_8i40m_L.FIT</a> (Luminance, 40 min, 5-min subs)<br><a href=\"/fits/ngc7293_050906_3i15m_R.FIT\">ngc7293_050906_3i15m_R.FIT</a> (Red, 15 min, 5-min subs)<br><a href=\"/fits/ngc7293_050906_3i15m_G.FIT\">ngc7293_050906_3i15m_G.FIT</a> (Green, 15 min, 5-min subs)<br><a href=\"/fits/ngc7293_050906_3i15m_B.FIT\">ngc7293_050906_3i15m_B.FIT</a> (Blue, 15 min, 5-min subs)<br>"
+      "text": "ngc7293_050906_8i40m_L.FIT (Luminance, 40 min, 5-min subs)\nngc7293_050906_3i15m_R.FIT (Red, 15 min, 5-min subs)\nngc7293_050906_3i15m_G.FIT (Green, 15 min, 5-min subs)\nngc7293_050906_3i15m_B.FIT (Blue, 15 min, 5-min subs)",
+      "links": [
+        {
+          "href": "/fits/ngc7293_050906_8i40m_L.FIT",
+          "label": "ngc7293_050906_8i40m_L.FIT"
+        },
+        {
+          "href": "/fits/ngc7293_050906_3i15m_R.FIT",
+          "label": "ngc7293_050906_3i15m_R.FIT"
+        },
+        {
+          "href": "/fits/ngc7293_050906_3i15m_G.FIT",
+          "label": "ngc7293_050906_3i15m_G.FIT"
+        },
+        {
+          "href": "/fits/ngc7293_050906_3i15m_B.FIT",
+          "label": "ngc7293_050906_3i15m_B.FIT"
+        }
+      ]
+    }
+  ],
+  "galleries": [
+    {
+      "category": "fits",
+      "order": 43,
+      "link": "image_card/fits_ngc7293.php",
+      "thumb": "Images/ngc7293_050906_100.jpg",
+      "alt": "NGC7293",
+      "title": "Helix Nebula",
+      "subtitle": "NGC7293"
     }
   ]
 }

@@ -1,20 +1,20 @@
 [
   {
-    "link": "image_card/500mm_m31.php",
+    "link": "/image_card/500mm_m31.php",
     "thumb": "/Images/m31_040723_200.jpg",
     "alt": "M31",
     "title": "Andromeda Galaxy",
     "subtitle": "M31"
   },
   {
-    "link": "image_card/500mm_ngc7000.php",
+    "link": "/image_card/500mm_ngc7000.php",
     "thumb": "/Images/ngc7000_040723_200.jpg",
     "alt": "NGC7000",
     "title": "North America Nebula",
     "subtitle": "NGC7000"
   },
   {
-    "link": "image_card/500mm_ic1318.php",
+    "link": "/image_card/500mm_ic1318.php",
     "thumb": "/Images/ic1318_040723_200.jpg",
     "alt": "IC1318",
     "title": "Gamma Cygni Nebula",

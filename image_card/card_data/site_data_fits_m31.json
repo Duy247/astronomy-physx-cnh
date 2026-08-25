@@ -1,4 +1,14 @@
 {
+  "id": "fits_m31",
+  "category": "fits",
+  "order": 47,
+  "canonical_url": "/image_card/fits_m31.php",
+  "gallery": {
+    "title": "Andromeda Galaxy",
+    "subtitle": "M31",
+    "thumb": "Images/m31_TomHarrison_100.jpg",
+    "alt": "M31"
+  },
   "title": "ASTROPHOTOGRAPHY - M31",
   "object": "M31",
   "image": {
@@ -12,23 +22,56 @@
   "details": [
     {
       "label": "Files",
-      "value": "<a href=\"/fits/m31_061022_12i60m_L.FIT\">m31_061022_12i60m_L.FIT</a> (Luminance, 60 min, 5-min subs)<br><a href=\"/fits/m31_061022_4i20m_R.FIT\">m31_061022_4i20m_R.FIT</a> (Red, 20 min, 5-min subs)<br><a href=\"/fits/m31_061022_4i20m_G.FIT\">m31_061022_4i20m_G.FIT</a> (Green, 20 min, 5-min subs)<br><a href=\"/fits/m31_061022_4i20m_B.FIT\">m31_061022_4i20m_B.FIT</a> (Blue, 20 min, 5-min subs)<br>"
+      "text": "m31_061022_12i60m_L.FIT (Luminance, 60 min, 5-min subs)\nm31_061022_4i20m_R.FIT (Red, 20 min, 5-min subs)\nm31_061022_4i20m_G.FIT (Green, 20 min, 5-min subs)\nm31_061022_4i20m_B.FIT (Blue, 20 min, 5-min subs)",
+      "links": [
+        {
+          "href": "/fits/m31_061022_12i60m_L.FIT",
+          "label": "m31_061022_12i60m_L.FIT"
+        },
+        {
+          "href": "/fits/m31_061022_4i20m_R.FIT",
+          "label": "m31_061022_4i20m_R.FIT"
+        },
+        {
+          "href": "/fits/m31_061022_4i20m_G.FIT",
+          "label": "m31_061022_4i20m_G.FIT"
+        },
+        {
+          "href": "/fits/m31_061022_4i20m_B.FIT",
+          "label": "m31_061022_4i20m_B.FIT"
+        }
+      ]
     },
     {
       "label": "Processed by Tom Harrison",
-      "value": "<img src=\"/Images/m31_TomHarrison_100.jpg\">"
+      "text": "",
+      "links": []
     },
     {
       "label": "Processed by Andrea Tamanti",
-      "value": "<img src=\"/Images/m31_AndreaTamanti_100.jpg\">"
+      "text": "",
+      "links": []
     },
     {
       "label": "Processed by Fernando Bosch",
-      "value": "<img src=\"/Images/m31_FernandoBosch_100.jpg\">"
+      "text": "",
+      "links": []
     },
     {
       "label": "Processed by David Pastern",
-      "value": "<img src=\"/Images/DavidPastern_m31_100.jpg\">"
+      "text": "",
+      "links": []
+    }
+  ],
+  "galleries": [
+    {
+      "category": "fits",
+      "order": 47,
+      "link": "image_card/fits_m31.php",
+      "thumb": "Images/m31_TomHarrison_100.jpg",
+      "alt": "M31",
+      "title": "Andromeda Galaxy",
+      "subtitle": "M31"
     }
   ]
 }
