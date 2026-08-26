@@ -33,7 +33,6 @@ require __DIR__ . '/includes/header.php';
     <section class="astro-tonight-map-section" aria-labelledby="sky-map-title">
         <div class="astro-section-heading">
             <h2 id="sky-map-title">Your horizon.</h2>
-            <p>Drag to look around, pinch or scroll to zoom, and move through the night with the timeline.</p>
         </div>
         <div class="astro-tonight-map-shell">
             <div id="tonight-sky-map" class="astro-tonight-map" role="img" aria-label="Interactive horizon map of tonight's sky from Hà Nội"></div>
