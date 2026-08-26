@@ -11,7 +11,7 @@ $navigation = astro_config('navigation');
     <meta name="description" content="Astronomy images, observing details, and historical resources from Misti Mountain Observatory.">
     <title><?= astro_escape($pageTitle) ?></title>
     <link rel="icon" href="<?= astro_escape(astro_url('/assets/branding/favicon.ico')) ?>" sizes="any">
-    <link rel="stylesheet" href="<?= astro_escape(astro_url('/css/astro-modern.css?v=20260826d')) ?>">
+    <link rel="stylesheet" href="<?= astro_escape(astro_url('/css/astro-modern.css?v=20260826e')) ?>">
     <script src="<?= astro_escape(astro_url('/js/site.js?v=20260825m')) ?>" defer></script>
 </head>
 <body>
