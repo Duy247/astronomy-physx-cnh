@@ -82,5 +82,5 @@ require __DIR__ . '/includes/header.php';
 <script src="<?= astro_escape(astro_url('/assets/vendor/d3-celestial/celestial.min.js')) ?>" defer></script>
 <script src="<?= astro_escape(astro_url('/assets/vendor/astronomy-engine/astronomy.browser.min.js')) ?>" defer></script>
 <script src="<?= astro_escape(astro_url('/js/tonight-core.js?v=20260826a')) ?>" defer></script>
-<script src="<?= astro_escape(astro_url('/js/tonight.js?v=20260826a')) ?>" defer></script>
+<script src="<?= astro_escape(astro_url('/js/tonight.js?v=20260826b')) ?>" defer></script>
 <?php require __DIR__ . '/includes/footer.php'; ?>

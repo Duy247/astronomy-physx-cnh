@@ -207,7 +207,7 @@ h2 { font-size: clamp(2.8rem, 6.5vw, 6.8rem); }
 .astro-tonight-dashboard small { align-self: end; color: var(--muted); font: 500 .58rem/1.45 var(--font-mono); }
 .astro-tonight-map-section, .astro-tonight-details, .astro-tonight-targets, .astro-weather-timeline { margin-top: clamp(105px, 13vw, 165px); }
 .astro-tonight-map-shell { position: relative; min-height: 680px; overflow: hidden; border: 1px solid var(--line-bright); background: #02050b; box-shadow: var(--shadow); }
-.astro-tonight-map { width: 100%; min-height: 680px; }
+.astro-tonight-map { width: calc(100% + 32px); min-height: 680px; }
 .astro-tonight-map canvas { display: block; max-width: none; }
 .astro-tonight-loading { position: absolute; z-index: 4; right: 18px; bottom: 14px; margin: 0; color: var(--gold); font: 550 .56rem var(--font-mono); letter-spacing: .05em; pointer-events: none; }
 .astro-tonight-loading.is-ready { color: #76deb9; }
@@ -424,7 +424,7 @@ h2 { font-size: clamp(2.8rem, 6.5vw, 6.8rem); }
     .astro-tonight-dashboard strong { font-size: .98rem; }
     .astro-tonight-dashboard small { font-size: .52rem; }
     .astro-planet-grid, .astro-target-grid { grid-template-columns: 1fr; }
-    .astro-tonight-map-shell, .astro-tonight-map { min-height: 440px; }
+    .astro-tonight-map-shell, .astro-tonight-map { height: calc(100vw - 32px); min-height: 0; max-height: 440px; }
     .astro-tonight-city-picker button { min-height: 44px; padding-inline: 6px; font-size: .55rem; }
     .astro-footer-end { display: grid; gap: 8px; }
 }

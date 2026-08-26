@@ -21,6 +21,7 @@ window.addEventListener('load', async () => {
   const mapStatus = $('[data-map-status]');
 
   function mapConfig() {
+    const compact = window.matchMedia('(max-width: 760px)').matches;
     return {
       container: 'tonight-sky-map',
       datapath: app.dataset.skyDataPath,
@@ -34,13 +35,13 @@ window.addEventListener('load', async () => {
       settimezone: false,
       geopos: [city.latitude, city.longitude],
       follow: 'zenith',
-      zoomlevel: 1.25,
-      zoomextend: 5,
+      zoomlevel: 1,
+      zoomextend: 3,
       adaptable: true,
-      stars: {show: true, limit: 6, colors: false, style: {fill: '#e9f7ff', opacity: 0.92}, designation: true, designationLimit: 1.3, designationStyle: {fill: '#b8cdd8', font: "10px 'Geist Mono Local', monospace", align: 'left', baseline: 'top'}, propername: false, data: 'stars.6.json', size: 6, exponent: -0.28},
-      dsos: {show: true, limit: 6, colors: false, style: {fill: '#a798ff', stroke: '#a798ff', width: 1, opacity: 0.85}, names: true, namesType: 'desig', nameStyle: {fill: '#b4a9ff', font: "9px 'Geist Mono Local', monospace", align: 'left', baseline: 'bottom'}, nameLimit: 4.5, data: 'dsos.6.json'},
-      constellations: {show: true, names: true, namesType: 'en', nameStyle: {fill: '#78919f', opacity: 0.8, font: ["12px 'Geist Mono Local', monospace", "11px 'Geist Mono Local', monospace", "10px 'Geist Mono Local', monospace"], align: 'center', baseline: 'middle'}, lines: true, lineStyle: {stroke: '#5a8091', width: 0.8, opacity: 0.48}, bounds: false},
-      mw: {show: true, style: {fill: '#7994c8', opacity: 0.08}},
+      stars: {show: true, limit: compact ? 5.2 : 5.8, colors: false, style: {fill: '#e9f7ff', opacity: 0.88}, designation: false, propername: false, data: 'stars.6.json', size: 5, exponent: -0.28},
+      dsos: {show: false},
+      constellations: {show: true, names: true, namesType: compact ? 'iau' : 'en', nameStyle: {fill: '#78919f', opacity: 0.72, font: ["11px 'Geist Mono Local', monospace", "10px 'Geist Mono Local', monospace", "9px 'Geist Mono Local', monospace"], align: 'center', baseline: 'middle'}, lines: true, lineStyle: {stroke: '#5a8091', width: 0.75, opacity: 0.42}, bounds: false},
+      mw: {show: true, style: {fill: '#7994c8', opacity: 0.055}},
       lines: {graticule: {show: false}, equatorial: {show: false}, ecliptic: {show: true, stroke: '#8a7cca', width: 0.8, opacity: 0.35}, galactic: {show: false}, supergalactic: {show: false}},
       background: {fill: '#02050b', opacity: 1, stroke: '#65e6f2', width: 0.7},
       horizon: {show: true, stroke: '#65e6f2', width: 1.1, fill: '#020409', opacity: 0.78},
