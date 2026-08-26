@@ -11,6 +11,7 @@ require __DIR__ . '/includes/header.php';
       data-base-path="<?= astro_escape(astro_base_path()) ?>"
       data-weather-base="<?= astro_escape(astro_url('/weather.php')) ?>"
       data-targets-url="<?= astro_escape(astro_url('/gallery/observable_targets.json')) ?>"
+      data-planet-image-path="<?= astro_escape(astro_url('/assets/planets/')) ?>"
       data-sky-data-path="<?= astro_escape(astro_url('/assets/vendor/d3-celestial/data/')) ?>">
     <section class="astro-tonight-intro" aria-labelledby="tonight-title">
         <p class="astro-eyebrow">Vietnam observing desk / live model</p>
@@ -82,5 +83,5 @@ require __DIR__ . '/includes/header.php';
 <script src="<?= astro_escape(astro_url('/assets/vendor/d3-celestial/celestial.min.js')) ?>" defer></script>
 <script src="<?= astro_escape(astro_url('/assets/vendor/astronomy-engine/astronomy.browser.min.js')) ?>" defer></script>
 <script src="<?= astro_escape(astro_url('/js/tonight-core.js?v=20260826a')) ?>" defer></script>
-<script src="<?= astro_escape(astro_url('/js/tonight.js?v=20260826b')) ?>" defer></script>
+<script src="<?= astro_escape(astro_url('/js/tonight.js?v=20260826c')) ?>" defer></script>
 <?php require __DIR__ . '/includes/footer.php'; ?>

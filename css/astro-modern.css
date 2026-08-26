@@ -220,7 +220,12 @@ h2 { font-size: clamp(2.8rem, 6.5vw, 6.8rem); }
 .astro-time-control output { color: var(--text); font-size: .65rem; text-align: center; }
 .astro-time-control input { width: 100%; accent-color: var(--cyan); }
 .astro-planet-grid, .astro-target-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
-.astro-planet-card, .astro-target-card { min-width: 0; min-height: 190px; padding: 22px; display: grid; align-content: start; gap: 12px; border: 1px solid var(--line); background: linear-gradient(145deg, rgba(14,24,40,.78), rgba(5,9,16,.92)); }
+.astro-planet-card, .astro-target-card { position: relative; min-width: 0; min-height: 190px; padding: 22px; display: grid; align-content: start; gap: 12px; overflow: hidden; isolation: isolate; border: 1px solid var(--line); background: linear-gradient(145deg, rgba(14,24,40,.78), rgba(5,9,16,.92)); }
+.astro-planet-card::before, .astro-target-card::before { position: absolute; z-index: -2; top: 0; right: 0; bottom: 0; width: 72%; content: ""; background-image: var(--astro-card-image); background-repeat: no-repeat; background-position: center right; opacity: .34; filter: saturate(.75) contrast(1.08); -webkit-mask-image: linear-gradient(90deg, transparent 0, rgba(0,0,0,.25) 22%, #000 62%); mask-image: linear-gradient(90deg, transparent 0, rgba(0,0,0,.25) 22%, #000 62%); }
+.astro-planet-card::before { background-size: cover; opacity: .28; }
+.astro-target-card::before { width: 76%; background-size: cover; opacity: .42; }
+.astro-planet-card::after, .astro-target-card::after { position: absolute; z-index: -1; inset: 0; content: ""; background: linear-gradient(90deg, rgba(5,9,16,.98) 0 34%, rgba(5,9,16,.82) 58%, rgba(5,9,16,.28)), linear-gradient(0deg, rgba(5,9,16,.72), transparent 70%); pointer-events: none; }
+.astro-planet-card > *, .astro-target-card > * { position: relative; z-index: 1; }
 .astro-planet-card.is-visible { border-top-color: #76deb9; }
 .astro-planet-card span, .astro-target-card span { color: var(--violet); font: 600 .52rem var(--font-mono); letter-spacing: .1em; text-transform: uppercase; }
 .astro-planet-card strong, .astro-target-card strong { font-size: 1.25rem; font-weight: 400; line-height: 1.1; }
@@ -424,6 +429,7 @@ h2 { font-size: clamp(2.8rem, 6.5vw, 6.8rem); }
     .astro-tonight-dashboard strong { font-size: .98rem; }
     .astro-tonight-dashboard small { font-size: .52rem; }
     .astro-planet-grid, .astro-target-grid { grid-template-columns: 1fr; }
+    .astro-planet-card::before, .astro-target-card::before { width: 68%; }
     .astro-tonight-map-shell, .astro-tonight-map { height: calc(100vw - 32px); min-height: 0; max-height: 440px; }
     .astro-tonight-city-picker button { min-height: 44px; padding-inline: 6px; font-size: .55rem; }
     .astro-footer-end { display: grid; gap: 8px; }

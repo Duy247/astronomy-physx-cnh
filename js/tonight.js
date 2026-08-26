@@ -81,7 +81,8 @@ window.addEventListener('load', async () => {
     const planets = T.planetInfo(selectedDate, windowInfo.observer);
     $('[data-planet-list]').innerHTML = planets.map((planet) => {
       const visible = planet.altitude > 0;
-      return `<article class="astro-planet-card ${visible ? 'is-visible' : ''}">
+      const image = `${app.dataset.planetImagePath}${planet.name.toLowerCase()}.jpg`;
+      return `<article class="astro-planet-card ${visible ? 'is-visible' : ''}" style="--astro-card-image: url('${image}')">
         <span>${visible ? 'Above horizon' : 'Below horizon'}</span><strong>${planet.name}</strong>
         <p>${visible ? `${Math.round(planet.altitude)}° high · ${T.compass(planet.azimuth)}` : `Rises ${planet.rise ? T.formatTime(planet.rise) : '—'}`}</p>
         <small>Magnitude ${planet.magnitude.toFixed(1)} · sets ${planet.set ? T.formatTime(planet.set) : '—'}</small>
@@ -99,7 +100,9 @@ window.addEventListener('load', async () => {
     container.innerHTML = ranked.map((target, index) => {
       const events = T.targetCrossings(target, windowInfo.sunset, windowInfo.sunrise, windowInfo.observer);
       const current = target.currentAltitude >= 0 ? `${Math.round(target.currentAltitude)}° ${T.compass(target.currentAzimuth)} now` : 'Below horizon now';
-      return `<a class="astro-target-card" href="${app.dataset.basePath || ''}${target.url}">
+      const image = target.image ? `${app.dataset.basePath || ''}${target.image}` : '';
+      const imageStyle = image ? ` style="--astro-card-image: url('${image}')"` : '';
+      return `<a class="astro-target-card" href="${app.dataset.basePath || ''}${target.url}"${imageStyle}>
         <span>Target ${String(index + 1).padStart(2, '0')} · ${target.typeLabel}</span>
         <strong>${target.name}</strong><p>${current}</p>
         <small>Best ${T.formatTime(target.bestTime)} at ${Math.round(target.maximumAltitude)}° · Moon ${Math.round(target.moonSeparation)}° away</small>

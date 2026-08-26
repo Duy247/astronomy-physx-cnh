@@ -332,11 +332,15 @@ def build_observable_targets(apply: bool) -> int:
         except (TypeError, ValueError):
             magnitude = None
         object_name = str(data.get("object") or designation).strip()
+        preview_image = str(data.get("image", {}).get("thumb") or data.get("gallery", {}).get("thumb") or "")
+        if preview_image:
+            preview_image = "/" + preview_image.lstrip("/")
         targets.append({
             "id": key.lower(),
             "name": object_name if len(object_name) <= 70 else designation,
             "designation": designation,
             "url": str(data.get("canonical_url", "")),
+            "image": preview_image,
             "raHours": round((longitude % 360) / 15, 7),
             "dec": round(declination, 7),
             "magnitude": magnitude,

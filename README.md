@@ -60,6 +60,10 @@ browser. Hourly observing weather is normalized and cached by `weather.php`
 from Open-Meteo; if that service is unavailable, the astronomical view remains
 fully usable.
 
+Planet card backgrounds use NASA Science imagery documented in
+`assets/planets/SOURCES.md`. Archive target cards reuse their existing local
+preview photographs.
+
 ## Verification
 
 Run `composer test`, or run the two checks separately:

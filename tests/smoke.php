@@ -28,6 +28,8 @@ $assert(is_file(dirname(__DIR__) . '/Tonight.php'), 'Tonight sky page is missing
 $assert(is_file(dirname(__DIR__) . '/gallery/observable_targets.json'), 'Observable target catalogue is missing.');
 $observableTargets = astro_load_json(dirname(__DIR__) . '/gallery/observable_targets.json');
 $assert(count($observableTargets) >= 20, 'Observable target catalogue is unexpectedly small.');
+$assert(!empty($observableTargets[0]['image']), 'Observable target preview image is missing.');
+$assert(is_file(dirname(__DIR__) . (string) $observableTargets[0]['image']), 'Observable target preview file is missing.');
 
 $weatherFixture = [
     'hourly' => [
