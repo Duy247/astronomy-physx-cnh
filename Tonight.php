@@ -53,7 +53,6 @@ require __DIR__ . '/includes/header.php';
     <section class="astro-tonight-details" aria-labelledby="solar-system-title">
         <div class="astro-section-heading">
             <h2 id="solar-system-title">Solar system.</h2>
-            <p>Positions update with the selected city and time.</p>
         </div>
         <div class="astro-planet-grid" data-planet-list></div>
     </section>
@@ -61,7 +60,6 @@ require __DIR__ . '/includes/header.php';
     <section class="astro-tonight-targets" aria-labelledby="targets-title">
         <div class="astro-section-heading">
             <h2 id="targets-title">Best archive targets.</h2>
-            <p>Objects photographed in this archive that climb at least 20° above your horizon during the selected night.</p>
         </div>
         <div class="astro-target-grid" data-target-list><p>Matching the archive to tonight’s sky…</p></div>
     </section>
@@ -69,7 +67,6 @@ require __DIR__ . '/includes/header.php';
     <section class="astro-weather-timeline" aria-labelledby="weather-title">
         <div class="astro-section-heading">
             <h2 id="weather-title">Observing weather.</h2>
-            <p>Hourly forecast nearest the selected time. Astronomy remains available if the forecast service is offline.</p>
         </div>
         <div class="astro-weather-hours" data-weather-hours></div>
         <p class="astro-weather-credit"><a href="https://open-meteo.com/" rel="noopener">Weather data by Open-Meteo.com</a></p>
